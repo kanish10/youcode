@@ -1,0 +1,1 @@
+-- Reference copy: bloom_core_schema_v1 + bloom_rls_and_kiosk_rpc (applied on Supabase)

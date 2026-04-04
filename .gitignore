@@ -13,3 +13,13 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Android / tooling
+app/build/
+.idea/
+.venv/
+
+# Web
+web/node_modules/
+web/.next/
+web/out/

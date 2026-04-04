@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bloom</string>
+
+    <!-- Ambient Garden -->
+    <string name="begin">はじめる</string>
+    <string name="moments_of_wellness">私たちの庭にある %d のウェルネスの瞬間</string>
+    <string name="staff">スタッフ</string>
+
+    <!-- Wellness Wheel -->
+    <string name="how_feeling">今日の調子はどうですか？</string>
+    <string name="mind">こころ</string>
+    <string name="body">からだ</string>
+    <string name="soul">たましい</string>
+    <string name="connect">つながり</string>
+    <string name="talk_to_bloom">Bloom と話す</string>
+    <string name="language_label">言語：%s</string>
+    <string name="close">閉じる</string>
+
+    <!-- Mind activities -->
+    <string name="breathing_title">Bloom と一緒に呼吸</string>
+    <string name="breathing_subtitle">2 分 · 円を追って</string>
+    <string name="grounding_title">グラウンディング（5-4-3-2-1）</string>
+    <string name="grounding_subtitle">3 分 · 今ここに戻る</string>
+    <string name="reframe_title">考え方を変える</string>
+    <string name="reframe_subtitle">3 分 · 視点を変えてみよう</string>
+    <string name="release_worry_title">心配を手放す</string>
+    <string name="release_worry_subtitle">2 分 · 吐き出してみよう</string>
+
+    <!-- Body activities -->
+    <string name="stretch_title">やさしいストレッチ</string>
+    <string name="stretch_subtitle">3 分 · マット不要</string>
+    <string name="tension_title">緊張をほぐす</string>
+    <string name="tension_subtitle">3 分 · ストレスを溶かそう</string>
+    <string name="movement_title">プチ運動</string>
+    <string name="movement_subtitle">1 分 · 体を振ろう</string>
+    <string name="food_title">近くの食べ物を探す</string>
+    <string name="food_subtitle">地域のフードリソース</string>
+
+    <!-- Soul activities -->
+    <string name="canvas_title">デジタルキャンバス</string>
+    <string name="canvas_subtitle">色と自由で創作しよう</string>
+    <string name="gratitude_title">感謝のひととき</string>
+    <string name="gratitude_subtitle">今日よかったことは何ですか？</string>
+    <string name="affirmation_title">アファメーション</string>
+    <string name="affirmation_subtitle">文化に寄り添うやさしい言葉</string>
+    <string name="memory_title">記憶のひらめき</string>
+    <string name="memory_subtitle">笑顔になれることを思い出そう</string>
+
+    <!-- Connect -->
+    <string name="garden_count">庭：%d のウェルネスの瞬間</string>
+    <string name="gratitude_count">感謝の壁：%d の共有メモ</string>
+    <string name="connect_coming_soon">コミュニティの気分とサポート機能は近日公開予定です。</string>
+
+    <!-- Staff dashboard -->
+    <string name="staff_dashboard">スタッフダッシュボード</string>
+    <string name="enter_pin">PINを入力</string>
+    <string name="unlock">ロック解除</string>
+    <string name="today_sessions">今日のセッション数：%d</string>
+    <string name="stats_disclaimer">集計統計のみ表示。個人データは保存されません。</string>
+
+    <!-- Breathing exercise -->
+    <string name="breathe_in">息を吸って…</string>
+    <string name="breathe_out">息を吐いて…</string>
+    <string name="elapsed_seconds">経過：%d秒</string>
+    <string name="done">完了</string>
+    <string name="great_job_flower">よくできました。花が咲きました。</string>
+
+    <!-- Grounding exercise -->
+    <string name="grounding_see">見えるものを5つ言ってください</string>
+    <string name="grounding_touch">触れるものを4つ言ってください</string>
+    <string name="grounding_hear">聞こえるものを3つ言ってください</string>
+    <string name="grounding_smell">匂いを2つ言ってください</string>
+    <string name="grounding_taste">味を1つ言ってください</string>
+    <string name="grounding_safe">あなたはここにいます。安全です。今この瞬間にいます。</string>
+    <string name="next">次へ</string>
+    <string name="complete">完了</string>
+    <string name="back">戻る</string>
+</resources>

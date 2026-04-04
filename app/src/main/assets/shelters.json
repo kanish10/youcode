@@ -1,0 +1,1316 @@
+[
+  {
+    "name": "100 Mile House Safe Home",
+    "city": "100 Mile House",
+    "organization": "Canadian Mental Health Association - South Cariboo Branch",
+    "phone": "1-800-563-0808",
+    "type": "safe_home",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Abbotsford Transition House",
+    "city": "Abbotsford",
+    "organization": "SARA for Women Society",
+    "phone": "604-852-6008",
+    "type": "transition_house",
+    "latitude": 49.0495106,
+    "longitude": -122.3349203
+  },
+  {
+    "name": "Libra Transition House",
+    "city": "Aldergrove",
+    "organization": "Ishtar Women's Resource Society",
+    "phone": "604-857-5797",
+    "type": "transition_house",
+    "latitude": 49.1181204,
+    "longitude": -122.6588398
+  },
+  {
+    "name": "Snxlhh or Nuxalk Transition House",
+    "city": "Bella Coola",
+    "organization": "Nuxalk Transition House Society",
+    "phone": "1-877-799-0070",
+    "type": "transition_house",
+    "latitude": 52.372895,
+    "longitude": -126.7625759
+  },
+  {
+    "name": "Dixon Transition House",
+    "city": "Burnaby",
+    "organization": "Dixon Transition Society",
+    "phone": "604-298-3454",
+    "type": "transition_house",
+    "latitude": 49.275356,
+    "longitude": -122.9913249
+  },
+  {
+    "name": "Eagle's Nest Transition House",
+    "city": "Burns Lake",
+    "organization": "Prince George and District Elizabeth Fry Society",
+    "phone": "250-692-5720",
+    "type": "transition_house",
+    "latitude": 54.6856375,
+    "longitude": -125.3478586
+  },
+  {
+    "name": "Ann Elmore Transition House",
+    "city": "Campbell River",
+    "organization": "Campbell River and North Island Transition Society",
+    "phone": "250-286-3666",
+    "type": "transition_house",
+    "latitude": 50.0198244,
+    "longitude": -125.2412805
+  },
+  {
+    "name": "Castlegar Safe Home",
+    "city": "Castlegar",
+    "organization": "Castlegar Community Services Society",
+    "phone": "250-608-3710",
+    "type": "safe_home",
+    "latitude": 55.69538,
+    "longitude": -121.6295029
+  },
+  {
+    "name": "Chetwynd Safe Home",
+    "city": "Chetwynd",
+    "organization": "South Peace Community Resources Society",
+    "phone": "250-788-1976",
+    "type": "safe_home",
+    "latitude": 55.71926,
+    "longitude": -121.633911
+  },
+  {
+    "name": "Linda Krystina Safe House",
+    "city": "Chetwynd",
+    "organization": "The Linda Krystina Housing Society",
+    "phone": "250-401-8079",
+    "type": "safe_home",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Ann Davis Transition House",
+    "city": "Chilliwack",
+    "organization": "Ann Davis Transition Society",
+    "phone": "604-792-3116",
+    "type": "transition_house",
+    "latitude": 49.176738,
+    "longitude": -121.9628433
+  },
+  {
+    "name": "Ann Davis Women's Centre",
+    "city": "Chilliwack",
+    "organization": "Ann Davis Transition Society",
+    "phone": "604-391-1993",
+    "type": "transition_house",
+    "latitude": 49.166738,
+    "longitude": -121.9528433
+  },
+  {
+    "name": "Wilma's Transition House",
+    "city": "Chilliwack",
+    "organization": "Wilma's Transition Society",
+    "phone": "604-858-0468",
+    "type": "transition_house",
+    "latitude": 49.130906,
+    "longitude": -122.0139109
+  },
+  {
+    "name": "Clearwater Safe Home",
+    "city": "Clearwater",
+    "organization": "Yellowhead Community Services Society",
+    "phone": "250-674-2135",
+    "type": "safe_home",
+    "latitude": 51.656452,
+    "longitude": -120.033213
+  },
+  {
+    "name": "Joy's Place",
+    "city": "Coquitlam",
+    "organization": "Tri-City Transitions Society",
+    "phone": "604-492-1700",
+    "type": "transition_house",
+    "latitude": 49.2615252,
+    "longitude": -122.781942
+  },
+  {
+    "name": "Lilli House",
+    "city": "Courtenay",
+    "organization": "Comox Valley Transition Society",
+    "phone": "250-338-1227",
+    "type": "transition_house",
+    "latitude": 49.6899546,
+    "longitude": -124.9993879
+  },
+  {
+    "name": "Kootenay Haven Transition House",
+    "city": "Cranbrook",
+    "organization": "Canadian Mental Health Association for the Kootenays",
+    "phone": "250-426-4887",
+    "type": "transition_house",
+    "latitude": 49.5217833,
+    "longitude": -115.751547
+  },
+  {
+    "name": "Irvine House Safe Home Program",
+    "city": "Creston",
+    "organization": "Kootenai Community Centre Society",
+    "phone": "250-428-6856",
+    "type": "safe_home",
+    "latitude": 49.0644511,
+    "longitude": -116.872542
+  },
+  {
+    "name": "Mizpah Transition House",
+    "city": "Dawson Creek",
+    "organization": "South Peace Community Resources Society",
+    "phone": "250-782-9176",
+    "type": "transition_house",
+    "latitude": 55.7561634,
+    "longitude": -120.2426322
+  },
+  {
+    "name": "Azure Place",
+    "city": "Delta",
+    "organization": "W.I.N.G.S. Fellowship Ministries",
+    "phone": "604-957-1556",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Somenos Transition House",
+    "city": "Duncan",
+    "organization": "Cowichan Women Against Violence Society",
+    "phone": "250-748-8544",
+    "type": "transition_house",
+    "latitude": 48.77849,
+    "longitude": -123.7124669
+  },
+  {
+    "name": "Lelum 'u tu S'tsa'-elh teyt-en",
+    "city": "Duncan",
+    "organization": "Hiiye'yu Lelum Society",
+    "phone": "250-732-7788",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Elk Valley Women's Transition House",
+    "city": "Elkford",
+    "organization": "Elkford Women's Task Force Society",
+    "phone": "250-946-6004",
+    "type": "transition_house",
+    "latitude": 49.4455151,
+    "longitude": -114.751544
+  },
+  {
+    "name": "FNAFS Women's Transition House",
+    "city": "Fort Nelson",
+    "organization": "Fort Nelson Aboriginal Friendship Society",
+    "phone": "250-774-4742",
+    "type": "transition_house",
+    "latitude": 58.842527,
+    "longitude": -122.5752589
+  },
+  {
+    "name": "Fireweed Safe Haven",
+    "city": "Fort St. James",
+    "organization": "Fireweed Collective Society",
+    "phone": "250-996-8000",
+    "type": "transition_house",
+    "latitude": 54.464698,
+    "longitude": -124.1723879
+  },
+  {
+    "name": "Meaope Transition House",
+    "city": "Fort St. John",
+    "organization": "North Peace Community Resources Society",
+    "phone": "250-785-5208",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Gold River Safe Home",
+    "city": "Gold River",
+    "organization": "Campbell River and North Island Transition Society",
+    "phone": "250-286-3666",
+    "type": "safe_home",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Golden Safe Home",
+    "city": "Golden",
+    "organization": "Golden Women's Centre Society",
+    "phone": "250-344-2101",
+    "type": "safe_home",
+    "latitude": 51.3001116,
+    "longitude": -116.966529
+  },
+  {
+    "name": "Boundary Women's Transition House",
+    "city": "Grand Forks",
+    "organization": "Boundary Women's Coalition",
+    "phone": "250-442-3131",
+    "type": "transition_house",
+    "latitude": 49.1732432,
+    "longitude": -123.1470865
+  },
+  {
+    "name": "Cedar Rose",
+    "city": "Hazelton",
+    "organization": "Northern Society for Domestic Peace",
+    "phone": "778-641-4445",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Jean Scott Transition House",
+    "city": "Hope",
+    "organization": "Cedar Strong Prevention and Intervention Society",
+    "phone": "604-869-5191",
+    "type": "transition_house",
+    "latitude": 49.3331426,
+    "longitude": -121.215742
+  },
+  {
+    "name": "Women's Information and Safe Home (WISH)",
+    "city": "Invermere",
+    "organization": "Family Dynamix Association",
+    "phone": "250-342-5566",
+    "type": "safe_home",
+    "latitude": 50.6021404,
+    "longitude": -115.8214025
+  },
+  {
+    "name": "Y Women's Emergency Shelter",
+    "city": "Kamloops",
+    "organization": "YWCA BC",
+    "phone": "250-374-6162",
+    "type": "transition_house",
+    "latitude": 50.6181326,
+    "longitude": -120.1505066
+  },
+  {
+    "name": "Kaslo Safe Home",
+    "city": "Kaslo",
+    "organization": "Kaslo Community Services Society",
+    "phone": "250-353-7691",
+    "type": "safe_home",
+    "latitude": 49.899302,
+    "longitude": -116.9116684
+  },
+  {
+    "name": "Kelowna Women's Shelter",
+    "city": "Kelowna",
+    "organization": "Central Okanagan Emergency Shelter Society",
+    "phone": "250-763-1040",
+    "type": "transition_house",
+    "latitude": 49.890457,
+    "longitude": -119.469223
+  },
+  {
+    "name": "Dunmore Place",
+    "city": "Kitimat",
+    "organization": "The Tamitik Status of Women Association",
+    "phone": "250-632-6070",
+    "type": "transition_house",
+    "latitude": 54.0535935,
+    "longitude": -128.65344
+  },
+  {
+    "name": "Ishtar Transition House",
+    "city": "Langley",
+    "organization": "Ishtar Women's Resource Society",
+    "phone": "604-530-9442",
+    "type": "transition_house",
+    "latitude": 49.1080376,
+    "longitude": -122.678928
+  },
+  {
+    "name": "Sa-Koh Housing",
+    "city": "Lower Post",
+    "organization": "Lower Post Housing Society",
+    "phone": "250-779-3078",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Lil'wat Nation Transition House",
+    "city": "Lil'wat Nation",
+    "organization": "Stqaka7stúmc",
+    "phone": "604-384-7247",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Lillooet Safe Home",
+    "city": "Lillooet",
+    "organization": "Lillooet Friendship Centre Society",
+    "phone": "250-256-4146",
+    "type": "safe_home",
+    "latitude": 50.6902203,
+    "longitude": -121.9344796
+  },
+  {
+    "name": "Helping Hands Transition House",
+    "city": "Lytton",
+    "organization": "Hans Knakst Tsitxw Society",
+    "phone": "778-254-0217",
+    "type": "transition_house",
+    "latitude": 50.2283622,
+    "longitude": -121.8562684
+  },
+  {
+    "name": "Jonduh Wuts'uh Safe Home",
+    "city": "Mackenzie",
+    "organization": "Mackenzie Counselling Services Society",
+    "phone": "250-997-6595",
+    "type": "safe_home",
+    "latitude": 55.3282106,
+    "longitude": -123.0925637
+  },
+  {
+    "name": "Cythera Transition House",
+    "city": "Maple Ridge",
+    "organization": "Cythera Transition House Society",
+    "phone": "604-467-9966",
+    "type": "transition_house",
+    "latitude": 49.2192557,
+    "longitude": -122.6026195
+  },
+  {
+    "name": "Tlaa Juuhldaa Naay Transition House",
+    "city": "Massett",
+    "organization": "Haida Gwaii Society for Community Peace",
+    "phone": "250-626-4666",
+    "type": "transition_house",
+    "latitude": 54.022776,
+    "longitude": -132.09902
+  },
+  {
+    "name": "Mission Transition House",
+    "city": "Mission",
+    "organization": "SARA for Women Society",
+    "phone": "604-826-7800",
+    "type": "transition_house",
+    "latitude": 49.1790916,
+    "longitude": -122.2372572
+  },
+  {
+    "name": "Nakusp Safe Home",
+    "city": "Nakusp",
+    "organization": "Arrow and Slocan Lakes Community Services",
+    "phone": "250-265-1843",
+    "type": "safe_home",
+    "latitude": 50.3063162,
+    "longitude": -118.06693
+  },
+  {
+    "name": "Haven House",
+    "city": "Nanaimo",
+    "organization": "Haven Society",
+    "phone": "250-756-0616",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Cedar Woman House",
+    "city": "Nanaimo",
+    "organization": "Snuneymuxw First Nation",
+    "phone": "250-591-5580",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Aimee Beaulieu Transition House",
+    "city": "Nelson",
+    "organization": "The Nelson Community Service Society",
+    "phone": "250-354-4357",
+    "type": "transition_house",
+    "latitude": 49.493668,
+    "longitude": -117.2951325
+  },
+  {
+    "name": "Monarch Place",
+    "city": "New Westminster",
+    "organization": "W.I.N.G.S. Fellowship Ministries",
+    "phone": "604-521-1888",
+    "type": "transition_house",
+    "latitude": 49.2006835,
+    "longitude": -122.916252
+  },
+  {
+    "name": "Sage Transition House",
+    "city": "North Vancouver",
+    "organization": "North Shore Crisis Services Society",
+    "phone": "604-987-3374",
+    "type": "transition_house",
+    "latitude": 49.3229223,
+    "longitude": -123.0740419
+  },
+  {
+    "name": "Cindy Taylor Safe Home",
+    "city": "Oliver",
+    "organization": "Desert Sun Counselling & Resource Centre Society",
+    "phone": "250-485-7777",
+    "type": "safe_home",
+    "latitude": 49.188634,
+    "longitude": -119.565618
+  },
+  {
+    "name": "Parksville Safe Home",
+    "city": "Parksville",
+    "organization": "Haven Society",
+    "phone": "250-586-4718",
+    "type": "safe_home",
+    "latitude": 49.3179194,
+    "longitude": -124.3078683
+  },
+  {
+    "name": "Pearl's Safe Home",
+    "city": "Pemberton",
+    "organization": "PearlSpace Support Services Society",
+    "phone": "604-892-5711",
+    "type": "safe_home",
+    "latitude": 50.510851,
+    "longitude": -123.0112056
+  },
+  {
+    "name": "Hughes House",
+    "city": "Penticton",
+    "organization": "South Okanagan Women in Need Society",
+    "phone": "250-493-7233",
+    "type": "transition_house",
+    "latitude": 49.4964222,
+    "longitude": -119.612815
+  },
+  {
+    "name": "Okanagan Nation Emergency Transition House",
+    "city": "Penticton (on-reserve)",
+    "organization": "Okanagan Nation Family Intervention and Services Society",
+    "phone": "250-493-4902",
+    "type": "transition_house",
+    "latitude": 49.4844799,
+    "longitude": -119.6020271
+  },
+  {
+    "name": "Oomiiqsu",
+    "city": "Port Alberni",
+    "organization": "Huu-ay-aht First Nations",
+    "phone": "250-736-5066",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Port Alberni Transition House",
+    "city": "Port Alberni",
+    "organization": "Sage Haven Society",
+    "phone": "250-724-2223",
+    "type": "transition_house",
+    "latitude": 49.267927,
+    "longitude": -124.7858807
+  },
+  {
+    "name": "Port Hardy Safe Home",
+    "city": "Port Hardy",
+    "organization": "North Island Crisis and Counselling Centre Society",
+    "phone": "250-230-1647",
+    "type": "safe_home",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Grace House",
+    "city": "Powell River",
+    "organization": "Powell River and Region Transition House Society",
+    "phone": "604-485-9773",
+    "type": "transition_house",
+    "latitude": 49.8478892,
+    "longitude": -124.5232893
+  },
+  {
+    "name": "Dzee Ba'yugh Safe House (Heart House)",
+    "city": "Prince George",
+    "organization": "Carrier Sekani Family Services",
+    "phone": "778-924-0004",
+    "type": "safe_home",
+    "latitude": 51.484824,
+    "longitude": -120.716617
+  },
+  {
+    "name": "Harmony House Prince George",
+    "city": "Prince George",
+    "organization": "Phoenix Transition Society",
+    "phone": "236-423-3335",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Phoenix Transition House",
+    "city": "Prince George",
+    "organization": "Phoenix Transition Society",
+    "phone": "250-563-7305",
+    "type": "transition_house",
+    "latitude": 53.9128663,
+    "longitude": -122.7573216
+  },
+  {
+    "name": "Amber House",
+    "city": "Prince George",
+    "organization": "Prince George and District Elizabeth Fry Society",
+    "phone": "250-562-5868",
+    "type": "transition_house",
+    "latitude": 53.9164675,
+    "longitude": -122.7514761
+  },
+  {
+    "name": "Ravens Keep Transition House",
+    "city": "Prince Rupert",
+    "organization": "North Coast Transition Society",
+    "phone": "250-627-8588",
+    "type": "transition_house",
+    "latitude": 54.3041521,
+    "longitude": -130.3371012
+  },
+  {
+    "name": "Cindy Parolin Safe Home",
+    "city": "Princeton",
+    "organization": "Princeton Family Services Society",
+    "phone": "250-295-8211",
+    "type": "safe_home",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Amata Transition House",
+    "city": "Quesnel",
+    "organization": "Amata Transition House Society",
+    "phone": "250-992-3385",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Forsythe House - A Safe Place",
+    "city": "Revelstoke",
+    "organization": "Revelstoke Women's Shelter Society",
+    "phone": "250-837-1111",
+    "type": "transition_house",
+    "latitude": 50.998529,
+    "longitude": -118.1986729
+  },
+  {
+    "name": "Nova Transition House",
+    "city": "Richmond",
+    "organization": "Chimo Community Services Society",
+    "phone": "604-270-4911",
+    "type": "transition_house",
+    "latitude": 49.1609272,
+    "longitude": -123.1401688
+  },
+  {
+    "name": "Salmo Safe Home",
+    "city": "Salmo",
+    "organization": "Salmo Community Resource Society",
+    "phone": "250-357-2277",
+    "type": "safe_home",
+    "latitude": 49.177759,
+    "longitude": -117.271221
+  },
+  {
+    "name": "Shuswap & Area Women's Shelter",
+    "city": "Salmon Arm",
+    "organization": "Shuswap Area Family Emergency Society",
+    "phone": "250-832-9616",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Salt Spring Island Transition House",
+    "city": "Salt Spring Island",
+    "organization": "Islanders Working Against Violence Society",
+    "phone": "250-537-0735",
+    "type": "transition_house",
+    "latitude": 48.8612069,
+    "longitude": -123.5105379
+  },
+  {
+    "name": "Yew Transition House",
+    "city": "Sechelt",
+    "organization": "Sunshine Coast Community Services Society",
+    "phone": "604-885-2944",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Passage Transition House",
+    "city": "Smithers",
+    "organization": "Northern Society for Domestic Peace",
+    "phone": "250-847-2595",
+    "type": "transition_house",
+    "latitude": 54.4206886,
+    "longitude": -127.8779524
+  },
+  {
+    "name": "Annie's Place",
+    "city": "Sooke",
+    "organization": "Sooke Transition House Society",
+    "phone": "250-642-2591",
+    "type": "transition_house",
+    "latitude": 48.4151176,
+    "longitude": -123.7684701
+  },
+  {
+    "name": "Ama House for Older Women",
+    "city": "South Surrey",
+    "organization": "Atira Women's Resource Society",
+    "phone": "604-542-5992",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Pearl's Place Transition House",
+    "city": "Squamish",
+    "organization": "PearlSpace Support Services Society",
+    "phone": "604-892-5711",
+    "type": "transition_house",
+    "latitude": 49.6989762,
+    "longitude": -123.152538
+  },
+  {
+    "name": "Shimai Transition House",
+    "city": "Surrey",
+    "organization": "Atira Women's Resource Society",
+    "phone": "604-581-9100",
+    "type": "transition_house",
+    "latitude": 49.192124,
+    "longitude": -122.8563663
+  },
+  {
+    "name": "Maxxine Wright Shelter",
+    "city": "Surrey",
+    "organization": "Atira Women's Resource Society",
+    "phone": "604-619-9188",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Virginia Sam Transition House",
+    "city": "Surrey/Newton",
+    "organization": "Options Community Services Society",
+    "phone": "604-572-5116",
+    "type": "transition_house",
+    "latitude": 49.1282672,
+    "longitude": -122.8446204
+  },
+  {
+    "name": "Evergreen Transition House",
+    "city": "Surrey/Whalley",
+    "organization": "Options Community Services Society",
+    "phone": "604-584-3301",
+    "type": "transition_house",
+    "latitude": 49.1382672,
+    "longitude": -122.8546204
+  },
+  {
+    "name": "Three Sisters Haven House",
+    "city": "Telegraph Creek (on-reserve)",
+    "organization": "Tahltan Health and Social Services Authority",
+    "phone": "250-235-3120",
+    "type": "transition_house",
+    "latitude": 57.9029714,
+    "longitude": -131.1695462
+  },
+  {
+    "name": "Ksan House",
+    "city": "Terrace",
+    "organization": "Ksan House Society",
+    "phone": "250-635-6447",
+    "type": "transition_house",
+    "latitude": 54.5180993,
+    "longitude": -128.6018512
+  },
+  {
+    "name": "WINS Transition House",
+    "city": "Trail",
+    "organization": "Trail Family and Individual Resource Centre Society",
+    "phone": "250-364-1543",
+    "type": "transition_house",
+    "latitude": 49.0979558,
+    "longitude": -117.7216564
+  },
+  {
+    "name": "Tumbler Ridge Safe Home",
+    "city": "Tumbler Ridge",
+    "organization": "South Peace Community Resources Society",
+    "phone": "250-242-8208",
+    "type": "safe_home",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Westcoast Transition House",
+    "city": "Ucluelet",
+    "organization": "Westcoast Community Resources Society",
+    "phone": "250-726-2020",
+    "type": "transition_house",
+    "latitude": 49.0090597,
+    "longitude": -125.492999
+  },
+  {
+    "name": "Ada's Place",
+    "city": "Valemount",
+    "organization": "Robson Valley Community Services Society",
+    "phone": "1-844-324-2004",
+    "type": "transition_house",
+    "latitude": 53.301347,
+    "longitude": -120.1684609
+  },
+  {
+    "name": "McBride Safe Home",
+    "city": "Valemount",
+    "organization": "Robson Valley Community Services Society",
+    "phone": "1-844-324-2004",
+    "type": "safe_home",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Katherine's House",
+    "city": "Vancouver",
+    "organization": "Atira Women's Resource Society",
+    "phone": "778-984-2021",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Pierce House",
+    "city": "Vancouver",
+    "organization": "Atira Women's Resource Society",
+    "phone": "604-267-9131",
+    "type": "transition_house",
+    "latitude": 49.1734442,
+    "longitude": -123.1467428
+  },
+  {
+    "name": "Deborah's Gate",
+    "city": "Vancouver",
+    "organization": "Governing Council of the Salvation Army in Canada",
+    "phone": "604-347-9500",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Kate Booth House",
+    "city": "Vancouver",
+    "organization": "Governing Council of the Salvation Army in Canada",
+    "phone": "604-872-7774",
+    "type": "transition_house",
+    "latitude": 49.248336,
+    "longitude": -123.1209501
+  },
+  {
+    "name": "Helping Spirit Lodge",
+    "city": "Vancouver",
+    "organization": "Helping Spirit Lodge Society",
+    "phone": "604-872-6649",
+    "type": "transition_house",
+    "latitude": 49.2495001,
+    "longitude": -123.0736091
+  },
+  {
+    "name": "Nisa Home",
+    "city": "Vancouver",
+    "organization": "Nisa Foundation",
+    "phone": "1-888-456-8043",
+    "type": "transition_house",
+    "latitude": 49.1587389,
+    "longitude": -122.838952
+  },
+  {
+    "name": "Peggy's Place",
+    "city": "Vancouver",
+    "organization": "The Kettle Friendship Society",
+    "phone": "604-430-5202",
+    "type": "transition_house",
+    "latitude": 49.234121,
+    "longitude": -122.98333
+  },
+  {
+    "name": "Vancouver Rape Relief & Women's Shelter",
+    "city": "Vancouver",
+    "organization": "Vancouver Rape Relief Society",
+    "phone": "604-872-8212",
+    "type": "transition_house",
+    "latitude": 49.2529828,
+    "longitude": -123.1035856
+  },
+  {
+    "name": "Joy Aitkens Safe Home",
+    "city": "Vanderhoof",
+    "organization": "Omineca Safe Home Society",
+    "phone": "250-567-9512",
+    "type": "transition_house",
+    "latitude": 54.015948,
+    "longitude": -124.0111589
+  },
+  {
+    "name": "Vernon Women's Transition House",
+    "city": "Vernon",
+    "organization": "Archway Society for Domestic Peace",
+    "phone": "250-542-1122",
+    "type": "transition_house",
+    "latitude": 50.2656562,
+    "longitude": -119.2719942
+  },
+  {
+    "name": "Cridge Transition House for Women",
+    "city": "Victoria",
+    "organization": "Cridge Centre for the Family",
+    "phone": "250-479-3963",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Older Women's Safe Home",
+    "city": "Victoria",
+    "organization": "Victoria Women's Transition House Society",
+    "phone": "250-385-6611",
+    "type": "safe_home",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Victoria Women's Transition House",
+    "city": "Victoria",
+    "organization": "Victoria Women's Transition House Society",
+    "phone": "250-385-6611",
+    "type": "transition_house",
+    "latitude": 48.4477113,
+    "longitude": -123.3445392
+  },
+  {
+    "name": "Help and Hope Transition House",
+    "city": "Watson Lake, Yukon",
+    "organization": "Help and Hope for Families Society",
+    "phone": "867-536-7233",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "West Kelowna Second Stage",
+    "city": "West Kelowna",
+    "organization": "Central Okanagan Emergency Shelter Society",
+    "phone": "250-763-1040",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Westshore",
+    "city": "Westshore",
+    "organization": "Victoria Women's Transition House Society",
+    "phone": "250-385-6611",
+    "type": "safe_home",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Maries Safe Home",
+    "city": "Whistler",
+    "organization": "PearlSpace Support Services Society",
+    "phone": "1-877-890-5711",
+    "type": "safe_home",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "Durrant House",
+    "city": "White Rock",
+    "organization": "Atira Women's Resource Society",
+    "phone": "604-531-9151",
+    "type": "transition_house",
+    "latitude": 49.0568459,
+    "longitude": -122.8214151
+  },
+  {
+    "name": "Chiwid Transition House",
+    "city": "Williams Lake",
+    "organization": "Cariboo Friendship Society",
+    "phone": "250-398-5658",
+    "type": "transition_house",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "name": "100 Mile House and District Women's Centre Society",
+    "city": "100 Mile House",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "crisis",
+    "latitude": 51.6795895,
+    "longitude": -121.3811819
+  },
+  {
+    "name": "Act2 Safe Choice Program",
+    "city": "Vancouver",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "safe_home",
+    "latitude": 49.2612326,
+    "longitude": -123.0920434
+  },
+  {
+    "name": "Ama Transition House For Older Women",
+    "city": "South Surrey",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "crisis",
+    "latitude": 49.0668459,
+    "longitude": -122.8314151
+  },
+  {
+    "name": "Amata Transition House Society",
+    "city": "Quesnel",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "mixed",
+    "latitude": 52.9832806,
+    "longitude": -122.4963997
+  },
+  {
+    "name": "Azure Place Transition House",
+    "city": "Delta",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "crisis",
+    "latitude": 49.1368688,
+    "longitude": -123.0397414
+  },
+  {
+    "name": "Boundary Women's Coalition 2nd stage",
+    "city": "Grand Forks",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 49.1340816,
+    "longitude": -118.5133909
+  },
+  {
+    "name": "Cadence Second Stage Housing",
+    "city": "South Surrey",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 49.327806,
+    "longitude": -117.6643606
+  },
+  {
+    "name": "Christine Lamb Residence",
+    "city": "Maple Ridge",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 49.2106835,
+    "longitude": -122.926252
+  },
+  {
+    "name": "Chrysalis Place Second Stage",
+    "city": "Clearwater",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 51.632463,
+    "longitude": -120.341679
+  },
+  {
+    "name": "Eagle's Landing",
+    "city": "Prince Rupert",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 54.3041521,
+    "longitude": -130.3371012
+  },
+  {
+    "name": "Eva's House",
+    "city": "Surrey",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 49.188402,
+    "longitude": -122.835498
+  },
+  {
+    "name": "Harmony House",
+    "city": "Surrey",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 49.1487418,
+    "longitude": -122.8713474
+  },
+  {
+    "name": "Harrison Place",
+    "city": "Victoria",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 48.4577113,
+    "longitude": -123.3545392
+  },
+  {
+    "name": "Haven Transition House",
+    "city": "Nanaimo",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "crisis",
+    "latitude": 49.214089,
+    "longitude": -124.0631219
+  },
+  {
+    "name": "HOPE's Place Second Stage Housing Program",
+    "city": "North Vancouver",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 49.3329223,
+    "longitude": -123.0840419
+  },
+  {
+    "name": "Journeys Into Tomorrow Transition House",
+    "city": "Merritt",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "crisis",
+    "latitude": 50.1111469,
+    "longitude": -120.7905197
+  },
+  {
+    "name": "Joy's Place Second Stage",
+    "city": "Coquitlam",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 49.2615252,
+    "longitude": -122.781942
+  },
+  {
+    "name": "Lela's Place",
+    "city": "Creston",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "mixed",
+    "latitude": 49.0084594,
+    "longitude": -116.8728968
+  },
+  {
+    "name": "Margaret Laurence House",
+    "city": "Victoria",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 48.425114,
+    "longitude": -123.3647699
+  },
+  {
+    "name": "Nexus Place",
+    "city": "Prince George",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 53.9164151,
+    "longitude": -122.7535578
+  },
+  {
+    "name": "NICCCS Safe Shelter",
+    "city": "Port Hardy",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "crisis",
+    "latitude": 50.6582475,
+    "longitude": -127.4437507
+  },
+  {
+    "name": "Nova House",
+    "city": "Richmond",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 49.1709272,
+    "longitude": -123.1501688
+  },
+  {
+    "name": "Nova Vita Second Stage Housing and Women in Need Transition House",
+    "city": "Trail",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 49.0948053,
+    "longitude": -117.7091353
+  },
+  {
+    "name": "Omenica Transition House",
+    "city": "Vanderhoof",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "crisis",
+    "latitude": 54.0159598,
+    "longitude": -124.0199137
+  },
+  {
+    "name": "Rose Harbour",
+    "city": "Campbell River",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 50.026271,
+    "longitude": -125.243481
+  },
+  {
+    "name": "SAFE Society Women's Emergency Shelter",
+    "city": "Salmon Arm",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "crisis",
+    "latitude": 50.7019667,
+    "longitude": -119.2803042
+  },
+  {
+    "name": "Sherielle Manors",
+    "city": "Smithers",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 54.4106886,
+    "longitude": -127.8679524
+  },
+  {
+    "name": "Skye's Place",
+    "city": "Fort St. John",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 56.246159,
+    "longitude": -120.8492169
+  },
+  {
+    "name": "The Cedars",
+    "city": "Salt Spring Island",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 48.8612069,
+    "longitude": -123.5105379
+  },
+  {
+    "name": "The Cridge Supportive Transitional Housing",
+    "city": "Victoria",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 48.4405149,
+    "longitude": -123.3496643
+  },
+  {
+    "name": "Thyme Second Stage",
+    "city": "Sechelt",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 49.5627453,
+    "longitude": -123.7532017
+  },
+  {
+    "name": "TSW Women's 2nd Stage Housing",
+    "city": "Kitimat",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 54.0535935,
+    "longitude": -128.65344
+  },
+  {
+    "name": "Valemount Safe Shelter",
+    "city": "Valemount",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "crisis",
+    "latitude": 52.829801,
+    "longitude": -119.2777718
+  },
+  {
+    "name": "Welcome Bay Second Stage",
+    "city": "Ucluelet",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 49.0090597,
+    "longitude": -125.492999
+  },
+  {
+    "name": "Wenda's Place",
+    "city": "Burnaby",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 49.265356,
+    "longitude": -122.9813249
+  },
+  {
+    "name": "Wilma's Transition House Second Stage",
+    "city": "Chilliwack",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 49.120906,
+    "longitude": -122.0039109
+  },
+  {
+    "name": "YWCA Arbour House",
+    "city": "Vancouver",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 49.2643045,
+    "longitude": -123.1439343
+  },
+  {
+    "name": "YWCA Eyrie",
+    "city": "Vancouver",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 49.2743045,
+    "longitude": -123.1339343
+  },
+  {
+    "name": "YWCA Munroe House",
+    "city": "Vancouver",
+    "organization": "unknown",
+    "phone": "unknown",
+    "type": "second_stage",
+    "latitude": 49.2583045,
+    "longitude": -123.1239343
+  }
+]

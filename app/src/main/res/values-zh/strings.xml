@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bloom</string>
+
+    <!-- Ambient Garden -->
+    <string name="begin">开始</string>
+    <string name="moments_of_wellness">我们花园中的 %d 个健康时刻</string>
+    <string name="staff">工作人员</string>
+
+    <!-- Wellness Wheel -->
+    <string name="how_feeling">你今天感觉怎么样？</string>
+    <string name="mind">心灵</string>
+    <string name="body">身体</string>
+    <string name="soul">灵魂</string>
+    <string name="connect">连接</string>
+    <string name="talk_to_bloom">和 Bloom 聊天</string>
+    <string name="language_label">语言：%s</string>
+    <string name="close">关闭</string>
+
+    <!-- Mind activities -->
+    <string name="breathing_title">和 Bloom 一起呼吸</string>
+    <string name="breathing_subtitle">2 分钟 · 跟随圆圈</string>
+    <string name="grounding_title">接地练习（5-4-3-2-1）</string>
+    <string name="grounding_subtitle">3 分钟 · 回到当下</string>
+    <string name="reframe_title">重新思考</string>
+    <string name="reframe_subtitle">3 分钟 · 换个角度看</string>
+    <string name="release_worry_title">释放担忧</string>
+    <string name="release_worry_subtitle">2 分钟 · 把它说出来</string>
+
+    <!-- Body activities -->
+    <string name="stretch_title">轻柔伸展</string>
+    <string name="stretch_subtitle">3 分钟 · 不需要瑜伽垫</string>
+    <string name="tension_title">释放紧张</string>
+    <string name="tension_subtitle">3 分钟 · 融化压力</string>
+    <string name="movement_title">活力小运动</string>
+    <string name="movement_subtitle">1 分钟 · 活动一下</string>
+    <string name="food_title">查找附近食物</string>
+    <string name="food_subtitle">社区食物资源</string>
+
+    <!-- Soul activities -->
+    <string name="canvas_title">数字画布</string>
+    <string name="canvas_subtitle">用色彩和自由创作</string>
+    <string name="gratitude_title">感恩时刻</string>
+    <string name="gratitude_subtitle">今天有什么还不错的事情？</string>
+    <string name="affirmation_title">肯定话语</string>
+    <string name="affirmation_subtitle">温暖而有文化内涵的话语</string>
+    <string name="memory_title">记忆火花</string>
+    <string name="memory_subtitle">重新想起让你微笑的事</string>
+
+    <!-- Connect -->
+    <string name="garden_count">花园：%d 个健康时刻</string>
+    <string name="gratitude_count">感恩墙：%d 条分享</string>
+    <string name="connect_coming_soon">社区情绪和支持功能即将推出。</string>
+
+    <!-- Staff dashboard -->
+    <string name="staff_dashboard">工作人员面板</string>
+    <string name="enter_pin">输入密码</string>
+    <string name="unlock">解锁</string>
+    <string name="today_sessions">今日使用次数：%d</string>
+    <string name="stats_disclaimer">仅显示汇总统计。不存储任何个人数据。</string>
+
+    <!-- Breathing exercise -->
+    <string name="breathe_in">吸气…</string>
+    <string name="breathe_out">呼气…</string>
+    <string name="elapsed_seconds">已过：%d秒</string>
+    <string name="done">完成</string>
+    <string name="great_job_flower">做得好！你种出了一朵花。</string>
+
+    <!-- Grounding exercise -->
+    <string name="grounding_see">说出你能看到的 5 样东西</string>
+    <string name="grounding_touch">说出你能触摸到的 4 样东西</string>
+    <string name="grounding_hear">说出你能听到的 3 种声音</string>
+    <string name="grounding_smell">说出你能闻到的 2 种气味</string>
+    <string name="grounding_taste">说出你能尝到的 1 种味道</string>
+    <string name="grounding_safe">你在这里。你很安全。你在当下。</string>
+    <string name="next">下一步</string>
+    <string name="complete">完成</string>
+    <string name="back">返回</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bloom</string>
+
+    <!-- Ambient Garden -->
+    <string name="begin">Commencer</string>
+    <string name="moments_of_wellness">%d moments de bien-être dans notre jardin</string>
+    <string name="staff">Personnel</string>
+
+    <!-- Wellness Wheel -->
+    <string name="how_feeling">Comment vous sentez-vous ?</string>
+    <string name="mind">Esprit</string>
+    <string name="body">Corps</string>
+    <string name="soul">Âme</string>
+    <string name="connect">Connexion</string>
+    <string name="talk_to_bloom">Parler à Bloom</string>
+    <string name="language_label">Langue : %s</string>
+    <string name="close">Fermer</string>
+
+    <!-- Mind activities -->
+    <string name="breathing_title">Respiration avec Bloom</string>
+    <string name="breathing_subtitle">2 minutes · Suivez le cercle</string>
+    <string name="grounding_title">Ancrage (5-4-3-2-1)</string>
+    <string name="grounding_subtitle">3 minutes · Revenez au présent</string>
+    <string name="reframe_title">Recadrer une pensée</string>
+    <string name="reframe_subtitle">3 minutes · Changez de perspective</string>
+    <string name="release_worry_title">Libérer une inquiétude</string>
+    <string name="release_worry_subtitle">2 minutes · Laissez sortir</string>
+
+    <!-- Body activities -->
+    <string name="stretch_title">Étirement doux</string>
+    <string name="stretch_subtitle">3 minutes · Pas de tapis nécessaire</string>
+    <string name="tension_title">Relâchement des tensions</string>
+    <string name="tension_subtitle">3 minutes · Dissolvez le stress</string>
+    <string name="movement_title">Micro-mouvement</string>
+    <string name="movement_subtitle">1 minute · Secouez-vous</string>
+    <string name="food_title">Trouver de la nourriture à proximité</string>
+    <string name="food_subtitle">Ressources alimentaires communautaires</string>
+
+    <!-- Soul activities -->
+    <string name="canvas_title">Toile numérique</string>
+    <string name="canvas_subtitle">Créez avec couleur et liberté</string>
+    <string name="gratitude_title">Moment de gratitude</string>
+    <string name="gratitude_subtitle">Qu\'est-ce qui allait bien aujourd\'hui ?</string>
+    <string name="affirmation_title">Affirmation</string>
+    <string name="affirmation_subtitle">Des paroles bienveillantes et respectueuses</string>
+    <string name="memory_title">Étincelle de mémoire</string>
+    <string name="memory_subtitle">Reconnectez-vous avec ce qui vous fait sourire</string>
+
+    <!-- Connect -->
+    <string name="garden_count">Le jardin : %d moments de bien-être</string>
+    <string name="gratitude_count">Mur de gratitude : %d notes partagées</string>
+    <string name="connect_coming_soon">L\'humeur communautaire et l\'aide arrivent bientôt.</string>
+
+    <!-- Staff dashboard -->
+    <string name="staff_dashboard">Tableau de bord du personnel</string>
+    <string name="enter_pin">Entrez le NIP</string>
+    <string name="unlock">Déverrouiller</string>
+    <string name="today_sessions">Sessions d\'aujourd\'hui : %d</string>
+    <string name="stats_disclaimer">Statistiques agrégées seulement. Aucune donnée personnelle n\'est conservée.</string>
+
+    <!-- Breathing exercise -->
+    <string name="breathe_in">Inspirez…</string>
+    <string name="breathe_out">Expirez…</string>
+    <string name="elapsed_seconds">Écoulé : %ds</string>
+    <string name="done">Terminé</string>
+    <string name="great_job_flower">Bravo. Vous avez fait pousser une fleur.</string>
+
+    <!-- Grounding exercise -->
+    <string name="grounding_see">Nommez 5 choses que vous voyez</string>
+    <string name="grounding_touch">Nommez 4 choses que vous pouvez toucher</string>
+    <string name="grounding_hear">Nommez 3 choses que vous entendez</string>
+    <string name="grounding_smell">Nommez 2 choses que vous sentez</string>
+    <string name="grounding_taste">Nommez 1 chose que vous goûtez</string>
+    <string name="grounding_safe">Vous êtes ici. Vous êtes en sécurité. Vous êtes présent.</string>
+    <string name="next">Suivant</string>
+    <string name="complete">Terminé</string>
+    <string name="back">Retour</string>
+</resources>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bloom - Living Garden</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#8FA89B",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#D7E3DC",
+                        "on-primary-container": "#3D4B44",
+                        "secondary": "#7D7767",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#ECE8DB",
+                        "on-secondary-container": "#4A4538",
+                        "tertiary": "#947A83",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#F5E9EE",
+                        "on-tertiary-container": "#524047",
+                        "surface": "#FBF9F6",
+                        "on-surface": "#3E3D39",
+                        "surface-variant": "#EAE8E0",
+                        "on-surface-variant": "#65655E",
+                        "outline": "#81817a",
+                        "outline-variant": "#bbb9b2",
+                        "background": "#FBF9F6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.5rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #FBF9F6; color: #3E3D39; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        
+        /* Meadow Animation/Visual Styling */
+        .flower-soul { color: #947A83; }
+        .flower-mind { color: #8FA89B; }
+        .flower-body { color: #A89B8F; }
+        
+        .meadow-bg {
+            background-image: radial-gradient(circle at 50% 120%, #D7E3DC 0%, transparent 70%);
+        }
+
+        .flower-sway {
+            animation: sway 6s ease-in-out infinite;
+            transform-origin: bottom center;
+        }
+        
+        @keyframes sway {
+            0%, 100% { transform: rotate(-2deg); }
+            50% { transform: rotate(2deg); }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface flex min-h-screen">
+<!-- SideNavBar (Shared Component) -->
+<aside class="flex flex-col h-full border-r border-outline-variant/20 bg-surface-variant/30 h-full w-64 fixed left-0 top-0 z-50">
+<div class="px-8 py-10">
+<h1 class="text-xl font-serif text-on-primary-container tracking-wide">Bloom</h1>
+<p class="text-xs font-medium text-on-surface-variant mt-1 font-body">Your Sanctuary</p>
+</div>
+<nav class="flex-grow flex flex-col mt-4">
+<!-- Living Garden - ACTIVE -->
+<a class="flex items-center px-8 py-4 gap-4 text-on-primary-container font-bold border-r-4 border-primary hover:bg-surface-variant/50 transition-colors duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="local_florist">local_florist</span>
+<span class="font-body text-sm">Living Garden</span>
+</a>
+<a class="flex items-center px-8 py-4 gap-4 text-on-surface-variant hover:bg-surface-variant/50 transition-colors duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="diversity_3">diversity_3</span>
+<span class="font-body text-sm">Connection Space</span>
+</a>
+<a class="flex items-center px-8 py-4 gap-4 text-on-surface-variant hover:bg-surface-variant/50 transition-colors duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="library_books">library_books</span>
+<span class="font-body text-sm">Resource Hub</span>
+</a>
+<a class="flex items-center px-8 py-4 gap-4 text-on-surface-variant hover:bg-surface-variant/50 transition-colors duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="spa">spa</span>
+<span class="font-body text-sm">Wellness Sanctuary</span>
+</a>
+</nav>
+<div class="p-8 flex items-center gap-3 mt-auto border-t border-outline-variant/10">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-primary-container">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a serene person in soft natural lighting with a neutral, calm background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBalCOEp11ORT_IWMZff2LrzpgIS1KZWzHmFJVFt1OAf3WKU4faUAfwMLpyn963kqtTYSoR_4gh-4fc04QMVW4F3chfy-J_CsRtuAea74gHUyXltPpONDohXuuGFB7kHdzvv23i6w4XfjBfT0PDn1YIZ13I0WdWdSllQARALtSeHYuol8IBtr_0HMbvIIbxLM_z1r1Oz4DCYZNLlxdXwU7UAYNa7BbzmhfCLwSkgSoah-mcttyH3XvdLxOML6drZsl-5ueT6nEvEGl-"/>
+</div>
+<div>
+<p class="text-sm font-semibold text-on-surface">Anna Smith</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-tighter">Shelter Member</p>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-grow ml-64 p-12 bg-surface">
+<div class="max-w-5xl mx-auto flex flex-col items-center text-center h-full">
+<!-- Hero Header -->
+<header class="mb-8">
+<h2 class="font-headline text-5xl text-on-primary-container mb-4">Living Garden</h2>
+<p class="font-body text-on-surface-variant max-w-xl mx-auto leading-relaxed">
+                    A visual representation of our collective journey. Each bloom signifies a shared activity completed by our community today.
+                </p>
+</header>
+<!-- Cohesive Garden Meadow Scene -->
+<div class="relative w-full aspect-[21/9] mb-12 meadow-bg rounded-3xl overflow-hidden border border-outline-variant/10 flex items-end justify-center px-12">
+<!-- Artistic Meadow Representation -->
+<div class="w-full h-full absolute inset-0 flex items-end justify-around pb-4">
+<!-- Clustered Flowers: Soul (Tertiary) -->
+<div class="flex items-end -space-x-4">
+<div class="flower-sway mb-2 opacity-80" style="animation-delay: 0.2s;">
+<span class="material-symbols-outlined !text-6xl flower-soul" data-icon="yard">yard</span>
+</div>
+<div class="flower-sway mb-6" style="animation-delay: 1.5s;">
+<span class="material-symbols-outlined !text-5xl flower-soul" data-icon="filter_vintage">filter_vintage</span>
+</div>
+<div class="flower-sway mb-1 opacity-90" style="animation-delay: 0.8s;">
+<span class="material-symbols-outlined !text-7xl flower-soul" data-icon="spa">spa</span>
+</div>
+</div>
+<!-- Central High-Growth Cluster: Mind (Primary) -->
+<div class="flex items-end -space-x-6 z-10">
+<div class="flower-sway mb-8 opacity-90" style="animation-delay: 0.5s;">
+<span class="material-symbols-outlined !text-6xl flower-mind" data-icon="psychiatry">psychiatry</span>
+</div>
+<div class="flower-sway mb-4" style="animation-delay: 0s;">
+<span class="material-symbols-outlined !text-8xl flower-mind" data-icon="local_florist">local_florist</span>
+</div>
+<div class="flower-sway mb-12 opacity-80" style="animation-delay: 2.1s;">
+<span class="material-symbols-outlined !text-5xl flower-mind" data-icon="psychology">psychology</span>
+</div>
+<div class="flower-sway mb-2" style="animation-delay: 1.2s;">
+<span class="material-symbols-outlined !text-7xl flower-mind" data-icon="eco">eco</span>
+</div>
+</div>
+<!-- Clustered Flowers: Body (Secondary-style) -->
+<div class="flex items-end -space-x-4">
+<div class="flower-sway mb-4 opacity-90" style="animation-delay: 0.3s;">
+<span class="material-symbols-outlined !text-5xl flower-body" data-icon="nature">nature</span>
+</div>
+<div class="flower-sway mb-2" style="animation-delay: 1.8s;">
+<span class="material-symbols-outlined !text-7xl flower-body" data-icon="self_improvement">self_improvement</span>
+</div>
+<div class="flower-sway mb-6 opacity-80" style="animation-delay: 0.9s;">
+<span class="material-symbols-outlined !text-6xl flower-body" data-icon="water_drop">water_drop</span>
+</div>
+</div>
+</div>
+<!-- Floating Legend Overlay -->
+<div class="absolute bottom-6 left-6 right-6 flex justify-between items-center text-xs font-body font-medium uppercase tracking-widest text-on-surface-variant/70">
+<div class="flex gap-6 bg-surface/80 backdrop-blur-sm px-6 py-2 rounded-full border border-outline-variant/10">
+<span class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-primary"></div> Mind</span>
+<span class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-[#A89B8F]"></div> Body</span>
+<span class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-tertiary"></div> Soul</span>
+</div>
+</div>
+</div>
+<!-- Central Growth Stat & Interaction -->
+<section class="w-full max-w-2xl mb-16">
+<div class="mb-10">
+<p class="font-serif text-sm text-primary uppercase tracking-[0.2em] mb-2">Growth Progress</p>
+<h3 class="font-body text-6xl font-light text-on-surface tracking-tight">158 <span class="text-3xl text-on-surface-variant/60 ml-2">Total Blooms Today</span></h3>
+<p class="font-body text-sm text-on-surface-variant mt-4 leading-relaxed max-w-lg mx-auto">
+                        Each bloom represents a connection made, a moment of rest, or a step toward wellness. As our residents participate, our digital garden flourishes in real-time.
+                    </p>
+</div>
+<button class="bg-primary text-on-primary px-12 py-4 rounded-lg font-body font-semibold tracking-wide hover:shadow-lg hover:bg-on-primary-container transition-all duration-300">
+                    Share Your Bloom
+                </button>
+</section>
+<!-- Bottom Integrated Card -->
+<div class="w-full flex justify-center">
+<div class="bg-secondary-container/40 p-6 rounded-xl flex items-center gap-8 max-w-md border border-outline-variant/5">
+<div class="w-20 h-20 bg-white p-2 rounded-lg flex items-center justify-center shrink-0 shadow-sm">
+<img alt="QR Code" class="w-full h-full opacity-70 mix-blend-multiply" data-alt="A clean, minimalist QR code on a plain white background with a slightly faded, professional appearance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBudPLIQlnML2_ogZsXtmMqP6EoiYmsr3VcNj3r3WaKpA3-z2S8H8xbbJDga5BmnXf9-FDYIlORfAxZlJ0TdMy3eELx3UY_qJIdHBNKueG7Q19nS_06z1Rj7GxXsxHkAJghwBd-mCd699hCGRIZ5k_z0bBJHdJICzC75Va41Ux_uWqcN25014TMBbTTDrMtdgqAPteZ9_JlvAgC92rgawQhAUSUVPRShoBsehSPOeZWzl-t82oL9m41sq4JQg8zr4fQJT__n0NLkvoG"/>
+</div>
+<div class="text-left">
+<h4 class="font-headline text-lg text-on-secondary-container mb-1">Private Sanctuary</h4>
+<p class="font-body text-xs text-on-surface-variant leading-relaxed">
+                            Scan to tend to your personal journal and private garden space.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Background Decor (Haven & Hearth Style) -->
+<div class="fixed top-0 right-0 w-1/4 h-full -z-10 bg-gradient-to-l from-primary-container/20 to-transparent pointer-events-none opacity-40"></div>
+<div class="fixed top-0 left-0 w-1/4 h-full -z-10 bg-gradient-to-r from-secondary-container/20 to-transparent pointer-events-none opacity-40"></div>
+</body></html>

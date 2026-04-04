@@ -1,0 +1,4 @@
+-- Reference: log_shelter_activity RPC (applied via migration bloom_rls_and_kiosk_rpc)
+-- Kiosk /tablet calls this with the anon key. No login required.
+-- p_identifier: Bloom unique_code or display_name (case-insensitive); empty → anonymous row
+-- Unknown code → anonymous row (still counted for staff)

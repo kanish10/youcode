@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bloom - Resource Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#645a4f",
+                        "on-error": "#ffffff",
+                        "secondary-dim": "#61564c",
+                        "primary-dim": "#465d52",
+                        "tertiary-fixed-dim": "#e0d2ed",
+                        "outline": "#81817a",
+                        "on-primary-container": "#40574c",
+                        "secondary-fixed-dim": "#e1d2c5",
+                        "surface-container-high": "#f0eee6",
+                        "secondary": "#6d6258",
+                        "on-error-container": "#6e0a12",
+                        "surface-tint": "#52695e",
+                        "tertiary-container": "#eee0fc",
+                        "surface-container": "#f6f3ec",
+                        "on-secondary-container": "#5a5046",
+                        "on-tertiary-fixed-variant": "#635970",
+                        "error": "#af3d3b",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed": "#473e34",
+                        "surface-dim": "#e4e3da",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#0e0e0c",
+                        "surface-container-low": "#fcf9f3",
+                        "on-background": "#383833",
+                        "on-surface": "#383833",
+                        "primary-fixed": "#cee9da",
+                        "inverse-primary": "#e2fdee",
+                        "error-container": "#fa746f",
+                        "on-tertiary-fixed": "#463d53",
+                        "on-surface-variant": "#65655e",
+                        "primary": "#52695e",
+                        "outline-variant": "#bbb9b2",
+                        "primary-fixed-dim": "#c0dacc",
+                        "surface-container-highest": "#eae8e0",
+                        "surface-bright": "#fffcf7",
+                        "on-primary-fixed-variant": "#496155",
+                        "tertiary-dim": "#5e546b",
+                        "tertiary": "#6b6077",
+                        "surface-variant": "#eae8e0",
+                        "surface": "#fffcf7",
+                        "secondary-container": "#efe0d2",
+                        "on-tertiary-container": "#594f66",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#cee9da",
+                        "tertiary-fixed": "#eee0fc",
+                        "on-tertiary": "#ffffff",
+                        "background": "#fffcf7",
+                        "secondary-fixed": "#efe0d2",
+                        "on-primary-fixed": "#2d443a",
+                        "error-dim": "#67040d",
+                        "inverse-on-surface": "#9e9d98"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-breathing-gradient {
+            background: radial-gradient(circle, #6b6077 0%, #e0d2ed 100%);
+        }
+        .resource-card {
+            transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .resource-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- SideNavBar (Consistent with SCREEN_19) -->
+<aside class="flex flex-col h-full border-r border-[#bbb9b2]/15 bg-[#f6f3ec] dark:bg-stone-800 w-64 fixed left-0 top-0 z-50">
+<div class="px-8 py-10">
+<h1 class="text-xl font-serif text-[#52695e]">Bloom</h1>
+<p class="text-on-surface-variant text-sm font-body mt-1">Your Sanctuary</p>
+</div>
+<nav class="flex-1 px-4 space-y-2">
+<!-- Living Garden -->
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-[#65655e] hover:bg-[#eae8e0] transition-colors duration-300" href="#">
+<span class="material-symbols-outlined">local_florist</span>
+<span class="font-label">Living Garden</span>
+</a>
+<!-- Connection Space -->
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-[#65655e] hover:bg-[#eae8e0] transition-colors duration-300" href="#">
+<span class="material-symbols-outlined">diversity_3</span>
+<span class="font-label">Connection Space</span>
+</a>
+<!-- Resource Hub (Active) -->
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-[#52695e] font-bold border-r-4 border-[#52695e] bg-[#eae8e0] transition-colors duration-300" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">library_books</span>
+<span class="font-label">Resource Hub</span>
+</a>
+<!-- Wellness Sanctuary -->
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-[#65655e] hover:bg-[#eae8e0] transition-colors duration-300" href="#">
+<span class="material-symbols-outlined">spa</span>
+<span class="font-label">Wellness Sanctuary</span>
+</a>
+</nav>
+<div class="p-8 mt-auto flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">account_circle</span>
+</div>
+<div class="overflow-hidden">
+<p class="text-sm font-bold truncate">Resident</p>
+<p class="text-xs text-on-surface-variant truncate">Anonymous Profile</p>
+</div>
+</div>
+</aside>
+<main class="ml-64 min-h-screen relative">
+<!-- TopNavBar -->
+<header class="w-full h-20 px-12 flex justify-between items-center sticky top-0 bg-surface/80 backdrop-blur-md z-40 border-b border-outline-variant/5">
+<div class="relative group">
+<input class="bg-surface-container border border-outline-variant/20 rounded-full px-6 py-2 w-72 focus:ring-2 focus:ring-primary/20 placeholder:text-stone-400 text-sm transition-all outline-none" placeholder="Search resources..." type="text"/>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-stone-400 text-sm">search</span>
+</div>
+<div class="flex items-center gap-6">
+<button class="p-2 text-stone-500 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-stone-500 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">spa</span>
+</button>
+<img alt="User profile" class="w-9 h-9 rounded-full object-cover ring-2 ring-emerald-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoJDQFIRPiHVfgcUvaMN4uesswugf_FML_FTbGlOSWQMY4AguA8vdLWsyBXtmKRU5QmjdzD5WaqRI28V16eoz9oiGP3W-D4lId5W8ma-45FsEn3OImdMzu_3j_PN1B-MF4ov1vd3gf5TtKzUPC5nAvCyt-sxptvBMd3NFiyjXjrA2G2QbDw7c1U6xTO7nwz2upeoRct3r1rtseMY_5sWrEw-fORfo13qEuilqvnqNQ5uNjd4r25a8gCY80BBVuCo9x9eM97OI1UK0u"/>
+</div>
+</header>
+<div class="p-12 max-w-6xl mx-auto space-y-16">
+<!-- Header Section -->
+<section class="flex flex-col md:flex-row justify-between items-end gap-8">
+<div class="space-y-4">
+<span class="text-primary font-bold tracking-widest text-xs uppercase">Directory of Care</span>
+<h2 class="text-5xl font-headline text-on-surface leading-tight">Resource Hub</h2>
+<p class="text-lg text-on-surface-variant font-body max-w-lg leading-relaxed">
+                        Access local support systems and essential services curated for your safety and growth.
+                    </p>
+</div>
+<div class="hidden md:flex">
+<div class="w-40 h-40 rounded-full bg-breathing-gradient flex items-center justify-center p-6 text-center shadow-xl relative overflow-hidden group">
+<div class="absolute inset-0 bg-white/10 blur-xl"></div>
+<span class="relative z-10 text-white font-serif italic text-base leading-snug">Exhale...<br/>You are safe here.</span>
+</div>
+</div>
+</section>
+<!-- Symmetrical Resource Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Housing & Legal (Lavender Theme) -->
+<article class="resource-card bg-tertiary-container/20 border border-tertiary-dim/10 rounded-xl p-8 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div class="p-3 bg-tertiary-container text-on-tertiary-container rounded-xl">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home_work</span>
+</div>
+<span class="px-2 py-1 bg-white/50 rounded text-[10px] font-bold text-tertiary uppercase tracking-wider">Emergency Available</span>
+</div>
+<h3 class="text-2xl font-headline text-on-surface mb-3">Housing &amp; Legal</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Emergency shelter placement, tenant rights advocacy, and pro-bono legal counsel for your protection.</p>
+</div>
+<div class="space-y-3">
+<button class="w-full py-3 bg-tertiary text-white rounded-lg font-bold text-sm hover:opacity-90 transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">call</span>
+                            Call BC211
+                        </button>
+<button class="w-full py-3 bg-white text-tertiary border border-tertiary/10 rounded-lg font-bold text-sm hover:bg-tertiary-container/30 transition-all">
+                            View Listings
+                        </button>
+</div>
+</article>
+<!-- Safety & Victim Services (Sage Theme) -->
+<article class="resource-card bg-primary-container/20 border border-primary-dim/10 rounded-xl p-8 flex flex-col justify-between">
+<div>
+<div class="p-3 bg-primary-container text-on-primary-container rounded-xl w-fit mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<h3 class="text-2xl font-headline text-on-surface mb-3">Safety Services</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">24/7 confidential crisis lines and immediate protection assistance from dedicated trauma-informed teams.</p>
+</div>
+<button class="w-full py-3 bg-primary text-white rounded-lg font-bold text-sm hover:opacity-90 transition-all shadow-md">
+                        Immediate Help
+                    </button>
+</article>
+<!-- Food & Essentials (Sand Theme) -->
+<article class="resource-card bg-secondary-container/20 border border-secondary-dim/10 rounded-xl p-8 flex flex-col justify-between">
+<div>
+<div class="p-3 bg-secondary-container text-on-secondary-container rounded-xl w-fit mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+<h3 class="text-2xl font-headline text-on-surface mb-3">Food &amp; Essentials</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Local food banks, clothing distribution, and hygiene supply centers available in your immediate vicinity.</p>
+</div>
+<a class="flex items-center justify-between group py-3 px-4 bg-white/60 rounded-lg border border-secondary-dim/5 hover:bg-white transition-all" href="#">
+<span class="text-sm font-bold text-on-surface">Find Nearby Pantry</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</article>
+<!-- Mental Health (Lavender Theme) -->
+<article class="resource-card bg-tertiary-container/20 border border-tertiary-dim/10 rounded-xl p-8 flex flex-col justify-between">
+<div>
+<div class="p-3 bg-tertiary-container text-on-tertiary-container rounded-xl w-fit mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</div>
+<h3 class="text-2xl font-headline text-on-surface mb-3">Mental Health</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Trauma-informed counseling, peer support groups, and holistic wellness practitioners for recovery.</p>
+</div>
+<div class="p-3 bg-white/60 rounded-lg border border-tertiary-dim/10 flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary text-sm">support_agent</span>
+<span class="text-xs font-bold text-on-surface">Support Hotline: 811</span>
+</div>
+</article>
+<!-- Employment & Skills (Sage Theme) -->
+<article class="resource-card bg-primary-container/20 border border-primary-dim/10 rounded-xl p-8 flex flex-col justify-between">
+<div>
+<div class="p-3 bg-primary-container text-on-primary-container rounded-xl w-fit mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">work</span>
+</div>
+<h3 class="text-2xl font-headline text-on-surface mb-3">Employment</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Resume workshops, job placement services, and vocational training tailored for those in transition.</p>
+</div>
+<button class="w-full py-3 bg-white text-primary border border-primary-dim/10 rounded-lg font-bold text-sm hover:bg-primary-container/30 transition-all">
+                        Browse Workshops
+                    </button>
+</article>
+<!-- Map Integration (Sand Theme Visual) -->
+<article class="resource-card relative overflow-hidden rounded-xl h-full min-h-[280px] group border border-outline-variant/10">
+<img class="absolute inset-0 w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="Minimalist map graphic of a city grid with soft earth tones and green markers indicating locations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvpN0tUzgvyYdDrrLzQ2ZY-8svDHGI7rfL2l32Cq3A9QHlfucUUDBHMyqzJJIGI7Bt5b6XeE_K0lKXRA3wKcZy15ODqN93WO25Lgk9bCryT9hMYdtY5rlfpw17G8G1seV_vcDgUlFB6AxML6HfRRuqVcrzwWFr9BFS1oazoMZ7igY0-WAKBIf_ymONwlPvntVFhgtN6HdOi8Vgz9f35ecVEzqUDyec6VjlLlQI3J4oveZh6sV7SBVRd_r4jwUlfLHZ0zXSySK2qdlA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary-container/90 to-transparent flex flex-col justify-end p-8">
+<div class="bg-white/90 backdrop-blur px-4 py-2 rounded-full shadow-lg w-fit flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-primary">location_on</span>
+<span class="text-xs font-bold text-on-surface">View All Service Locations</span>
+</div>
+</div>
+</article>
+</section>
+</div>
+<!-- Footer / Safety Exit (Consistent with overall theme) -->
+<div class="fixed bottom-8 right-8 z-50">
+<button class="bg-error text-on-error px-6 py-4 rounded-full shadow-2xl font-bold flex items-center gap-3 hover:scale-105 active:scale-95 transition-all">
+<span class="material-symbols-outlined">logout</span>
+                SAFE EXIT
+            </button>
+</div>
+</main>
+<!-- Background Polish -->
+<div class="fixed top-0 right-0 w-1/2 h-1/2 bg-primary-container/10 blur-[120px] pointer-events-none -z-10"></div>
+<div class="fixed bottom-0 left-64 w-1/3 h-1/3 bg-tertiary-container/15 blur-[100px] pointer-events-none -z-10"></div>
+</body></html>

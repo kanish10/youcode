@@ -1,0 +1,4749 @@
+[
+  {
+    "category": "recreation",
+    "name": "Gathering Place Community Centre",
+    "phone": "",
+    "address": "609 Helmcken St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Downtown",
+    "latitude": 49.278,
+    "longitude": -123.1235
+  },
+  {
+    "category": "recreation",
+    "name": "Kerrisdale",
+    "phone": "",
+    "address": "5851 West Boulevard",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Kerrisdale",
+    "latitude": 49.2332,
+    "longitude": -123.1571
+  },
+  {
+    "category": "recreation",
+    "name": "Britannia",
+    "phone": "",
+    "address": "1661 Napier St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Grandview-Woodland",
+    "latitude": 49.2756,
+    "longitude": -123.0738
+  },
+  {
+    "category": "recreation",
+    "name": "Marpole-Oakridge",
+    "phone": "",
+    "address": "990 W 59th Av",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Marpole",
+    "latitude": 49.2145,
+    "longitude": -123.1275
+  },
+  {
+    "category": "recreation",
+    "name": "Champlain Heights",
+    "phone": "",
+    "address": "3350 Maquinna Drive",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Killarney",
+    "latitude": 49.2144,
+    "longitude": -123.0321
+  },
+  {
+    "category": "recreation",
+    "name": "Ray-Cam Co-Operative Center",
+    "phone": "",
+    "address": "920 E Hastings St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Strathcona",
+    "latitude": 49.2807,
+    "longitude": -123.0841
+  },
+  {
+    "category": "recreation",
+    "name": "Evelyne Saller Centre",
+    "phone": "",
+    "address": "320 Alexander St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Strathcona",
+    "latitude": 49.2839,
+    "longitude": -123.0971
+  },
+  {
+    "category": "recreation",
+    "name": "Renfrew Park",
+    "phone": "",
+    "address": "2929 E 22nd Av",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Renfrew-Collingwood",
+    "latitude": 49.2524,
+    "longitude": -123.043
+  },
+  {
+    "category": "recreation",
+    "name": "West Point Grey",
+    "phone": "",
+    "address": "4397 W 2nd Av",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in West Point Grey",
+    "latitude": 49.2718,
+    "longitude": -123.2045
+  },
+  {
+    "category": "recreation",
+    "name": "False Creek",
+    "phone": "",
+    "address": "1318 Cartwright St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Fairview",
+    "latitude": 49.2694,
+    "longitude": -123.134
+  },
+  {
+    "category": "recreation",
+    "name": "Coal Harbour",
+    "phone": "",
+    "address": "480 Broughton St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Downtown",
+    "latitude": 49.2902,
+    "longitude": -123.1259
+  },
+  {
+    "category": "recreation",
+    "name": "Hastings",
+    "phone": "",
+    "address": "3096 E Hastings St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Hastings-Sunrise",
+    "latitude": 49.2809,
+    "longitude": -123.0393
+  },
+  {
+    "category": "recreation",
+    "name": "Thunderbird",
+    "phone": "",
+    "address": "2311 Cassiar St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Hastings-Sunrise",
+    "latitude": 49.2636,
+    "longitude": -123.0321
+  },
+  {
+    "category": "recreation",
+    "name": "Killarney",
+    "phone": "",
+    "address": "6260 Killarney St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Killarney",
+    "latitude": 49.2274,
+    "longitude": -123.0444
+  },
+  {
+    "category": "recreation",
+    "name": "Hillcrest",
+    "phone": "",
+    "address": "4575 Clancy Loranger Way",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Riley Park",
+    "latitude": 49.2438,
+    "longitude": -123.1079
+  },
+  {
+    "category": "recreation",
+    "name": "Sunset",
+    "phone": "",
+    "address": "6810 Main St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Sunset",
+    "latitude": 49.2229,
+    "longitude": -123.1006
+  },
+  {
+    "category": "recreation",
+    "name": "Trout Lake",
+    "phone": "",
+    "address": "3360 Victoria Drive",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Kensington-Cedar Cottage",
+    "latitude": 49.2553,
+    "longitude": -123.0655
+  },
+  {
+    "category": "recreation",
+    "name": "Douglas Park",
+    "phone": "",
+    "address": "801 W 22nd Av",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in South Cambie",
+    "latitude": 49.2529,
+    "longitude": -123.1213
+  },
+  {
+    "category": "recreation",
+    "name": "Kitsilano War Memorial",
+    "phone": "",
+    "address": "2690 Larch St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Kitsilano",
+    "latitude": 49.2621,
+    "longitude": -123.1601
+  },
+  {
+    "category": "recreation",
+    "name": "Dunbar",
+    "phone": "",
+    "address": "4747 Dunbar St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Dunbar-Southlands",
+    "latitude": 49.2428,
+    "longitude": -123.1883
+  },
+  {
+    "category": "recreation",
+    "name": "West End",
+    "phone": "",
+    "address": "870 Denman St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in West End",
+    "latitude": 49.2899,
+    "longitude": -123.1361
+  },
+  {
+    "category": "recreation",
+    "name": "Roundhouse",
+    "phone": "",
+    "address": "181 Roundhouse Mews",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Downtown",
+    "latitude": 49.2733,
+    "longitude": -123.1217
+  },
+  {
+    "category": "recreation",
+    "name": "Kensington",
+    "phone": "",
+    "address": "5175 Dumfries St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Kensington-Cedar Cottage",
+    "latitude": 49.2385,
+    "longitude": -123.0755
+  },
+  {
+    "category": "recreation",
+    "name": "Mount Pleasant",
+    "phone": "",
+    "address": "1 Kingsway",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Mount Pleasant",
+    "latitude": 49.2643,
+    "longitude": -123.1002
+  },
+  {
+    "category": "recreation",
+    "name": "Strathcona",
+    "phone": "",
+    "address": "601 Keefer St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Strathcona",
+    "latitude": 49.2798,
+    "longitude": -123.0915
+  },
+  {
+    "category": "recreation",
+    "name": "Creekside",
+    "phone": "",
+    "address": "1 Athletes Way",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Mount Pleasant",
+    "latitude": 49.2718,
+    "longitude": -123.1056
+  },
+  {
+    "category": "recreation",
+    "name": "Carnegie Centre",
+    "phone": "",
+    "address": "401 Main St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Community centre in Downtown",
+    "latitude": 49.2811,
+    "longitude": -123.1001
+  },
+  {
+    "category": "food",
+    "name": "The Dugout - Hot Breakfast",
+    "phone": "",
+    "address": "57 E Hastings St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Daily hot meal at 10:30am. For info call (604) 685-5239.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free)",
+    "latitude": 49.281478,
+    "longitude": -123.103155
+  },
+  {
+    "category": "food",
+    "name": "Gathering Place Community Centre - Meals",
+    "phone": "",
+    "address": "609 Helmcken St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Meals every day of the week. Breakfast 9am-noon ($2.25), Lunch 11:30am-4:30pm ($2.75), Dinner 4:30-7pm ($3.50). Menu at https://vancouver.ca/parks-recreation-culture/gathering-place-cafeteria.aspx",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Low cost). Wheelchair accessible",
+    "latitude": 49.277708,
+    "longitude": -123.123799
+  },
+  {
+    "category": "food",
+    "name": "Cityview Church - Open Table",
+    "phone": "",
+    "address": "4370 Sophia St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Thurs at 12pm. Hot lunch and spiritual service, more info at https://www.cityviewchurch.ca/opentable",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible",
+    "latitude": 49.245928,
+    "longitude": -123.098691
+  },
+  {
+    "category": "food",
+    "name": "DTES Neighbourhood House - Meal Program",
+    "phone": "",
+    "address": "573 E Hastings St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Community drop-in: Oatmeal on Mon and Wed at 10am-12pm and hot lunch on Wed at 12:30pm-2pm (open to everyone). Family drop-in: Tuesdays and Thursdays 3:30-6:30PM - afterschool snack and dinner for families/caregivers and their children. Early years drop-in: Friday 9am-11am - breakfast for families/caregivers and their children age 0-6. Peacemeal lunch: Third Sunday of every month from 12pm-1pm. Contact ops@dtesnhouse.ca or call (604) 215-2030 with any questions.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible",
+    "latitude": 49.281262,
+    "longitude": -123.091816
+  },
+  {
+    "category": "food",
+    "name": "The Door is Open - Meal Program",
+    "phone": "",
+    "address": "255 Dunlevy Ave, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Anyone on Mon, Tues, Thurs, Fri, Sat at 11am and Sun at 11:30am. Wed at 9am. More info at https://www.thedoorisopen.ca/free-lunch-program/",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free)",
+    "latitude": 49.282407,
+    "longitude": -123.095626
+  },
+  {
+    "category": "food",
+    "name": "Salvation Army - Harbour Light, Meal Program",
+    "phone": "",
+    "address": "119 E Cordova St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Mon-Fri at 11am; Sat 4pm.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible",
+    "latitude": 49.282569,
+    "longitude": -123.100962
+  },
+  {
+    "category": "food",
+    "name": "Lookout Society's Powell St. Getaway - Snacks",
+    "phone": "",
+    "address": "450 E Hastings St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Daily at 10:30am, 1pm, and 4pm. Coffee 9-10am, 10:30-11am, and 4-5pm.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible",
+    "latitude": 49.280912,
+    "longitude": -123.094276
+  },
+  {
+    "category": "food",
+    "name": "DTES Women's Centre - Drop In - Takeout Meals",
+    "phone": "",
+    "address": "302 Columbia St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Daily (except Wed) 10-11am, 12-2pm. Coffee and snacks until 4pm.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible. Serves: women",
+    "latitude": 49.281867,
+    "longitude": -123.102196
+  },
+  {
+    "category": "food",
+    "name": "Quest Non-Profit Grocery Markets (Dundas)",
+    "phone": "",
+    "address": "2020 Dundas St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Mon–Fri 9am–6pm. Sat 10am–5pm. Closed Sunday and Holidays. Referral required to shop. For more information on referrals, please visit:  questoutreach.org/refer-clients/",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Low cost)",
+    "latitude": 49.284545,
+    "longitude": -123.062766
+  },
+  {
+    "category": "food",
+    "name": "Covenant House - Meal Program",
+    "phone": "",
+    "address": "1302 Seymour St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Hot breakfast M-F 9am-12pm; Hot meal or pizza M-F 3:30-5pm",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible. Serves: young people age 16-24",
+    "latitude": 49.275159,
+    "longitude": -123.126681
+  },
+  {
+    "category": "food",
+    "name": "La Boussole - Foodbank",
+    "phone": "",
+    "address": "312 Main St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Wed, 1:30pm. For information contact (604) 683-7337 or Laboussole@Lbv.Ca",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Wheelchair accessible",
+    "latitude": 49.281791,
+    "longitude": -123.099169
+  },
+  {
+    "category": "food",
+    "name": "Aboriginal Friendship Centre -Grocery Hampers",
+    "phone": "(604) 251-4844",
+    "address": "1607 E Hastings St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "An Indigenous-operated program. Delivery services are on a first come, first serve basis with limited availability.",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Serves: Indigenous families with young children",
+    "latitude": 49.281562,
+    "longitude": -123.071999
+  },
+  {
+    "category": "food",
+    "name": "Marpole Community Food Hub - Grocery Program",
+    "phone": "",
+    "address": "8680 Hudson St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Pickup grocery bags every Thursday, 10am-noon. Sign up at the door/contact (604) 836-7419 or foodhub@staugustinemarpole.com. Free for residents of V5W V5X V5Y V5Z V6M V6N V6P.",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Wheelchair accessible",
+    "latitude": 49.207246,
+    "longitude": -123.134299
+  },
+  {
+    "category": "food",
+    "name": "St Mary's Kerrisdale - Community Meal",
+    "phone": "",
+    "address": "2490 W 37th Ave, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Every Tuesday, 11:30AM - 12:30PM. Free, sit-down hot lunch. Hot entree or soup, salad,\r\nbread, and sweets. Arrive 30 min prior to enjoy a coffee/tea with others. All welcome!",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible",
+    "latitude": 49.238121,
+    "longitude": -123.162091
+  },
+  {
+    "category": "food",
+    "name": "Gospel Mission Society - Food Program",
+    "phone": "",
+    "address": "255 Dunlevy Ave, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Serving sandwiches or hot food Wed 7-8pm",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible",
+    "latitude": 49.282399,
+    "longitude": -123.09564
+  },
+  {
+    "category": "food",
+    "name": "CityReach - Club Freedom Meal",
+    "phone": "",
+    "address": "2650 Slocan St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "A Christ-centred worship service and hot meal. Sun 11am. For info contact jemald@cityreach.org.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible",
+    "latitude": 49.261161,
+    "longitude": -123.048888
+  },
+  {
+    "category": "food",
+    "name": "VCH - Healthiest Babies Possible Food Support",
+    "phone": "604 675 3982",
+    "address": "1669 E Broadway, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Available on the 2nd floor. Food access and other supports available. To sign up, drop in or phone Mon to Fri 8:30-4:30PM.",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Serves: prenatal or pregnant women and youth facing challenging life circumstances",
+    "latitude": 49.262625,
+    "longitude": -123.070543
+  },
+  {
+    "category": "food",
+    "name": "Tenth Church - Oasis Cafe",
+    "phone": "",
+    "address": "11 W 10th Ave, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Mon 5:30-7:30pm, Tues 11am-1pm. Dine in meals only. Access via the alley at Ontario street. For info contact oasis.cafe@tenth.ca.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible",
+    "latitude": 49.262351,
+    "longitude": -123.105783
+  },
+  {
+    "category": "food",
+    "name": "Vancouver Community Fridge - Victoria Drive",
+    "phone": "",
+    "address": "4040 Victoria Dr, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Fridge, freezer, and pantry stocked with free food and home cooked meals, located in the alley behind the green house, accessible 24/7. More info at https://vcfp.square.site/",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Wheelchair accessible",
+    "latitude": 49.248881,
+    "longitude": -123.064653
+  },
+  {
+    "category": "food",
+    "name": "Three Links Foundation - Sunday Free Breakfast",
+    "phone": "",
+    "address": "1443 W 8th Ave, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Every Sunday, 9:30am to 11:30am. Warm breakfast for individuals experiencing homelessness, featuring items such as ham, egg, and cheese sandwiches, coffee, muffins, cereal, pancakes, hot chocolate, water, and juice.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible",
+    "latitude": 49.26474,
+    "longitude": -123.136943
+  },
+  {
+    "category": "food",
+    "name": "Greater Van Food Bank - Lougheed Hwy Location",
+    "phone": "(604) 876-3601",
+    "address": "3454 Lougheed Hwy, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Check https://foodbank.bc.ca/ for schedule (Tues, Wed, and Fri 10am-4PM, Thur 1PM - 7PM, and Sat 10AM - 3PM)",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Wheelchair accessible. Serves: Registered clients",
+    "latitude": 49.262779,
+    "longitude": -123.028741
+  },
+  {
+    "category": "food",
+    "name": "Food on the Corner",
+    "phone": "",
+    "address": "222 Main St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Sat 11am. Soup and coffee plus a bagged lunch with PB&J sandwich, banana, granola bar. Info at https://www.foodonthecorner.ca/",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free)",
+    "latitude": 49.282721,
+    "longitude": -123.098575
+  },
+  {
+    "category": "food",
+    "name": "West End Farmers Market - Nutrition Coupons",
+    "phone": "",
+    "address": "1100 Comox St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Farmers Market location accepting Nutrition Coupons. Enrolled households receive minimum of $27/week in vouchers. Market is open Saturdays at 9am-2pm, from May 20th - October 28th.",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Serves: eligible enrolled families.",
+    "latitude": 49.281794,
+    "longitude": -123.12916
+  },
+  {
+    "category": "food",
+    "name": "Guru Nanak's Free Kitchen",
+    "phone": "",
+    "address": "401 Main Street",
+    "city": "Vancouver",
+    "hours": "Hot meal served Saturday 1pm, Sunday 12pm outside of Carnegie Centre.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free)",
+    "latitude": 49.28106,
+    "longitude": -123.100121
+  },
+  {
+    "category": "food",
+    "name": "Seniors Lunch at Kitsilano Neighbourhood House",
+    "phone": "",
+    "address": "2305 West 7th Ave, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Tuesdays 11:00am – 1:00pm.\r\nLight exercise, engaging conversation, entertainment and a delicious meal with dessert!\r\nDrop-in, no registration required. \r\nLunch schedule and menu can be found at https://www.kitshouse.org/seniors-55/ [kitshouse.org]\r\nFor more information contact: sarad@kitshouse.org or the front desk at Kits House. \r\n$7 per drop-in fee (annual $10 Kits House membership required)",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Low cost). Wheelchair accessible",
+    "latitude": 49.265901,
+    "longitude": -123.158042
+  },
+  {
+    "category": "food",
+    "name": "Monthly Seniors Dine and Connect",
+    "phone": "(604) 760-5351",
+    "address": "2131 Renfrew St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Make new friends and connect with neighbours over a free, delicious meal. Event runs monthly. The next meals will occur on July 22nd and August 19th, 6:30-8PM. Future lunches will be announced at a later date. Visit https://froghollow.bc.ca/programs-services/seniors/ for the latest information.",
+    "languages": [
+      "en"
+    ],
+    "description": "Wheelchair accessible. Serves: Older adults (age 50+)",
+    "latitude": 49.265263,
+    "longitude": -123.044739
+  },
+  {
+    "category": "food",
+    "name": "Vancouver Community Fridge - Point Grey",
+    "phone": "",
+    "address": "4405 W 8th Ave, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Fridge, freezer, and pantry stocked with free food. Located inside the carpark. More info at https://vcfp.square.site/ [vcfp.square.site]. Free",
+    "languages": [
+      "en"
+    ],
+    "description": "Wheelchair accessible",
+    "latitude": 49.265774,
+    "longitude": -123.206641
+  },
+  {
+    "category": "food",
+    "name": "Vancouver Community Fridge – LMNH",
+    "phone": "",
+    "address": "3718 Main Street",
+    "city": "Vancouver",
+    "hours": "Fridge, freezer, and pantry stocked with free food. Temporarily located in front of the Soap Dispensary. Available 24/7. \r\nMore info at https://vcfp.square.site/",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Unknown). Wheelchair accessible",
+    "latitude": 49.251757,
+    "longitude": -123.100852
+  },
+  {
+    "category": "food",
+    "name": "The Kettle Society - Meal Program",
+    "phone": "",
+    "address": "1725 Venables St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Daily @ 11:30am Must sign up in morning prior to meal service. Required to provide name and have completed member orientation to centre (Wednesdays @ 2pm). Takeout available for $0.25. Meal cost $1.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Low cost). Wheelchair accessible",
+    "latitude": 49.276925,
+    "longitude": -123.070065
+  },
+  {
+    "category": "food",
+    "name": "Japanese Community Volunteers - Meals on Wheels",
+    "phone": "(604) 687-2172",
+    "address": "42 W 8th Ave, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Japanese-style bento meal delivery service for home-bound seniors, including caregivers and people with illness or injury. Every Tuesday except two weeks during the Christmas holiday, 10:30 am – 12:30 pm. Must be home to receive the meals from delivery volunteers. An in-person pre-assessment visit from Community Services staff is required. $7/meal for Tonai Gumi members, $8/meal for non members",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Low cost). Serves: Home-bound seniors with difficulty cooking, including caregivers and people with illness or injury",
+    "latitude": 49.263553,
+    "longitude": -123.105955
+  },
+  {
+    "category": "food",
+    "name": "Bryn's Neighbourhood Table",
+    "phone": "",
+    "address": "8680 Hudson St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Free, sit-down dinner every Thursday 6-7pm at St. Augustine's Anglican Church. Arrive 30 min prior to enjoy a coffee/tea with others. For info contact (604) 836-7419. Wheelchair accessible. Takeout available.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible",
+    "latitude": 49.207246,
+    "longitude": -123.134299
+  },
+  {
+    "category": "food",
+    "name": "Christ Church Cathedral - Maundy Cafe",
+    "phone": "",
+    "address": "690 Burrard St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Mon, Thurs, Fri from 11:30am-12:30pm.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible",
+    "latitude": 49.284484,
+    "longitude": -123.120359
+  },
+  {
+    "category": "food",
+    "name": "Care BC - Western and Chinese Meals on Wheels",
+    "phone": "(604) 732-7638",
+    "address": "3077 Granville St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Western styled meals delivered weekdays 10:30 am-1pm, priced from $6.50 -9.75.\r\nChinese meals delivered weekdays 10:30 am-1pm, priced at $9.95.\r\nMust be home to receive the meals. More info at https://www.carebc.ca/western-mow-vancouverrichmond.html.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Low cost). Serves: Home-bound older adults including frail seniors, their caregivers, adults with chronic illnesses, or with a debilitating injury",
+    "latitude": 49.258422,
+    "longitude": -123.139174
+  },
+  {
+    "category": "food",
+    "name": "Evelyne Saller Centre - Low Cost Meals",
+    "phone": "",
+    "address": "404 Alexander St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Breakfast 10am-12pm, Lunch 11:30am-3pm, Dinner 3-5:50pm. Menu and info at https://vancouver.ca/parks-recreation-culture/evelyne-saller-centre-cafeteria.aspx or (604) 665-3075.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals ($2.00). Wheelchair accessible",
+    "latitude": 49.283977,
+    "longitude": -123.094983
+  },
+  {
+    "category": "food",
+    "name": "A Loving Spoonful - Meals and groceries",
+    "phone": "",
+    "address": "1449 Powell St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Eligible individuals and families can be referred by a Doctor, Nurse, Dietitian, Social Worker, or self-refer. For more information on how to refer an individual or family, please call (604) 682-6325. Referrals can be faxed to (604) 682-6327.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Serves: individuals and families living with HIV.",
+    "latitude": 49.28329,
+    "longitude": -123.07419
+  },
+  {
+    "category": "food",
+    "name": "Sheway - Lunches",
+    "phone": "",
+    "address": "533 E Hastings St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Mon-Fri 11:30am-1:30pm. Closed on holidays. Groceries are also available to eligible clients. For information contact (604) 216-1699 or drop in Mon-Fri between 10:30am-3pm.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible. Serves: Sheway clients who have a current or recent history of drug and/or alcohol use and are pregnant or parenting",
+    "latitude": 49.281501,
+    "longitude": -123.092398
+  },
+  {
+    "category": "food",
+    "name": "Nourishing Neighbours",
+    "phone": "",
+    "address": "1018 Nelson St",
+    "city": "Vancouver",
+    "hours": "Free community dinner on the 2nd Monday of every month at 6PM in our Salons. Open to anyone who needs a meal.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible",
+    "latitude": 52.984779,
+    "longitude": -122.480962
+  },
+  {
+    "category": "food",
+    "name": "Trout Lake Farmers Market - Nutrition Coupons",
+    "phone": "",
+    "address": "2950 Lakewood Dr, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Farmers Market location accepting Nutrition Coupons. Enrolled households receive minimum of $27/week in vouchers. Market is open Saturdays at 9am-2pm from April 1st - October 28th.",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Serves: eligible enrolled families.",
+    "latitude": 49.258336,
+    "longitude": -123.061898
+  },
+  {
+    "category": "food",
+    "name": "Quest Non-Profit Grocery Markets (Hastings)",
+    "phone": "",
+    "address": "637 E Hastings St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Mon-Fri: 9am-6pm. Sat 10am-5pm. Sun and holidays closed. Referral required to shop. For more information on referrals, please visit:  questoutreach.org/refer-clients/",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Low cost)",
+    "latitude": 49.281242,
+    "longitude": -123.090659
+  },
+  {
+    "category": "food",
+    "name": "Aboriginal Mother Centre - Hampers for Elders",
+    "phone": "",
+    "address": "2019 Dundas St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "An Indigenous-operated program.",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Wheelchair accessible. Serves: Indigenous elders",
+    "latitude": 49.285156,
+    "longitude": -123.062728
+  },
+  {
+    "category": "food",
+    "name": "DUDES Club",
+    "phone": "",
+    "address": "606 Powell St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Th at 4pm. Mainly dine-in format. Men are prioritized, and extra meals are handed out to community on a first come, first serve basis.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible",
+    "latitude": 49.283002,
+    "longitude": -123.091232
+  },
+  {
+    "category": "food",
+    "name": "Vancouver Second Mile Society - Meal Program",
+    "phone": "(604) 254-2194",
+    "address": "509 E Hastings St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals ($4.00). Wheelchair accessible",
+    "latitude": 49.281283,
+    "longitude": -123.092787
+  },
+  {
+    "category": "food",
+    "name": "Washington Community Market",
+    "phone": "",
+    "address": "179 E Hastings St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Low cost essential food and household supplies, Mon-Fri 9am-6pm. Sat 10am-5pm. For info contact (604) 428-9605.",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Low cost). Wheelchair accessible",
+    "latitude": 49.281418,
+    "longitude": -123.100279
+  },
+  {
+    "category": "food",
+    "name": "Aboriginal Friendship Centre-Elder Meals on Wheels",
+    "phone": "(604) 251-4844",
+    "address": "1607 E Hastings St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "An Indigenous-operated program. Provides a daily meal and one hamper per month. Delivery services are on a first come, first serve basis with limited availability.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Hampers (Free). Serves: Indigenous Elders",
+    "latitude": 49.281562,
+    "longitude": -123.071999
+  },
+  {
+    "category": "food",
+    "name": "Covenant House - Hamper Program",
+    "phone": "(604) 685-7474",
+    "address": "1302 Seymour St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Wheelchair accessible. Serves: youth under 25",
+    "latitude": 49.275159,
+    "longitude": -123.126681
+  },
+  {
+    "category": "food",
+    "name": "First United – Community Meals",
+    "phone": "",
+    "address": "",
+    "city": "Vancouver",
+    "hours": "Northeast corner of Hastings St and Gore St, Vancouver\r\nMonday – Friday, service begins around noon (not served on income assistance days or statutory holidays)\r\nFree, hearty lunch served weekdays via the FIRST Food Truck. Usually hot meals, sometimes able to provide vegetarian option. Available to all. For info, call (604) 681-8365",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "category": "food",
+    "name": "CityReach - Food for Families (YWCA South)",
+    "phone": "",
+    "address": "7001 Kerr St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Nutritious foodbank. Fri, 1-2pm. Not currently accepting new registrations, more info at https://www.cityreach.org/foodforfamilies",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Wheelchair accessible. Serves: individuals and families referred by a partner agency or school.",
+    "latitude": 49.22013,
+    "longitude": -123.041331
+  },
+  {
+    "category": "food",
+    "name": "Kits House Living Room Food Distribution",
+    "phone": "",
+    "address": "2305 West 7th Ave, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "11am - 12:30PM. Fresh and non-perishable food items available to take home. Randomly generated schedule to determine pick-up times. Food is available for first time drop-ins; however, regularly attending participants will be scheduled first. After your first drop-in, you can be added to the weekly randomized list and will be notified on Tuesday about your timeslot. Those without contact info can check in a few days before Friday or drop in on the day of. More info at (604) 736 3588.",
+    "languages": [
+      "en"
+    ],
+    "description": "Wheelchair accessible",
+    "latitude": 49.265901,
+    "longitude": -123.158042
+  },
+  {
+    "category": "food",
+    "name": "Kitsilano Community Centre Breakfast Program",
+    "phone": "",
+    "address": "2690 Larch St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Biweekly: 2nd and 4th Saturday, 7:30am-9am. Hot breakfast until 8:45am, showers until 9am, toiletries and\r\nclean change of clothes provided. Valet services available for carts and dogs.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Serves: People experiencing homelessness",
+    "latitude": 49.262056,
+    "longitude": -123.160105
+  },
+  {
+    "category": "food",
+    "name": "Kits Cares - Low Cost Food Market",
+    "phone": "",
+    "address": "3512 W 7th Ave, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Thurs, 12:30-2:30pm. The Market sells low-cost and subsidized produce and canned goods. Cash, debit and credit accepted. Guests can also enjoy a hot drink and a sweet treat at a cafe area at no cost. Free items of food available. For info contact kitscarescafe@tenth.ca. Operated by Tenth Church.",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Low cost). Wheelchair accessible",
+    "latitude": 49.265757,
+    "longitude": -123.182079
+  },
+  {
+    "category": "food",
+    "name": "Salvation Army Boundless - Nourishing Hope Hampers",
+    "phone": "(604) 872-7676",
+    "address": "3213 Fraser St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Grocery hampers, pickup by appointment only.",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free)",
+    "latitude": 49.256107,
+    "longitude": -123.089973
+  },
+  {
+    "category": "food",
+    "name": "CityReach - Food For Families (Slocan)",
+    "phone": "(604) 254-2489",
+    "address": "2650 Slocan St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Only for individuals and families referred by a partner agency or school. Nutritious foodbank. For families without minors: Tues 3-4:15pm (First and Third Tuesday of each month). For families with minors: Tues 4:30-5:30pm or Thurs 11am-noon. Not currently accepting new registrations, more info at www.cityreach.org/foodforfamilies.",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Wheelchair accessible. Serves: individuals and families referred by a partner agency or school",
+    "latitude": 49.261161,
+    "longitude": -123.048888
+  },
+  {
+    "category": "food",
+    "name": "Directions Youth Services - Meal and Snacks",
+    "phone": "(604) 633-1472",
+    "address": "1138 Burrard St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Open for snacks 24/7; Meal daily from 8-9 pm. Youth Pantry program Tues/Thurs/Sat, call to inquire. Intake process to become a client.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Serves: Youth under 25 experiencing homelessness or precariously housed",
+    "latitude": 49.279589,
+    "longitude": -123.12829
+  },
+  {
+    "category": "food",
+    "name": "Central Presbyterian - Rescued food distribution",
+    "phone": "",
+    "address": "1155 Thurlow Street",
+    "city": "Vancouver",
+    "hours": "Located at the corner of Thurlow & Pendrell Street. Weekly distribution of rescued foods on Friday from 11:45am to 12:45PM. People are encouraged to bring their own shopping bag, clean plastic bags and a small empty container. Sliding scale entrance fee of $3-5 with 100% proceeds going to the local food bank. No one will be turned down if unable to pay.",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Wheelchair accessible",
+    "latitude": 49.281028,
+    "longitude": -123.130949
+  },
+  {
+    "category": "food",
+    "name": "Care BC - Chinese Meals on Wheels",
+    "phone": "(604) 733-6615",
+    "address": "3077 Granville St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Meal delivery service for home-bound people including seniors, caregivers, people with illness or injury. Delivery times are M-F 10:30am-1pm. Must be home to receive the meals. More info at https://www.carebc.ca/chinese-mow-vancouverrichmond.html",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals ($9.95). Serves: home-bound people including seniors, caregivers, people with illness or injury.",
+    "latitude": 49.258422,
+    "longitude": -123.139174
+  },
+  {
+    "category": "food",
+    "name": "Jewish Family Services - JFS Kitchen",
+    "phone": "",
+    "address": "54 E 3rd Ave, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Provides food support through a food bank, meal delivery program, and Jewish holiday assistance. Kosher foods available. For more info visit https://www.jfsvancouver.ca/services/family-and-adult-resources/food-and-support/ or call (604) 257-5151.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Hampers (Free). Wheelchair accessible",
+    "latitude": 49.268006,
+    "longitude": -123.103369
+  },
+  {
+    "category": "food",
+    "name": "Kitsilano Farmers Market - Nutrition Coupons",
+    "phone": "",
+    "address": "2690 Larch St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Farmers Market location accepting Nutrition Coupons. Enrolled households receive minimum of $27/week in vouchers. Market is open Sundays at 10am-2pm, from May 7th – October 29th.",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Serves: eligible enrolled families.",
+    "latitude": 49.262056,
+    "longitude": -123.160105
+  },
+  {
+    "category": "food",
+    "name": "Riley Park Farmers Market - Nutrition Coupons",
+    "phone": "",
+    "address": "50 E 30th Ave, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Farmers Market location accepting Nutrition Coupons. Enrolled households receive minimum of $27/week in vouchers. Market is open year-round, Saturdays 10am-2pm.",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Serves: eligible enrolled families.",
+    "latitude": 49.243315,
+    "longitude": -123.104407
+  },
+  {
+    "category": "food",
+    "name": "Mount Pleasant Farmers Market - Nutrition Coupons",
+    "phone": "",
+    "address": "2390 Brunswick St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Farmers Market location accepting Nutrition Coupons. Enrolled households receive minimum of $27/week in vouchers. Market is open Sundays at 10am-2pm, May 21st – October 29th.",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Serves: eligible enrolled families.",
+    "latitude": 49.263996,
+    "longitude": -123.09594
+  },
+  {
+    "category": "food",
+    "name": "Kits Neighbourhood House Free Pantry and Fridge",
+    "phone": "",
+    "address": "2305 West 7th Ave, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Take what you need and give what you can to this pantry with non-perishable foods and fridge/freezer with perishable items. Available 24/7. Located outside the neighbourhood house on Vine Street. More info at https://www.kitshouse.org/2021/11/02/kitsilano-little-free-pantry/",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free)",
+    "latitude": 49.265901,
+    "longitude": -123.158042
+  },
+  {
+    "category": "food",
+    "name": "Vancouver Community Fridge - Mount Pleasant",
+    "phone": "",
+    "address": "273 E 4th Ave, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "The fridge, freezer and pantry are maintained in partnership by Food Stash Foundation and the Vancouver Community Fridge Project. Food is free and everyone is welcome to take what they need and leave what they can. The Fridge is accessible 24/7 and it is in the alley between E 4th Avenue and Scotia Street at the CoFood Community Garden. More info: https://www.foodstash.ca/fridge.",
+    "languages": [
+      "en"
+    ],
+    "description": "Wheelchair accessible",
+    "latitude": 49.267421,
+    "longitude": -123.099051
+  },
+  {
+    "category": "food",
+    "name": "Mount Pleasant N'hood House - Seniors Lunch",
+    "phone": "",
+    "address": "800 E Broadway, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Come and share a meal with your neighbours at our Seniors Lunch on Tuesdays from 12-1PM. Lunch is served at noon so it's best to come at 11:45AM. A single meal costs $5. Contact the front Desk at (604) 879-8208 for more info.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Low cost). Wheelchair accessible. Serves: Older adults",
+    "latitude": 49.262154,
+    "longitude": -123.086769
+  },
+  {
+    "category": "food",
+    "name": "Mount Pleasant N'hood House",
+    "phone": "(604) 879-8208",
+    "address": "",
+    "city": "Vancouver",
+    "hours": "Come and share a meal with your neighbours at our Community Lunch every second Friday from 11:45AM-1PM. Lunch is served at noon. A single meal costs $5.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Low cost). Wheelchair accessible",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "category": "food",
+    "name": "Vancouver Community Fridge - Kerrisdale",
+    "phone": "",
+    "address": "2490 W 37th Ave, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Fridge and pantry stocked with free food, located in in a brown shed to the left of the pantry area at St. Mary's. Accessible 24/7. More info at https://vcfp.square.site/ [vcfp.square.site]. Free",
+    "languages": [
+      "en"
+    ],
+    "description": "Wheelchair accessible",
+    "latitude": 49.238113,
+    "longitude": -123.162105
+  },
+  {
+    "category": "food",
+    "name": "Union Gospel Mission - Meal Program",
+    "phone": "",
+    "address": "601 E Hastings St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Lunch every day at 11am (tickets at 10:45am). Dinner M-F at 6pm (tickets at 5:45pm), Sat-Sun at 4pm (tickets at 3:45pm). For info call (604) 253-3323.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible",
+    "latitude": 49.281483,
+    "longitude": -123.091066
+  },
+  {
+    "category": "food",
+    "name": "Mount Pleasant N'hood House - Referral Support",
+    "phone": "",
+    "address": "800 E Broadway, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "For information about meals and groceries available, call (604) 879-8208",
+    "languages": [
+      "en"
+    ],
+    "description": "Community food resource",
+    "latitude": 49.262154,
+    "longitude": -123.086769
+  },
+  {
+    "category": "food",
+    "name": "Collingwood N'hood House - Morning Star Breakfast",
+    "phone": "",
+    "address": "5288 Joyce St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Sat, 7am clothing and showers, 8-8:30am breakfast. More info (604) 435-0323.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible",
+    "latitude": 49.236608,
+    "longitude": -123.032888
+  },
+  {
+    "category": "food",
+    "name": "YWCA Crabtree Corner - Meal Programs",
+    "phone": "",
+    "address": "533 E Hastings St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Breakfast: Mon-Fri, 9-10am. \r\nLunch: Mon-Fri: 1-2:pm. No lunch on income assistance days.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible. Serves: Women and children",
+    "latitude": 49.281501,
+    "longitude": -123.092398
+  },
+  {
+    "category": "food",
+    "name": "St. James Community Square Pantry",
+    "phone": "",
+    "address": "3214 W 10th Ave, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Take what you need and give what you can to this pantry stocked with non-perishable foods, available 24/7. Located outside the community centre on Trutch Street. More info at www.sjcommunitysquare.org/",
+    "languages": [
+      "en"
+    ],
+    "description": "Community food resource",
+    "latitude": 49.263054,
+    "longitude": -123.176515
+  },
+  {
+    "category": "food",
+    "name": "Carnegie Community Centre - Cafeteria",
+    "phone": "",
+    "address": "401 Main St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Meals served daily. Breakfast ($2.25) at 9-11am, Lunch ($2.75) at 12-4pm, Dinner ($3.50) at 5-8pm.",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Low cost). Wheelchair accessible",
+    "latitude": 49.28106,
+    "longitude": -123.100121
+  },
+  {
+    "category": "food",
+    "name": "Muslim Care Centre - Meal Program",
+    "phone": "",
+    "address": "140 E Hastings St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Mon-Fri at 5:30pm, Sat at 1pm, Sun at Noon",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Free). Wheelchair accessible",
+    "latitude": 49.281319,
+    "longitude": -123.101134
+  },
+  {
+    "category": "food",
+    "name": "Kiwassa Neighbourhood House - Community Lunch",
+    "phone": "(604) 254-5401",
+    "address": "2425 Oxford St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "First & third Friday of the month, 12:15pm. 3 course meal. Seniors $7, children 12 & under $5, everyone else $8. Please inform staff during sign up if a vegetarian meal is needed. Walk-ins taken as space permits. For more info contact food@kiwassa.ca",
+    "languages": [
+      "en"
+    ],
+    "description": "Meals (Low cost). Wheelchair accessible",
+    "latitude": 49.286005,
+    "longitude": -123.055856
+  },
+  {
+    "category": "food",
+    "name": "Ribbon Community - Supplementary Grocery Program",
+    "phone": "(604) 893-2201",
+    "address": "1101 Seymour St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Groceries include protein, milk, eggs, and produce. Grocery bags available for pick up on scheduled days. See current schedule at https://www.ribboncommunity.org/grocery. To do an intake and assess eligibility, contact (604) 893-2201 and/or welcome@ribboncommunity.org",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Serves: Community Case Management clients and participants from The Corner",
+    "latitude": 49.277532,
+    "longitude": -123.123682
+  },
+  {
+    "category": "food",
+    "name": "CityReach - Food for Families (Culloden Court)",
+    "phone": "",
+    "address": "6265 Knight St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Nutritious foodbank. Fri 3-4pm. Not currently accepting new registrations, more info at https://www.cityreach.org/foodforfamilies",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Wheelchair accessible. Serves: individuals and families referred by a partner agency or school, and residents within the geographic borders of Main, Victoria, East 41st Avenue and Fraser River",
+    "latitude": 49.227744,
+    "longitude": -123.077321
+  },
+  {
+    "category": "food",
+    "name": "Little Mtn N'hood House-Food Distribution Program",
+    "phone": "",
+    "address": "4580 Walden St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Weekly market providing free produce and non-perishable food. Currently admitting families with kids and single parents (Limited spots).",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Wheelchair accessible. Serves: registered individuals living within the boundaries of Cambie to Knight Street and 16th to 49th ave",
+    "latitude": 49.243439,
+    "longitude": -123.099941
+  },
+  {
+    "category": "food",
+    "name": "Saige Community Food Bank - Food Hamper Pickup",
+    "phone": "",
+    "address": "2425 Oxford St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Two-spirit, trans and gender diverse safe space program open for all individuals in need of healthy food options. A food hamper with fresh produce and baked goods available on the 2nd and 4th Fridays of the month. www.saigecommunityfoodbank.com",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free)",
+    "latitude": 49.286005,
+    "longitude": -123.055856
+  },
+  {
+    "category": "food",
+    "name": "Food Stash - Rescued Food Market",
+    "phone": "(604) 862-9701",
+    "address": "290 E 1st Ave, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Thursdays, 3-7pm fresh food market (fruit, vegetables, dairy, meat).  $24 one-time registration fee (3-month membership)",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Wheelchair accessible",
+    "latitude": 49.268401,
+    "longitude": -123.097959
+  },
+  {
+    "category": "food",
+    "name": "Vancouver Community Fridge - Kitsilano",
+    "phone": "",
+    "address": "3066 West 13th Ave",
+    "city": "Vancouver",
+    "hours": "Fridge and pantry stocked with free food, located in the alley behind the red house and garden at the above address. Accessible 24/7. More info at https://vcfp.square.site/",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Wheelchair accessible",
+    "latitude": 49.26029,
+    "longitude": -123.173496
+  },
+  {
+    "category": "food",
+    "name": "Collingwood Community Fridge and Pantry",
+    "phone": "",
+    "address": "5288 Joyce St, Vancouver, BC",
+    "city": "Vancouver",
+    "hours": "Fridge and pantry stocked with free food, and located on the west facing side of Collingwood Neighbourhood House, adjacent to the gym entrance. Open 24/7. Wheelchair accessible. For more info, contact foodhub@cnh.bc.ca.",
+    "languages": [
+      "en"
+    ],
+    "description": "Hampers (Free). Wheelchair accessible",
+    "latitude": 49.236608,
+    "longitude": -123.032888
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Collingwood",
+    "phone": "",
+    "address": "2985 Kingsway",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2362,
+    "longitude": -123.0426
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Joe Fortes",
+    "phone": "",
+    "address": "870 Denman St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2899,
+    "longitude": -123.1361
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Kerrisdale",
+    "phone": "",
+    "address": "2112 W 42nd Av",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2332,
+    "longitude": -123.1571
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Marpole",
+    "phone": "",
+    "address": "8386 Granville St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2104,
+    "longitude": -123.14
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Mount Pleasant",
+    "phone": "",
+    "address": "1 Kingsway",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2643,
+    "longitude": -123.1002
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Fraserview",
+    "phone": "",
+    "address": "1950 Argyle Drive",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2197,
+    "longitude": -123.0669
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Outreach Services",
+    "phone": "",
+    "address": "302-345 Robson St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2797,
+    "longitude": -123.1156
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Kitsilano",
+    "phone": "",
+    "address": "2425 Macdonald St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2647,
+    "longitude": -123.1687
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Carnegie",
+    "phone": "",
+    "address": "401 Main St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2811,
+    "longitude": -123.1001
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Central Branch",
+    "phone": "",
+    "address": "350 W Georgia St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2797,
+    "longitude": -123.1156
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Kensington",
+    "phone": "",
+    "address": "1428 Cedar Cottage Mews",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2491,
+    "longitude": -123.0753
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Oakridge",
+    "phone": "",
+    "address": "191-650 W 41st Av",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2327,
+    "longitude": -123.1172
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Terry Salman",
+    "phone": "",
+    "address": "4575 Clancy Loranger Way",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2438,
+    "longitude": -123.1079
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Strathcona",
+    "phone": "",
+    "address": "592 E Pender St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2798,
+    "longitude": -123.0915
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Renfrew",
+    "phone": "",
+    "address": "2969 E 22nd Av",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2524,
+    "longitude": -123.043
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Britannia",
+    "phone": "",
+    "address": "1661 Napier St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2756,
+    "longitude": -123.0738
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Dunbar",
+    "phone": "",
+    "address": "4515 Dunbar St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.246,
+    "longitude": -123.1856
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Hastings",
+    "phone": "",
+    "address": "2674 E Hastings St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2809,
+    "longitude": -123.05
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Champlain Heights",
+    "phone": "",
+    "address": "7110 Kerr St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2191,
+    "longitude": -123.0402
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – Firehall",
+    "phone": "",
+    "address": "1455 W 10th Av",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2629,
+    "longitude": -123.1376
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – South Hill",
+    "phone": "",
+    "address": "6076 Fraser St",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2295,
+    "longitude": -123.0903
+  },
+  {
+    "category": "recreation",
+    "name": "Vancouver Public Library – West Point Grey",
+    "phone": "",
+    "address": "4480 W 10th Av",
+    "city": "Vancouver",
+    "hours": "",
+    "languages": [
+      "en",
+      "zh",
+      "fr"
+    ],
+    "description": "Free library access, internet, programs, quiet space.",
+    "latitude": 49.2635,
+    "longitude": -123.2086
+  },
+  {
+    "category": "recreation",
+    "name": "Arbutus Village Park",
+    "phone": "",
+    "address": "4202 Valley Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Arbutus-Ridge (Facilities)",
+    "latitude": 49.249783,
+    "longitude": -123.15525
+  },
+  {
+    "category": "recreation",
+    "name": "Trafalgar Park",
+    "phone": "",
+    "address": "2610 W 23rd Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Arbutus-Ridge (Washrooms, Facilities)",
+    "latitude": 49.25046,
+    "longitude": -123.161879
+  },
+  {
+    "category": "recreation",
+    "name": "Coopers' Park",
+    "phone": "",
+    "address": "1020 Marinaside Crescent",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown (Facilities)",
+    "latitude": 49.273253,
+    "longitude": -123.1139
+  },
+  {
+    "category": "recreation",
+    "name": "Devonian Harbour Park",
+    "phone": "",
+    "address": "1929 W Georgia Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown (Facilities)",
+    "latitude": 49.294353,
+    "longitude": -123.134654
+  },
+  {
+    "category": "recreation",
+    "name": "Emery Barnes Park",
+    "phone": "",
+    "address": "1170 Richards Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown (Facilities)",
+    "latitude": 49.276458,
+    "longitude": -123.123995
+  },
+  {
+    "category": "recreation",
+    "name": "Wendy Poole Park",
+    "phone": "",
+    "address": "199 Alexander Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown",
+    "latitude": 49.284296,
+    "longitude": -123.099666
+  },
+  {
+    "category": "recreation",
+    "name": "Deering Island Park",
+    "phone": "",
+    "address": "3530 Deering Island Pl.",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Dunbar-Southlands",
+    "latitude": 49.218288,
+    "longitude": -123.184356
+  },
+  {
+    "category": "recreation",
+    "name": "Valdez Park",
+    "phone": "",
+    "address": "3210 W 22nd Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Dunbar-Southlands (Facilities)",
+    "latitude": 49.252391,
+    "longitude": -123.1764
+  },
+  {
+    "category": "recreation",
+    "name": "Willow Park",
+    "phone": "",
+    "address": "802 W 7th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Fairview",
+    "latitude": 49.264868,
+    "longitude": -123.122031
+  },
+  {
+    "category": "recreation",
+    "name": "Alice Townley Park",
+    "phone": "",
+    "address": "1775 Woodland Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Grandview-Woodland",
+    "latitude": 49.268974,
+    "longitude": -123.073923
+  },
+  {
+    "category": "recreation",
+    "name": "Cambridge Park",
+    "phone": "",
+    "address": "2099 Wall Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Grandview-Woodland",
+    "latitude": 49.286753,
+    "longitude": -123.062784
+  },
+  {
+    "category": "recreation",
+    "name": "McSpadden Park",
+    "phone": "",
+    "address": "2125 Victoria Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Grandview-Woodland (Facilities)",
+    "latitude": 49.265936,
+    "longitude": -123.066601
+  },
+  {
+    "category": "recreation",
+    "name": "Mosaic Creek Park",
+    "phone": "",
+    "address": "1475 Charles Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Grandview-Woodland",
+    "latitude": 49.273323,
+    "longitude": -123.074121
+  },
+  {
+    "category": "recreation",
+    "name": "Salsbury Park",
+    "phone": "",
+    "address": "1806 Adanac Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Grandview-Woodland",
+    "latitude": 49.277291,
+    "longitude": -123.067926
+  },
+  {
+    "category": "recreation",
+    "name": "Victoria Park",
+    "phone": "",
+    "address": "1425 Victoria Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Grandview-Woodland (Washrooms, Facilities)",
+    "latitude": 49.271694,
+    "longitude": -123.06673
+  },
+  {
+    "category": "recreation",
+    "name": "W.C. Shelly Park",
+    "phone": "",
+    "address": "1500 E 8th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Grandview-Woodland (Facilities)",
+    "latitude": 49.263034,
+    "longitude": -123.072931
+  },
+  {
+    "category": "recreation",
+    "name": "Burrard View Park",
+    "phone": "",
+    "address": "650 North Penticton Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Hastings-Sunrise (Washrooms, Facilities)",
+    "latitude": 49.291253,
+    "longitude": -123.050513
+  },
+  {
+    "category": "recreation",
+    "name": "Callister Park",
+    "phone": "",
+    "address": "2875 Oxford Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Hastings-Sunrise (Facilities)",
+    "latitude": 49.286214,
+    "longitude": -123.045363
+  },
+  {
+    "category": "recreation",
+    "name": "Hastings Community Park",
+    "phone": "",
+    "address": "3000 E Pender Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Hastings-Sunrise (Washrooms, Facilities)",
+    "latitude": 49.280637,
+    "longitude": -123.038884
+  },
+  {
+    "category": "recreation",
+    "name": "Kaslo Park",
+    "phone": "",
+    "address": "2851 E 7th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Hastings-Sunrise (Facilities)",
+    "latitude": 49.264099,
+    "longitude": -123.046012
+  },
+  {
+    "category": "recreation",
+    "name": "Sunrise Park",
+    "phone": "",
+    "address": "1950 Windermere Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Hastings-Sunrise (Washrooms, Facilities)",
+    "latitude": 49.266612,
+    "longitude": -123.035037
+  },
+  {
+    "category": "recreation",
+    "name": "Brewers Park",
+    "phone": "",
+    "address": "4175 Victoria Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kensington-Cedar Cottage (Washrooms, Facilities)",
+    "latitude": 49.247695,
+    "longitude": -123.066461
+  },
+  {
+    "category": "recreation",
+    "name": "Clark Park",
+    "phone": "",
+    "address": "1500 E 14th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kensington-Cedar Cottage (Facilities)",
+    "latitude": 49.257142,
+    "longitude": -123.072405
+  },
+  {
+    "category": "recreation",
+    "name": "Glen Park",
+    "phone": "",
+    "address": "3999 Glen Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kensington-Cedar Cottage (Facilities)",
+    "latitude": 49.249576,
+    "longitude": -123.082823
+  },
+  {
+    "category": "recreation",
+    "name": "Jones Park",
+    "phone": "",
+    "address": "5350 Commercial Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kensington-Cedar Cottage (Washrooms, Facilities)",
+    "latitude": 49.235945,
+    "longitude": -123.067051
+  },
+  {
+    "category": "recreation",
+    "name": "Sunnyside Park",
+    "phone": "",
+    "address": "1100 E 17th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kensington-Cedar Cottage (Facilities)",
+    "latitude": 49.254924,
+    "longitude": -123.080752
+  },
+  {
+    "category": "recreation",
+    "name": "Malkin Park",
+    "phone": "",
+    "address": "6001 Balaclava Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kerrisdale",
+    "latitude": 49.231959,
+    "longitude": -123.176845
+  },
+  {
+    "category": "recreation",
+    "name": "McCleery Park",
+    "phone": "",
+    "address": "6501 Marine Crescent",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kerrisdale",
+    "latitude": 49.226973,
+    "longitude": -123.164155
+  },
+  {
+    "category": "recreation",
+    "name": "McCleery Golf Course",
+    "phone": "",
+    "address": "7188 Macdonald Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kerrisdale (Facilities)",
+    "latitude": 49.220813,
+    "longitude": -123.170066
+  },
+  {
+    "category": "recreation",
+    "name": "Everett Crowley Park",
+    "phone": "",
+    "address": "8200 Kerr Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Killarney (Facilities)",
+    "latitude": 49.210985,
+    "longitude": -123.036321
+  },
+  {
+    "category": "recreation",
+    "name": "Killarney Park",
+    "phone": "",
+    "address": "6205 Kerr Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Killarney (Facilities)",
+    "latitude": 49.227998,
+    "longitude": -123.04413
+  },
+  {
+    "category": "recreation",
+    "name": "Kinross Ravine Park",
+    "phone": "",
+    "address": "3350 SE Marine Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Killarney",
+    "latitude": 49.207509,
+    "longitude": -123.036128
+  },
+  {
+    "category": "recreation",
+    "name": "Almond Park",
+    "phone": "",
+    "address": "3600 W 12th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kitsilano (Facilities)",
+    "latitude": 49.261014,
+    "longitude": -123.184543
+  },
+  {
+    "category": "recreation",
+    "name": "Connaught Park",
+    "phone": "",
+    "address": "2390 W 10th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kitsilano (Facilities)",
+    "latitude": 49.262026,
+    "longitude": -123.160025
+  },
+  {
+    "category": "recreation",
+    "name": "Delamont Park",
+    "phone": "",
+    "address": "2091 W 7th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kitsilano (Facilities)",
+    "latitude": 49.265808,
+    "longitude": -123.152426
+  },
+  {
+    "category": "recreation",
+    "name": "McBride Park",
+    "phone": "",
+    "address": "3350 W 4th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kitsilano (Washrooms, Facilities)",
+    "latitude": 49.268073,
+    "longitude": -123.179732
+  },
+  {
+    "category": "recreation",
+    "name": "Point Grey Park Site at Musqueamview Street",
+    "phone": "",
+    "address": "3215 Point Grey Road",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kitsilano",
+    "latitude": 49.271658,
+    "longitude": -123.17617
+  },
+  {
+    "category": "recreation",
+    "name": "Oak Park",
+    "phone": "",
+    "address": "900 W 59th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Marpole (Washrooms, Facilities)",
+    "latitude": 49.215497,
+    "longitude": -123.128319
+  },
+  {
+    "category": "recreation",
+    "name": "Riverview Park",
+    "phone": "",
+    "address": "1751 W 66th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Marpole (Facilities)",
+    "latitude": 49.212238,
+    "longitude": -123.147342
+  },
+  {
+    "category": "recreation",
+    "name": "Winona Park",
+    "phone": "",
+    "address": "7575 Columbia Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Marpole (Washrooms, Facilities)",
+    "latitude": 49.215431,
+    "longitude": -123.114024
+  },
+  {
+    "category": "recreation",
+    "name": "Guelph Park",
+    "phone": "",
+    "address": "2390 Brunswick Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Mount Pleasant (Facilities)",
+    "latitude": 49.263965,
+    "longitude": -123.095837
+  },
+  {
+    "category": "recreation",
+    "name": "Jonathan Rogers Park",
+    "phone": "",
+    "address": "110 W 7th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Mount Pleasant (Washrooms, Facilities)",
+    "latitude": 49.264334,
+    "longitude": -123.108174
+  },
+  {
+    "category": "recreation",
+    "name": "Robson Park",
+    "phone": "",
+    "address": "599 Kingsway",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Mount Pleasant (Washrooms, Facilities)",
+    "latitude": 49.258229,
+    "longitude": -123.091798
+  },
+  {
+    "category": "recreation",
+    "name": "Cambie Park",
+    "phone": "",
+    "address": "500 W 54th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Oakridge",
+    "latitude": 49.221411,
+    "longitude": -123.117988
+  },
+  {
+    "category": "recreation",
+    "name": "Columbia Park",
+    "phone": "",
+    "address": "5908 Alberta Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Oakridge (Washrooms, Facilities)",
+    "latitude": 49.231521,
+    "longitude": -123.111978
+  },
+  {
+    "category": "recreation",
+    "name": "Tisdall Park",
+    "phone": "",
+    "address": "6210 Tisdall Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Oakridge (Facilities)",
+    "latitude": 49.227725,
+    "longitude": -123.119693
+  },
+  {
+    "category": "recreation",
+    "name": "Beaconsfield Park",
+    "phone": "",
+    "address": "3215 Slocan Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Renfrew-Collingwood (Washrooms, Facilities)",
+    "latitude": 49.255546,
+    "longitude": -123.051302
+  },
+  {
+    "category": "recreation",
+    "name": "Collingwood Park",
+    "phone": "",
+    "address": "5275 McKinnon Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Renfrew-Collingwood (Washrooms, Facilities)",
+    "latitude": 49.237066,
+    "longitude": -123.036887
+  },
+  {
+    "category": "recreation",
+    "name": "Norquay Park",
+    "phone": "",
+    "address": "5050 Wales Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Renfrew-Collingwood (Washrooms, Facilities)",
+    "latitude": 49.237098,
+    "longitude": -123.051061
+  },
+  {
+    "category": "recreation",
+    "name": "Renfrew Community Park",
+    "phone": "",
+    "address": "2929 E 22nd Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Renfrew-Collingwood (Facilities)",
+    "latitude": 49.252129,
+    "longitude": -123.042896
+  },
+  {
+    "category": "recreation",
+    "name": "Renfrew Ravine Park",
+    "phone": "",
+    "address": "3900 Renfrew Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Renfrew-Collingwood",
+    "latitude": 49.247166,
+    "longitude": -123.044111
+  },
+  {
+    "category": "recreation",
+    "name": "Slocan Park",
+    "phone": "",
+    "address": "2750 E 29th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Renfrew-Collingwood (Washrooms, Facilities)",
+    "latitude": 49.243921,
+    "longitude": -123.047574
+  },
+  {
+    "category": "recreation",
+    "name": "Grimmett Park",
+    "phone": "",
+    "address": "169 E 19th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Riley Park",
+    "latitude": 49.253954,
+    "longitude": -123.102003
+  },
+  {
+    "category": "recreation",
+    "name": "Hillcrest Park",
+    "phone": "",
+    "address": "4501 Clancy Loranger Way",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Riley Park (Facilities)",
+    "latitude": 49.244734,
+    "longitude": -123.108417
+  },
+  {
+    "category": "recreation",
+    "name": "Queen Elizabeth Park",
+    "phone": "",
+    "address": "4600 Cambie Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Riley Park (Washrooms, Facilities)",
+    "latitude": 49.240978,
+    "longitude": -123.112028
+  },
+  {
+    "category": "recreation",
+    "name": "Riley Park",
+    "phone": "",
+    "address": "50 E 30th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Riley Park (Facilities)",
+    "latitude": 49.241987,
+    "longitude": -123.104361
+  },
+  {
+    "category": "recreation",
+    "name": "Kerrisdale Park",
+    "phone": "",
+    "address": "5670 E Boulevard",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Shaughnessy (Facilities)",
+    "latitude": 49.235725,
+    "longitude": -123.152674
+  },
+  {
+    "category": "recreation",
+    "name": "VanDusen Botanical Garden",
+    "phone": "",
+    "address": "5251 Oak Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Shaughnessy (Washrooms, Facilities)",
+    "latitude": 49.239181,
+    "longitude": -123.131293
+  },
+  {
+    "category": "recreation",
+    "name": "Strathcona Park",
+    "phone": "",
+    "address": "857 Malkin Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Strathcona (Washrooms, Facilities)",
+    "latitude": 49.275276,
+    "longitude": -123.084674
+  },
+  {
+    "category": "recreation",
+    "name": "Thornton Park",
+    "phone": "",
+    "address": "1166 Main Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Strathcona",
+    "latitude": 49.273946,
+    "longitude": -123.099212
+  },
+  {
+    "category": "recreation",
+    "name": "George Park",
+    "phone": "",
+    "address": "500 E 63rd Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Sunset (Facilities)",
+    "latitude": 49.212608,
+    "longitude": -123.094228
+  },
+  {
+    "category": "recreation",
+    "name": "Memorial South Park",
+    "phone": "",
+    "address": "5955 Ross Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Sunset (Washrooms, Facilities)",
+    "latitude": 49.230901,
+    "longitude": -123.085138
+  },
+  {
+    "category": "recreation",
+    "name": "Moberly Park",
+    "phone": "",
+    "address": "7646 Prince Albert Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Sunset (Washrooms, Facilities)",
+    "latitude": 49.215602,
+    "longitude": -123.086219
+  },
+  {
+    "category": "recreation",
+    "name": "Ross Park",
+    "phone": "",
+    "address": "7402 Ross Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Sunset (Washrooms, Facilities)",
+    "latitude": 49.217276,
+    "longitude": -123.082351
+  },
+  {
+    "category": "recreation",
+    "name": "Fraserview Park",
+    "phone": "",
+    "address": "7595 Victoria Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Victoria-Fraserview (Facilities)",
+    "latitude": 49.215398,
+    "longitude": -123.067572
+  },
+  {
+    "category": "recreation",
+    "name": "Gordon Park",
+    "phone": "",
+    "address": "6675 Commercial Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Victoria-Fraserview (Washrooms, Facilities)",
+    "latitude": 49.22338,
+    "longitude": -123.070491
+  },
+  {
+    "category": "recreation",
+    "name": "Alexandra Park",
+    "phone": "",
+    "address": "1755 Beach Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in West End",
+    "latitude": 49.28546,
+    "longitude": -123.14223
+  },
+  {
+    "category": "recreation",
+    "name": "Barclay Heritage Square",
+    "phone": "",
+    "address": "1433 Barclay Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in West End (Washrooms, Facilities)",
+    "latitude": 49.28718,
+    "longitude": -123.132167
+  },
+  {
+    "category": "recreation",
+    "name": "Hastings Mill Park",
+    "phone": "",
+    "address": "1575 Alma Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in West Point Grey (Facilities)",
+    "latitude": 49.27279,
+    "longitude": -123.186689
+  },
+  {
+    "category": "recreation",
+    "name": "Westmount Park",
+    "phone": "",
+    "address": "4651 W 2nd Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in West Point Grey (Facilities)",
+    "latitude": 49.271852,
+    "longitude": -123.214423
+  },
+  {
+    "category": "recreation",
+    "name": "Arbutus Greenway Park",
+    "phone": "",
+    "address": "2205 W11th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kitsilano",
+    "latitude": 49.262283,
+    "longitude": -123.154927
+  },
+  {
+    "category": "recreation",
+    "name": "Yaletown Park",
+    "phone": "",
+    "address": "901 Mainland Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown",
+    "latitude": 49.277042,
+    "longitude": -123.118921
+  },
+  {
+    "category": "recreation",
+    "name": "Carolina Park",
+    "phone": "",
+    "address": "2100 Carolina Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Mount Pleasant",
+    "latitude": 49.266401,
+    "longitude": -123.090778
+  },
+  {
+    "category": "recreation",
+    "name": "Fraser River Trail",
+    "phone": "",
+    "address": "9149 Hudson Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Marpole",
+    "latitude": 49.200357,
+    "longitude": -123.135862
+  },
+  {
+    "category": "recreation",
+    "name": "Carnarvon Park",
+    "phone": "",
+    "address": "2995 W 19th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Arbutus-Ridge (Washrooms, Facilities)",
+    "latitude": 49.256555,
+    "longitude": -123.171406
+  },
+  {
+    "category": "recreation",
+    "name": "Coal Harbour Park",
+    "phone": "",
+    "address": "480 Broughton Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown (Facilities)",
+    "latitude": 49.289981,
+    "longitude": -123.125015
+  },
+  {
+    "category": "recreation",
+    "name": "David Lam Park",
+    "phone": "",
+    "address": "1300 Pacific Boulevard",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown (Washrooms, Facilities)",
+    "latitude": 49.272569,
+    "longitude": -123.124145
+  },
+  {
+    "category": "recreation",
+    "name": "May & Lorne Brown Park",
+    "phone": "",
+    "address": "801 Beach Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown",
+    "latitude": 49.275188,
+    "longitude": -123.132046
+  },
+  {
+    "category": "recreation",
+    "name": "Pioneer Place (Pigeon Park)",
+    "phone": "",
+    "address": "399 Carrall Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown",
+    "latitude": 49.281699,
+    "longitude": -123.104588
+  },
+  {
+    "category": "recreation",
+    "name": "Portal Park",
+    "phone": "",
+    "address": "1099 W Hastings Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown",
+    "latitude": 49.288042,
+    "longitude": -123.119169
+  },
+  {
+    "category": "recreation",
+    "name": "CRAB Park at Portside",
+    "phone": "",
+    "address": "101 E Waterfront Road",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown (Washrooms, Facilities)",
+    "latitude": 49.284942,
+    "longitude": -123.102377
+  },
+  {
+    "category": "recreation",
+    "name": "Roundhouse Turntable Plaza",
+    "phone": "",
+    "address": "181 Roundhouse Mews",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown (Facilities)",
+    "latitude": 49.273379,
+    "longitude": -123.121603
+  },
+  {
+    "category": "recreation",
+    "name": "Balaclava Park",
+    "phone": "",
+    "address": "4594 Balaclava Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Dunbar-Southlands (Washrooms, Facilities)",
+    "latitude": 49.244951,
+    "longitude": -123.175247
+  },
+  {
+    "category": "recreation",
+    "name": "Chaldecott Park",
+    "phone": "",
+    "address": "4175 Wallace Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Dunbar-Southlands (Washrooms, Facilities)",
+    "latitude": 49.249092,
+    "longitude": -123.192177
+  },
+  {
+    "category": "recreation",
+    "name": "Musqueam Park",
+    "phone": "",
+    "address": "4000 SW Marine Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Dunbar-Southlands (Facilities)",
+    "latitude": 49.229331,
+    "longitude": -123.18998
+  },
+  {
+    "category": "recreation",
+    "name": "Charleson Park",
+    "phone": "",
+    "address": "999 Charleson Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Fairview (Facilities)",
+    "latitude": 49.266995,
+    "longitude": -123.1242
+  },
+  {
+    "category": "recreation",
+    "name": "Granville Park",
+    "phone": "",
+    "address": "3001 Fir Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Fairview (Washrooms, Facilities)",
+    "latitude": 49.258105,
+    "longitude": -123.142395
+  },
+  {
+    "category": "recreation",
+    "name": "Garden Park",
+    "phone": "",
+    "address": "1851 Garden Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Grandview-Woodland (Washrooms, Facilities)",
+    "latitude": 49.268159,
+    "longitude": -123.058994
+  },
+  {
+    "category": "recreation",
+    "name": "Grandview Park",
+    "phone": "",
+    "address": "1255 Commercial Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Grandview-Woodland (Washrooms, Facilities)",
+    "latitude": 49.273511,
+    "longitude": -123.070469
+  },
+  {
+    "category": "recreation",
+    "name": "McGill Park",
+    "phone": "",
+    "address": "2305 McGill Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Grandview-Woodland",
+    "latitude": 49.288668,
+    "longitude": -123.057154
+  },
+  {
+    "category": "recreation",
+    "name": "Oxford Park",
+    "phone": "",
+    "address": "2050 Wall Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Grandview-Woodland (Facilities)",
+    "latitude": 49.286172,
+    "longitude": -123.062223
+  },
+  {
+    "category": "recreation",
+    "name": "Woodland Park",
+    "phone": "",
+    "address": "705 Woodland Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Grandview-Woodland (Washrooms, Facilities)",
+    "latitude": 49.278526,
+    "longitude": -123.073387
+  },
+  {
+    "category": "recreation",
+    "name": "Adanac Park",
+    "phone": "",
+    "address": "1025 Boundary Road",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Hastings-Sunrise (Washrooms, Facilities)",
+    "latitude": 49.276381,
+    "longitude": -123.025811
+  },
+  {
+    "category": "recreation",
+    "name": "Bates Park",
+    "phone": "",
+    "address": "669 Fellowes Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Hastings-Sunrise",
+    "latitude": 49.292443,
+    "longitude": -123.024336
+  },
+  {
+    "category": "recreation",
+    "name": "Clinton Park",
+    "phone": "",
+    "address": "2690 Grant Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Hastings-Sunrise (Washrooms, Facilities)",
+    "latitude": 49.270355,
+    "longitude": -123.0509
+  },
+  {
+    "category": "recreation",
+    "name": "Dusty Greenwell Park",
+    "phone": "",
+    "address": "2799 Wall Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Hastings-Sunrise (Facilities)",
+    "latitude": 49.292113,
+    "longitude": -123.047643
+  },
+  {
+    "category": "recreation",
+    "name": "Hastings Park",
+    "phone": "",
+    "address": "2901 E Hastings",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Hastings-Sunrise (Washrooms, Facilities)",
+    "latitude": 49.282256,
+    "longitude": -123.039776
+  },
+  {
+    "category": "recreation",
+    "name": "New Brighton Park",
+    "phone": "",
+    "address": "3201 New Brighton Road",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Hastings-Sunrise (Washrooms, Facilities)",
+    "latitude": 49.290122,
+    "longitude": -123.037888
+  },
+  {
+    "category": "recreation",
+    "name": "Rupert Park",
+    "phone": "",
+    "address": "1600 Rupert Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Hastings-Sunrise (Washrooms, Facilities)",
+    "latitude": 49.271629,
+    "longitude": -123.031384
+  },
+  {
+    "category": "recreation",
+    "name": "Grays Park",
+    "phone": "",
+    "address": "4850 St. Catherines Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kensington-Cedar Cottage (Washrooms, Facilities)",
+    "latitude": 49.241136,
+    "longitude": -123.084974
+  },
+  {
+    "category": "recreation",
+    "name": "John Hendry (Trout Lake) Park",
+    "phone": "",
+    "address": "3300 Victoria Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kensington-Cedar Cottage (Washrooms, Facilities)",
+    "latitude": 49.255808,
+    "longitude": -123.062242
+  },
+  {
+    "category": "recreation",
+    "name": "Arbutus Park",
+    "phone": "",
+    "address": "7601 Arbutus Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kerrisdale (Facilities)",
+    "latitude": 49.21659,
+    "longitude": -123.15513
+  },
+  {
+    "category": "recreation",
+    "name": "Elm Park",
+    "phone": "",
+    "address": "5800 Elm Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kerrisdale (Washrooms, Facilities)",
+    "latitude": 49.233847,
+    "longitude": -123.163488
+  },
+  {
+    "category": "recreation",
+    "name": "Maple Grove Park",
+    "phone": "",
+    "address": "6875 Yew Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kerrisdale (Washrooms, Facilities)",
+    "latitude": 49.223703,
+    "longitude": -123.16013
+  },
+  {
+    "category": "recreation",
+    "name": "Captain Cook Park",
+    "phone": "",
+    "address": "3398 E 54th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Killarney (Facilities)",
+    "latitude": 49.21912,
+    "longitude": -123.033713
+  },
+  {
+    "category": "recreation",
+    "name": "Champlain Heights Park",
+    "phone": "",
+    "address": "3351 Maquinna Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Killarney (Facilities)",
+    "latitude": 49.215527,
+    "longitude": -123.032545
+  },
+  {
+    "category": "recreation",
+    "name": "Fraserview Golf Course",
+    "phone": "",
+    "address": "7800 Vivian Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Killarney (Washrooms, Facilities)",
+    "latitude": 49.212251,
+    "longitude": -123.047869
+  },
+  {
+    "category": "recreation",
+    "name": "Sparwood Park",
+    "phone": "",
+    "address": "6998 Arlington Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Killarney (Facilities)",
+    "latitude": 49.220024,
+    "longitude": -123.028777
+  },
+  {
+    "category": "recreation",
+    "name": "Hadden Park",
+    "phone": "",
+    "address": "1905 Ogden Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kitsilano (Washrooms, Facilities)",
+    "latitude": 49.275353,
+    "longitude": -123.152513
+  },
+  {
+    "category": "recreation",
+    "name": "Kitsilano Beach Park",
+    "phone": "",
+    "address": "1499 Arbutus Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kitsilano (Washrooms, Facilities)",
+    "latitude": 49.273431,
+    "longitude": -123.153901
+  },
+  {
+    "category": "recreation",
+    "name": "Seaforth Peace Park",
+    "phone": "",
+    "address": "1620 Chestnut Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kitsilano",
+    "latitude": 49.271554,
+    "longitude": -123.145967
+  },
+  {
+    "category": "recreation",
+    "name": "China Creek South Park",
+    "phone": "",
+    "address": "1255 E 10th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Mount Pleasant (Facilities)",
+    "latitude": 49.261581,
+    "longitude": -123.079352
+  },
+  {
+    "category": "recreation",
+    "name": "Major Matthews Park",
+    "phone": "",
+    "address": "2627 Manitoba Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Mount Pleasant (Facilities)",
+    "latitude": 49.26158,
+    "longitude": -123.107238
+  },
+  {
+    "category": "recreation",
+    "name": "Tea Swamp Park",
+    "phone": "",
+    "address": "266 E 15th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Mount Pleasant (Facilities)",
+    "latitude": 49.257091,
+    "longitude": -123.098595
+  },
+  {
+    "category": "recreation",
+    "name": "Langara Golf Course",
+    "phone": "",
+    "address": "6706 Alberta Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in South Cambie (Facilities)",
+    "latitude": 49.221371,
+    "longitude": -123.11211
+  },
+  {
+    "category": "recreation",
+    "name": "Carleton Park",
+    "phone": "",
+    "address": "3450 Price Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Renfrew-Collingwood (Facilities)",
+    "latitude": 49.242002,
+    "longitude": -123.030451
+  },
+  {
+    "category": "recreation",
+    "name": "Earles Park",
+    "phone": "",
+    "address": "2801 E 41st Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Renfrew-Collingwood (Facilities)",
+    "latitude": 49.233476,
+    "longitude": -123.047702
+  },
+  {
+    "category": "recreation",
+    "name": "Falaise Park",
+    "phone": "",
+    "address": "3434 Falaise Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Renfrew-Collingwood (Washrooms, Facilities)",
+    "latitude": 49.256485,
+    "longitude": -123.031631
+  },
+  {
+    "category": "recreation",
+    "name": "Gaston Park",
+    "phone": "",
+    "address": "3470 Crowley Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Renfrew-Collingwood (Facilities)",
+    "latitude": 49.236117,
+    "longitude": -123.031094
+  },
+  {
+    "category": "recreation",
+    "name": "Prince Edward Park",
+    "phone": "",
+    "address": "3773 Prince Edward Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Riley Park (Washrooms, Facilities)",
+    "latitude": 49.251692,
+    "longitude": -123.097024
+  },
+  {
+    "category": "recreation",
+    "name": "Angus Park",
+    "phone": "",
+    "address": "3600 Angus Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Shaughnessy",
+    "latitude": 49.253932,
+    "longitude": -123.143816
+  },
+  {
+    "category": "recreation",
+    "name": "Devonshire Park",
+    "phone": "",
+    "address": "1250 Devonshire Crescent",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Shaughnessy",
+    "latitude": 49.24502,
+    "longitude": -123.13364
+  },
+  {
+    "category": "recreation",
+    "name": "Shaughnessy Park",
+    "phone": "",
+    "address": "1300 The Crescent",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Shaughnessy",
+    "latitude": 49.255715,
+    "longitude": -123.135068
+  },
+  {
+    "category": "recreation",
+    "name": "Heather Park",
+    "phone": "",
+    "address": "702 W 18th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in South Cambie (Facilities)",
+    "latitude": 49.254765,
+    "longitude": -123.121103
+  },
+  {
+    "category": "recreation",
+    "name": "Gladstone-Riverside Park",
+    "phone": "",
+    "address": "2500 E Kent Street S",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Victoria-Fraserview",
+    "latitude": 49.205532,
+    "longitude": -123.056883
+  },
+  {
+    "category": "recreation",
+    "name": "Humm Park",
+    "phone": "",
+    "address": "7250 Humm Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Victoria-Fraserview (Facilities)",
+    "latitude": 49.218698,
+    "longitude": -123.063266
+  },
+  {
+    "category": "recreation",
+    "name": "Nanaimo Park",
+    "phone": "",
+    "address": "2390 E 46th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Victoria-Fraserview (Washrooms, Facilities)",
+    "latitude": 49.227724,
+    "longitude": -123.057508
+  },
+  {
+    "category": "recreation",
+    "name": "Riverfront Park",
+    "phone": "",
+    "address": "2750 E Kent Ave S",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Killarney (Washrooms, Facilities)",
+    "latitude": 49.205951,
+    "longitude": -123.04575
+  },
+  {
+    "category": "recreation",
+    "name": "Tecumseh Park",
+    "phone": "",
+    "address": "1751 E 45th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Victoria-Fraserview (Facilities)",
+    "latitude": 49.229752,
+    "longitude": -123.069846
+  },
+  {
+    "category": "recreation",
+    "name": "Morton Park",
+    "phone": "",
+    "address": "1800 Morton Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in West End",
+    "latitude": 49.28768,
+    "longitude": -123.141955
+  },
+  {
+    "category": "recreation",
+    "name": "Nelson Park",
+    "phone": "",
+    "address": "1030 Bute Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in West End (Facilities)",
+    "latitude": 49.282855,
+    "longitude": -123.129558
+  },
+  {
+    "category": "recreation",
+    "name": "Sunset Beach Park",
+    "phone": "",
+    "address": "1204 Beach Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in West End (Washrooms, Facilities)",
+    "latitude": 49.281211,
+    "longitude": -123.139681
+  },
+  {
+    "category": "recreation",
+    "name": "Spanish Banks Beach Park",
+    "phone": "",
+    "address": "4801 NW Marine Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in West Point Grey (Washrooms, Facilities)",
+    "latitude": 49.277063,
+    "longitude": -123.216909
+  },
+  {
+    "category": "recreation",
+    "name": "West Point Grey Park",
+    "phone": "",
+    "address": "2250 Trimble Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in West Point Grey (Washrooms, Facilities)",
+    "latitude": 49.266301,
+    "longitude": -123.204312
+  },
+  {
+    "category": "recreation",
+    "name": "Choklit Park",
+    "phone": "",
+    "address": "2400 Spruce Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Fairview",
+    "latitude": 49.265482,
+    "longitude": -123.128905
+  },
+  {
+    "category": "recreation",
+    "name": "George Wainborn Park",
+    "phone": "",
+    "address": "450 Beach Crescent",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown",
+    "latitude": 49.272541,
+    "longitude": -123.129311
+  },
+  {
+    "category": "recreation",
+    "name": "Creekway Park",
+    "phone": "",
+    "address": "2901 E Hastings Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Hastings-Sunrise",
+    "latitude": 49.288336,
+    "longitude": -123.036982
+  },
+  {
+    "category": "recreation",
+    "name": "Shannon Mews",
+    "phone": "",
+    "address": "1551 W 57th Ave",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kerrisdale (Facilities)",
+    "latitude": 49.21978389371605,
+    "longitude": -123.141960658531
+  },
+  {
+    "category": "recreation",
+    "name": "Prince of Wales Park",
+    "phone": "",
+    "address": "4780 Haggart Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Arbutus-Ridge (Facilities)",
+    "latitude": 49.244397,
+    "longitude": -123.156429
+  },
+  {
+    "category": "recreation",
+    "name": "Quilchena Park",
+    "phone": "",
+    "address": "4590 Magnolia Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Arbutus-Ridge (Washrooms, Facilities)",
+    "latitude": 49.24369,
+    "longitude": -123.148865
+  },
+  {
+    "category": "recreation",
+    "name": "Ravine Park",
+    "phone": "",
+    "address": "2159 W 36th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Arbutus-Ridge",
+    "latitude": 49.240902,
+    "longitude": -123.155935
+  },
+  {
+    "category": "recreation",
+    "name": "Andy Livingstone Park",
+    "phone": "",
+    "address": "89 Expo Boulevard",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown (Washrooms, Facilities)",
+    "latitude": 49.278923,
+    "longitude": -123.1055
+  },
+  {
+    "category": "recreation",
+    "name": "Cardero Park",
+    "phone": "",
+    "address": "1601 Bayshore Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in West End",
+    "latitude": 49.292211,
+    "longitude": -123.128206
+  },
+  {
+    "category": "recreation",
+    "name": "Cathedral Square",
+    "phone": "",
+    "address": "566 Richards Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown",
+    "latitude": 49.282084,
+    "longitude": -123.113877
+  },
+  {
+    "category": "recreation",
+    "name": "Creekside Park",
+    "phone": "",
+    "address": "1455 Quebec Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown (Facilities)",
+    "latitude": 49.274415,
+    "longitude": -123.102924
+  },
+  {
+    "category": "recreation",
+    "name": "Art Phillips Park",
+    "phone": "",
+    "address": "625 Burrard Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown",
+    "latitude": 49.285911,
+    "longitude": -123.120948
+  },
+  {
+    "category": "recreation",
+    "name": "Harbour Green Park",
+    "phone": "",
+    "address": "1199 W Cordova Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown (Washrooms, Facilities)",
+    "latitude": 49.290263,
+    "longitude": -123.121924
+  },
+  {
+    "category": "recreation",
+    "name": "Helmcken Park",
+    "phone": "",
+    "address": "1103 Pacific Boulevard",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown",
+    "latitude": 49.274814,
+    "longitude": -123.119555
+  },
+  {
+    "category": "recreation",
+    "name": "Marina Square",
+    "phone": "",
+    "address": "1675 Bayshore Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown",
+    "latitude": 49.292334,
+    "longitude": -123.131296
+  },
+  {
+    "category": "recreation",
+    "name": "Sun Yat-Sen Gardens",
+    "phone": "",
+    "address": "578 Carrall Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown",
+    "latitude": 49.279691,
+    "longitude": -123.104233
+  },
+  {
+    "category": "recreation",
+    "name": "Victory Square",
+    "phone": "",
+    "address": "200 W Hastings Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown",
+    "latitude": 49.282218,
+    "longitude": -123.110133
+  },
+  {
+    "category": "recreation",
+    "name": "Park Site on Blenheim",
+    "phone": "",
+    "address": "3500 Quadra Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Arbutus-Ridge",
+    "latitude": 49.255575,
+    "longitude": -123.178934
+  },
+  {
+    "category": "recreation",
+    "name": "Memorial West Park",
+    "phone": "",
+    "address": "4747 Dunbar Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Dunbar-Southlands (Washrooms, Facilities)",
+    "latitude": 49.243326,
+    "longitude": -123.188166
+  },
+  {
+    "category": "recreation",
+    "name": "Quadra West Park",
+    "phone": "",
+    "address": "3250 Quadra Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Dunbar-Southlands",
+    "latitude": 49.257112,
+    "longitude": -123.180696
+  },
+  {
+    "category": "recreation",
+    "name": "Sutcliffe Park",
+    "phone": "",
+    "address": "1318 Cartwright Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Fairview (Facilities)",
+    "latitude": 49.268871,
+    "longitude": -123.134832
+  },
+  {
+    "category": "recreation",
+    "name": "Pandora Park",
+    "phone": "",
+    "address": "2325 Franklin Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Grandview-Woodland (Washrooms, Facilities)",
+    "latitude": 49.282533,
+    "longitude": -123.058045
+  },
+  {
+    "category": "recreation",
+    "name": "Templeton Park",
+    "phone": "",
+    "address": "700 Templeton Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Grandview-Woodland (Facilities)",
+    "latitude": 49.278279,
+    "longitude": -123.058646
+  },
+  {
+    "category": "recreation",
+    "name": "Park Site on Trinity Street",
+    "phone": "",
+    "address": "2303 Wall Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Hastings-Sunrise",
+    "latitude": 49.289561,
+    "longitude": -123.059459
+  },
+  {
+    "category": "recreation",
+    "name": "Charles Park",
+    "phone": "",
+    "address": "3400 Charles Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Hastings-Sunrise",
+    "latitude": 49.273407,
+    "longitude": -123.027661
+  },
+  {
+    "category": "recreation",
+    "name": "Thunderbird Park",
+    "phone": "",
+    "address": "3485 E 2nd Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Hastings-Sunrise (Facilities)",
+    "latitude": 49.268829,
+    "longitude": -123.028552
+  },
+  {
+    "category": "recreation",
+    "name": "Cedar Cottage Park",
+    "phone": "",
+    "address": "2650 Clark Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kensington-Cedar Cottage (Facilities)",
+    "latitude": 49.260807,
+    "longitude": -123.076605
+  },
+  {
+    "category": "recreation",
+    "name": "General Brock Park",
+    "phone": "",
+    "address": "2301 Brock Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kensington-Cedar Cottage (Facilities)",
+    "latitude": 49.244757,
+    "longitude": -123.058517
+  },
+  {
+    "category": "recreation",
+    "name": "Kensington Park",
+    "phone": "",
+    "address": "5175 Dumfries Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kensington-Cedar Cottage (Facilities)",
+    "latitude": 49.238478,
+    "longitude": -123.075308
+  },
+  {
+    "category": "recreation",
+    "name": "Kingcrest Park",
+    "phone": "",
+    "address": "4150 Knight Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kensington-Cedar Cottage (Facilities)",
+    "latitude": 49.247499,
+    "longitude": -123.074674
+  },
+  {
+    "category": "recreation",
+    "name": "Fraser River Park",
+    "phone": "",
+    "address": "8705 Angus Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kerrisdale (Washrooms, Facilities)",
+    "latitude": 49.207915,
+    "longitude": -123.150862
+  },
+  {
+    "category": "recreation",
+    "name": "Kerrisdale Centennial Park",
+    "phone": "",
+    "address": "5898 Yew Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kerrisdale (Facilities)",
+    "latitude": 49.233094,
+    "longitude": -123.158043
+  },
+  {
+    "category": "recreation",
+    "name": "Jean Beaty Park",
+    "phone": "",
+    "address": "3393 Point Grey Road",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in West Point Grey",
+    "latitude": 49.271913,
+    "longitude": -123.179433
+  },
+  {
+    "category": "recreation",
+    "name": "Margaret Pigott Park",
+    "phone": "",
+    "address": "2743 Point Grey Road",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kitsilano",
+    "latitude": 49.272089,
+    "longitude": -123.167454
+  },
+  {
+    "category": "recreation",
+    "name": "Tatlow Park",
+    "phone": "",
+    "address": "2845 W 3rd Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kitsilano (Washrooms, Facilities)",
+    "latitude": 49.270068,
+    "longitude": -123.169609
+  },
+  {
+    "category": "recreation",
+    "name": "Vanier Park",
+    "phone": "",
+    "address": "1000 Chestnut Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kitsilano (Washrooms)",
+    "latitude": 49.277049,
+    "longitude": -123.143159
+  },
+  {
+    "category": "recreation",
+    "name": "Volunteer Park",
+    "phone": "",
+    "address": "2855 Point Grey Road",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Kitsilano",
+    "latitude": 49.271635,
+    "longitude": -123.169243
+  },
+  {
+    "category": "recreation",
+    "name": "Ash Park",
+    "phone": "",
+    "address": "8288 Ash Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Marpole (Facilities)",
+    "latitude": 49.210597,
+    "longitude": -123.119435
+  },
+  {
+    "category": "recreation",
+    "name": "Eburne Park",
+    "phone": "",
+    "address": "950 W 71st Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Marpole (Facilities)",
+    "latitude": 49.206517,
+    "longitude": -123.129241
+  },
+  {
+    "category": "recreation",
+    "name": "Marpole Park",
+    "phone": "",
+    "address": "1410 W 72nd Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Marpole (Facilities)",
+    "latitude": 49.205507,
+    "longitude": -123.138307
+  },
+  {
+    "category": "recreation",
+    "name": "Shannon Park",
+    "phone": "",
+    "address": "1575 W 62nd Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Marpole (Facilities)",
+    "latitude": 49.215457,
+    "longitude": -123.142529
+  },
+  {
+    "category": "recreation",
+    "name": "William Mackie Park",
+    "phone": "",
+    "address": "1592 W 71st Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Marpole (Facilities)",
+    "latitude": 49.206787,
+    "longitude": -123.142733
+  },
+  {
+    "category": "recreation",
+    "name": "China Creek North Park",
+    "phone": "",
+    "address": "1001 E 7th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Mount Pleasant (Facilities)",
+    "latitude": 49.264901,
+    "longitude": -123.083355
+  },
+  {
+    "category": "recreation",
+    "name": "Mount Pleasant Park",
+    "phone": "",
+    "address": "3161 Ontario Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Mount Pleasant (Facilities)",
+    "latitude": 49.25696,
+    "longitude": -123.106743
+  },
+  {
+    "category": "recreation",
+    "name": "Montgomery Park",
+    "phone": "",
+    "address": "1040 W 43rd Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Oakridge (Washrooms, Facilities)",
+    "latitude": 49.231291,
+    "longitude": -123.130776
+  },
+  {
+    "category": "recreation",
+    "name": "Cariboo Park",
+    "phone": "",
+    "address": "3450 E 29th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Renfrew-Collingwood (Facilities)",
+    "latitude": 49.244232,
+    "longitude": -123.028792
+  },
+  {
+    "category": "recreation",
+    "name": "Foster Park",
+    "phone": "",
+    "address": "5501 Aberdeen Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Renfrew-Collingwood (Facilities)",
+    "latitude": 49.234046,
+    "longitude": -123.028741
+  },
+  {
+    "category": "recreation",
+    "name": "Melbourne Park",
+    "phone": "",
+    "address": "3530 Vanness Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Renfrew-Collingwood (Facilities)",
+    "latitude": 49.236236,
+    "longitude": -123.029179
+  },
+  {
+    "category": "recreation",
+    "name": "Price Park",
+    "phone": "",
+    "address": "3650 Price Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Renfrew-Collingwood (Facilities)",
+    "latitude": 49.251572,
+    "longitude": -123.097564
+  },
+  {
+    "category": "recreation",
+    "name": "Cartier Park",
+    "phone": "",
+    "address": "390 E 36th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Riley Park (Facilities)",
+    "latitude": 49.237598,
+    "longitude": -123.097473
+  },
+  {
+    "category": "recreation",
+    "name": "Nat Bailey Stadium",
+    "phone": "",
+    "address": "4601 Ontario Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Riley Park (Facilities)",
+    "latitude": 49.242653,
+    "longitude": -123.106679
+  },
+  {
+    "category": "recreation",
+    "name": "Braemar Park",
+    "phone": "",
+    "address": "895 W 27th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in South Cambie (Washrooms, Facilities)",
+    "latitude": 49.247615,
+    "longitude": -123.12363
+  },
+  {
+    "category": "recreation",
+    "name": "Douglas Park",
+    "phone": "",
+    "address": "801 W 22nd Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in South Cambie (Facilities)",
+    "latitude": 49.252493,
+    "longitude": -123.122225
+  },
+  {
+    "category": "recreation",
+    "name": "MacLean Park",
+    "phone": "",
+    "address": "710 Keefer Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Strathcona (Washrooms, Facilities)",
+    "latitude": 49.278838,
+    "longitude": -123.088396
+  },
+  {
+    "category": "recreation",
+    "name": "Oppenheimer Park",
+    "phone": "",
+    "address": "488 Powell Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Strathcona (Washrooms, Facilities)",
+    "latitude": 49.282645,
+    "longitude": -123.094313
+  },
+  {
+    "category": "recreation",
+    "name": "Strathcona Linear Park",
+    "phone": "",
+    "address": "787 Prior Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Strathcona (Facilities)",
+    "latitude": 49.276983,
+    "longitude": -123.087485
+  },
+  {
+    "category": "recreation",
+    "name": "MacDonald Park",
+    "phone": "",
+    "address": "300 E 44th Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Sunset (Facilities)",
+    "latitude": 49.229748,
+    "longitude": -123.098396
+  },
+  {
+    "category": "recreation",
+    "name": "Sunset Park",
+    "phone": "",
+    "address": "404 E 51st Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Sunset (Facilities)",
+    "latitude": 49.222561,
+    "longitude": -123.096916
+  },
+  {
+    "category": "recreation",
+    "name": "Bobolink Park",
+    "phone": "",
+    "address": "2510 Hoylake Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Victoria-Fraserview (Washrooms, Facilities)",
+    "latitude": 49.215075,
+    "longitude": -123.057615
+  },
+  {
+    "category": "recreation",
+    "name": "English Bay Beach Park",
+    "phone": "",
+    "address": "1700 Beach Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in West End (Washrooms, Facilities)",
+    "latitude": 49.287118,
+    "longitude": -123.143317
+  },
+  {
+    "category": "recreation",
+    "name": "Stanley Park",
+    "phone": "",
+    "address": "2000 W Georgia Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in West End (Washrooms, Facilities)",
+    "latitude": 49.302701,
+    "longitude": -123.144307
+  },
+  {
+    "category": "recreation",
+    "name": "Jericho Beach Park",
+    "phone": "",
+    "address": "3941 Point Grey Road",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in West Point Grey (Washrooms, Facilities)",
+    "latitude": 49.271513,
+    "longitude": -123.197415
+  },
+  {
+    "category": "recreation",
+    "name": "Locarno Park",
+    "phone": "",
+    "address": "4445 NW Marine Drive",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in West Point Grey (Washrooms, Facilities)",
+    "latitude": 49.273015,
+    "longitude": -123.207284
+  },
+  {
+    "category": "recreation",
+    "name": "Aberdeen Park",
+    "phone": "",
+    "address": "3525 Foster Avenue",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Renfrew-Collingwood (Facilities)",
+    "latitude": 49.234765,
+    "longitude": -123.027446
+  },
+  {
+    "category": "recreation",
+    "name": "McAuley Park",
+    "phone": "",
+    "address": "699 Kingsway",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Mount Pleasant",
+    "latitude": 49.256978,
+    "longitude": -123.09
+  },
+  {
+    "category": "recreation",
+    "name": "s??q?lxen?m'ts'exwts'a?xwi7",
+    "phone": "",
+    "address": "860 Richards Street",
+    "city": "Vancouver",
+    "hours": "Dawn to dusk",
+    "languages": [
+      "en"
+    ],
+    "description": "Park in Downtown (Facilities)",
+    "latitude": 49.28477,
+    "longitude": -123.11862
+  },
+  {
+    "category": "emergency_crisis",
+    "name": "VictimLink BC",
+    "phone": "1-800-563-0808",
+    "address": "BC-wide phone support",
+    "city": "Vancouver",
+    "hours": "24/7",
+    "languages": [
+      "en",
+      "fr",
+      "zh",
+      "pa",
+      "es",
+      "ar",
+      "ko",
+      "vi"
+    ],
+    "description": "Confidential multilingual support for victims of violence and abuse."
+  },
+  {
+    "category": "emergency_crisis",
+    "name": "BC Crisis Centre",
+    "phone": "1-800-784-2433",
+    "address": "BC-wide phone support",
+    "city": "Vancouver",
+    "hours": "24/7",
+    "languages": [
+      "en"
+    ],
+    "description": "24-hour crisis and suicide prevention line."
+  },
+  {
+    "category": "emergency_crisis",
+    "name": "Kids Help Phone",
+    "phone": "1-800-668-6868",
+    "address": "Canada-wide phone support",
+    "city": "Vancouver",
+    "hours": "24/7",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "description": "Counselling for children and youth."
+  },
+  {
+    "category": "mental_health",
+    "name": "BC Mental Health Support Line",
+    "phone": "310-6789",
+    "address": "BC-wide phone support",
+    "city": "Vancouver",
+    "hours": "24/7",
+    "languages": [
+      "en"
+    ],
+    "description": "No-cost emotional support. No area code needed."
+  },
+  {
+    "category": "counselling",
+    "name": "Women Against Violence Against Women (WAVAW)",
+    "phone": "604-255-6344",
+    "address": "BC-wide phone support",
+    "city": "Vancouver",
+    "hours": "24/7 crisis line",
+    "languages": [
+      "en"
+    ],
+    "description": "Crisis support for women who have experienced sexualized violence."
+  },
+  {
+    "category": "victim_services",
+    "name": "Battered Women's Support Services",
+    "phone": "604-687-1867",
+    "address": "BC-wide phone support",
+    "city": "Vancouver",
+    "hours": "24/7 crisis line",
+    "languages": [
+      "en"
+    ],
+    "description": "Counselling, advocacy, and practical support for women experiencing violence."
+  },
+  {
+    "category": "indigenous",
+    "name": "Vancouver Aboriginal Friendship Centre",
+    "phone": "604-251-4844",
+    "address": "1607 E Hastings St, Vancouver",
+    "city": "Vancouver",
+    "hours": "Mon-Fri 9am-5pm",
+    "languages": [
+      "en"
+    ],
+    "description": "Culturally safe programs and referrals for Indigenous community members."
+  },
+  {
+    "category": "immigrant_refugee",
+    "name": "MOSAIC",
+    "phone": "604-254-9626",
+    "address": "Multiple locations",
+    "city": "Vancouver",
+    "hours": "Mon-Fri 9am-5pm",
+    "languages": [
+      "en",
+      "zh",
+      "ar",
+      "fa",
+      "ko",
+      "es",
+      "vi",
+      "tl"
+    ],
+    "description": "Settlement, language, and employment services for immigrants and refugees."
+  }
+]

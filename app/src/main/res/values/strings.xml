@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bloom</string>
+
+    <!-- Ambient Garden -->
+    <string name="begin">Begin</string>
+    <string name="moments_of_wellness">%d moments of wellness in our garden</string>
+    <string name="staff">Staff</string>
+
+    <!-- Wellness Wheel -->
+    <string name="how_feeling">How are you feeling?</string>
+    <string name="mind">Mind</string>
+    <string name="body">Body</string>
+    <string name="soul">Soul</string>
+    <string name="connect">Connect</string>
+    <string name="talk_to_bloom">Talk to Bloom</string>
+    <string name="language_label">Language: %s</string>
+    <string name="close">Close</string>
+
+    <!-- Mind activities -->
+    <string name="breathing_title">Breathing with Bloom</string>
+    <string name="breathing_subtitle">2 minutes · Follow the circle</string>
+    <string name="grounding_title">Grounding (5-4-3-2-1)</string>
+    <string name="grounding_subtitle">3 minutes · Come back to now</string>
+    <string name="reframe_title">Reframe a thought</string>
+    <string name="reframe_subtitle">3 minutes · Shift your perspective</string>
+    <string name="release_worry_title">Release a worry</string>
+    <string name="release_worry_subtitle">2 minutes · Let it out</string>
+
+    <!-- Body activities -->
+    <string name="stretch_title">Gentle stretch</string>
+    <string name="stretch_subtitle">3 minutes · No mat needed</string>
+    <string name="tension_title">Tension release</string>
+    <string name="tension_subtitle">3 minutes · Melt stress away</string>
+    <string name="movement_title">Movement snack</string>
+    <string name="movement_subtitle">1 minute · Shake it out</string>
+    <string name="food_title">Find food nearby</string>
+    <string name="food_subtitle">Community food resources</string>
+
+    <!-- Soul activities -->
+    <string name="canvas_title">Digital canvas</string>
+    <string name="canvas_subtitle">Create with color and freedom</string>
+    <string name="gratitude_title">Gratitude moment</string>
+    <string name="gratitude_subtitle">What\'s one thing that was okay today?</string>
+    <string name="affirmation_title">Affirmation</string>
+    <string name="affirmation_subtitle">Culturally thoughtful words</string>
+    <string name="memory_title">Memory spark</string>
+    <string name="memory_subtitle">Reconnect with what makes you smile</string>
+
+    <!-- Connect -->
+    <string name="garden_count">The garden: %d moments of wellness</string>
+    <string name="gratitude_count">Gratitude wall: %d shared notes</string>
+    <string name="connect_coming_soon">Community mood and support finder are next in this build.</string>
+
+    <!-- Staff dashboard -->
+    <string name="staff_dashboard">Staff dashboard</string>
+    <string name="enter_pin">Enter PIN</string>
+    <string name="unlock">Unlock</string>
+    <string name="today_sessions">Today\'s sessions: %d</string>
+    <string name="stats_disclaimer">Aggregate stats only. No personal session data is stored.</string>
+
+    <!-- Breathing exercise -->
+    <string name="breathe_in">Breathe in…</string>
+    <string name="breathe_out">Breathe out…</string>
+    <string name="elapsed_seconds">Elapsed: %ds</string>
+    <string name="done">Done</string>
+    <string name="great_job_flower">Great job. You grew a flower.</string>
+
+    <!-- Grounding exercise -->
+    <string name="grounding_see">Name 5 things you can see</string>
+    <string name="grounding_touch">Name 4 things you can touch</string>
+    <string name="grounding_hear">Name 3 things you can hear</string>
+    <string name="grounding_smell">Name 2 things you can smell</string>
+    <string name="grounding_taste">Name 1 thing you can taste</string>
+    <string name="grounding_safe">You are here. You are safe. You are present.</string>
+    <string name="next">Next</string>
+    <string name="complete">Complete</string>
+    <string name="back">Back</string>
+
+    <!-- Integrated shell (haven / sanctuary mockups) -->
+    <string name="your_sanctuary">Your Sanctuary</string>
+    <string name="nav_living_garden">Living Garden</string>
+    <string name="nav_connection_space">Connection Space</string>
+    <string name="nav_resource_hub">Resource Hub</string>
+    <string name="nav_wellness_sanctuary">Wellness Sanctuary</string>
+    <string name="layout_view_mode">View</string>
+    <string name="layout_phone">Phone</string>
+    <string name="layout_tablet">Tablet</string>
+    <string name="back_to_welcome">Back to welcome</string>
+    <string name="anonymous_profile">Anonymous profile</string>
+    <string name="resident">Resident</string>
+
+    <string name="living_garden_title">Living Garden</string>
+    <string name="living_garden_subtitle">A visual representation of our collective journey. Each bloom signifies a shared activity completed by our community today.</string>
+    <string name="growth_progress">Growth progress</string>
+    <string name="total_blooms_today">%1$d total blooms today</string>
+    <string name="blooms_today_subtitle">Each bloom represents a connection made, a moment of rest, or a step toward wellness.</string>
+    <string name="share_your_bloom">Share your bloom</string>
+    <string name="private_sanctuary_title">Private sanctuary</string>
+    <string name="private_sanctuary_desc">Your personal journal and garden continue in the wellness activities.</string>
+    <string name="legend_mind">Mind</string>
+    <string name="legend_body">Body</string>
+    <string name="legend_soul">Soul</string>
+
+    <string name="collective_energy">Collective energy</string>
+    <string name="shared_breath_title">A shared breath</string>
+    <string name="community_mood_line">Today, our community feels %1$s. You are not alone in this space.</string>
+    <string name="mood_resilient">resilient</string>
+    <string name="connection_note_1">The way the light hits the courtyard at 4 PM reminded me that things can be beautiful even in transition.</string>
+    <string name="connection_note_2">Taking it one small step at a time today. I managed to finish a book for the first time in months.</string>
+    <string name="connection_note_3">Grateful for a quiet morning and hot tea. Small things count.</string>
+    <string name="hours_ago">%1$dh ago</string>
+    <string name="add_kind_response">Add a kind response</string>
+    <string name="neighbors_responded">%1$d neighbors responded</string>
+
+    <string name="resource_hub_title">Resource Hub</string>
+    <string name="resource_hub_tagline">Directory of care</string>
+    <string name="resource_hub_intro">Access local support systems and essential services curated for your safety and growth.</string>
+    <string name="search_resources">Search resources</string>
+    <string name="exhale_safe">Exhale… You are safe here.</string>
+    <string name="housing_legal">Housing &amp; legal</string>
+    <string name="housing_legal_desc">Emergency shelter placement, tenant rights, and legal support information.</string>
+    <string name="call">Call</string>
+    <string name="call_bc211">Call BC211</string>
+    <string name="view_shelter_listings">View shelter listings</string>
+    <string name="safety_services">Safety services</string>
+    <string name="safety_services_desc">24/7 confidential crisis lines and trauma-informed support.</string>
+    <string name="immediate_help">Immediate help</string>
+    <string name="food_essentials">Food &amp; essentials</string>
+    <string name="food_essentials_desc">Food banks, programs, and essentials near you.</string>
+    <string name="find_nearby_food">Find nearby food</string>
+    <string name="mental_health_resources">Mental health</string>
+    <string name="mental_health_resources_desc">Counselling, peer support, and wellness resources.</string>
+    <string name="employment_resources">Employment</string>
+    <string name="employment_resources_desc">Workshops, placement, and skills support.</string>
+    <string name="browse_filtered">Browse list</string>
+    <string name="map_locations_hint">Service listings below reflect your search.</string>
+    <string name="safe_exit">Safe exit</string>
+    <string name="emergency_available">Emergency available</string>
+
+    <string name="wellness_sanctuary_title">Wellness Sanctuary</string>
+    <string name="wellness_sanctuary_intro">A curated space for restoration. Choose a pillar of practice to begin.</string>
+    <string name="pillar_mind_desc">Cultivate mental clarity through guided exercises and reflection.</string>
+    <string name="pillar_body_desc">Nourish your physical self with movement and breath.</string>
+    <string name="pillar_soul_desc">Connect through creativity, gratitude, and affirmations.</string>
+    <string name="start_pillar">Start</string>
+    <string name="symmetric_workspace">Trauma-informed workspace</string>
+</resources>

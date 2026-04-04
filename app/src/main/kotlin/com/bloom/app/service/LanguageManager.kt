@@ -34,6 +34,7 @@ class LanguageManager(private val context: Context) {
             "yue", "zh-tw", "zh-hant" -> Locale.TRADITIONAL_CHINESE
             "pa" -> Locale("pa", "IN")
             "tl" -> Locale("tl", "PH")
+            "ja" -> Locale.JAPANESE
             "ko" -> Locale.KOREAN
             "fa" -> Locale("fa", "IR")
             "ar" -> Locale("ar")
@@ -52,6 +53,7 @@ class LanguageManager(private val context: Context) {
             "yue", "zh-tw", "zh-hant" -> "粵語"
             "pa" -> "ਪੰਜਾਬੀ"
             "tl" -> "Filipino"
+            "ja" -> "日本語"
             "ko" -> "한국어"
             "fa" -> "فارسی"
             "ar" -> "عربي"
@@ -70,6 +72,7 @@ class LanguageManager(private val context: Context) {
             "yue", "zh-tw", "zh-hant" -> "Cantonese (廣東話)"
             "pa" -> "Punjabi (ਪੰਜਾਬੀ)"
             "tl" -> "Tagalog / Filipino"
+            "ja" -> "Japanese (日本語)"
             "ko" -> "Korean (한국어)"
             "fa" -> "Farsi / Persian (فارسی)"
             "ar" -> "Arabic (عربي)"
@@ -85,8 +88,12 @@ class LanguageManager(private val context: Context) {
         return code in listOf("ar", "fa", "he", "ur")
     }
 
+    fun isCJK(code: String = _currentLanguage.value): Boolean {
+        return code in listOf("zh", "yue", "ja", "ko")
+    }
+
     val supportedLanguages = listOf(
-        "en", "zh", "yue", "pa", "tl", "ko", "fa", "ar", "es", "vi", "hi", "fr"
+        "en", "zh", "yue", "pa", "tl", "ja", "ko", "fa", "ar", "es", "vi", "hi", "fr"
     )
 
     private fun normalizeLanguageCode(code: String): String {
@@ -95,6 +102,7 @@ class LanguageManager(private val context: Context) {
             "yue", "zh-tw", "zh-hant", "zh-yue" -> "yue"
             "pa", "pun" -> "pa"
             "tl", "fil" -> "tl"
+            "ja", "jpn" -> "ja"
             "ko" -> "ko"
             "fa", "per" -> "fa"
             "ar" -> "ar"

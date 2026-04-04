@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bloom</string>
+
+    <!-- Ambient Garden -->
+    <string name="begin">시작하기</string>
+    <string name="moments_of_wellness">우리 정원의 웰니스 순간 %d개</string>
+    <string name="staff">직원</string>
+
+    <!-- Wellness Wheel -->
+    <string name="how_feeling">오늘 기분이 어떠세요?</string>
+    <string name="mind">마음</string>
+    <string name="body">몸</string>
+    <string name="soul">영혼</string>
+    <string name="connect">연결</string>
+    <string name="talk_to_bloom">Bloom과 대화하기</string>
+    <string name="language_label">언어: %s</string>
+    <string name="close">닫기</string>
+
+    <!-- Mind activities -->
+    <string name="breathing_title">Bloom과 함께 호흡하기</string>
+    <string name="breathing_subtitle">2분 · 원을 따라가세요</string>
+    <string name="grounding_title">그라운딩 (5-4-3-2-1)</string>
+    <string name="grounding_subtitle">3분 · 지금 여기로 돌아오기</string>
+    <string name="reframe_title">생각 바꾸기</string>
+    <string name="reframe_subtitle">3분 · 관점을 바꿔보세요</string>
+    <string name="release_worry_title">걱정 내려놓기</string>
+    <string name="release_worry_subtitle">2분 · 마음을 비워보세요</string>
+
+    <!-- Body activities -->
+    <string name="stretch_title">부드러운 스트레칭</string>
+    <string name="stretch_subtitle">3분 · 매트 불필요</string>
+    <string name="tension_title">긴장 풀기</string>
+    <string name="tension_subtitle">3분 · 스트레스를 녹여요</string>
+    <string name="movement_title">짧은 운동</string>
+    <string name="movement_subtitle">1분 · 몸을 흔들어요</string>
+    <string name="food_title">근처 음식 찾기</string>
+    <string name="food_subtitle">지역사회 식품 자원</string>
+
+    <!-- Soul activities -->
+    <string name="canvas_title">디지털 캔버스</string>
+    <string name="canvas_subtitle">색과 자유로 창작하세요</string>
+    <string name="gratitude_title">감사의 순간</string>
+    <string name="gratitude_subtitle">오늘 괜찮았던 일이 있나요?</string>
+    <string name="affirmation_title">긍정 확언</string>
+    <string name="affirmation_subtitle">문화적으로 배려하는 따뜻한 말</string>
+    <string name="memory_title">기억의 불꽃</string>
+    <string name="memory_subtitle">미소 짓게 하는 것을 떠올려보세요</string>
+
+    <!-- Connect -->
+    <string name="garden_count">정원: 웰니스 순간 %d개</string>
+    <string name="gratitude_count">감사 벽: 공유 메모 %d개</string>
+    <string name="connect_coming_soon">커뮤니티 기분 및 지원 찾기 기능이 곧 추가됩니다.</string>
+
+    <!-- Staff dashboard -->
+    <string name="staff_dashboard">직원 대시보드</string>
+    <string name="enter_pin">PIN 입력</string>
+    <string name="unlock">잠금 해제</string>
+    <string name="today_sessions">오늘 세션 수: %d</string>
+    <string name="stats_disclaimer">집계 통계만 표시됩니다. 개인 데이터는 저장되지 않습니다.</string>
+
+    <!-- Breathing exercise -->
+    <string name="breathe_in">숨을 들이쉬세요…</string>
+    <string name="breathe_out">숨을 내쉬세요…</string>
+    <string name="elapsed_seconds">경과: %d초</string>
+    <string name="done">완료</string>
+    <string name="great_job_flower">잘했어요. 꽃이 피었어요.</string>
+
+    <!-- Grounding exercise -->
+    <string name="grounding_see">보이는 것 5가지를 말해보세요</string>
+    <string name="grounding_touch">만질 수 있는 것 4가지를 말해보세요</string>
+    <string name="grounding_hear">들리는 것 3가지를 말해보세요</string>
+    <string name="grounding_smell">냄새 맡을 수 있는 것 2가지를 말해보세요</string>
+    <string name="grounding_taste">맛볼 수 있는 것 1가지를 말해보세요</string>
+    <string name="grounding_safe">당신은 여기 있어요. 안전해요. 지금 이 순간에 있어요.</string>
+    <string name="next">다음</string>
+    <string name="complete">완료</string>
+    <string name="back">뒤로</string>
+</resources>
