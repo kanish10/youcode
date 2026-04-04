@@ -1,0 +1,13 @@
+## Copy this file to local.properties and fill in your API keys
+## local.properties is gitignored — never commit your real keys
+
+# Groq API key — handles both STT (Whisper) and LLM (Llama 3.3 70B)
+# Get yours free at https://console.groq.com
+GROQ_API_KEY=gsk_your_key_here
+
+# Gemini API key — optional fallback if Groq rate-limits
+# Get yours free at https://aistudio.google.com
+GEMINI_API_KEY=AIza_your_key_here_optional
+
+# SDK location (set by Android Studio automatically)
+sdk.dir=/home/username/Android/Sdk
