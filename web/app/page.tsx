@@ -16,7 +16,7 @@ export default function LoginPage() {
     setLoading(true);
     setError("");
     const supabase = createClient();
-    const { error: err } = await supabase.auth.signInWithPassword({ email, password });
+    const { data: signInData, error: err } = await supabase.auth.signInWithPassword({ email, password });
     if (err) {
       setError(err.message);
       setLoading(false);
@@ -25,6 +25,7 @@ export default function LoginPage() {
     const { data: profile } = await supabase
       .from("profiles")
       .select("role")
+      .eq("id", signInData.user.id)
       .single();
     if (profile?.role !== "staff" && profile?.role !== "admin") {
       setError("Access restricted to staff accounts.");
