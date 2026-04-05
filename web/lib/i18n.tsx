@@ -69,7 +69,11 @@ export type TKey =
   | "resources.catSafety" | "resources.catCounselling" | "resources.catEmployment"
   | "resources.allCategories" | "resources.openInMaps" | "resources.callNow"
   | "resources.directions" | "resources.address" | "resources.phone"
-  | "resources.hours" | "resources.languages";
+  | "resources.hours" | "resources.languages"
+  | "sidebar.livingGarden" | "sidebar.activityLogs" | "sidebar.residents"
+  | "sidebar.resourceHub" | "sidebar.shelterMap" | "sidebar.shelterTablet"
+  | "sidebar.staffDashboard" | "sidebar.language" | "sidebar.signOut"
+  | "sidebar.chooseLang";
 
 type TranslationMap = Record<TKey, string>;
 
@@ -163,6 +167,11 @@ const en: TranslationMap = {
   "resources.callNow": "Call Now", "resources.directions": "Get Directions",
   "resources.address": "Address", "resources.phone": "Phone",
   "resources.hours": "Hours", "resources.languages": "Languages",
+  "sidebar.livingGarden": "Living Garden", "sidebar.activityLogs": "Activity Logs",
+  "sidebar.residents": "Residents", "sidebar.resourceHub": "Resource Hub",
+  "sidebar.shelterMap": "Shelter Map", "sidebar.shelterTablet": "Shelter tablet",
+  "sidebar.staffDashboard": "Staff dashboard", "sidebar.language": "Language",
+  "sidebar.signOut": "Sign out", "sidebar.chooseLang": "Choose language",
 };
 
 const fr: Partial<TranslationMap> = {
@@ -605,6 +614,12 @@ const zh: TranslationMap = {
   "common.or": "或", "common.gentle": "温和",
   "common.moderate": "中等", "common.active": "积极",
   "common.seated": "坐姿", "common.min": "分钟",
+  // Sidebar
+  "sidebar.livingGarden": "生命花园", "sidebar.activityLogs": "活动日志",
+  "sidebar.residents": "居民", "sidebar.resourceHub": "资源中心",
+  "sidebar.shelterMap": "庇护所地图", "sidebar.shelterTablet": "庇护所平板",
+  "sidebar.staffDashboard": "工作人员仪表板", "sidebar.language": "语言",
+  "sidebar.signOut": "退出登录", "sidebar.chooseLang": "选择语言",
 };
 
 const ja: Partial<TranslationMap> = {

@@ -7,18 +7,18 @@ import { createClient } from "@/lib/supabase";
 import { useLanguage, LANGUAGES } from "@/lib/i18n";
 
 const NAV_ITEMS = [
-  { href: "/dashboard", label: "Living Garden", icon: "local_florist" },
-  { href: "/dashboard/activity-logs", label: "Activity Logs", icon: "timeline" },
-  { href: "/dashboard/residents", label: "Residents", icon: "group" },
-  { href: "/dashboard/resources", label: "Resource Hub", icon: "library_books" },
-  { href: "/dashboard/shelter-map", label: "Shelter Map", icon: "map" },
-  { href: "/tablet", label: "Shelter tablet", icon: "tablet_mac", external: true },
+  { href: "/dashboard", labelKey: "sidebar.livingGarden" as const, icon: "local_florist" },
+  { href: "/dashboard/activity-logs", labelKey: "sidebar.activityLogs" as const, icon: "timeline" },
+  { href: "/dashboard/residents", labelKey: "sidebar.residents" as const, icon: "group" },
+  { href: "/dashboard/resources", labelKey: "sidebar.resourceHub" as const, icon: "library_books" },
+  { href: "/dashboard/shelter-map", labelKey: "sidebar.shelterMap" as const, icon: "map" },
+  { href: "/tablet", labelKey: "sidebar.shelterTablet" as const, icon: "tablet_mac", external: true },
 ];
 
 export default function Sidebar() {
   const pathname = usePathname();
   const router = useRouter();
-  const { lang, setLang } = useLanguage();
+  const { lang, setLang, t } = useLanguage();
   const [showLangPanel, setShowLangPanel] = useState(false);
 
   async function handleLogout() {
@@ -31,7 +31,7 @@ export default function Sidebar() {
     <aside className="flex flex-col h-full w-64 fixed left-0 top-0 bg-surface-container border-r border-outline-variant/15 z-50">
       <div className="px-8 py-10">
         <h1 className="text-xl font-headline text-primary tracking-wide">Bloom</h1>
-        <p className="text-xs text-on-surface-variant uppercase tracking-widest mt-1 font-medium">Staff dashboard</p>
+        <p className="text-xs text-on-surface-variant uppercase tracking-widest mt-1 font-medium">{t("sidebar.staffDashboard")}</p>
       </div>
 
       <nav className="flex-1 px-4 space-y-1">
@@ -48,14 +48,14 @@ export default function Sidebar() {
             return (
               <a key={item.href} href={item.href} target="_blank" rel="noopener noreferrer" className={cls}>
                 <span className="material-symbols-outlined text-xl">{item.icon}</span>
-                <span className="text-sm">{item.label}</span>
+                <span className="text-sm">{t(item.labelKey)}</span>
               </a>
             );
           }
           return (
             <Link key={item.href} href={item.href} className={cls}>
               <span className="material-symbols-outlined text-xl">{item.icon}</span>
-              <span className="text-sm">{item.label}</span>
+              <span className="text-sm">{t(item.labelKey)}</span>
             </Link>
           );
         })}
@@ -67,7 +67,7 @@ export default function Sidebar() {
           className="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-colors w-full px-4 py-2 rounded-lg hover:bg-surface-variant/30"
         >
           <span className="material-symbols-outlined text-xl">translate</span>
-          <span className="text-sm font-medium">Language</span>
+          <span className="text-sm font-medium">{t("sidebar.language")}</span>
           <span className="ml-auto text-xs font-bold uppercase text-primary">{lang}</span>
         </button>
         <button
@@ -75,7 +75,7 @@ export default function Sidebar() {
           className="flex items-center gap-3 text-on-surface-variant hover:text-error transition-colors w-full px-4 py-2 rounded-lg hover:bg-surface-variant/30"
         >
           <span className="material-symbols-outlined text-xl">logout</span>
-          <span className="text-sm font-medium">Sign out</span>
+          <span className="text-sm font-medium">{t("sidebar.signOut")}</span>
         </button>
       </div>
 
@@ -89,7 +89,7 @@ export default function Sidebar() {
             <div className="flex items-center justify-between p-5 border-b border-outline-variant/20">
               <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-primary">translate</span>
-                <h3 className="font-headline text-lg font-semibold text-on-surface">Choose language</h3>
+                <h3 className="font-headline text-lg font-semibold text-on-surface">{t("sidebar.chooseLang")}</h3>
               </div>
               <button onClick={() => setShowLangPanel(false)} className="p-2 rounded-full hover:bg-surface-container">
                 <span className="material-symbols-outlined text-on-surface-variant">close</span>
