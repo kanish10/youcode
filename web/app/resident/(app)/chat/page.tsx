@@ -7,11 +7,16 @@ import { isTextUIPart, DefaultChatTransport, type UIMessage } from "ai";
 
 function useVoiceInput(onResult: (text: string) => void) {
   const [isListening, setIsListening] = useState(false);
+  const [showUnsupported, setShowUnsupported] = useState(false);
   const recognitionRef = useRef<SpeechRecognition | null>(null);
 
   const startListening = useCallback(() => {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    if (!SpeechRecognition) return;
+    if (!SpeechRecognition) {
+      setShowUnsupported(true);
+      setTimeout(() => setShowUnsupported(false), 3500);
+      return;
+    }
 
     const recognition = new SpeechRecognition();
     recognition.continuous = false;
@@ -37,9 +42,7 @@ function useVoiceInput(onResult: (text: string) => void) {
     setIsListening(false);
   }, []);
 
-  const supported = typeof window !== "undefined" && !!(window.SpeechRecognition || window.webkitSpeechRecognition);
-
-  return { isListening, startListening, stopListening, supported };
+  return { isListening, startListening, stopListening, showUnsupported };
 }
 
 export default function ChatPage() {
@@ -51,7 +54,7 @@ export default function ChatPage() {
     setInputValue((prev) => (prev ? prev + " " + text : text));
   }, []);
 
-  const { isListening, startListening, stopListening, supported: voiceSupported } = useVoiceInput(handleVoiceResult);
+  const { isListening, startListening, stopListening, showUnsupported } = useVoiceInput(handleVoiceResult);
 
   const greeting = t("chat.greeting");
   const initialMessages: UIMessage[] = [
@@ -150,28 +153,34 @@ export default function ChatPage() {
         <div ref={bottomRef} />
       </div>
 
+      {/* Unsupported browser toast */}
+      {showUnsupported && (
+        <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 bg-surface-container rounded-xl shadow-lg border border-outline-variant/20 flex items-center gap-2 max-w-xs">
+          <span className="material-symbols-outlined text-on-surface-variant text-lg">mic_off</span>
+          <p className="text-xs text-on-surface-variant">Voice input requires Chrome, Edge, or Safari.</p>
+        </div>
+      )}
+
       {/* Input */}
       <form
         onSubmit={handleSend}
         className="px-4 py-3 border-t border-outline-variant/20 flex gap-2 bg-background shrink-0"
       >
-        {voiceSupported && (
-          <button
-            type="button"
-            onClick={isListening ? stopListening : startListening}
-            disabled={isLoading}
-            className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-all duration-200 ${
-              isListening
-                ? "bg-error text-white animate-pulse"
-                : "bg-surface-container text-on-surface-variant hover:bg-surface-container-high"
-            } disabled:opacity-40`}
-            title={isListening ? t("chat.stopRecording") : t("chat.voice")}
-          >
-            <span className="material-symbols-outlined text-base" style={{ fontVariationSettings: "'FILL' 1" }}>
-              {isListening ? "stop" : "mic"}
-            </span>
-          </button>
-        )}
+        <button
+          type="button"
+          onClick={isListening ? stopListening : startListening}
+          disabled={isLoading}
+          className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-all duration-200 ${
+            isListening
+              ? "bg-error text-white animate-pulse"
+              : "bg-surface-container text-on-surface-variant hover:bg-surface-container-high"
+          } disabled:opacity-40`}
+          title={isListening ? t("chat.stopRecording") : t("chat.voice")}
+        >
+          <span className="material-symbols-outlined text-base" style={{ fontVariationSettings: "'FILL' 1" }}>
+            {isListening ? "stop" : "mic"}
+          </span>
+        </button>
         <input
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}

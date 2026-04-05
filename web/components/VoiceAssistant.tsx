@@ -31,6 +31,7 @@ export default function VoiceAssistant() {
   const [transcript, setTranscript] = useState("");
   const [matchLabel, setMatchLabel] = useState("");
   const [showTooltip, setShowTooltip] = useState(false);
+  const [supported, setSupported] = useState(true);
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const recognitionRef = useRef<AnySpeechRecognition>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -40,7 +41,7 @@ export default function VoiceAssistant() {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
     if (!SR) {
-      setState("unsupported");
+      setSupported(false);
     }
     return () => {
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -60,7 +61,11 @@ export default function VoiceAssistant() {
     if (state !== "idle") return;
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-    if (!SpeechRecognition) return;
+    if (!SpeechRecognition) {
+      setState("unsupported");
+      resetAfterDelay(3500);
+      return;
+    }
 
     const recognition = new SpeechRecognition();
     recognition.lang = document.documentElement.lang || "en-US";
@@ -123,15 +128,13 @@ export default function VoiceAssistant() {
     setMatchLabel("");
   }
 
-  if (state === "unsupported") return null;
-
-  type ActiveState = Exclude<State, "unsupported">;
-  const BG_COLORS: Record<ActiveState, string> = {
+  const BG_COLORS: Record<State, string> = {
     idle: "bg-primary shadow-lg",
     listening: "bg-error shadow-lg shadow-error/30 animate-pulse",
     processing: "bg-secondary shadow-lg",
     result: "bg-primary-container shadow-lg",
     error: "bg-outline shadow-lg",
+    unsupported: "bg-outline shadow-lg",
   };
 
   return (
@@ -169,6 +172,12 @@ export default function VoiceAssistant() {
               <p className="text-sm text-on-surface-variant">Couldn&apos;t hear you. Try again.</p>
             </>
           )}
+          {state === "unsupported" && (
+            <>
+              <span className="material-symbols-outlined text-outline text-xl">mic_off</span>
+              <p className="text-sm text-on-surface-variant">Voice input requires Chrome, Edge, or Safari.</p>
+            </>
+          )}
         </div>
       )}
 
@@ -180,11 +189,11 @@ export default function VoiceAssistant() {
           </div>
         )}
         <button
-          onClick={state === "idle" ? startListening : cancelListening}
+          onClick={state === "idle" || state === "unsupported" ? startListening : cancelListening}
           onMouseEnter={() => setShowTooltip(true)}
           onMouseLeave={() => setShowTooltip(false)}
           aria-label="Voice assistant"
-          className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-200 active:scale-90 ${BG_COLORS[state]}`}
+          className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-200 active:scale-90 ${BG_COLORS[state === "unsupported" ? "idle" : state]}`}
         >
           <span
             className={`material-symbols-outlined text-xl ${

@@ -1,17 +1,27 @@
 import { streamText, convertToModelMessages } from "ai";
 import { createGroq } from "@ai-sdk/groq";
-import { createClient } from "@/lib/supabase";
+import { createClient } from "@supabase/supabase-js";
 
 const groq = createGroq({ apiKey: process.env.GROQ_API_KEY });
 
 export async function POST(req: Request) {
+  if (!process.env.GROQ_API_KEY) {
+    return new Response(JSON.stringify({ error: "GROQ_API_KEY is not configured" }), {
+      status: 500,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
   const { messages, bloomId } = await req.json();
 
   // Fetch resident context if bloomId is available
   let residentContext = "";
-  if (bloomId) {
+  if (bloomId && process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
     try {
-      const supabase = createClient();
+      const supabase = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL,
+        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+      );
       const { data } = await supabase.rpc("get_resident_summary", {
         p_identifier: bloomId,
       });
