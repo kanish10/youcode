@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { createClient, Flower, ActivityLog } from "@/lib/supabase";
 import GardenView from "@/components/garden-view";
 
@@ -21,39 +21,44 @@ export default function DashboardHome() {
   const [recentLogs, setRecentLogs] = useState<ActivityLog[]>([]);
   const [langDist, setLangDist] = useState<Record<string, number>>({});
 
-  useEffect(() => {
+  const load = useCallback(async () => {
     const supabase = createClient();
     const todayStart = new Date();
     todayStart.setHours(0, 0, 0, 0);
 
-    async function load() {
-      const [flowerRes, sessionRes, activityRes, recentRes, anonRes, langRes] = await Promise.all([
-        supabase.from("flowers").select("*").order("created_at", { ascending: false }).limit(200),
-        supabase.from("sessions").select("id").gte("started_at", todayStart.toISOString()),
-        supabase.from("activity_logs").select("user_id").eq("completed", true).gte("created_at", todayStart.toISOString()),
-        supabase.from("activity_logs").select("*, profiles(display_name, unique_code)").eq("completed", true).order("created_at", { ascending: false }).limit(10),
-        supabase.from("kiosk_anonymous_events").select("*").order("created_at", { ascending: false }).limit(500),
-        supabase.from("sessions").select("language").limit(200),
-      ]);
+    const [flowerRes, sessionRes, activityRes, recentRes, anonRes, langRes] = await Promise.all([
+      supabase.from("flowers").select("*").order("created_at", { ascending: false }).limit(200),
+      supabase.from("sessions").select("id").gte("started_at", todayStart.toISOString()),
+      supabase.from("activity_logs").select("user_id").eq("completed", true).gte("created_at", todayStart.toISOString()),
+      supabase.from("activity_logs").select("*, profiles(display_name, unique_code)").eq("completed", true).order("created_at", { ascending: false }).limit(10),
+      supabase.from("kiosk_anonymous_events").select("*").order("created_at", { ascending: false }).limit(500),
+      supabase.from("sessions").select("language").limit(200),
+    ]);
 
-      setFlowers(flowerRes.data ?? []);
-      setAnonEvents((anonRes.data as AnonEvent[]) ?? []);
-      setTodaySessions(sessionRes.data?.length ?? 0);
-      const activities = activityRes.data ?? [];
-      setTodayActivities(activities.length);
-      setUniqueUsers(new Set(activities.map((a: any) => a.user_id)).size);
-      setRecentLogs((recentRes.data as ActivityLog[]) ?? []);
+    setFlowers(flowerRes.data ?? []);
+    setAnonEvents((anonRes.data as AnonEvent[]) ?? []);
+    setTodaySessions(sessionRes.data?.length ?? 0);
+    const activities = activityRes.data ?? [];
+    setTodayActivities(activities.length);
+    setUniqueUsers(new Set(activities.map((a: any) => a.user_id)).size);
+    setRecentLogs((recentRes.data as ActivityLog[]) ?? []);
 
-      const ld: Record<string, number> = {};
-      (langRes.data ?? []).forEach((s: any) => {
-        const l = s.language || "en";
-        ld[l] = (ld[l] || 0) + 1;
-      });
-      setLangDist(ld);
-    }
+    const ld: Record<string, number> = {};
+    (langRes.data ?? []).forEach((s: any) => {
+      const l = s.language || "en";
+      ld[l] = (ld[l] || 0) + 1;
+    });
+    // Merge with presentation baseline so the pie chart always has content
+    const MOCK_LANG: Record<string, number> = { en: 24, pa: 11, zh: 8, ar: 6, tl: 5, es: 4, fa: 3, fr: 2 };
+    const merged: Record<string, number> = { ...MOCK_LANG };
+    Object.entries(ld).forEach(([k, v]) => { merged[k] = (merged[k] || 0) + v; });
+    setLangDist(merged);
+  }, []);
 
+  useEffect(() => {
     load();
 
+    const supabase = createClient();
     const channel = supabase
       .channel("realtime-dashboard")
       .on("postgres_changes", { event: "INSERT", schema: "public", table: "flowers" }, (payload) => {
@@ -72,15 +77,28 @@ export default function DashboardHome() {
       })
       .subscribe();
 
-    return () => { supabase.removeChannel(channel); };
-  }, []);
+    // Re-fetch when user returns to the tab
+    const onFocus = () => load();
+    window.addEventListener("focus", onFocus);
+
+    return () => {
+      supabase.removeChannel(channel);
+      window.removeEventListener("focus", onFocus);
+    };
+  }, [load]);
 
   // Use kiosk_anonymous_events as the single source of truth for bloom counts.
-  // The flowers table is supplementary for linked-user personalization only.
   const totalBlooms = anonEvents.length;
-  const todayBlooms = anonEvents.filter((e) => isToday(e.created_at)).length;
+  const todayEvents = anonEvents.filter((e) => isToday(e.created_at));
+  const todayBlooms = todayEvents.length;
 
-  // Quadrant distribution — from anonymous events (primary universal log)
+  // Today's quadrant counts — used by the garden so flowers grow throughout the day
+  const todayQuadrantCounts = { mind: 0, body: 0, soul: 0, connect: 0 };
+  todayEvents.forEach((e) => {
+    if (e.quadrant in todayQuadrantCounts) todayQuadrantCounts[e.quadrant as keyof typeof todayQuadrantCounts]++;
+  });
+
+  // All-time quadrant distribution — used for analytics
   const quadrantCounts = { mind: 0, body: 0, soul: 0, connect: 0 };
   anonEvents.forEach((e) => {
     if (e.quadrant in quadrantCounts) quadrantCounts[e.quadrant as keyof typeof quadrantCounts]++;
@@ -125,7 +143,7 @@ export default function DashboardHome() {
       </header>
 
       {/* Garden View */}
-      <GardenView totalBlooms={totalBlooms} quadrantCounts={quadrantCounts} />
+      <GardenView totalBlooms={todayBlooms} quadrantCounts={todayQuadrantCounts} />
 
       {/* Bento Analytics Grid */}
       <div className="grid grid-cols-12 gap-6">

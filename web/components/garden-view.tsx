@@ -1,22 +1,28 @@
 "use client";
 
-/* ── Flower cluster definitions matching the design reference ─── */
+/* ── Flower cluster definitions — more icons for finer growth ─── */
 const CLUSTER_ICONS = {
   soul: [
     { icon: "yard", size: "!text-5xl", mb: "mb-2", delay: "0.2s", opacity: "opacity-80" },
     { icon: "filter_vintage", size: "!text-4xl", mb: "mb-6", delay: "1.5s", opacity: "" },
     { icon: "spa", size: "!text-6xl", mb: "mb-1", delay: "0.8s", opacity: "opacity-90" },
+    { icon: "eco", size: "!text-5xl", mb: "mb-4", delay: "1.8s", opacity: "opacity-85" },
+    { icon: "nest_eco_leaf", size: "!text-4xl", mb: "mb-8", delay: "2.4s", opacity: "opacity-75" },
   ],
   mind: [
     { icon: "psychiatry", size: "!text-5xl", mb: "mb-8", delay: "0.5s", opacity: "opacity-90" },
     { icon: "local_florist", size: "!text-7xl", mb: "mb-4", delay: "0s", opacity: "" },
     { icon: "psychology", size: "!text-4xl", mb: "mb-12", delay: "2.1s", opacity: "opacity-80" },
     { icon: "eco", size: "!text-6xl", mb: "mb-2", delay: "1.2s", opacity: "" },
+    { icon: "forest", size: "!text-5xl", mb: "mb-6", delay: "1.7s", opacity: "opacity-85" },
+    { icon: "filter_vintage", size: "!text-4xl", mb: "mb-10", delay: "2.5s", opacity: "opacity-75" },
   ],
   body: [
     { icon: "nature", size: "!text-4xl", mb: "mb-4", delay: "0.3s", opacity: "opacity-90" },
     { icon: "self_improvement", size: "!text-6xl", mb: "mb-2", delay: "1.8s", opacity: "" },
     { icon: "water_drop", size: "!text-5xl", mb: "mb-6", delay: "0.9s", opacity: "opacity-80" },
+    { icon: "grass", size: "!text-5xl", mb: "mb-3", delay: "1.4s", opacity: "opacity-85" },
+    { icon: "potted_plant", size: "!text-4xl", mb: "mb-8", delay: "2.2s", opacity: "opacity-75" },
   ],
 };
 
@@ -26,9 +32,11 @@ type QuadrantCounts = { mind: number; body: number; soul: number; connect: numbe
 function visibleIcons(quadrant: "mind" | "body" | "soul", count: number): number {
   const max = CLUSTER_ICONS[quadrant].length;
   if (count === 0) return 0;
-  if (count <= 2) return 1;
-  if (count <= 5) return Math.min(2, max);
-  if (count <= 10) return Math.min(3, max);
+  if (count <= 1) return 1;
+  if (count <= 3) return Math.min(2, max);
+  if (count <= 6) return Math.min(3, max);
+  if (count <= 10) return Math.min(4, max);
+  if (count <= 15) return Math.min(5, max);
   return max;
 }
 

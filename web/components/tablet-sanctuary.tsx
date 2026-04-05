@@ -27,6 +27,7 @@ import { useLanguage, LANGUAGES } from "@/lib/i18n";
 import PantryToPlate from "@/components/features/PantryToPlate";
 import ThreadsOfHome from "@/components/features/ThreadsOfHome";
 import KidsCorner from "@/components/features/KidsCorner";
+import TabletResources from "@/components/tablet-resources";
 
 type Step =
   | "welcome"
@@ -41,6 +42,7 @@ type Step =
   | "pantry"
   | "threads"
   | "kids"
+  | "resources"
   | "message";
 
 type CompletionNotice = {
@@ -339,6 +341,7 @@ export default function TabletSanctuary() {
     pantry: "Pantry to Plate",
     threads: "Threads of Home",
     kids: "Kids Corner",
+    resources: "Resource Hub",
     message: "Saved moment",
   }[step];
 
@@ -439,6 +442,7 @@ export default function TabletSanctuary() {
             onOpenPantry={() => setStep("pantry")}
             onOpenThreads={() => setStep("threads")}
             onOpenKids={() => setStep("kids")}
+            onOpenResources={() => setStep("resources")}
           />
         )}
 
@@ -514,6 +518,12 @@ export default function TabletSanctuary() {
         {step === "kids" && (
           <div className="rounded-[2rem] border border-outline-variant/20 bg-white/80 p-4 shadow-[0_20px_70px_rgba(82,105,94,0.08)] md:p-8">
             <KidsCorner />
+          </div>
+        )}
+
+        {step === "resources" && (
+          <div className="rounded-[2rem] border border-outline-variant/20 bg-white/80 p-4 shadow-[0_20px_70px_rgba(82,105,94,0.08)] md:p-8">
+            <TabletResources />
           </div>
         )}
 
@@ -656,6 +666,7 @@ function HomeStep({
   onOpenPantry,
   onOpenThreads,
   onOpenKids,
+  onOpenResources,
 }: {
   identifier: string;
   onOpenMind: () => void;
@@ -665,6 +676,7 @@ function HomeStep({
   onOpenPantry: () => void;
   onOpenThreads: () => void;
   onOpenKids: () => void;
+  onOpenResources: () => void;
 }) {
   return (
     <div className="space-y-8">
@@ -750,11 +762,20 @@ function HomeStep({
               More from Bloom
             </p>
             <h2 className="mt-1 font-headline text-3xl text-on-surface">
-              Nourishment, home, and little ones
+              Resources, nourishment, home, and little ones
             </h2>
           </div>
         </div>
-        <div className="grid gap-5 md:grid-cols-3">
+        <div className="grid gap-5 xl:grid-cols-4 md:grid-cols-2">
+          <SanctuaryCard
+            icon="library_books"
+            eyebrow="Support"
+            title="Resource Hub"
+            description="Find shelters, food banks, counselling, safety services, and employment help near you."
+            accent="primary"
+            cta="Browse resources"
+            onClick={onOpenResources}
+          />
           <SanctuaryCard
             icon="restaurant_menu"
             eyebrow="Pantry"

@@ -10,7 +10,6 @@ const NAV_ITEMS = [
   { href: "/dashboard", labelKey: "sidebar.livingGarden" as const, icon: "local_florist" },
   { href: "/dashboard/activity-logs", labelKey: "sidebar.activityLogs" as const, icon: "timeline" },
   { href: "/dashboard/residents", labelKey: "sidebar.residents" as const, icon: "group" },
-  { href: "/dashboard/resources", labelKey: "sidebar.resourceHub" as const, icon: "library_books" },
   { href: "/dashboard/shelter-map", labelKey: "sidebar.shelterMap" as const, icon: "map" },
   { href: "/tablet", labelKey: "sidebar.shelterTablet" as const, icon: "tablet_mac", external: true },
 ];
