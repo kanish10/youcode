@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useLanguage } from "@/lib/i18n";
 import {
   RESOURCES,
   RESOURCE_CATEGORIES,
@@ -10,61 +11,55 @@ import {
 } from "@/lib/resources";
 import { SHELTER_FALLBACKS } from "@/lib/shelter-fallbacks";
 
-/* ── Category overview cards ── */
+/* ── Category overview cards — using i18n keys ── */
 const CATEGORY_INFO: {
   id: ResourceCategory;
   icon: string;
-  title: string;
-  desc: string;
-  tag: string;
+  titleKey: string;
+  descKey: string;
+  tagKey: string;
   bgClass: string;
   iconBgClass: string;
   tagClass: string;
 }[] = [
   {
-    id: "mental", icon: "psychology", title: "Mental Wellness",
-    desc: "Counselling, peer support groups, and crisis intervention.",
-    tag: "Peer Led",
+    id: "mental", icon: "psychology",
+    titleKey: "resources.catMental", descKey: "resources.mentalDesc", tagKey: "resources.mentalTag",
     bgClass: "bg-tertiary-container/20 border-tertiary/15",
     iconBgClass: "bg-tertiary-container/50 text-tertiary",
     tagClass: "bg-tertiary-container/40 text-tertiary",
   },
   {
-    id: "food", icon: "restaurant", title: "Food Security",
-    desc: "Community kitchens, food hampers, and seasonal markets.",
-    tag: "Market Today",
+    id: "food", icon: "restaurant",
+    titleKey: "resources.catFood", descKey: "resources.foodDesc", tagKey: "resources.foodTag",
     bgClass: "bg-secondary-container/20 border-secondary/15",
     iconBgClass: "bg-secondary-container/50 text-secondary",
     tagClass: "bg-secondary-container/40 text-secondary",
   },
   {
-    id: "housing", icon: "home_work", title: "Housing & Legal",
-    desc: "Tenant rights, emergency shelter, and legal aid.",
-    tag: `${SHELTER_FALLBACKS.length}+ Shelters`,
+    id: "housing", icon: "home_work",
+    titleKey: "resources.catHousing", descKey: "resources.housingDesc", tagKey: "resources.housingTag",
     bgClass: "bg-primary-container/20 border-primary/15",
     iconBgClass: "bg-primary-container/50 text-primary",
     tagClass: "bg-primary-container/40 text-primary",
   },
   {
-    id: "safety", icon: "security", title: "Safety & Emergency",
-    desc: "Emergency safe spaces, crisis lines, and 24/7 support.",
-    tag: "24h Response",
+    id: "safety", icon: "security",
+    titleKey: "resources.catSafety", descKey: "resources.safetyDesc", tagKey: "resources.safetyTag",
     bgClass: "bg-error-container/15 border-error/10",
     iconBgClass: "bg-error-container/40 text-error",
     tagClass: "bg-error-container/30 text-error",
   },
   {
-    id: "counselling", icon: "support_agent", title: "Counselling",
-    desc: "Trauma-informed counselling, peer support, and outreach.",
-    tag: "Available",
+    id: "counselling", icon: "support_agent",
+    titleKey: "resources.catCounselling", descKey: "resources.mentalDesc", tagKey: "resources.mentalTag",
     bgClass: "bg-tertiary-container/15 border-tertiary/10",
     iconBgClass: "bg-tertiary-container/50 text-tertiary",
     tagClass: "bg-tertiary-container/40 text-tertiary",
   },
   {
-    id: "employment", icon: "work", title: "Employment",
-    desc: "Job training, resume help, skills programs, and placement.",
-    tag: "Available",
+    id: "employment", icon: "work",
+    titleKey: "resources.catEmployment", descKey: "resources.foodDesc", tagKey: "resources.housingTag",
     bgClass: "bg-secondary-container/15 border-secondary/10",
     iconBgClass: "bg-secondary-container/50 text-secondary",
     tagClass: "bg-secondary-container/40 text-secondary",
@@ -72,6 +67,7 @@ const CATEGORY_INFO: {
 ];
 
 export default function ResourcesPage() {
+  const { t } = useLanguage();
   const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState<ResourceCategory | "all">("all");
   const [selectedResource, setSelectedResource] = useState<Resource | null>(null);
@@ -94,11 +90,9 @@ export default function ResourcesPage() {
     <div className="p-8 lg:p-12 max-w-7xl mx-auto space-y-8">
       {/* Header */}
       <header>
-        <span className="text-primary font-bold tracking-widest text-xs uppercase">Directory of care</span>
-        <h2 className="font-headline text-4xl text-on-surface mt-2 font-bold">Resource Hub</h2>
-        <p className="text-on-surface-variant mt-2 max-w-lg">
-          Community resources across mental health, food, housing, safety, counselling, and employment.
-        </p>
+        <span className="text-primary font-bold tracking-widest text-xs uppercase">{t("resources.nearby")}</span>
+        <h2 className="font-headline text-4xl text-on-surface mt-2 font-bold">{t("resources.title")}</h2>
+        <p className="text-on-surface-variant mt-2 max-w-lg">{t("resources.subtitle")}</p>
       </header>
 
       {/* Search + Filter row */}
@@ -108,7 +102,7 @@ export default function ResourcesPage() {
           <input
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search resources…"
+            placeholder={t("resources.searchPlaceholder")}
             className="px-4 py-2.5 pl-10 rounded-xl border border-outline-variant/20 bg-white text-sm w-80 focus:ring-2 focus:ring-primary/20 outline-none"
           />
         </div>
@@ -124,7 +118,7 @@ export default function ResourcesPage() {
               }`}
             >
               <span className="material-symbols-outlined text-sm">{cat.icon}</span>
-              {cat.id === "all" ? "All" : cat.id.charAt(0).toUpperCase() + cat.id.slice(1)}
+              {t(cat.labelKey as any)}
             </button>
           ))}
         </div>
@@ -147,12 +141,12 @@ export default function ResourcesPage() {
                   </span>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="font-headline font-semibold text-on-surface">{cat.title}</h3>
-                  <p className="text-xs text-on-surface-variant leading-relaxed mt-0.5">{cat.desc}</p>
+                  <h3 className="font-headline font-semibold text-on-surface">{t(cat.titleKey as any)}</h3>
+                  <p className="text-xs text-on-surface-variant leading-relaxed mt-0.5">{t(cat.descKey as any)}</p>
                   <p className="text-[10px] text-on-surface-variant mt-1">{count} resources</p>
                 </div>
                 <div className={`px-2.5 py-1 rounded-lg text-[10px] font-bold shrink-0 ${cat.tagClass}`}>
-                  {cat.tag}
+                  {t(cat.tagKey as any)}
                 </div>
               </button>
             );
@@ -164,13 +158,13 @@ export default function ResourcesPage() {
       {activeCategory !== "all" && (
         <div className="flex items-center justify-between">
           <h3 className="font-headline text-xl font-semibold text-on-surface">
-            {CATEGORY_INFO.find((c) => c.id === activeCategory)?.title ?? activeCategory}
+            {t((CATEGORY_INFO.find((c) => c.id === activeCategory)?.titleKey ?? "resources.allCategories") as any)}
           </h3>
           <button
             onClick={() => setActiveCategory("all")}
             className="text-xs text-primary font-medium hover:underline"
           >
-            Show all categories
+            {t("resources.allCategories")}
           </button>
         </div>
       )}
@@ -200,7 +194,7 @@ export default function ResourcesPage() {
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1 flex-wrap">
                     <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${style.tag}`}>
-                      {r.category}
+                      {t(`resources.cat${r.category.charAt(0).toUpperCase() + r.category.slice(1)}` as any)}
                     </span>
                     {r.hours && (
                       <span className="text-[10px] text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">
@@ -253,7 +247,7 @@ export default function ResourcesPage() {
                   className="flex items-center gap-1.5 text-on-surface-variant text-xs hover:text-primary transition-colors"
                 >
                   <span className="material-symbols-outlined text-sm">map</span>
-                  View on Map
+                  {t("resources.viewMap")}
                 </a>
               </div>
             </article>
