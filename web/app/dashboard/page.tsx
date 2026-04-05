@@ -103,14 +103,11 @@ export default function DashboardHome() {
   return (
     <div className="p-8 lg:p-12 max-w-7xl mx-auto space-y-8">
       {/* Header */}
-      <header className="flex items-center justify-between">
-        <div>
-          <h2 className="font-headline text-4xl text-on-surface font-bold">Living Garden</h2>
-          <p className="text-on-surface-variant mt-1">Real-time view of collective wellness</p>
-        </div>
-        <div className="text-right text-sm text-on-surface-variant">
-          <p>{new Date().toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" })}</p>
-        </div>
+      <header className="text-center mb-2">
+        <h2 className="font-headline text-5xl text-on-primary-container mb-4">Living Garden</h2>
+        <p className="text-on-surface-variant max-w-xl mx-auto leading-relaxed">
+          A visual representation of our collective journey. Each bloom signifies a shared activity completed by our community today.
+        </p>
       </header>
 
       {/* Garden View */}
@@ -203,29 +200,65 @@ export default function DashboardHome() {
           </div>
         </div>
 
-        {/* Language Distribution */}
+        {/* Language Distribution — Pie Chart */}
         <div className="col-span-12 md:col-span-4 bg-surface-container-low rounded-2xl p-6 border border-outline-variant/20">
           <p className="text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-4">Language Distribution</p>
-          <div className="space-y-3">
-            {langEntries.length === 0 && <p className="text-sm text-on-surface-variant">No data yet</p>}
-            {langEntries.map(([code, count]) => {
-              const pct = Math.round((count / totalLang) * 100);
-              return (
-                <div key={code} className="flex items-center gap-3">
-                  <span className="text-sm font-medium text-on-surface w-16 truncate">{LANG_NAMES[code] ?? code}</span>
-                  <div className="flex-1 h-4 bg-surface-container rounded-full overflow-hidden">
-                    <div className="h-full bg-tertiary/40 rounded-full" style={{ width: `${pct}%` }} />
+          {langEntries.length === 0 ? (
+            <p className="text-sm text-on-surface-variant">No data yet</p>
+          ) : (
+            <div className="flex flex-col items-center gap-5">
+              {/* Donut chart */}
+              <div className="relative" style={{ width: 140, height: 140 }}>
+                <div
+                  className="w-full h-full rounded-full"
+                  style={{
+                    background: (() => {
+                      const PIE_COLORS = ["#52695e", "#6d6258", "#6b6077", "#b8a88a", "#8FA89B"];
+                      let cur = 0;
+                      const parts = langEntries.map(([, c], i) => {
+                        const pct = (c / totalLang) * 100;
+                        const seg = `${PIE_COLORS[i % PIE_COLORS.length]} ${cur}% ${cur + pct}%`;
+                        cur += pct;
+                        return seg;
+                      });
+                      if (cur < 100) parts.push(`#d4d2cc ${cur}% 100%`);
+                      return `conic-gradient(${parts.join(", ")})`;
+                    })(),
+                  }}
+                />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-[84px] h-[84px] rounded-full bg-surface-container-low flex items-center justify-center">
+                    <div className="text-center">
+                      <p className="text-xl font-bold text-on-surface">{Object.keys(langDist).length}</p>
+                      <p className="text-[9px] text-on-surface-variant uppercase tracking-wider">Languages</p>
+                    </div>
                   </div>
-                  <span className="text-xs text-on-surface-variant w-10 text-right">{pct}%</span>
                 </div>
-              );
-            })}
-          </div>
+              </div>
+              {/* Legend */}
+              <div className="w-full space-y-2">
+                {langEntries.map(([code, count], i) => {
+                  const PIE_COLORS = ["#52695e", "#6d6258", "#6b6077", "#b8a88a", "#8FA89B"];
+                  const pct = Math.round((count / totalLang) * 100);
+                  return (
+                    <div key={code} className="flex items-center gap-2.5">
+                      <span
+                        className="w-3 h-3 rounded-full shrink-0"
+                        style={{ backgroundColor: PIE_COLORS[i % PIE_COLORS.length] }}
+                      />
+                      <span className="text-sm text-on-surface flex-1 truncate">{LANG_NAMES[code] ?? code}</span>
+                      <span className="text-xs text-on-surface-variant font-medium">{pct}%</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Top Activities */}
         <div className="col-span-12 md:col-span-4 bg-surface-container-low rounded-2xl p-6 border border-outline-variant/20">
-          <p className="text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-4">Resource Hub Interests</p>
+          <p className="text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-4">Top Activities This Week</p>
           <div className="space-y-3">
             {topActivities.length === 0 && <p className="text-sm text-on-surface-variant">No data yet</p>}
             {topActivities.map(([name, count], i) => (

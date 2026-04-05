@@ -1924,7 +1924,7 @@ function SanctuaryCard({
     <button
       type="button"
       onClick={onClick}
-      className={`rounded-[1.75rem] border p-6 text-left transition-transform hover:-translate-y-0.5 ${tone.card}`}
+      className={`flex h-full flex-col rounded-[1.75rem] border p-6 text-left transition-transform hover:-translate-y-0.5 ${tone.card}`}
     >
       <div className={`flex h-14 w-14 items-center justify-center rounded-2xl ${tone.icon}`}>
         <span className="material-symbols-outlined text-2xl">{icon}</span>
@@ -1936,7 +1936,7 @@ function SanctuaryCard({
       <p className="mt-3 text-sm leading-relaxed text-on-surface-variant">
         {description}
       </p>
-      <div className="mt-6 flex items-center gap-2 text-sm font-semibold text-primary">
+      <div className="mt-auto flex items-center gap-2 pt-6 text-sm font-semibold text-primary">
         {cta}
         <span className="material-symbols-outlined text-base">arrow_forward</span>
       </div>

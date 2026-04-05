@@ -23,4 +23,7 @@ h1, h2, h3, .font-headline {
     0%, 100% { transform: rotate(-2deg); }
     50% { transform: rotate(2deg); }
   }
+  .flower-mind { color: #52695e; }
+  .flower-body { color: #A89B8F; }
+  .flower-soul { color: #6b6077; }
 }
