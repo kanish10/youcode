@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bloom</string>
+
+    <!-- Bottom Nav -->
+    <string name="nav_garden">Jardín</string>
+    <string name="nav_sanctuary">Santuario</string>
+    <string name="nav_chat">Chat</string>
+    <string name="nav_connect">Conectar</string>
+    <string name="nav_resources">Recursos</string>
+
+    <!-- Ambient Garden -->
+    <string name="begin">Comenzar</string>
+    <string name="moments_of_wellness">%d momentos de bienestar en nuestro jardín</string>
+    <string name="staff">Personal</string>
+
+    <!-- Wellness Wheel -->
+    <string name="how_feeling">¿Cómo te sientes hoy?</string>
+    <string name="mind">Mente</string>
+    <string name="body">Cuerpo</string>
+    <string name="soul">Alma</string>
+    <string name="connect">Conectar</string>
+    <string name="talk_to_bloom">Hablar con Bloom</string>
+    <string name="talk_to_bloom_desc">Tu compañera de bienestar siempre está aquí para escucharte</string>
+    <string name="language_label">Idioma: %s</string>
+    <string name="close">Cerrar</string>
+    <string name="body_subtitle">Elige un movimiento para restaurar tu energía</string>
+    <string name="soul_subtitle">Conecta a través de la creatividad y la reflexión</string>
+
+    <!-- Mind activities -->
+    <string name="breathing_title">Respiración con Bloom</string>
+    <string name="breathing_subtitle">2 minutos · Sigue el círculo</string>
+    <string name="grounding_title">Anclaje (5-4-3-2-1)</string>
+    <string name="grounding_subtitle">3 minutos · Vuelve al presente</string>
+    <string name="reframe_title">Reformular un pensamiento</string>
+    <string name="reframe_subtitle">3 minutos · Cambia tu perspectiva</string>
+    <string name="release_worry_title">Liberar una preocupación</string>
+    <string name="release_worry_subtitle">2 minutos · Déjalo salir</string>
+
+    <!-- Body activities -->
+    <string name="stretch_title">Estiramiento suave</string>
+    <string name="stretch_subtitle">3 minutos · Sin colchoneta</string>
+    <string name="tension_title">Liberar tensión</string>
+    <string name="tension_subtitle">3 minutos · Disuelve el estrés</string>
+    <string name="movement_title">Micro-movimiento</string>
+    <string name="movement_subtitle">1 minuto · Sacúdete</string>
+    <string name="food_title">Encontrar comida cercana</string>
+    <string name="food_subtitle">Recursos alimentarios comunitarios</string>
+
+    <!-- Exercise detail -->
+    <string name="exercise_seated">Sentada</string>
+    <string name="exercise_steps_title">Cómo hacerlo</string>
+    <string name="exercise_complete">Lo completé ✨</string>
+    <string name="exercise_filter_all">Todos</string>
+
+    <!-- Soul activities -->
+    <string name="canvas_title">Lienzo digital</string>
+    <string name="canvas_subtitle">Crea con color y libertad</string>
+    <string name="gratitude_title">Momento de gratitud</string>
+    <string name="gratitude_subtitle">¿Qué estuvo bien hoy?</string>
+    <string name="affirmation_title">Afirmación</string>
+    <string name="affirmation_subtitle">Palabras cálidas y respetuosas</string>
+    <string name="memory_title">Chispa de memoria</string>
+    <string name="memory_subtitle">Reconecta con lo que te hace sonreír</string>
+
+    <!-- Soul Expression -->
+    <string name="soul_expression_title">Expresión del alma</string>
+    <string name="soul_doodle_title">Garabato digital</string>
+    <string name="soul_start_timer">▶ Empezar</string>
+    <string name="soul_undo">Deshacer</string>
+    <string name="soul_clear">Limpiar lienzo</string>
+    <string name="soul_brush_size">Pincel:</string>
+
+    <!-- Connect -->
+    <string name="connect_title">Espacio de conexión</string>
+    <string name="connect_anonymous">Anónimo</string>
+    <string name="connect_subtitle">Comparte lo que hay en tu corazón. No estás sola aquí.</string>
+    <string name="connect_post_whisper">Dejar un susurro</string>
+    <string name="connect_post_title">Compartir un susurro</string>
+    <string name="connect_post_hint">Tus palabras son anónimas. Comparte lo que hay en tu corazón.</string>
+    <string name="connect_post_placeholder">¿Qué te gustaría compartir…</string>
+    <string name="connect_posting">Compartiendo…</string>
+    <string name="connect_share">Compartir</string>
+    <string name="garden_count">Jardín: %d momentos de bienestar</string>
+    <string name="gratitude_count">Muro de gratitud: %d notas compartidas</string>
+
+    <!-- Chat -->
+    <string name="chat_bloom_name">Bloom</string>
+    <string name="chat_bloom_subtitle">Compañera de bienestar · siempre aquí</string>
+    <string name="chat_placeholder">¿Cómo te sientes…</string>
+    <string name="chat_send">Enviar</string>
+    <string name="chat_voice">Entrada de voz</string>
+    <string name="chat_stop_recording">Detener grabación</string>
+    <string name="chat_recording">Escuchando…</string>
+
+    <!-- Resource Hub -->
+    <string name="resource_hub_title">Centro de recursos</string>
+    <string name="resource_hub_tagline">Directorio de atención</string>
+    <string name="resource_hub_intro">Accede a sistemas de apoyo local y servicios esenciales diseñados para tu seguridad y crecimiento.</string>
+    <string name="search_resources">Buscar recursos…</string>
+    <string name="call_bc211">Llamar a BC211 — Apoyo 24/7</string>
+
+    <!-- Staff dashboard -->
+    <string name="staff_dashboard">Panel del personal</string>
+    <string name="enter_pin">Ingresar PIN</string>
+    <string name="unlock">Desbloquear</string>
+    <string name="today_sessions">Sesiones de hoy: %d</string>
+    <string name="stats_disclaimer">Solo estadísticas agregadas. No se almacenan datos personales.</string>
+
+    <!-- Breathing exercise -->
+    <string name="breathe_in">Inhala…</string>
+    <string name="breathe_out">Exhala…</string>
+    <string name="elapsed_seconds">Transcurrido: %ds</string>
+    <string name="done">Listo</string>
+    <string name="great_job_flower">¡Muy bien! Cultivaste una flor.</string>
+
+    <!-- Grounding -->
+    <string name="grounding_see">Nombra 5 cosas que puedas ver</string>
+    <string name="grounding_touch">Nombra 4 cosas que puedas tocar</string>
+    <string name="grounding_hear">Nombra 3 cosas que puedas oír</string>
+    <string name="grounding_smell">Nombra 2 cosas que puedas oler</string>
+    <string name="grounding_taste">Nombra 1 cosa que puedas saborear</string>
+    <string name="grounding_safe">Estás aquí. Estás segura. Estás presente.</string>
+    <string name="next">Siguiente</string>
+    <string name="complete">Completar</string>
+    <string name="back">Volver</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Configuración</string>
+    <string name="settings_language">Idioma</string>
+    <string name="settings_language_desc">Elige tu idioma preferido</string>
+
+    <!-- Pillar buttons -->
+    <string name="pillar_mind_button">Enfocar</string>
+    <string name="pillar_body_button">Vitalizar</string>
+    <string name="pillar_soul_button">Expresar</string>
+    <string name="pillar_mind_desc">Cultiva claridad mental a través de ejercicios guiados y reflexión.</string>
+    <string name="pillar_body_desc">Nutre tu cuerpo con movimiento y respiración.</string>
+    <string name="pillar_soul_desc">Conecta a través de la creatividad, gratitud y afirmaciones.</string>
+
+    <!-- Sanctuary -->
+    <string name="sanctuary_title">Santuario</string>
+    <string name="sanctuary_subtitle">Cultiva tu paisaje interior</string>
+
+    <!-- Garden -->
+    <string name="living_garden_title">Jardín viviente</string>
+    <string name="begin_practice">Comienza tu práctica</string>
+    <string name="garden_subtitle">Cada flor representa una conexión hecha, un momento de descanso o un paso hacia el bienestar.</string>
+</resources>

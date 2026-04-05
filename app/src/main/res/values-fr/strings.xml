@@ -2,6 +2,13 @@
 <resources>
     <string name="app_name">Bloom</string>
 
+    <!-- Bottom Nav -->
+    <string name="nav_garden">Jardin</string>
+    <string name="nav_sanctuary">Sanctuaire</string>
+    <string name="nav_chat">Chat</string>
+    <string name="nav_connect">Connexion</string>
+    <string name="nav_resources">Ressources</string>
+
     <!-- Ambient Garden -->
     <string name="begin">Commencer</string>
     <string name="moments_of_wellness">%d moments de bien-être dans notre jardin</string>
@@ -14,8 +21,11 @@
     <string name="soul">Âme</string>
     <string name="connect">Connexion</string>
     <string name="talk_to_bloom">Parler à Bloom</string>
+    <string name="talk_to_bloom_desc">Votre compagne de bien-être est toujours là pour écouter</string>
     <string name="language_label">Langue : %s</string>
     <string name="close">Fermer</string>
+    <string name="body_subtitle">Choisissez un mouvement pour restaurer votre énergie</string>
+    <string name="soul_subtitle">Connectez-vous par la créativité et la réflexion</string>
 
     <!-- Mind activities -->
     <string name="breathing_title">Respiration avec Bloom</string>
@@ -37,6 +47,12 @@
     <string name="food_title">Trouver de la nourriture à proximité</string>
     <string name="food_subtitle">Ressources alimentaires communautaires</string>
 
+    <!-- Exercise detail -->
+    <string name="exercise_seated">Assise</string>
+    <string name="exercise_steps_title">Comment faire</string>
+    <string name="exercise_complete">J\'ai terminé ✨</string>
+    <string name="exercise_filter_all">Tous</string>
+
     <!-- Soul activities -->
     <string name="canvas_title">Toile numérique</string>
     <string name="canvas_subtitle">Créez avec couleur et liberté</string>
@@ -47,10 +63,43 @@
     <string name="memory_title">Étincelle de mémoire</string>
     <string name="memory_subtitle">Reconnectez-vous avec ce qui vous fait sourire</string>
 
+    <!-- Soul Expression -->
+    <string name="soul_expression_title">Expression de l\'âme</string>
+    <string name="soul_doodle_title">Gribouillage numérique</string>
+    <string name="soul_start_timer">▶ Commencer</string>
+    <string name="soul_undo">Annuler</string>
+    <string name="soul_clear">Effacer la toile</string>
+    <string name="soul_brush_size">Pinceau :</string>
+
     <!-- Connect -->
+    <string name="connect_title">Espace de connexion</string>
+    <string name="connect_anonymous">Anonyme</string>
+    <string name="connect_subtitle">Partagez ce qui est dans votre cœur. Vous n\'êtes pas seule ici.</string>
+    <string name="connect_post_whisper">Laisser un murmure</string>
+    <string name="connect_post_title">Partager un murmure</string>
+    <string name="connect_post_hint">Vos mots sont anonymes. Partagez ce qui est dans votre cœur.</string>
+    <string name="connect_post_placeholder">Que souhaitez-vous partager…</string>
+    <string name="connect_posting">Partage en cours…</string>
+    <string name="connect_share">Partager</string>
     <string name="garden_count">Le jardin : %d moments de bien-être</string>
     <string name="gratitude_count">Mur de gratitude : %d notes partagées</string>
     <string name="connect_coming_soon">L\'humeur communautaire et l\'aide arrivent bientôt.</string>
+
+    <!-- Chat -->
+    <string name="chat_bloom_name">Bloom</string>
+    <string name="chat_bloom_subtitle">Compagne de bien-être · toujours là</string>
+    <string name="chat_placeholder">Comment vous sentez-vous…</string>
+    <string name="chat_send">Envoyer</string>
+    <string name="chat_voice">Saisie vocale</string>
+    <string name="chat_stop_recording">Arrêter l\'enregistrement</string>
+    <string name="chat_recording">Écoute en cours…</string>
+
+    <!-- Resource Hub -->
+    <string name="resource_hub_title">Centre de ressources</string>
+    <string name="resource_hub_tagline">Répertoire de soins</string>
+    <string name="resource_hub_intro">Accédez aux systèmes de soutien locaux et aux services essentiels pour votre sécurité et croissance.</string>
+    <string name="search_resources">Rechercher des ressources…</string>
+    <string name="call_bc211">Appelez le BC211 — Soutien 24h/24</string>
 
     <!-- Staff dashboard -->
     <string name="staff_dashboard">Tableau de bord du personnel</string>
@@ -72,8 +121,30 @@
     <string name="grounding_hear">Nommez 3 choses que vous entendez</string>
     <string name="grounding_smell">Nommez 2 choses que vous sentez</string>
     <string name="grounding_taste">Nommez 1 chose que vous goûtez</string>
-    <string name="grounding_safe">Vous êtes ici. Vous êtes en sécurité. Vous êtes présent.</string>
+    <string name="grounding_safe">Vous êtes ici. Vous êtes en sécurité. Vous êtes présente.</string>
     <string name="next">Suivant</string>
     <string name="complete">Terminé</string>
     <string name="back">Retour</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Paramètres</string>
+    <string name="settings_language">Langue</string>
+    <string name="settings_language_desc">Choisissez votre langue préférée</string>
+
+    <!-- Pillar buttons -->
+    <string name="pillar_mind_button">Concentration</string>
+    <string name="pillar_body_button">Vitalité</string>
+    <string name="pillar_soul_button">Expression</string>
+    <string name="pillar_mind_desc">Cultivez la clarté mentale à travers des exercices guidés et la réflexion.</string>
+    <string name="pillar_body_desc">Nourrissez votre corps avec le mouvement et la respiration.</string>
+    <string name="pillar_soul_desc">Connectez-vous par la créativité, la gratitude et les affirmations.</string>
+
+    <!-- Sanctuary -->
+    <string name="sanctuary_title">Sanctuaire</string>
+    <string name="sanctuary_subtitle">Cultivez votre paysage intérieur</string>
+
+    <!-- Garden -->
+    <string name="living_garden_title">Jardin vivant</string>
+    <string name="begin_practice">Commencez votre pratique</string>
+    <string name="garden_subtitle">Chaque fleur représente une connexion, un moment de repos ou un pas vers le bien-être.</string>
 </resources>

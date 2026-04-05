@@ -1,5 +1,6 @@
 package com.bloom.app.service
 
+import com.bloom.app.data.models.Whisper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.Serializable
@@ -109,6 +110,65 @@ class SupabaseClient(
         } catch (_: Exception) { null }
     }
 
+    suspend fun fetchGratitudeNotes(): List<Whisper> = withContext(Dispatchers.IO) {
+        if (!isConfigured) return@withContext emptyList()
+        try {
+            val req = Request.Builder()
+                .url("$url/rest/v1/gratitude_notes?select=id,content,reaction_count,created_at&order=created_at.desc&limit=30")
+                .get()
+                .addHeader("apikey", key)
+                .addHeader("Authorization", "Bearer ${accessToken ?: key}")
+                .addHeader("Content-Type", "application/json")
+                .build()
+            val resp = http.newCall(req).execute()
+            if (!resp.isSuccessful) return@withContext emptyList()
+            val body = resp.body?.string() ?: return@withContext emptyList()
+            val rows = json.decodeFromString<List<GratitudeNoteRow>>(body)
+            rows.map { row ->
+                Whisper(
+                    id = row.id,
+                    content = row.content,
+                    resonanceCount = row.reaction_count,
+                    timeAgo = formatTimeAgo(row.created_at)
+                )
+            }
+        } catch (_: Exception) { emptyList() }
+    }
+
+    suspend fun postGratitudeNote(content: String): Boolean = withContext(Dispatchers.IO) {
+        if (!isConfigured) return@withContext false
+        val payload = json.encodeToString(GratitudeNotePayload(content = content))
+        post("gratitude_notes", payload)
+    }
+
+    suspend fun reactToGratitudeNote(noteId: String): Boolean = withContext(Dispatchers.IO) {
+        if (!isConfigured || noteId.isBlank()) return@withContext false
+        try {
+            val req = Request.Builder()
+                .url("$url/rest/v1/rpc/increment_reaction")
+                .post("""{"note_id":"$noteId"}""".toRequestBody(jsonMedia))
+                .addHeader("apikey", key)
+                .addHeader("Authorization", "Bearer ${accessToken ?: key}")
+                .addHeader("Content-Type", "application/json")
+                .build()
+            http.newCall(req).execute().isSuccessful
+        } catch (_: Exception) { false }
+    }
+
+    private fun formatTimeAgo(isoDate: String): String {
+        return try {
+            val sdf = java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", java.util.Locale.US)
+            val date = sdf.parse(isoDate.take(19)) ?: return "recently"
+            val diff = System.currentTimeMillis() - date.time
+            when {
+                diff < 60_000 -> "just now"
+                diff < 3_600_000 -> "${diff / 60_000}m ago"
+                diff < 86_400_000 -> "${diff / 3_600_000}h ago"
+                else -> "${diff / 86_400_000}d ago"
+            }
+        } catch (_: Exception) { "recently" }
+    }
+
     private fun post(table: String, jsonBody: String): Boolean {
         val req = Request.Builder()
             .url("$url/rest/v1/$table")
@@ -168,5 +228,12 @@ class SupabaseClient(
         val language: String
     )
     @Serializable data class SessionResponse(val id: String)
+    @Serializable data class GratitudeNoteRow(
+        val id: String,
+        val content: String,
+        val reaction_count: Int = 0,
+        val created_at: String = ""
+    )
+    @Serializable data class GratitudeNotePayload(val content: String)
     data class AuthResult(val success: Boolean, val userId: String? = null, val error: String? = null)
 }

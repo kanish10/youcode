@@ -15,16 +15,44 @@ class LanguageManager(private val context: Context) {
 
     private val ttsService = TTSService(context)
 
+    init {
+        // Restore persisted locale from AppCompat on cold start
+        val currentLocales = AppCompatDelegate.getApplicationLocales()
+        if (!currentLocales.isEmpty) {
+            val locale = currentLocales.get(0)
+            if (locale != null) {
+                val tag = locale.toLanguageTag()
+                val code = when {
+                    tag.startsWith("zh-TW") || tag.startsWith("zh-Hant") -> "yue"
+                    tag.startsWith("zh") -> "zh"
+                    else -> normalizeLanguageCode(tag.substringBefore("-"))
+                }
+                _currentLanguage.value = code
+            }
+        }
+    }
+
     fun updateLanguage(languageCode: String) {
         val normalizedCode = normalizeLanguageCode(languageCode)
         if (normalizedCode == _currentLanguage.value) return
         _currentLanguage.value = normalizedCode
         ttsService.setLanguage(getLocale(normalizedCode))
+        // Apply locale to Android resource system so stringResource() picks it up
+        val localeTag = getLocaleTag(normalizedCode)
+        AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags(localeTag))
     }
 
     fun resetToDefault() {
         _currentLanguage.value = "en"
         ttsService.setLanguage(Locale.ENGLISH)
+        AppCompatDelegate.setApplicationLocales(LocaleListCompat.getEmptyLocaleList())
+    }
+
+    private fun getLocaleTag(code: String): String {
+        return when (code) {
+            "yue" -> "zh-TW"   // Cantonese → Traditional Chinese locale
+            else -> code        // All others map directly (zh, fr, es, ar, etc.)
+        }
     }
 
     fun getLocale(code: String = _currentLanguage.value): Locale {

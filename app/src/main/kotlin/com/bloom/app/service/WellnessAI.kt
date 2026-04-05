@@ -53,7 +53,8 @@ class WellnessAI {
         return """
 ${Constants.BLOOM_SYSTEM_PROMPT}
 
-LANGUAGE: Respond ONLY in $languageName. Do not switch languages.
+LANGUAGE: You MUST respond ONLY in $languageName using its native writing system and characters.
+Never romanize, transliterate, or use Latin alphabet for non-Latin languages.
 If the language is English, respond in simple, clear English.
 
 $additionalContext
@@ -133,6 +134,8 @@ $additionalContext
             getFallbackResponse(language)
         }
     }
+
+    fun getFallback(language: String): String = getFallbackResponse(language)
 
     private fun getFallbackResponse(language: String): String {
         return when (language) {

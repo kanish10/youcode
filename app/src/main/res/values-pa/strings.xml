@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bloom</string>
+
+    <!-- Bottom Nav -->
+    <string name="nav_garden">ਬਗੀਚਾ</string>
+    <string name="nav_sanctuary">ਸ਼ਰਨ</string>
+    <string name="nav_chat">ਗੱਲਬਾਤ</string>
+    <string name="nav_connect">ਜੁੜੋ</string>
+    <string name="nav_resources">ਸਰੋਤ</string>
+
+    <!-- Ambient Garden -->
+    <string name="begin">ਸ਼ੁਰੂ ਕਰੋ</string>
+    <string name="moments_of_wellness">ਸਾਡੇ ਬਗੀਚੇ ਵਿੱਚ %d ਤੰਦਰੁਸਤੀ ਦੇ ਪਲ</string>
+    <string name="staff">ਸਟਾਫ਼</string>
+
+    <!-- Wellness Wheel -->
+    <string name="how_feeling">ਅੱਜ ਤੁਸੀਂ ਕਿਵੇਂ ਮਹਿਸੂਸ ਕਰ ਰਹੀ ਹੋ?</string>
+    <string name="mind">ਮਨ</string>
+    <string name="body">ਸਰੀਰ</string>
+    <string name="soul">ਰੂਹ</string>
+    <string name="connect">ਜੁੜੋ</string>
+    <string name="talk_to_bloom">Bloom ਨਾਲ ਗੱਲ ਕਰੋ</string>
+    <string name="talk_to_bloom_desc">ਤੁਹਾਡੀ ਤੰਦਰੁਸਤੀ ਸਾਥਣ ਹਮੇਸ਼ਾ ਸੁਣਨ ਲਈ ਇੱਥੇ ਹੈ</string>
+    <string name="close">ਬੰਦ ਕਰੋ</string>
+    <string name="body_subtitle">ਆਪਣੀ ਊਰਜਾ ਬਹਾਲ ਕਰਨ ਲਈ ਕੋਈ ਗਤੀਵਿਧੀ ਚੁਣੋ</string>
+    <string name="soul_subtitle">ਸਿਰਜਣਾਤਮਕਤਾ ਅਤੇ ਸੋਚ ਰਾਹੀਂ ਜੁੜੋ</string>
+
+    <!-- Mind activities -->
+    <string name="breathing_title">Bloom ਨਾਲ ਸਾਹ ਲਓ</string>
+    <string name="breathing_subtitle">2 ਮਿੰਟ · ਗੋਲੇ ਦਾ ਅਨੁਸਰਨ ਕਰੋ</string>
+    <string name="grounding_title">ਗਰਾਊਂਡਿੰਗ (5-4-3-2-1)</string>
+    <string name="grounding_subtitle">3 ਮਿੰਟ · ਮੌਜੂਦਾ ਵਿੱਚ ਵਾਪਸ ਆਓ</string>
+
+    <!-- Body activities -->
+    <string name="stretch_title">ਹਲਕੀ ਖਿੱਚ</string>
+    <string name="stretch_subtitle">3 ਮਿੰਟ · ਚਟਾਈ ਦੀ ਲੋੜ ਨਹੀਂ</string>
+    <string name="tension_title">ਤਣਾਅ ਮੁਕਤੀ</string>
+    <string name="tension_subtitle">3 ਮਿੰਟ · ਤਣਾਅ ਪਿਘਲਾਓ</string>
+
+    <!-- Soul activities -->
+    <string name="canvas_title">ਡਿਜੀਟਲ ਕੈਨਵਸ</string>
+    <string name="gratitude_title">ਸ਼ੁਕਰਗੁਜ਼ਾਰੀ ਦਾ ਪਲ</string>
+    <string name="gratitude_subtitle">ਅੱਜ ਕੀ ਠੀਕ ਸੀ?</string>
+    <string name="affirmation_title">ਪੁਸ਼ਟੀ</string>
+    <string name="memory_title">ਯਾਦ ਦੀ ਚਿੰਗਾਰੀ</string>
+
+    <!-- Connect -->
+    <string name="connect_title">ਜੁੜਾਅ ਦੀ ਥਾਂ</string>
+    <string name="connect_subtitle">ਆਪਣੇ ਦਿਲ ਦੀ ਗੱਲ ਸਾਂਝੀ ਕਰੋ। ਤੁਸੀਂ ਇੱਥੇ ਇਕੱਲੀ ਨਹੀਂ ਹੋ।</string>
+    <string name="connect_share">ਸਾਂਝਾ ਕਰੋ</string>
+
+    <!-- Chat -->
+    <string name="chat_bloom_name">Bloom</string>
+    <string name="chat_bloom_subtitle">ਤੰਦਰੁਸਤੀ ਸਾਥਣ · ਹਮੇਸ਼ਾ ਇੱਥੇ</string>
+    <string name="chat_placeholder">ਤੁਸੀਂ ਕਿਵੇਂ ਮਹਿਸੂਸ ਕਰ ਰਹੀ ਹੋ…</string>
+    <string name="chat_send">ਭੇਜੋ</string>
+    <string name="chat_voice">ਅਵਾਜ਼ ਇੰਪੁੱਟ</string>
+    <string name="chat_stop_recording">ਰਿਕਾਰਡਿੰਗ ਰੋਕੋ</string>
+    <string name="chat_recording">ਸੁਣ ਰਿਹਾ ਹੈ…</string>
+
+    <!-- Resource Hub -->
+    <string name="resource_hub_title">ਸਰੋਤ ਕੇਂਦਰ</string>
+    <string name="search_resources">ਸਰੋਤ ਲੱਭੋ…</string>
+
+    <!-- Breathing -->
+    <string name="breathe_in">ਸਾਹ ਅੰਦਰ ਲਓ…</string>
+    <string name="breathe_out">ਸਾਹ ਬਾਹਰ ਕੱਢੋ…</string>
+    <string name="done">ਹੋ ਗਿਆ</string>
+    <string name="great_job_flower">ਬਹੁਤ ਵਧੀਆ। ਤੁਸੀਂ ਇੱਕ ਫੁੱਲ ਉਗਾਇਆ।</string>
+
+    <!-- Grounding -->
+    <string name="grounding_see">5 ਚੀਜ਼ਾਂ ਦੱਸੋ ਜੋ ਤੁਸੀਂ ਦੇਖ ਸਕਦੀ ਹੋ</string>
+    <string name="grounding_touch">4 ਚੀਜ਼ਾਂ ਦੱਸੋ ਜੋ ਤੁਸੀਂ ਛੂਹ ਸਕਦੀ ਹੋ</string>
+    <string name="grounding_hear">3 ਚੀਜ਼ਾਂ ਦੱਸੋ ਜੋ ਤੁਸੀਂ ਸੁਣ ਸਕਦੀ ਹੋ</string>
+    <string name="grounding_smell">2 ਚੀਜ਼ਾਂ ਦੱਸੋ ਜੋ ਤੁਸੀਂ ਸੁੰਘ ਸਕਦੀ ਹੋ</string>
+    <string name="grounding_taste">1 ਚੀਜ਼ ਦੱਸੋ ਜੋ ਤੁਸੀਂ ਚੱਖ ਸਕਦੀ ਹੋ</string>
+    <string name="grounding_safe">ਤੁਸੀਂ ਇੱਥੇ ਹੋ। ਤੁਸੀਂ ਸੁਰੱਖਿਅਤ ਹੋ। ਤੁਸੀਂ ਮੌਜੂਦ ਹੋ।</string>
+    <string name="next">ਅੱਗੇ</string>
+    <string name="complete">ਪੂਰਾ</string>
+    <string name="back">ਪਿੱਛੇ</string>
+
+    <!-- Settings -->
+    <string name="settings_title">ਸੈਟਿੰਗਾਂ</string>
+    <string name="settings_language">ਭਾਸ਼ਾ</string>
+    <string name="settings_language_desc">ਆਪਣੀ ਪਸੰਦੀਦਾ ਭਾਸ਼ਾ ਚੁਣੋ</string>
+
+    <!-- Pillars -->
+    <string name="pillar_mind_button">ਧਿਆਨ</string>
+    <string name="pillar_body_button">ਊਰਜਾ</string>
+    <string name="pillar_soul_button">ਪ੍ਰਗਟਾਵਾ</string>
+    <string name="pillar_mind_desc">ਮਾਰਗਦਰਸ਼ਿਤ ਅਭਿਆਸ ਨਾਲ ਮਾਨਸਿਕ ਸਪੱਸ਼ਟਤਾ ਵਧਾਓ।</string>
+    <string name="pillar_body_desc">ਗਤੀ ਅਤੇ ਸਾਹ ਨਾਲ ਆਪਣੇ ਸਰੀਰ ਦੀ ਦੇਖਭਾਲ ਕਰੋ।</string>
+    <string name="pillar_soul_desc">ਸਿਰਜਣਾਤਮਕਤਾ, ਸ਼ੁਕਰਗੁਜ਼ਾਰੀ ਅਤੇ ਪੁਸ਼ਟੀ ਰਾਹੀਂ ਜੁੜੋ।</string>
+
+    <!-- Sanctuary / Garden -->
+    <string name="sanctuary_title">ਸ਼ਰਨ</string>
+    <string name="sanctuary_subtitle">ਆਪਣੀ ਅੰਦਰਲੀ ਦੁਨੀਆ ਨੂੰ ਸੰਵਾਰੋ</string>
+    <string name="living_garden_title">ਜੀਵਤ ਬਗੀਚਾ</string>
+    <string name="begin_practice">ਆਪਣਾ ਅਭਿਆਸ ਸ਼ੁਰੂ ਕਰੋ</string>
+    <string name="garden_subtitle">ਹਰ ਫੁੱਲ ਇੱਕ ਜੁੜਾਅ, ਆਰਾਮ ਦਾ ਪਲ, ਜਾਂ ਤੰਦਰੁਸਤੀ ਵੱਲ ਇੱਕ ਕਦਮ ਦਰਸਾਉਂਦਾ ਹੈ।</string>
+</resources>

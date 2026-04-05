@@ -2,6 +2,13 @@
 <resources>
     <string name="app_name">Bloom</string>
 
+    <!-- Bottom Nav -->
+    <string name="nav_garden">ガーデン</string>
+    <string name="nav_sanctuary">安らぎ</string>
+    <string name="nav_chat">チャット</string>
+    <string name="nav_connect">つながり</string>
+    <string name="nav_resources">リソース</string>
+
     <!-- Ambient Garden -->
     <string name="begin">はじめる</string>
     <string name="moments_of_wellness">私たちの庭にある %d のウェルネスの瞬間</string>
@@ -14,8 +21,11 @@
     <string name="soul">たましい</string>
     <string name="connect">つながり</string>
     <string name="talk_to_bloom">Bloom と話す</string>
+    <string name="talk_to_bloom_desc">あなたのウェルネスパートナーがいつでもここで聴いています</string>
     <string name="language_label">言語：%s</string>
     <string name="close">閉じる</string>
+    <string name="body_subtitle">エネルギーを回復する動きを選びましょう</string>
+    <string name="soul_subtitle">創造性と内省を通じてつながりましょう</string>
 
     <!-- Mind activities -->
     <string name="breathing_title">Bloom と一緒に呼吸</string>
@@ -37,6 +47,12 @@
     <string name="food_title">近くの食べ物を探す</string>
     <string name="food_subtitle">地域のフードリソース</string>
 
+    <!-- Exercise detail -->
+    <string name="exercise_seated">座位</string>
+    <string name="exercise_steps_title">やり方</string>
+    <string name="exercise_complete">完了しました ✨</string>
+    <string name="exercise_filter_all">すべて</string>
+
     <!-- Soul activities -->
     <string name="canvas_title">デジタルキャンバス</string>
     <string name="canvas_subtitle">色と自由で創作しよう</string>
@@ -47,10 +63,43 @@
     <string name="memory_title">記憶のひらめき</string>
     <string name="memory_subtitle">笑顔になれることを思い出そう</string>
 
+    <!-- Soul Expression -->
+    <string name="soul_expression_title">魂の表現</string>
+    <string name="soul_doodle_title">デジタルお絵かき</string>
+    <string name="soul_start_timer">▶ スタート</string>
+    <string name="soul_undo">元に戻す</string>
+    <string name="soul_clear">キャンバスをクリア</string>
+    <string name="soul_brush_size">ブラシ：</string>
+
     <!-- Connect -->
+    <string name="connect_title">つながりの場</string>
+    <string name="connect_anonymous">匿名</string>
+    <string name="connect_subtitle">心にあることを共有しましょう。あなたはここで一人ではありません。</string>
+    <string name="connect_post_whisper">ささやきを残す</string>
+    <string name="connect_post_title">ささやきを共有</string>
+    <string name="connect_post_hint">あなたの言葉は匿名です。心にあることを共有してください。</string>
+    <string name="connect_post_placeholder">何を共有したいですか…</string>
+    <string name="connect_posting">共有中…</string>
+    <string name="connect_share">共有</string>
     <string name="garden_count">庭：%d のウェルネスの瞬間</string>
     <string name="gratitude_count">感謝の壁：%d の共有メモ</string>
     <string name="connect_coming_soon">コミュニティの気分とサポート機能は近日公開予定です。</string>
+
+    <!-- Chat -->
+    <string name="chat_bloom_name">Bloom</string>
+    <string name="chat_bloom_subtitle">ウェルネスパートナー · いつでもここに</string>
+    <string name="chat_placeholder">今どんな気持ちですか…</string>
+    <string name="chat_send">送信</string>
+    <string name="chat_voice">音声入力</string>
+    <string name="chat_stop_recording">録音停止</string>
+    <string name="chat_recording">聴いています…</string>
+
+    <!-- Resource Hub -->
+    <string name="resource_hub_title">リソースハブ</string>
+    <string name="resource_hub_tagline">ケアディレクトリ</string>
+    <string name="resource_hub_intro">あなたの安全と成長のために厳選された地域のサポートシステムと必須サービスにアクセスしましょう。</string>
+    <string name="search_resources">リソースを検索…</string>
+    <string name="call_bc211">BC211に電話 — 24時間対応</string>
 
     <!-- Staff dashboard -->
     <string name="staff_dashboard">スタッフダッシュボード</string>
@@ -76,4 +125,26 @@
     <string name="next">次へ</string>
     <string name="complete">完了</string>
     <string name="back">戻る</string>
+
+    <!-- Settings -->
+    <string name="settings_title">設定</string>
+    <string name="settings_language">言語</string>
+    <string name="settings_language_desc">お好みの言語を選択</string>
+
+    <!-- Pillar buttons -->
+    <string name="pillar_mind_button">集中</string>
+    <string name="pillar_body_button">活力</string>
+    <string name="pillar_soul_button">表現</string>
+    <string name="pillar_mind_desc">ガイド付きの練習と内省で心の明晰さを育みましょう。</string>
+    <string name="pillar_body_desc">動きと呼吸で体を養いましょう。</string>
+    <string name="pillar_soul_desc">創造性、感謝、アファメーションでつながりましょう。</string>
+
+    <!-- Sanctuary -->
+    <string name="sanctuary_title">安らぎの場</string>
+    <string name="sanctuary_subtitle">内なる世界を育てましょう</string>
+
+    <!-- Garden -->
+    <string name="living_garden_title">いのちの庭</string>
+    <string name="begin_practice">練習を始めましょう</string>
+    <string name="garden_subtitle">それぞれの花は、つながり、やすらぎの瞬間、またはウェルネスへの一歩を表しています。</string>
 </resources>

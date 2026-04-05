@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bloom</string>
+
+    <!-- Bottom Nav -->
+    <string name="nav_garden">बगीचा</string>
+    <string name="nav_sanctuary">अभयारण्य</string>
+    <string name="nav_chat">चैट</string>
+    <string name="nav_connect">जुड़ें</string>
+    <string name="nav_resources">संसाधन</string>
+
+    <!-- Ambient Garden -->
+    <string name="begin">शुरू करें</string>
+    <string name="moments_of_wellness">हमारे बगीचे में %d कल्याण के पल</string>
+    <string name="staff">कर्मचारी</string>
+
+    <!-- Wellness Wheel -->
+    <string name="how_feeling">आज आप कैसा महसूस कर रही हैं?</string>
+    <string name="mind">मन</string>
+    <string name="body">शरीर</string>
+    <string name="soul">आत्मा</string>
+    <string name="connect">जुड़ें</string>
+    <string name="talk_to_bloom">Bloom से बात करें</string>
+    <string name="talk_to_bloom_desc">आपकी कल्याण साथी हमेशा यहाँ सुनने के लिए है</string>
+    <string name="language_label">भाषा: %s</string>
+    <string name="close">बंद करें</string>
+    <string name="body_subtitle">अपनी ऊर्जा बहाल करने के लिए एक गतिविधि चुनें</string>
+    <string name="soul_subtitle">रचनात्मकता और चिंतन के माध्यम से जुड़ें</string>
+
+    <!-- Mind activities -->
+    <string name="breathing_title">Bloom के साथ साँस लें</string>
+    <string name="breathing_subtitle">2 मिनट · गोले का अनुसरण करें</string>
+    <string name="grounding_title">ग्राउंडिंग (5-4-3-2-1)</string>
+    <string name="grounding_subtitle">3 मिनट · वर्तमान में लौटें</string>
+    <string name="reframe_title">सोच बदलें</string>
+    <string name="reframe_subtitle">3 मिनट · दृष्टिकोण बदलें</string>
+    <string name="release_worry_title">चिंता छोड़ें</string>
+    <string name="release_worry_subtitle">2 मिनट · बाहर निकलने दें</string>
+
+    <!-- Body activities -->
+    <string name="stretch_title">हल्की स्ट्रेचिंग</string>
+    <string name="stretch_subtitle">3 मिनट · चटाई की ज़रूरत नहीं</string>
+    <string name="tension_title">तनाव मुक्ति</string>
+    <string name="tension_subtitle">3 मिनट · तनाव पिघलाएँ</string>
+    <string name="movement_title">छोटी गतिविधि</string>
+    <string name="movement_subtitle">1 मिनट · हिलें-डुलें</string>
+    <string name="food_title">पास में भोजन खोजें</string>
+    <string name="food_subtitle">सामुदायिक खाद्य संसाधन</string>
+
+    <!-- Soul activities -->
+    <string name="canvas_title">डिजिटल कैनवास</string>
+    <string name="canvas_subtitle">रंग और स्वतंत्रता के साथ बनाएँ</string>
+    <string name="gratitude_title">कृतज्ञता का पल</string>
+    <string name="gratitude_subtitle">आज क्या अच्छा रहा?</string>
+    <string name="affirmation_title">प्रतिज्ञान</string>
+    <string name="affirmation_subtitle">सांस्कृतिक रूप से विचारशील शब्द</string>
+    <string name="memory_title">स्मृति चिंगारी</string>
+    <string name="memory_subtitle">वो याद करें जो आपको मुस्कुराए</string>
+
+    <!-- Connect -->
+    <string name="connect_title">संपर्क स्थान</string>
+    <string name="connect_subtitle">अपने दिल की बात साझा करें। आप यहाँ अकेली नहीं हैं।</string>
+    <string name="connect_post_placeholder">आप क्या साझा करना चाहेंगी…</string>
+    <string name="connect_share">साझा करें</string>
+    <string name="garden_count">बगीचा: %d कल्याण के पल</string>
+    <string name="gratitude_count">कृतज्ञता दीवार: %d साझा नोट</string>
+
+    <!-- Chat -->
+    <string name="chat_bloom_name">Bloom</string>
+    <string name="chat_bloom_subtitle">कल्याण साथी · हमेशा यहाँ</string>
+    <string name="chat_placeholder">आप कैसा महसूस कर रही हैं…</string>
+    <string name="chat_send">भेजें</string>
+    <string name="chat_voice">आवाज़ इनपुट</string>
+    <string name="chat_stop_recording">रिकॉर्डिंग रोकें</string>
+    <string name="chat_recording">सुन रहा है…</string>
+
+    <!-- Resource Hub -->
+    <string name="resource_hub_title">संसाधन केंद्र</string>
+    <string name="resource_hub_tagline">देखभाल निर्देशिका</string>
+    <string name="search_resources">संसाधन खोजें…</string>
+    <string name="call_bc211">BC211 पर कॉल करें — 24/7 सहायता</string>
+
+    <!-- Staff -->
+    <string name="staff_dashboard">कर्मचारी पैनल</string>
+    <string name="enter_pin">PIN दर्ज करें</string>
+    <string name="unlock">अनलॉक</string>
+    <string name="today_sessions">आज के सत्र: %d</string>
+
+    <!-- Breathing -->
+    <string name="breathe_in">साँस अंदर लें…</string>
+    <string name="breathe_out">साँस बाहर छोड़ें…</string>
+    <string name="done">पूरा हुआ</string>
+    <string name="great_job_flower">बहुत अच्छा। आपने एक फूल उगाया।</string>
+
+    <!-- Grounding -->
+    <string name="grounding_see">5 चीज़ें बताएँ जो आप देख सकती हैं</string>
+    <string name="grounding_touch">4 चीज़ें बताएँ जिन्हें छू सकती हैं</string>
+    <string name="grounding_hear">3 चीज़ें बताएँ जो सुन सकती हैं</string>
+    <string name="grounding_smell">2 चीज़ें बताएँ जो सूँघ सकती हैं</string>
+    <string name="grounding_taste">1 चीज़ बताएँ जो चख सकती हैं</string>
+    <string name="grounding_safe">आप यहाँ हैं। आप सुरक्षित हैं। आप वर्तमान में हैं।</string>
+    <string name="next">अगला</string>
+    <string name="complete">पूर्ण</string>
+    <string name="back">वापस</string>
+
+    <!-- Settings -->
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="settings_language">भाषा</string>
+    <string name="settings_language_desc">अपनी पसंदीदा भाषा चुनें</string>
+
+    <!-- Pillars -->
+    <string name="pillar_mind_button">ध्यान</string>
+    <string name="pillar_body_button">ऊर्जा</string>
+    <string name="pillar_soul_button">अभिव्यक्ति</string>
+    <string name="pillar_mind_desc">निर्देशित अभ्यास और चिंतन से मानसिक स्पष्टता बढ़ाएँ।</string>
+    <string name="pillar_body_desc">गति और साँस से अपने शरीर को पोषित करें।</string>
+    <string name="pillar_soul_desc">रचनात्मकता, कृतज्ञता और प्रतिज्ञान से जुड़ें।</string>
+
+    <!-- Sanctuary -->
+    <string name="sanctuary_title">अभयारण्य</string>
+    <string name="sanctuary_subtitle">अपनी आंतरिक दुनिया को संवारें</string>
+
+    <!-- Garden -->
+    <string name="living_garden_title">जीवित बगीचा</string>
+    <string name="begin_practice">अपना अभ्यास शुरू करें</string>
+    <string name="garden_subtitle">हर फूल एक जुड़ाव, विश्राम का पल, या कल्याण की ओर एक कदम दर्शाता है।</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bloom</string>
+
+    <!-- Bottom Nav -->
+    <string name="nav_garden">باغ</string>
+    <string name="nav_sanctuary">پناهگاه</string>
+    <string name="nav_chat">گفتگو</string>
+    <string name="nav_connect">ارتباط</string>
+    <string name="nav_resources">منابع</string>
+
+    <!-- Ambient Garden -->
+    <string name="begin">شروع</string>
+    <string name="moments_of_wellness">%d لحظه سلامتی در باغ ما</string>
+    <string name="staff">کارکنان</string>
+
+    <!-- Wellness Wheel -->
+    <string name="how_feeling">امروز چه احساسی دارید؟</string>
+    <string name="mind">ذهن</string>
+    <string name="body">بدن</string>
+    <string name="soul">روح</string>
+    <string name="connect">ارتباط</string>
+    <string name="talk_to_bloom">با Bloom صحبت کنید</string>
+    <string name="talk_to_bloom_desc">همراه سلامتی شما همیشه اینجاست تا گوش دهد</string>
+    <string name="close">بستن</string>
+    <string name="body_subtitle">یک حرکت برای بازیابی انرژی خود انتخاب کنید</string>
+    <string name="soul_subtitle">از طریق خلاقیت و تأمل ارتباط برقرار کنید</string>
+
+    <!-- Mind activities -->
+    <string name="breathing_title">تنفس با Bloom</string>
+    <string name="breathing_subtitle">۲ دقیقه · دایره را دنبال کنید</string>
+    <string name="grounding_title">زمین‌یابی (۵-۴-۳-۲-۱)</string>
+    <string name="grounding_subtitle">۳ دقیقه · به لحظه حال برگردید</string>
+
+    <!-- Body activities -->
+    <string name="stretch_title">کشش ملایم</string>
+    <string name="stretch_subtitle">۳ دقیقه · بدون نیاز به تشک</string>
+    <string name="tension_title">رها کردن تنش</string>
+    <string name="tension_subtitle">۳ دقیقه · استرس را آب کنید</string>
+
+    <!-- Soul activities -->
+    <string name="canvas_title">بوم دیجیتال</string>
+    <string name="gratitude_title">لحظه قدردانی</string>
+    <string name="gratitude_subtitle">امروز چه چیزی خوب بود؟</string>
+    <string name="affirmation_title">تأیید</string>
+    <string name="memory_title">جرقه خاطره</string>
+
+    <!-- Connect -->
+    <string name="connect_title">فضای ارتباط</string>
+    <string name="connect_subtitle">آنچه در دل دارید به اشتراک بگذارید. شما اینجا تنها نیستید.</string>
+    <string name="connect_share">اشتراک</string>
+
+    <!-- Chat -->
+    <string name="chat_bloom_name">Bloom</string>
+    <string name="chat_bloom_subtitle">همراه سلامتی · همیشه اینجا</string>
+    <string name="chat_placeholder">چه احساسی دارید…</string>
+    <string name="chat_send">ارسال</string>
+    <string name="chat_voice">ورودی صوتی</string>
+    <string name="chat_stop_recording">توقف ضبط</string>
+    <string name="chat_recording">در حال گوش دادن…</string>
+
+    <!-- Resource Hub -->
+    <string name="resource_hub_title">مرکز منابع</string>
+    <string name="search_resources">جستجوی منابع…</string>
+    <string name="call_bc211">تماس با BC211 — پشتیبانی ۲۴/۷</string>
+
+    <!-- Breathing -->
+    <string name="breathe_in">دم…</string>
+    <string name="breathe_out">بازدم…</string>
+    <string name="done">انجام شد</string>
+    <string name="great_job_flower">آفرین! شما یک گل پرورش دادید.</string>
+
+    <!-- Grounding -->
+    <string name="grounding_see">۵ چیزی که می‌بینید نام ببرید</string>
+    <string name="grounding_touch">۴ چیزی که می‌توانید لمس کنید نام ببرید</string>
+    <string name="grounding_hear">۳ چیزی که می‌شنوید نام ببرید</string>
+    <string name="grounding_smell">۲ چیزی که بو می‌دهد نام ببرید</string>
+    <string name="grounding_taste">۱ چیزی که مزه می‌دهد نام ببرید</string>
+    <string name="grounding_safe">شما اینجایید. امن هستید. در لحظه حال هستید.</string>
+    <string name="next">بعدی</string>
+    <string name="complete">کامل</string>
+    <string name="back">بازگشت</string>
+
+    <!-- Settings -->
+    <string name="settings_title">تنظیمات</string>
+    <string name="settings_language">زبان</string>
+    <string name="settings_language_desc">زبان دلخواه خود را انتخاب کنید</string>
+
+    <!-- Pillars -->
+    <string name="pillar_mind_button">تمرکز</string>
+    <string name="pillar_body_button">انرژی</string>
+    <string name="pillar_soul_button">بیان</string>
+    <string name="pillar_mind_desc">وضوح ذهنی را از طریق تمرینات هدایت‌شده و تأمل پرورش دهید.</string>
+    <string name="pillar_body_desc">بدن خود را با حرکت و تنفس تغذیه کنید.</string>
+    <string name="pillar_soul_desc">از طریق خلاقیت، قدردانی و تأیید ارتباط برقرار کنید.</string>
+
+    <!-- Sanctuary / Garden -->
+    <string name="sanctuary_title">پناهگاه</string>
+    <string name="sanctuary_subtitle">دنیای درونی خود را پرورش دهید</string>
+    <string name="living_garden_title">باغ زنده</string>
+    <string name="begin_practice">تمرین خود را آغاز کنید</string>
+    <string name="garden_subtitle">هر گل نشان‌دهنده یک ارتباط، لحظه‌ای آرامش، یا گامی به سوی سلامتی است.</string>
+</resources>

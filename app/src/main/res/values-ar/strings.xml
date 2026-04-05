@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bloom</string>
+
+    <!-- Bottom Nav -->
+    <string name="nav_garden">الحديقة</string>
+    <string name="nav_sanctuary">الملاذ</string>
+    <string name="nav_chat">محادثة</string>
+    <string name="nav_connect">تواصل</string>
+    <string name="nav_resources">موارد</string>
+
+    <!-- Ambient Garden -->
+    <string name="begin">ابدأي</string>
+    <string name="moments_of_wellness">%d لحظة عافية في حديقتنا</string>
+    <string name="staff">الموظفون</string>
+
+    <!-- Wellness Wheel -->
+    <string name="how_feeling">كيف تشعرين اليوم؟</string>
+    <string name="mind">العقل</string>
+    <string name="body">الجسد</string>
+    <string name="soul">الروح</string>
+    <string name="connect">تواصل</string>
+    <string name="talk_to_bloom">تحدثي مع Bloom</string>
+    <string name="talk_to_bloom_desc">رفيقتك في العافية دائماً هنا للاستماع</string>
+    <string name="language_label">اللغة: %s</string>
+    <string name="close">إغلاق</string>
+    <string name="body_subtitle">اختاري حركة لاستعادة طاقتك</string>
+    <string name="soul_subtitle">تواصلي من خلال الإبداع والتأمل</string>
+
+    <!-- Mind activities -->
+    <string name="breathing_title">التنفس مع Bloom</string>
+    <string name="breathing_subtitle">دقيقتان · اتبعي الدائرة</string>
+    <string name="grounding_title">التأريض (5-4-3-2-1)</string>
+    <string name="grounding_subtitle">3 دقائق · عودي إلى الحاضر</string>
+    <string name="reframe_title">إعادة صياغة فكرة</string>
+    <string name="reframe_subtitle">3 دقائق · غيّري منظورك</string>
+    <string name="release_worry_title">أطلقي القلق</string>
+    <string name="release_worry_subtitle">دقيقتان · دعيه يخرج</string>
+
+    <!-- Body activities -->
+    <string name="stretch_title">تمدد لطيف</string>
+    <string name="stretch_subtitle">3 دقائق · لا حاجة لسجادة</string>
+    <string name="tension_title">إزالة التوتر</string>
+    <string name="tension_subtitle">3 دقائق · أذيبي الضغط</string>
+    <string name="movement_title">حركة خفيفة</string>
+    <string name="movement_subtitle">دقيقة واحدة · انتعشي</string>
+    <string name="food_title">ابحثي عن طعام قريب</string>
+    <string name="food_subtitle">موارد غذائية مجتمعية</string>
+
+    <!-- Exercise detail -->
+    <string name="exercise_seated">جالسة</string>
+    <string name="exercise_steps_title">كيفية القيام بذلك</string>
+    <string name="exercise_complete">أكملتها ✨</string>
+    <string name="exercise_filter_all">الكل</string>
+
+    <!-- Soul activities -->
+    <string name="canvas_title">لوحة رقمية</string>
+    <string name="canvas_subtitle">أبدعي بالألوان والحرية</string>
+    <string name="gratitude_title">لحظة امتنان</string>
+    <string name="gratitude_subtitle">ما الشيء الجيد اليوم؟</string>
+    <string name="affirmation_title">تأكيد</string>
+    <string name="affirmation_subtitle">كلمات دافئة ومحترمة ثقافياً</string>
+    <string name="memory_title">شرارة ذاكرة</string>
+    <string name="memory_subtitle">أعيدي التواصل مع ما يجعلك تبتسمين</string>
+
+    <!-- Connect -->
+    <string name="connect_title">مساحة التواصل</string>
+    <string name="connect_anonymous">مجهولة</string>
+    <string name="connect_subtitle">شاركي ما في قلبك. لستِ وحدك هنا.</string>
+    <string name="connect_post_placeholder">ماذا تودين مشاركته…</string>
+    <string name="connect_share">شاركي</string>
+    <string name="garden_count">الحديقة: %d لحظة عافية</string>
+    <string name="gratitude_count">جدار الامتنان: %d ملاحظة مشتركة</string>
+
+    <!-- Chat -->
+    <string name="chat_bloom_name">Bloom</string>
+    <string name="chat_bloom_subtitle">رفيقة العافية · دائماً هنا</string>
+    <string name="chat_placeholder">كيف تشعرين…</string>
+    <string name="chat_send">إرسال</string>
+    <string name="chat_voice">إدخال صوتي</string>
+    <string name="chat_stop_recording">إيقاف التسجيل</string>
+    <string name="chat_recording">أستمع…</string>
+
+    <!-- Resource Hub -->
+    <string name="resource_hub_title">مركز الموارد</string>
+    <string name="resource_hub_tagline">دليل الرعاية</string>
+    <string name="search_resources">البحث عن موارد…</string>
+    <string name="call_bc211">اتصلي بـ BC211 — دعم على مدار الساعة</string>
+
+    <!-- Staff -->
+    <string name="staff_dashboard">لوحة الموظفين</string>
+    <string name="enter_pin">أدخلي الرمز</string>
+    <string name="unlock">فتح</string>
+    <string name="today_sessions">جلسات اليوم: %d</string>
+
+    <!-- Breathing -->
+    <string name="breathe_in">شهيق…</string>
+    <string name="breathe_out">زفير…</string>
+    <string name="done">تم</string>
+    <string name="great_job_flower">أحسنتِ! لقد زرعتِ زهرة.</string>
+
+    <!-- Grounding -->
+    <string name="grounding_see">سمّي 5 أشياء يمكنك رؤيتها</string>
+    <string name="grounding_touch">سمّي 4 أشياء يمكنك لمسها</string>
+    <string name="grounding_hear">سمّي 3 أشياء يمكنك سماعها</string>
+    <string name="grounding_smell">سمّي شيئين يمكنك شمّهما</string>
+    <string name="grounding_taste">سمّي شيئاً واحداً يمكنك تذوقه</string>
+    <string name="grounding_safe">أنتِ هنا. أنتِ بأمان. أنتِ حاضرة.</string>
+    <string name="next">التالي</string>
+    <string name="complete">إكمال</string>
+    <string name="back">رجوع</string>
+
+    <!-- Settings -->
+    <string name="settings_title">الإعدادات</string>
+    <string name="settings_language">اللغة</string>
+    <string name="settings_language_desc">اختاري لغتك المفضلة</string>
+
+    <!-- Pillars -->
+    <string name="pillar_mind_button">تركيز</string>
+    <string name="pillar_body_button">نشاط</string>
+    <string name="pillar_soul_button">تعبير</string>
+    <string name="pillar_mind_desc">ازرعي الوضوح الذهني من خلال التمارين الموجّهة والتأمل.</string>
+    <string name="pillar_body_desc">غذّي جسدك بالحركة والتنفس.</string>
+    <string name="pillar_soul_desc">تواصلي من خلال الإبداع والامتنان والتأكيدات.</string>
+
+    <!-- Sanctuary -->
+    <string name="sanctuary_title">الملاذ</string>
+    <string name="sanctuary_subtitle">ازرعي عالمك الداخلي</string>
+
+    <!-- Garden -->
+    <string name="living_garden_title">الحديقة الحية</string>
+    <string name="begin_practice">ابدأي ممارستك</string>
+    <string name="garden_subtitle">كل زهرة تمثل اتصالاً أو لحظة راحة أو خطوة نحو العافية.</string>
+</resources>

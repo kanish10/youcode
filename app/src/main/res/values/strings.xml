@@ -7,7 +7,14 @@
     <string name="moments_of_wellness">%d moments of wellness in our garden</string>
     <string name="staff">Staff</string>
 
-    <!-- Wellness Wheel -->
+    <!-- Bottom Nav -->
+    <string name="nav_garden">Garden</string>
+    <string name="nav_sanctuary">Sanctuary</string>
+    <string name="nav_chat">Chat</string>
+    <string name="nav_connect">Connect</string>
+    <string name="nav_resources">Resources</string>
+
+    <!-- Wellness Wheel / Sanctuary -->
     <string name="how_feeling">How are you feeling?</string>
     <string name="mind">Mind</string>
     <string name="body">Body</string>
@@ -16,6 +23,9 @@
     <string name="talk_to_bloom">Talk to Bloom</string>
     <string name="language_label">Language: %s</string>
     <string name="close">Close</string>
+    <string name="body_subtitle">Choose a movement to restore your energy</string>
+    <string name="mind_subtitle">Create a little room between your breath and the noise</string>
+    <string name="soul_subtitle">Connect through creativity and reflection</string>
 
     <!-- Mind activities -->
     <string name="breathing_title">Breathing with Bloom</string>
@@ -37,6 +47,12 @@
     <string name="food_title">Find food nearby</string>
     <string name="food_subtitle">Community food resources</string>
 
+    <!-- Exercise detail -->
+    <string name="exercise_seated">Seated</string>
+    <string name="exercise_steps_title">How to do it</string>
+    <string name="exercise_complete">I completed this ✨</string>
+    <string name="exercise_filter_all">All</string>
+
     <!-- Soul activities -->
     <string name="canvas_title">Digital canvas</string>
     <string name="canvas_subtitle">Create with color and freedom</string>
@@ -47,17 +63,82 @@
     <string name="memory_title">Memory spark</string>
     <string name="memory_subtitle">Reconnect with what makes you smile</string>
 
-    <!-- Connect -->
+    <!-- Soul Expression -->
+    <string name="soul_expression_title">Soul Expression</string>
+    <string name="soul_doodle_title">Digital Doodle</string>
+    <string name="soul_start_timer">▶ Start</string>
+    <string name="soul_undo">Undo</string>
+    <string name="soul_clear">Clear canvas</string>
+    <string name="soul_brush_size">Brush:</string>
+
+    <!-- Connect / Connection Space -->
+    <string name="connect_title">Connection Space</string>
+    <string name="connect_anonymous">Anonymous</string>
+    <string name="connect_subtitle">Share what\'s on your heart. You are not alone here.</string>
+    <string name="connect_post_whisper">Leave a whisper</string>
+    <string name="connect_post_title">Share a whisper</string>
+    <string name="connect_post_hint">Your words are anonymous. Share what is on your heart.</string>
+    <string name="connect_post_placeholder">What would you like to share…</string>
+    <string name="connect_posting">Sharing…</string>
+    <string name="connect_share">Share</string>
     <string name="garden_count">The garden: %d moments of wellness</string>
     <string name="gratitude_count">Gratitude wall: %d shared notes</string>
     <string name="connect_coming_soon">Community mood and support finder are next in this build.</string>
 
+    <!-- Chat -->
+    <string name="chat_bloom_name">Bloom</string>
+    <string name="chat_bloom_subtitle">Wellness companion · always here</string>
+    <string name="chat_placeholder">How are you feeling…</string>
+    <string name="chat_send">Send</string>
+    <string name="chat_voice">Voice input</string>
+    <string name="chat_stop_recording">Stop recording</string>
+    <string name="chat_recording">Listening…</string>
+
+    <!-- Resource Hub -->
+    <string name="resource_hub_title">Resource Hub</string>
+    <string name="resource_hub_tagline">Directory of care</string>
+    <string name="resource_hub_intro">Access local support systems and essential services curated for your safety and growth.</string>
+    <string name="search_resources">Search resources…</string>
+    <string name="call_bc211">Call BC211 — 24/7 Support</string>
+    <string name="res_categories_title">Browse by category</string>
+    <string name="res_all_resources">All resources</string>
+
+    <!-- Resource categories -->
+    <string name="res_cat_mental">Mental Wellness</string>
+    <string name="res_cat_mental_desc">Counselling, peer support, and crisis intervention</string>
+    <string name="res_cat_food">Food Security</string>
+    <string name="res_cat_food_desc">Community kitchens, food banks, and essentials</string>
+    <string name="res_cat_housing">Housing &amp; Legal</string>
+    <string name="res_cat_housing_desc">Emergency shelter, tenant rights, legal aid</string>
+    <string name="res_cat_safety">Safety</string>
+    <string name="res_cat_safety_desc">Emergency safe spaces, crisis lines, reporting tools</string>
+    <string name="res_cat_counselling">Counselling</string>
+    <string name="res_cat_counselling_desc">Individual and group therapy support</string>
+    <string name="res_cat_employment">Employment</string>
+    <string name="res_cat_employment_desc">Workshops, placement, and skills support</string>
+
+    <!-- Resource status badges -->
+    <string name="res_status_peer_led">Peer Led</string>
+    <string name="res_status_market_today">Market Today</string>
+    <string name="res_status_active_sites">Active Sites</string>
+    <string name="res_status_24h">24h Response</string>
+    <string name="res_status_available">Available</string>
+
     <!-- Staff dashboard -->
-    <string name="staff_dashboard">Staff dashboard</string>
+    <string name="staff_dashboard">Staff Portal</string>
     <string name="enter_pin">Enter PIN</string>
-    <string name="unlock">Unlock</string>
+    <string name="unlock">Enter Portal</string>
+    <string name="staff_pin_wrong">Incorrect PIN. Please try again.</string>
     <string name="today_sessions">Today\'s sessions: %d</string>
-    <string name="stats_disclaimer">Aggregate stats only. No personal session data is stored.</string>
+    <string name="stats_disclaimer">Aggregate stats only — no personal or identifying data is stored or displayed.</string>
+    <string name="kpi_total_blooms">Total Blooms</string>
+    <string name="kpi_today_sessions">Today\'s Sessions</string>
+    <string name="kpi_languages">Languages Active</string>
+    <string name="dashboard_weekly_title">Weekly Activity</string>
+    <string name="dashboard_quadrants_title">Wellness Focus</string>
+    <string name="dashboard_languages_title">Language Distribution</string>
+    <string name="dashboard_mood_title">Mood Patterns</string>
+    <string name="dashboard_no_data">No data yet this week</string>
 
     <!-- Breathing exercise -->
     <string name="breathe_in">Breathe in…</string>
@@ -65,6 +146,25 @@
     <string name="elapsed_seconds">Elapsed: %ds</string>
     <string name="done">Done</string>
     <string name="great_job_flower">Great job. You grew a flower.</string>
+    <string name="breathing_hero_badge">Guided breathing</string>
+    <string name="breathing_hero_title">Let the circle set the pace</string>
+    <string name="breathing_hero_body">Follow Bloom through a gentle inhale, pause, and slower exhale. You can start softly, stop anytime, and finish whenever your body feels more settled.</string>
+    <string name="breathing_stat_elapsed">Elapsed</string>
+    <string name="breathing_stat_cycles">Cycles</string>
+    <string name="breathing_stat_current">Current cue</string>
+    <string name="breathing_guidance_title">Current guidance</string>
+    <string name="breathing_seconds_format">%1$ds</string>
+    <string name="breathing_phase_inhale">Inhale</string>
+    <string name="breathing_phase_inhale_desc">Breathe in through your nose and let your ribs widen.</string>
+    <string name="breathing_phase_hold">Hold</string>
+    <string name="breathing_phase_hold_desc">Pause softly. Keep your jaw and shoulders relaxed.</string>
+    <string name="breathing_phase_exhale">Exhale</string>
+    <string name="breathing_phase_exhale_desc">Breathe out slowly like you are fogging up a window.</string>
+    <string name="breathing_pause">Pause practice</string>
+    <string name="breathing_resume">Resume practice</string>
+    <string name="breathing_start">Start practice</string>
+    <string name="breathing_reset">Reset</string>
+    <string name="breathing_finish">Finish and save</string>
 
     <!-- Grounding exercise -->
     <string name="grounding_see">Name 5 things you can see</string>
@@ -73,11 +173,27 @@
     <string name="grounding_smell">Name 2 things you can smell</string>
     <string name="grounding_taste">Name 1 thing you can taste</string>
     <string name="grounding_safe">You are here. You are safe. You are present.</string>
+    <string name="grounding_hero_badge">Quiet grounding</string>
+    <string name="grounding_hero_title">Return to what is steady around you</string>
+    <string name="grounding_hero_body">This 5-4-3-2-1 flow brings attention back to the room, one sense at a time. There is no perfect answer here. Noticing even one thing is enough.</string>
+    <string name="grounding_step_see_body">Look around slowly and notice five shapes, colors, or pieces of light that are here with you.</string>
+    <string name="grounding_step_touch_body">Find four textures or surfaces nearby. You can rest your hand on something if that feels easier.</string>
+    <string name="grounding_step_hear_body">Pause and listen for three sounds, even if they are quiet, far away, or only present for a moment.</string>
+    <string name="grounding_step_smell_body">Notice two scents in the air, on your clothes, or in the room. If nothing stands out, simply notice the temperature of the air.</string>
+    <string name="grounding_step_taste_body">Notice one taste in your mouth, a sip of water, or even the absence of taste. Gentle noticing still counts.</string>
+    <string name="grounding_begin">Begin grounding</string>
+    <string name="grounding_previous">Previous</string>
+    <string name="grounding_complete_button">Complete grounding</string>
+    <string name="grounding_step_counter">Step %1$d of %2$d</string>
+    <string name="grounding_complete_icon">✦</string>
+    <string name="grounding_complete_title">You are here. You are safe enough for this breath.</string>
+    <string name="grounding_complete_body">If the room feels a little more solid now, you can save this moment and return to the sanctuary.</string>
+    <string name="grounding_save">Save grounding moment</string>
     <string name="next">Next</string>
     <string name="complete">Complete</string>
     <string name="back">Back</string>
 
-    <!-- Integrated shell (haven / sanctuary mockups) -->
+    <!-- Integrated shell strings -->
     <string name="your_sanctuary">Your Sanctuary</string>
     <string name="nav_living_garden">Living Garden</string>
     <string name="nav_connection_space">Connection Space</string>
@@ -113,15 +229,11 @@
     <string name="add_kind_response">Add a kind response</string>
     <string name="neighbors_responded">%1$d neighbors responded</string>
 
-    <string name="resource_hub_title">Resource Hub</string>
-    <string name="resource_hub_tagline">Directory of care</string>
-    <string name="resource_hub_intro">Access local support systems and essential services curated for your safety and growth.</string>
-    <string name="search_resources">Search resources</string>
+    <string name="resource_hub_intro2">Access local support systems and essential services curated for your safety and growth.</string>
     <string name="exhale_safe">Exhale… You are safe here.</string>
     <string name="housing_legal">Housing &amp; legal</string>
     <string name="housing_legal_desc">Emergency shelter placement, tenant rights, and legal support information.</string>
     <string name="call">Call</string>
-    <string name="call_bc211">Call BC211</string>
     <string name="view_shelter_listings">View shelter listings</string>
     <string name="safety_services">Safety services</string>
     <string name="safety_services_desc">24/7 confidential crisis lines and trauma-informed support.</string>
@@ -145,4 +257,44 @@
     <string name="pillar_soul_desc">Connect through creativity, gratitude, and affirmations.</string>
     <string name="start_pillar">Start</string>
     <string name="symmetric_workspace">Trauma-informed workspace</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_desc">Choose your preferred language</string>
+
+    <!-- Pillar buttons -->
+    <string name="pillar_mind_button">Focus</string>
+    <string name="pillar_body_button">Vitalize</string>
+    <string name="pillar_soul_button">Express</string>
+
+    <!-- Sanctuary redesign -->
+    <string name="sanctuary_title">Sanctuary</string>
+    <string name="sanctuary_subtitle">Cultivate your inner landscape</string>
+    <string name="sanctuary_badge">Wellness Sanctuary</string>
+    <string name="sanctuary_hero_body">Choose the kind of care that fits this moment, then move gently through mind, body, or soul with Bloom.</string>
+    <string name="sanctuary_quote_label">Today\'s intention</string>
+    <string name="sanctuary_quote_text">Rest can still be meaningful progress. Small practices count.</string>
+    <string name="mind_hero_badge">Quiet grounding</string>
+    <string name="mind_hero_title">Settle the room inside you</string>
+    <string name="mind_hero_body">Begin with a guided breath or sensory grounding practice, then let the softer reflection cards hold anything you are not ready to solve yet.</string>
+    <string name="mind_reflections_title">Gentle reflections</string>
+    <string name="mind_reflections_body">These quieter prompts are here to slow the spiral and create space for your next steady breath.</string>
+    <string name="mind_breathing_meta">Follow Bloom\'s calming rhythm</string>
+    <string name="mind_grounding_meta">A sensory check-in for hard moments</string>
+    <string name="soul_hero_badge">Creative sanctuary</string>
+    <string name="soul_hero_title">Make room for expression, gratitude, and memory</string>
+    <string name="soul_hero_body">The soul space is where Bloom feels softest: a private canvas, thoughtful affirmations, and small prompts that help feelings become shapes, color, or words.</string>
+    <string name="soul_private_title">Private studio</string>
+    <string name="soul_private_body">This space is meant for your own reflection. Draw, pause, and return whenever it feels right.</string>
+    <string name="soul_canvas_meta">Open Bloom\'s doodle studio</string>
+    <string name="soul_gratitude_meta">A soft place to notice what was okay</string>
+    <string name="soul_expression_placeholder">Draw what words cannot hold yet</string>
+    <string name="soul_expression_private">Private session</string>
+    <string name="soul_expression_local">Local canvas only</string>
+    <string name="talk_to_bloom_desc">Your wellness companion is always here to listen</string>
+
+    <!-- Garden redesign -->
+    <string name="begin_practice">Begin Your Practice</string>
+    <string name="garden_subtitle">Each bloom represents a connection made, a moment of rest, or a step toward wellness.</string>
 </resources>

@@ -116,6 +116,14 @@ dependencies {
     // Google Fonts (for Noto Sans)
     implementation("androidx.compose.ui:ui-text-google-fonts")
 
+    // Media3 / ExoPlayer for video playback
+    val media3Version = "1.2.1"
+    implementation("androidx.media3:media3-exoplayer:$media3Version")
+    implementation("androidx.media3:media3-ui:$media3Version")
+
+    // WebKit (for YouTube WebView embeds)
+    implementation("androidx.webkit:webkit:1.9.0")
+
     // Debug
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")

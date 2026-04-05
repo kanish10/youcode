@@ -2,6 +2,13 @@
 <resources>
     <string name="app_name">Bloom</string>
 
+    <!-- Bottom Nav -->
+    <string name="nav_garden">정원</string>
+    <string name="nav_sanctuary">안식처</string>
+    <string name="nav_chat">채팅</string>
+    <string name="nav_connect">연결</string>
+    <string name="nav_resources">자원</string>
+
     <!-- Ambient Garden -->
     <string name="begin">시작하기</string>
     <string name="moments_of_wellness">우리 정원의 웰니스 순간 %d개</string>
@@ -14,8 +21,11 @@
     <string name="soul">영혼</string>
     <string name="connect">연결</string>
     <string name="talk_to_bloom">Bloom과 대화하기</string>
+    <string name="talk_to_bloom_desc">당신의 웰니스 파트너가 항상 여기서 듣고 있어요</string>
     <string name="language_label">언어: %s</string>
     <string name="close">닫기</string>
+    <string name="body_subtitle">에너지를 회복할 움직임을 선택하세요</string>
+    <string name="soul_subtitle">창의성과 성찰을 통해 연결하세요</string>
 
     <!-- Mind activities -->
     <string name="breathing_title">Bloom과 함께 호흡하기</string>
@@ -37,6 +47,12 @@
     <string name="food_title">근처 음식 찾기</string>
     <string name="food_subtitle">지역사회 식품 자원</string>
 
+    <!-- Exercise detail -->
+    <string name="exercise_seated">앉은 자세</string>
+    <string name="exercise_steps_title">방법</string>
+    <string name="exercise_complete">완료했어요 ✨</string>
+    <string name="exercise_filter_all">전체</string>
+
     <!-- Soul activities -->
     <string name="canvas_title">디지털 캔버스</string>
     <string name="canvas_subtitle">색과 자유로 창작하세요</string>
@@ -47,10 +63,43 @@
     <string name="memory_title">기억의 불꽃</string>
     <string name="memory_subtitle">미소 짓게 하는 것을 떠올려보세요</string>
 
+    <!-- Soul Expression -->
+    <string name="soul_expression_title">영혼의 표현</string>
+    <string name="soul_doodle_title">디지털 그림</string>
+    <string name="soul_start_timer">▶ 시작</string>
+    <string name="soul_undo">되돌리기</string>
+    <string name="soul_clear">캔버스 지우기</string>
+    <string name="soul_brush_size">브러시:</string>
+
     <!-- Connect -->
+    <string name="connect_title">연결 공간</string>
+    <string name="connect_anonymous">익명</string>
+    <string name="connect_subtitle">마음속에 있는 것을 나눠보세요. 여기서 혼자가 아니에요.</string>
+    <string name="connect_post_whisper">속삭임 남기기</string>
+    <string name="connect_post_title">속삭임 공유</string>
+    <string name="connect_post_hint">당신의 말은 익명이에요. 마음에 있는 것을 나눠주세요.</string>
+    <string name="connect_post_placeholder">무엇을 나누고 싶으세요…</string>
+    <string name="connect_posting">공유 중…</string>
+    <string name="connect_share">공유</string>
     <string name="garden_count">정원: 웰니스 순간 %d개</string>
     <string name="gratitude_count">감사 벽: 공유 메모 %d개</string>
     <string name="connect_coming_soon">커뮤니티 기분 및 지원 찾기 기능이 곧 추가됩니다.</string>
+
+    <!-- Chat -->
+    <string name="chat_bloom_name">Bloom</string>
+    <string name="chat_bloom_subtitle">웰니스 파트너 · 항상 여기에</string>
+    <string name="chat_placeholder">기분이 어떠세요…</string>
+    <string name="chat_send">보내기</string>
+    <string name="chat_voice">음성 입력</string>
+    <string name="chat_stop_recording">녹음 중지</string>
+    <string name="chat_recording">듣고 있어요…</string>
+
+    <!-- Resource Hub -->
+    <string name="resource_hub_title">자원 허브</string>
+    <string name="resource_hub_tagline">돌봄 디렉토리</string>
+    <string name="resource_hub_intro">안전과 성장을 위해 선별된 지역 지원 시스템과 필수 서비스에 접근하세요.</string>
+    <string name="search_resources">자원 검색…</string>
+    <string name="call_bc211">BC211 전화 — 24시간 지원</string>
 
     <!-- Staff dashboard -->
     <string name="staff_dashboard">직원 대시보드</string>
@@ -76,4 +125,26 @@
     <string name="next">다음</string>
     <string name="complete">완료</string>
     <string name="back">뒤로</string>
+
+    <!-- Settings -->
+    <string name="settings_title">설정</string>
+    <string name="settings_language">언어</string>
+    <string name="settings_language_desc">선호하는 언어를 선택하세요</string>
+
+    <!-- Pillar buttons -->
+    <string name="pillar_mind_button">집중</string>
+    <string name="pillar_body_button">활력</string>
+    <string name="pillar_soul_button">표현</string>
+    <string name="pillar_mind_desc">안내된 연습과 성찰로 정신적 명료함을 키우세요.</string>
+    <string name="pillar_body_desc">움직임과 호흡으로 몸을 돌보세요.</string>
+    <string name="pillar_soul_desc">창의성, 감사, 확언을 통해 연결하세요.</string>
+
+    <!-- Sanctuary -->
+    <string name="sanctuary_title">안식처</string>
+    <string name="sanctuary_subtitle">내면의 세계를 가꾸세요</string>
+
+    <!-- Garden -->
+    <string name="living_garden_title">살아있는 정원</string>
+    <string name="begin_practice">연습을 시작하세요</string>
+    <string name="garden_subtitle">각각의 꽃은 연결, 쉼의 순간, 또는 웰니스를 향한 한 걸음을 나타냅니다.</string>
 </resources>

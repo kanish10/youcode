@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bloom</string>
+
+    <!-- Bottom Nav -->
+    <string name="nav_garden">Hardin</string>
+    <string name="nav_sanctuary">Kanlungan</string>
+    <string name="nav_chat">Chat</string>
+    <string name="nav_connect">Kumonekta</string>
+    <string name="nav_resources">Mga Mapagkukunan</string>
+
+    <!-- Ambient Garden -->
+    <string name="begin">Magsimula</string>
+    <string name="moments_of_wellness">%d sandali ng kalusugan sa ating hardin</string>
+    <string name="staff">Staff</string>
+
+    <!-- Wellness Wheel -->
+    <string name="how_feeling">Kumusta ang pakiramdam mo ngayon?</string>
+    <string name="mind">Isip</string>
+    <string name="body">Katawan</string>
+    <string name="soul">Kaluluwa</string>
+    <string name="connect">Kumonekta</string>
+    <string name="talk_to_bloom">Kausapin si Bloom</string>
+    <string name="talk_to_bloom_desc">Ang iyong kasama sa kalusugan ay laging naririto para makinig</string>
+    <string name="close">Isara</string>
+    <string name="body_subtitle">Pumili ng galaw para ibalik ang iyong lakas</string>
+    <string name="soul_subtitle">Kumonekta sa pamamagitan ng pagkamalikhain at pagninilay</string>
+
+    <!-- Mind activities -->
+    <string name="breathing_title">Paghinga kasama si Bloom</string>
+    <string name="breathing_subtitle">2 minuto · Sundan ang bilog</string>
+    <string name="grounding_title">Grounding (5-4-3-2-1)</string>
+    <string name="grounding_subtitle">3 minuto · Bumalik sa kasalukuyan</string>
+
+    <!-- Body activities -->
+    <string name="stretch_title">Malumanay na pag-unat</string>
+    <string name="stretch_subtitle">3 minuto · Walang kailangan na mat</string>
+    <string name="tension_title">Pagpapawala ng tensyon</string>
+    <string name="tension_subtitle">3 minuto · Tunawin ang stress</string>
+
+    <!-- Soul activities -->
+    <string name="canvas_title">Digital na canvas</string>
+    <string name="gratitude_title">Sandali ng pasasalamat</string>
+    <string name="gratitude_subtitle">Ano ang maganda ngayong araw?</string>
+    <string name="affirmation_title">Pagpapatibay</string>
+    <string name="memory_title">Spark ng alaala</string>
+
+    <!-- Connect -->
+    <string name="connect_title">Espasyo ng Koneksyon</string>
+    <string name="connect_subtitle">Ibahagi ang nasa puso mo. Hindi ka nag-iisa dito.</string>
+    <string name="connect_share">Ibahagi</string>
+
+    <!-- Chat -->
+    <string name="chat_bloom_name">Bloom</string>
+    <string name="chat_bloom_subtitle">Kasama sa kalusugan · laging naririto</string>
+    <string name="chat_placeholder">Kumusta ang pakiramdam mo…</string>
+    <string name="chat_send">Ipadala</string>
+    <string name="chat_voice">Boses na input</string>
+    <string name="chat_stop_recording">Itigil ang recording</string>
+    <string name="chat_recording">Nakikinig…</string>
+
+    <!-- Resource Hub -->
+    <string name="resource_hub_title">Sentro ng Mapagkukunan</string>
+    <string name="search_resources">Maghanap ng mapagkukunan…</string>
+    <string name="call_bc211">Tumawag sa BC211 — 24/7 Suporta</string>
+
+    <!-- Breathing -->
+    <string name="breathe_in">Huminga…</string>
+    <string name="breathe_out">Ilabas ang hininga…</string>
+    <string name="done">Tapos na</string>
+    <string name="great_job_flower">Magaling! Nagpatubo ka ng bulaklak.</string>
+
+    <!-- Grounding -->
+    <string name="grounding_see">Magbanggit ng 5 bagay na nakikita mo</string>
+    <string name="grounding_touch">Magbanggit ng 4 bagay na nahihipo mo</string>
+    <string name="grounding_hear">Magbanggit ng 3 bagay na naririnig mo</string>
+    <string name="grounding_smell">Magbanggit ng 2 bagay na naamoy mo</string>
+    <string name="grounding_taste">Magbanggit ng 1 bagay na nalilasahan mo</string>
+    <string name="grounding_safe">Nandito ka. Ligtas ka. Nasa kasalukuyan ka.</string>
+    <string name="next">Susunod</string>
+    <string name="complete">Kumpleto</string>
+    <string name="back">Bumalik</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Mga Setting</string>
+    <string name="settings_language">Wika</string>
+    <string name="settings_language_desc">Piliin ang gustong wika</string>
+
+    <!-- Pillars -->
+    <string name="pillar_mind_button">Pokus</string>
+    <string name="pillar_body_button">Sigla</string>
+    <string name="pillar_soul_button">Ipahayag</string>
+    <string name="pillar_mind_desc">Linangin ang kalinawan ng isip sa pamamagitan ng mga pagsasanay at pagninilay.</string>
+    <string name="pillar_body_desc">Alagaan ang katawan sa pamamagitan ng galaw at paghinga.</string>
+    <string name="pillar_soul_desc">Kumonekta sa pamamagitan ng pagkamalikhain, pasasalamat, at pagpapatibay.</string>
+
+    <!-- Sanctuary / Garden -->
+    <string name="sanctuary_title">Kanlungan</string>
+    <string name="sanctuary_subtitle">Alagaan ang iyong loob na daigdig</string>
+    <string name="living_garden_title">Buhay na Hardin</string>
+    <string name="begin_practice">Simulan ang iyong pagsasanay</string>
+    <string name="garden_subtitle">Bawat bulaklak ay kumakatawan sa isang koneksyon, sandali ng pahinga, o hakbang patungo sa kalusugan.</string>
+</resources>

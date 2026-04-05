@@ -7,6 +7,13 @@
     <string name="moments_of_wellness">我们花园中的 %d 个健康时刻</string>
     <string name="staff">工作人员</string>
 
+    <!-- Bottom Nav -->
+    <string name="nav_garden">花园</string>
+    <string name="nav_sanctuary">安宁所</string>
+    <string name="nav_chat">聊天</string>
+    <string name="nav_connect">连接</string>
+    <string name="nav_resources">资源</string>
+
     <!-- Wellness Wheel -->
     <string name="how_feeling">你今天感觉怎么样？</string>
     <string name="mind">心灵</string>
@@ -14,8 +21,11 @@
     <string name="soul">灵魂</string>
     <string name="connect">连接</string>
     <string name="talk_to_bloom">和 Bloom 聊天</string>
+    <string name="talk_to_bloom_desc">你的健康伴侣随时在这里倾听</string>
     <string name="language_label">语言：%s</string>
     <string name="close">关闭</string>
+    <string name="body_subtitle">选择一个运动来恢复你的能量</string>
+    <string name="soul_subtitle">通过创意和反思来连接</string>
 
     <!-- Mind activities -->
     <string name="breathing_title">和 Bloom 一起呼吸</string>
@@ -37,6 +47,12 @@
     <string name="food_title">查找附近食物</string>
     <string name="food_subtitle">社区食物资源</string>
 
+    <!-- Exercise detail -->
+    <string name="exercise_seated">坐姿</string>
+    <string name="exercise_steps_title">如何做</string>
+    <string name="exercise_complete">我完成了 ✨</string>
+    <string name="exercise_filter_all">全部</string>
+
     <!-- Soul activities -->
     <string name="canvas_title">数字画布</string>
     <string name="canvas_subtitle">用色彩和自由创作</string>
@@ -47,10 +63,43 @@
     <string name="memory_title">记忆火花</string>
     <string name="memory_subtitle">重新想起让你微笑的事</string>
 
-    <!-- Connect -->
+    <!-- Soul Expression -->
+    <string name="soul_expression_title">灵魂表达</string>
+    <string name="soul_doodle_title">数字涂鸦</string>
+    <string name="soul_start_timer">▶ 开始</string>
+    <string name="soul_undo">撤消</string>
+    <string name="soul_clear">清除画布</string>
+    <string name="soul_brush_size">画笔：</string>
+
+    <!-- Connect / Connection Space -->
+    <string name="connect_title">连接空间</string>
+    <string name="connect_anonymous">匿名</string>
+    <string name="connect_subtitle">分享你心中的话。你并不孤单。</string>
+    <string name="connect_post_whisper">留下悄悄话</string>
+    <string name="connect_post_title">分享悄悄话</string>
+    <string name="connect_post_hint">你的话是匿名的。分享你心中的想法。</string>
+    <string name="connect_post_placeholder">你想分享什么…</string>
+    <string name="connect_posting">分享中…</string>
+    <string name="connect_share">分享</string>
     <string name="garden_count">花园：%d 个健康时刻</string>
     <string name="gratitude_count">感恩墙：%d 条分享</string>
     <string name="connect_coming_soon">社区情绪和支持功能即将推出。</string>
+
+    <!-- Chat -->
+    <string name="chat_bloom_name">Bloom</string>
+    <string name="chat_bloom_subtitle">健康伴侣 · 随时在这里</string>
+    <string name="chat_placeholder">你感觉怎么样…</string>
+    <string name="chat_send">发送</string>
+    <string name="chat_voice">语音输入</string>
+    <string name="chat_stop_recording">停止录音</string>
+    <string name="chat_recording">正在听…</string>
+
+    <!-- Resource Hub -->
+    <string name="resource_hub_title">资源中心</string>
+    <string name="resource_hub_tagline">关怀目录</string>
+    <string name="resource_hub_intro">访问当地支持系统和为您的安全和成长精心策划的基本服务。</string>
+    <string name="search_resources">搜索资源…</string>
+    <string name="call_bc211">拨打 BC211 — 全天候支持</string>
 
     <!-- Staff dashboard -->
     <string name="staff_dashboard">工作人员面板</string>
@@ -76,4 +125,26 @@
     <string name="next">下一步</string>
     <string name="complete">完成</string>
     <string name="back">返回</string>
+
+    <!-- Settings -->
+    <string name="settings_title">设置</string>
+    <string name="settings_language">语言</string>
+    <string name="settings_language_desc">选择你的首选语言</string>
+
+    <!-- Pillar buttons -->
+    <string name="pillar_mind_button">专注</string>
+    <string name="pillar_body_button">活力</string>
+    <string name="pillar_soul_button">表达</string>
+    <string name="pillar_mind_desc">通过引导练习和反思培养心理清晰。</string>
+    <string name="pillar_body_desc">通过运动和呼吸滋养你的身体。</string>
+    <string name="pillar_soul_desc">通过创意、感恩和肯定来连接。</string>
+
+    <!-- Sanctuary -->
+    <string name="sanctuary_title">安宁所</string>
+    <string name="sanctuary_subtitle">培养你的内在世界</string>
+
+    <!-- Garden -->
+    <string name="living_garden_title">生命花园</string>
+    <string name="begin_practice">开始你的练习</string>
+    <string name="garden_subtitle">每一朵花代表一次连接、一个休息的时刻、或迈向健康的一步。</string>
 </resources>

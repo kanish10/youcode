@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bloom</string>
+
+    <!-- Bottom Nav -->
+    <string name="nav_garden">Vườn</string>
+    <string name="nav_sanctuary">Nơi an lành</string>
+    <string name="nav_chat">Trò chuyện</string>
+    <string name="nav_connect">Kết nối</string>
+    <string name="nav_resources">Tài nguyên</string>
+
+    <!-- Ambient Garden -->
+    <string name="begin">Bắt đầu</string>
+    <string name="moments_of_wellness">%d khoảnh khắc sức khỏe trong vườn</string>
+    <string name="staff">Nhân viên</string>
+
+    <!-- Wellness Wheel -->
+    <string name="how_feeling">Hôm nay bạn cảm thấy thế nào?</string>
+    <string name="mind">Tâm trí</string>
+    <string name="body">Cơ thể</string>
+    <string name="soul">Tâm hồn</string>
+    <string name="connect">Kết nối</string>
+    <string name="talk_to_bloom">Nói chuyện với Bloom</string>
+    <string name="talk_to_bloom_desc">Người bạn đồng hành sức khỏe luôn ở đây lắng nghe</string>
+    <string name="language_label">Ngôn ngữ: %s</string>
+    <string name="close">Đóng</string>
+    <string name="body_subtitle">Chọn một bài tập để phục hồi năng lượng</string>
+    <string name="soul_subtitle">Kết nối qua sáng tạo và suy ngẫm</string>
+
+    <!-- Mind activities -->
+    <string name="breathing_title">Thở cùng Bloom</string>
+    <string name="breathing_subtitle">2 phút · Theo vòng tròn</string>
+    <string name="grounding_title">Tiếp đất (5-4-3-2-1)</string>
+    <string name="grounding_subtitle">3 phút · Trở về hiện tại</string>
+    <string name="reframe_title">Đổi góc nhìn</string>
+    <string name="reframe_subtitle">3 phút · Thay đổi quan điểm</string>
+    <string name="release_worry_title">Giải tỏa lo lắng</string>
+    <string name="release_worry_subtitle">2 phút · Hãy nói ra</string>
+
+    <!-- Body activities -->
+    <string name="stretch_title">Giãn cơ nhẹ</string>
+    <string name="stretch_subtitle">3 phút · Không cần thảm</string>
+    <string name="tension_title">Giảm căng thẳng</string>
+    <string name="tension_subtitle">3 phút · Tan chảy stress</string>
+    <string name="movement_title">Vận động nhẹ</string>
+    <string name="movement_subtitle">1 phút · Lắc lư nào</string>
+    <string name="food_title">Tìm thực phẩm gần đây</string>
+    <string name="food_subtitle">Nguồn thực phẩm cộng đồng</string>
+
+    <!-- Soul activities -->
+    <string name="canvas_title">Khung vẽ kỹ thuật số</string>
+    <string name="canvas_subtitle">Sáng tạo với màu sắc và tự do</string>
+    <string name="gratitude_title">Khoảnh khắc biết ơn</string>
+    <string name="gratitude_subtitle">Hôm nay có gì tốt đẹp?</string>
+    <string name="affirmation_title">Khẳng định</string>
+    <string name="affirmation_subtitle">Những lời ấm áp và tôn trọng</string>
+    <string name="memory_title">Tia ký ức</string>
+    <string name="memory_subtitle">Nhớ lại điều khiến bạn mỉm cười</string>
+
+    <!-- Connect -->
+    <string name="connect_title">Không gian kết nối</string>
+    <string name="connect_subtitle">Chia sẻ những gì trong lòng. Bạn không đơn độc.</string>
+    <string name="connect_post_placeholder">Bạn muốn chia sẻ điều gì…</string>
+    <string name="connect_share">Chia sẻ</string>
+    <string name="garden_count">Vườn: %d khoảnh khắc sức khỏe</string>
+    <string name="gratitude_count">Bức tường biết ơn: %d ghi chú</string>
+
+    <!-- Chat -->
+    <string name="chat_bloom_name">Bloom</string>
+    <string name="chat_bloom_subtitle">Bạn đồng hành · luôn ở đây</string>
+    <string name="chat_placeholder">Bạn cảm thấy thế nào…</string>
+    <string name="chat_send">Gửi</string>
+    <string name="chat_voice">Nhập giọng nói</string>
+    <string name="chat_stop_recording">Dừng ghi âm</string>
+    <string name="chat_recording">Đang nghe…</string>
+
+    <!-- Resource Hub -->
+    <string name="resource_hub_title">Trung tâm tài nguyên</string>
+    <string name="resource_hub_tagline">Danh mục chăm sóc</string>
+    <string name="search_resources">Tìm tài nguyên…</string>
+    <string name="call_bc211">Gọi BC211 — Hỗ trợ 24/7</string>
+
+    <!-- Staff -->
+    <string name="staff_dashboard">Bảng nhân viên</string>
+    <string name="enter_pin">Nhập mã PIN</string>
+    <string name="unlock">Mở khóa</string>
+    <string name="today_sessions">Phiên hôm nay: %d</string>
+
+    <!-- Breathing -->
+    <string name="breathe_in">Hít vào…</string>
+    <string name="breathe_out">Thở ra…</string>
+    <string name="done">Xong</string>
+    <string name="great_job_flower">Tuyệt vời! Bạn đã trồng một bông hoa.</string>
+
+    <!-- Grounding -->
+    <string name="grounding_see">Nêu 5 thứ bạn nhìn thấy</string>
+    <string name="grounding_touch">Nêu 4 thứ bạn chạm được</string>
+    <string name="grounding_hear">Nêu 3 thứ bạn nghe thấy</string>
+    <string name="grounding_smell">Nêu 2 thứ bạn ngửi được</string>
+    <string name="grounding_taste">Nêu 1 thứ bạn nếm được</string>
+    <string name="grounding_safe">Bạn đang ở đây. Bạn an toàn. Bạn đang ở hiện tại.</string>
+    <string name="next">Tiếp theo</string>
+    <string name="complete">Hoàn thành</string>
+    <string name="back">Quay lại</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Cài đặt</string>
+    <string name="settings_language">Ngôn ngữ</string>
+    <string name="settings_language_desc">Chọn ngôn ngữ ưa thích</string>
+
+    <!-- Pillars -->
+    <string name="pillar_mind_button">Tập trung</string>
+    <string name="pillar_body_button">Năng lượng</string>
+    <string name="pillar_soul_button">Biểu đạt</string>
+    <string name="pillar_mind_desc">Nuôi dưỡng sự sáng suốt qua bài tập và suy ngẫm.</string>
+    <string name="pillar_body_desc">Chăm sóc cơ thể bằng vận động và hơi thở.</string>
+    <string name="pillar_soul_desc">Kết nối qua sáng tạo, biết ơn và khẳng định.</string>
+
+    <!-- Sanctuary -->
+    <string name="sanctuary_title">Nơi an lành</string>
+    <string name="sanctuary_subtitle">Vun đắp thế giới nội tâm</string>
+
+    <!-- Garden -->
+    <string name="living_garden_title">Vườn sống</string>
+    <string name="begin_practice">Bắt đầu luyện tập</string>
+    <string name="garden_subtitle">Mỗi bông hoa đại diện cho một kết nối, một khoảnh khắc nghỉ ngơi, hay một bước hướng tới sức khỏe.</string>
+</resources>
