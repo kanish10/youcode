@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useLanguage } from "@/lib/i18n";
 import { useRouter } from "next/navigation";
+import { logResidentActivity } from "@/lib/kioskActivity";
 
 const STEPS = [
   { numKey: "grounding.step1" as const, descKey: "grounding.step1Desc" as const, num: 5, icon: "visibility", color: "primary" },
@@ -22,6 +23,12 @@ export default function GroundingPage() {
   const { t } = useLanguage();
   const router = useRouter();
   const [step, setStep] = useState(0); // 0 = intro, 1-5 = steps, 6 = final
+  const logged = useRef(false);
+
+  if (step === 6 && !logged.current) {
+    logged.current = true;
+    logResidentActivity({ quadrant: "mind", activityType: "grounding" });
+  }
 
   if (step === 6) {
     return (

@@ -7,6 +7,11 @@ export type KioskLogResult = {
   error?: string;
 };
 
+/**
+ * Log an activity completion. Always writes to kiosk_anonymous_events
+ * (the universal activity log). If an identifier is provided and matches
+ * a profile, also writes to activity_logs and flowers for that resident.
+ */
 export async function logKioskActivity(params: {
   identifier: string;
   quadrant: "mind" | "body" | "soul" | "connect";
@@ -16,24 +21,76 @@ export async function logKioskActivity(params: {
   colorHex?: string;
 }): Promise<KioskLogResult> {
   const supabase = createClient();
-  const { data, error } = await supabase.rpc("log_shelter_activity", {
-    p_identifier: params.identifier.trim(),
-    p_quadrant: params.quadrant,
-    p_activity_type: params.activityType,
-    p_duration_seconds: params.durationSeconds ?? 0,
-    p_completed: true,
-    p_add_flower: params.addFlower ?? false,
-    p_color_hex: params.colorHex ?? "#8FA89B",
-  });
-  if (error) {
-    return { ok: false, error: error.message };
+  const id = params.identifier.trim();
+
+  try {
+    // 1. Always log to kiosk_anonymous_events (universal activity log)
+    const { error: anonErr } = await supabase
+      .from("kiosk_anonymous_events")
+      .insert({
+        quadrant: params.quadrant,
+        activity_type: params.activityType,
+        duration_seconds: params.durationSeconds ?? 0,
+      });
+
+    if (anonErr) {
+      return { ok: false, error: anonErr.message };
+    }
+
+    // 2. If identifier provided, try to match a profile
+    if (id) {
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("id")
+        .or(`unique_code.eq.${id},display_name.eq.${id}`)
+        .limit(1)
+        .maybeSingle();
+
+      if (profile) {
+        await supabase.from("activity_logs").insert({
+          user_id: profile.id,
+          quadrant: params.quadrant,
+          activity_type: params.activityType,
+          duration_seconds: params.durationSeconds ?? 0,
+          completed: true,
+        });
+
+        if (params.addFlower) {
+          await supabase.from("flowers").insert({
+            user_id: profile.id,
+            quadrant: params.quadrant,
+            color_hex: params.colorHex ?? "#8FA89B",
+          });
+        }
+
+        return { ok: true, anonymous: false, matched: true };
+      }
+
+      return { ok: true, anonymous: true, matched: false };
+    }
+
+    return { ok: true, anonymous: true };
+  } catch (e: unknown) {
+    const msg = e instanceof Error ? e.message : "Unknown error";
+    return { ok: false, error: msg };
   }
-  const row = data as Record<string, unknown> | null;
-  return {
-    ok: row?.ok === true,
-    anonymous: row?.anonymous === true,
-    matched: row?.matched === true,
-  };
+}
+
+/**
+ * Simple activity logger for resident pages. Writes to kiosk_anonymous_events.
+ */
+export async function logResidentActivity(params: {
+  quadrant: "mind" | "body" | "soul" | "connect";
+  activityType: string;
+  durationSeconds?: number;
+}): Promise<boolean> {
+  const supabase = createClient();
+  const { error } = await supabase.from("kiosk_anonymous_events").insert({
+    quadrant: params.quadrant,
+    activity_type: params.activityType,
+    duration_seconds: params.durationSeconds ?? 0,
+  });
+  return !error;
 }
 
 export const KIOSK_ID_KEY = "bloom_kiosk_identifier";

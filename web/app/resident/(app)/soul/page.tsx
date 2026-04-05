@@ -2,6 +2,7 @@
 
 import { useRef, useState, useEffect } from "react";
 import { useLanguage } from "@/lib/i18n";
+import { logResidentActivity } from "@/lib/kioskActivity";
 
 const AFFIRMATIONS = [
   "You are more resilient than you know.",
@@ -26,11 +27,17 @@ export default function SoulPage() {
 
   const todayAffirmation = AFFIRMATIONS[new Date().getDay() % AFFIRMATIONS.length];
 
+  const soulLogged = useRef(false);
+
   useEffect(() => {
     if (!timerActive) return;
     if (timerSeconds === 0) {
       setTimerActive(false);
       setTimerDone(true);
+      if (!soulLogged.current) {
+        soulLogged.current = true;
+        logResidentActivity({ quadrant: "soul", activityType: "soul_expression", durationSeconds: 30 });
+      }
       return;
     }
     const id = setTimeout(() => setTimerSeconds((s) => s - 1), 1000);

@@ -1,29 +1,45 @@
 "use client";
 
-import { Flower } from "@/lib/supabase";
-
 /* ── Flower cluster definitions matching the design reference ─── */
 const CLUSTER_ICONS = {
   soul: [
-    { icon: "yard", size: "!text-6xl", mb: "mb-2", delay: "0.2s", opacity: "opacity-80" },
-    { icon: "filter_vintage", size: "!text-5xl", mb: "mb-6", delay: "1.5s", opacity: "" },
-    { icon: "spa", size: "!text-7xl", mb: "mb-1", delay: "0.8s", opacity: "opacity-90" },
+    { icon: "yard", size: "!text-5xl", mb: "mb-2", delay: "0.2s", opacity: "opacity-80" },
+    { icon: "filter_vintage", size: "!text-4xl", mb: "mb-6", delay: "1.5s", opacity: "" },
+    { icon: "spa", size: "!text-6xl", mb: "mb-1", delay: "0.8s", opacity: "opacity-90" },
   ],
   mind: [
-    { icon: "psychiatry", size: "!text-6xl", mb: "mb-8", delay: "0.5s", opacity: "opacity-90" },
-    { icon: "local_florist", size: "!text-8xl", mb: "mb-4", delay: "0s", opacity: "" },
-    { icon: "psychology", size: "!text-5xl", mb: "mb-12", delay: "2.1s", opacity: "opacity-80" },
-    { icon: "eco", size: "!text-7xl", mb: "mb-2", delay: "1.2s", opacity: "" },
+    { icon: "psychiatry", size: "!text-5xl", mb: "mb-8", delay: "0.5s", opacity: "opacity-90" },
+    { icon: "local_florist", size: "!text-7xl", mb: "mb-4", delay: "0s", opacity: "" },
+    { icon: "psychology", size: "!text-4xl", mb: "mb-12", delay: "2.1s", opacity: "opacity-80" },
+    { icon: "eco", size: "!text-6xl", mb: "mb-2", delay: "1.2s", opacity: "" },
   ],
   body: [
-    { icon: "nature", size: "!text-5xl", mb: "mb-4", delay: "0.3s", opacity: "opacity-90" },
-    { icon: "self_improvement", size: "!text-7xl", mb: "mb-2", delay: "1.8s", opacity: "" },
-    { icon: "water_drop", size: "!text-6xl", mb: "mb-6", delay: "0.9s", opacity: "opacity-80" },
+    { icon: "nature", size: "!text-4xl", mb: "mb-4", delay: "0.3s", opacity: "opacity-90" },
+    { icon: "self_improvement", size: "!text-6xl", mb: "mb-2", delay: "1.8s", opacity: "" },
+    { icon: "water_drop", size: "!text-5xl", mb: "mb-6", delay: "0.9s", opacity: "opacity-80" },
   ],
 };
 
-export default function GardenView({ flowers }: { flowers: Flower[] }) {
-  const total = flowers.length;
+type QuadrantCounts = { mind: number; body: number; soul: number; connect: number };
+
+/** Determine how many icons to show for a cluster based on activity count */
+function visibleIcons(quadrant: "mind" | "body" | "soul", count: number): number {
+  const max = CLUSTER_ICONS[quadrant].length;
+  if (count === 0) return 0;
+  if (count <= 2) return 1;
+  if (count <= 5) return Math.min(2, max);
+  if (count <= 10) return Math.min(3, max);
+  return max;
+}
+
+export default function GardenView({
+  totalBlooms,
+  quadrantCounts,
+}: {
+  totalBlooms: number;
+  quadrantCounts: QuadrantCounts;
+}) {
+  const hasAnyActivity = totalBlooms > 0;
 
   return (
     <div className="w-full flex flex-col items-center">
@@ -36,50 +52,69 @@ export default function GardenView({ flowers }: { flowers: Flower[] }) {
         }}
       >
         <div className="absolute inset-0 flex items-end justify-around pb-4 px-12">
-          {/* Soul cluster (left) */}
-          <div className="flex items-end -space-x-4">
-            {CLUSTER_ICONS.soul.map((f, i) => (
-              <div
-                key={i}
-                className={`flower-sway ${f.mb} ${f.opacity}`}
-                style={{ animationDelay: f.delay }}
-              >
-                <span className={`material-symbols-outlined ${f.size} flower-soul`}>
-                  {f.icon}
-                </span>
+          {hasAnyActivity ? (
+            <>
+              {/* Soul cluster (left) */}
+              <div className="flex items-end -space-x-4">
+                {CLUSTER_ICONS.soul
+                  .slice(0, visibleIcons("soul", quadrantCounts.soul))
+                  .map((f, i) => (
+                    <div
+                      key={i}
+                      className={`flower-sway ${f.mb} ${f.opacity}`}
+                      style={{ animationDelay: f.delay }}
+                    >
+                      <span className={`material-symbols-outlined ${f.size} flower-soul`}>
+                        {f.icon}
+                      </span>
+                    </div>
+                  ))}
               </div>
-            ))}
-          </div>
 
-          {/* Mind cluster (center, tallest) */}
-          <div className="flex items-end -space-x-6 z-10">
-            {CLUSTER_ICONS.mind.map((f, i) => (
-              <div
-                key={i}
-                className={`flower-sway ${f.mb} ${f.opacity}`}
-                style={{ animationDelay: f.delay }}
-              >
-                <span className={`material-symbols-outlined ${f.size} flower-mind`}>
-                  {f.icon}
-                </span>
+              {/* Mind cluster (center, tallest) */}
+              <div className="flex items-end -space-x-6 z-10">
+                {CLUSTER_ICONS.mind
+                  .slice(0, visibleIcons("mind", quadrantCounts.mind))
+                  .map((f, i) => (
+                    <div
+                      key={i}
+                      className={`flower-sway ${f.mb} ${f.opacity}`}
+                      style={{ animationDelay: f.delay }}
+                    >
+                      <span className={`material-symbols-outlined ${f.size} flower-mind`}>
+                        {f.icon}
+                      </span>
+                    </div>
+                  ))}
               </div>
-            ))}
-          </div>
 
-          {/* Body cluster (right) */}
-          <div className="flex items-end -space-x-4">
-            {CLUSTER_ICONS.body.map((f, i) => (
-              <div
-                key={i}
-                className={`flower-sway ${f.mb} ${f.opacity}`}
-                style={{ animationDelay: f.delay }}
-              >
-                <span className={`material-symbols-outlined ${f.size} flower-body`}>
-                  {f.icon}
+              {/* Body cluster (right) */}
+              <div className="flex items-end -space-x-4">
+                {CLUSTER_ICONS.body
+                  .slice(0, visibleIcons("body", quadrantCounts.body))
+                  .map((f, i) => (
+                    <div
+                      key={i}
+                      className={`flower-sway ${f.mb} ${f.opacity}`}
+                      style={{ animationDelay: f.delay }}
+                    >
+                      <span className={`material-symbols-outlined ${f.size} flower-body`}>
+                        {f.icon}
+                      </span>
+                    </div>
+                  ))}
+              </div>
+            </>
+          ) : (
+            /* Empty garden — show a seed waiting to bloom */
+            <div className="flex items-end justify-center w-full pb-4">
+              <div className="flower-sway opacity-40">
+                <span className="material-symbols-outlined !text-5xl flower-mind">
+                  local_florist
                 </span>
               </div>
-            ))}
-          </div>
+            </div>
+          )}
         </div>
 
         {/* Legend */}
@@ -104,7 +139,7 @@ export default function GardenView({ flowers }: { flowers: Flower[] }) {
           Growth Progress
         </p>
         <p className="text-6xl font-light text-on-surface tracking-tight">
-          {total}{" "}
+          {totalBlooms}{" "}
           <span className="text-3xl text-on-surface-variant/60 ml-2">
             Total Blooms Today
           </span>

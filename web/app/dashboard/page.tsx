@@ -4,13 +4,21 @@ import { useEffect, useState } from "react";
 import { createClient, Flower, ActivityLog } from "@/lib/supabase";
 import GardenView from "@/components/garden-view";
 
+type AnonEvent = {
+  id: string;
+  quadrant: string;
+  activity_type: string;
+  duration_seconds: number;
+  created_at: string;
+};
+
 export default function DashboardHome() {
   const [flowers, setFlowers] = useState<Flower[]>([]);
+  const [anonEvents, setAnonEvents] = useState<AnonEvent[]>([]);
   const [todaySessions, setTodaySessions] = useState(0);
   const [todayActivities, setTodayActivities] = useState(0);
   const [uniqueUsers, setUniqueUsers] = useState(0);
   const [recentLogs, setRecentLogs] = useState<ActivityLog[]>([]);
-  const [allLogs, setAllLogs] = useState<ActivityLog[]>([]);
   const [langDist, setLangDist] = useState<Record<string, number>>({});
 
   useEffect(() => {
@@ -19,22 +27,22 @@ export default function DashboardHome() {
     todayStart.setHours(0, 0, 0, 0);
 
     async function load() {
-      const [flowerRes, sessionRes, activityRes, recentRes, weekRes, langRes] = await Promise.all([
+      const [flowerRes, sessionRes, activityRes, recentRes, anonRes, langRes] = await Promise.all([
         supabase.from("flowers").select("*").order("created_at", { ascending: false }).limit(200),
         supabase.from("sessions").select("id").gte("started_at", todayStart.toISOString()),
         supabase.from("activity_logs").select("user_id").eq("completed", true).gte("created_at", todayStart.toISOString()),
         supabase.from("activity_logs").select("*, profiles(display_name, unique_code)").eq("completed", true).order("created_at", { ascending: false }).limit(10),
-        supabase.from("activity_logs").select("quadrant, activity_type, created_at").eq("completed", true).order("created_at", { ascending: false }).limit(500),
+        supabase.from("kiosk_anonymous_events").select("*").order("created_at", { ascending: false }).limit(500),
         supabase.from("sessions").select("language").limit(200),
       ]);
 
       setFlowers(flowerRes.data ?? []);
+      setAnonEvents((anonRes.data as AnonEvent[]) ?? []);
       setTodaySessions(sessionRes.data?.length ?? 0);
       const activities = activityRes.data ?? [];
       setTodayActivities(activities.length);
       setUniqueUsers(new Set(activities.map((a: any) => a.user_id)).size);
       setRecentLogs((recentRes.data as ActivityLog[]) ?? []);
-      setAllLogs((weekRes.data as any[]) ?? []);
 
       const ld: Record<string, number> = {};
       (langRes.data ?? []).forEach((s: any) => {
@@ -51,10 +59,14 @@ export default function DashboardHome() {
       .on("postgres_changes", { event: "INSERT", schema: "public", table: "flowers" }, (payload) => {
         setFlowers((prev) => [payload.new as Flower, ...prev]);
       })
+      .on("postgres_changes", { event: "INSERT", schema: "public", table: "kiosk_anonymous_events" }, (payload) => {
+        const evt = payload.new as AnonEvent;
+        setAnonEvents((prev) => [evt, ...prev]);
+        setTodayActivities((prev) => prev + 1);
+      })
       .on("postgres_changes", { event: "INSERT", schema: "public", table: "activity_logs" }, (payload) => {
         const log = payload.new as ActivityLog;
         if (log.completed) {
-          setTodayActivities((prev) => prev + 1);
           setRecentLogs((prev) => [log, ...prev].slice(0, 10));
         }
       })
@@ -63,21 +75,27 @@ export default function DashboardHome() {
     return () => { supabase.removeChannel(channel); };
   }, []);
 
-  const todayBlooms = flowers.filter((f) => isToday(f.created_at)).length;
-  const totalBlooms = flowers.length;
+  // Combine flowers + anonymous events for total bloom count
+  const totalBlooms = flowers.length + anonEvents.length;
+  const todayBlooms = flowers.filter((f) => isToday(f.created_at)).length +
+    anonEvents.filter((e) => isToday(e.created_at)).length;
 
-  // Quadrant distribution
+  // Also count today's anon activities for the Activities stat
+  const todayAnonActivities = anonEvents.filter((e) => isToday(e.created_at)).length;
+  const combinedTodayActivities = todayActivities + todayAnonActivities;
+
+  // Quadrant distribution — from anonymous events (primary universal log)
   const quadrantCounts = { mind: 0, body: 0, soul: 0, connect: 0 };
-  allLogs.forEach((l: any) => {
-    if (l.quadrant in quadrantCounts) quadrantCounts[l.quadrant as keyof typeof quadrantCounts]++;
+  anonEvents.forEach((e) => {
+    if (e.quadrant in quadrantCounts) quadrantCounts[e.quadrant as keyof typeof quadrantCounts]++;
   });
   const totalQActivities = Object.values(quadrantCounts).reduce((a, b) => a + b, 0);
   const topPillar = Object.entries(quadrantCounts).sort((a, b) => b[1] - a[1])[0];
 
   // Peak usage hours
   const hourCounts: Record<number, number> = {};
-  allLogs.forEach((l: any) => {
-    const h = new Date(l.created_at).getHours();
+  anonEvents.forEach((e) => {
+    const h = new Date(e.created_at).getHours();
     hourCounts[h] = (hourCounts[h] || 0) + 1;
   });
   const peakHours = Object.entries(hourCounts)
@@ -95,9 +113,9 @@ export default function DashboardHome() {
     ko: "한국어", ja: "日本語", yue: "粵語",
   };
 
-  // Top activities
+  // Top activities — from anonymous events
   const actCounts: Record<string, number> = {};
-  allLogs.forEach((l: any) => { actCounts[l.activity_type] = (actCounts[l.activity_type] || 0) + 1; });
+  anonEvents.forEach((e) => { actCounts[e.activity_type] = (actCounts[e.activity_type] || 0) + 1; });
   const topActivities = Object.entries(actCounts).sort((a, b) => b[1] - a[1]).slice(0, 5);
 
   return (
@@ -111,7 +129,7 @@ export default function DashboardHome() {
       </header>
 
       {/* Garden View */}
-      <GardenView flowers={flowers} />
+      <GardenView totalBlooms={totalBlooms} quadrantCounts={quadrantCounts} />
 
       {/* Bento Analytics Grid */}
       <div className="grid grid-cols-12 gap-6">
@@ -165,7 +183,7 @@ export default function DashboardHome() {
           </div>
           <div className="bg-tertiary-container/30 rounded-2xl p-5 border border-tertiary-fixed-dim/30">
             <span className="material-symbols-outlined text-tertiary mb-2 block">check_circle</span>
-            <p className="text-2xl font-bold text-on-surface">{todayActivities}</p>
+            <p className="text-2xl font-bold text-on-surface">{combinedTodayActivities}</p>
             <p className="text-[10px] text-on-surface-variant uppercase tracking-widest font-medium mt-1">Activities</p>
           </div>
           <div className="bg-primary-container/20 rounded-2xl p-5 border border-primary-fixed-dim/30">

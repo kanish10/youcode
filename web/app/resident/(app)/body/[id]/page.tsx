@@ -40,27 +40,43 @@ export default function ExerciseDetailPage({ params }: { params: Promise<{ id: s
   async function handleLog() {
     setLogging(true);
     try {
+      const supabase = createClient();
+      const durationSec = (ex!.durationMin ?? 5) * 60;
+
+      // Always log to kiosk_anonymous_events (universal activity log)
+      await supabase.from("kiosk_anonymous_events").insert({
+        quadrant: "body",
+        activity_type: ex!.id,
+        duration_seconds: durationSec,
+      });
+
+      // If bloom ID exists, also log to activity_logs + flowers
       if (bloomId) {
-        const supabase = createClient();
-        // Try to find the resident by bloom_id
         const { data: profile } = await supabase
           .from("profiles")
           .select("id")
-          .eq("bloom_id", bloomId)
-          .single();
+          .or(`unique_code.eq.${bloomId},display_name.eq.${bloomId}`)
+          .limit(1)
+          .maybeSingle();
+
         if (profile) {
           await supabase.from("activity_logs").insert({
-            resident_id: profile.id,
-            activity_type: "body",
-            activity_name: ex!.name,
-            category: ex!.category,
-            duration_minutes: ex!.durationMin,
+            user_id: profile.id,
+            quadrant: "body",
+            activity_type: ex!.id,
+            duration_seconds: durationSec,
+            completed: true,
+          });
+          await supabase.from("flowers").insert({
+            user_id: profile.id,
+            quadrant: "body",
+            color_hex: "#A89B8F",
           });
         }
       }
+
       setLogged(true);
     } catch {
-      // silently fail — guest mode
       setLogged(true);
     } finally {
       setLogging(false);
