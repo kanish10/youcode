@@ -27,7 +27,8 @@ export default function ExerciseDetailPage({ params }: { params: Promise<{ id: s
   }
 
   const tint = TINT_CLASSES[ex.tint];
-  const ytUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(ex.youtubeQuery)}`;
+  const ytSearchUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(ex.youtubeQuery)}`;
+  const ytEmbedUrl = `https://www.youtube.com/embed?listType=search&list=${encodeURIComponent(ex.youtubeQuery)}`;
 
   const stepColors = ["primary", "secondary", "tertiary", "primary", "secondary", "tertiary", "primary", "secondary"];
   const stepTints = [
@@ -101,21 +102,33 @@ export default function ExerciseDetailPage({ params }: { params: Promise<{ id: s
         </div>
       </div>
 
-      {/* YouTube Demo */}
+      {/* Embedded YouTube Video */}
+      <div className="mb-6 rounded-2xl overflow-hidden border border-outline-variant/20 shadow-sm">
+        <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+          <iframe
+            className="absolute inset-0 w-full h-full"
+            src={ytEmbedUrl}
+            title={ex.name}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      </div>
+
+      {/* YouTube Search Fallback */}
       <a
-        href={ytUrl}
+        href={ytSearchUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className={`w-full mb-6 flex items-center gap-3 px-5 py-4 rounded-xl border ${tint.card} active:scale-[0.98] transition-transform`}
+        className={`w-full mb-6 flex items-center gap-3 px-5 py-3 rounded-xl border ${tint.card} active:scale-[0.98] transition-transform`}
       >
-        <div className="w-10 h-10 rounded-xl bg-red-500 flex items-center justify-center shrink-0">
-          <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white"><path d="M21.8 8s-.2-1.4-.8-2c-.7-.8-1.5-.8-1.9-.9C16.8 5 12 5 12 5s-4.8 0-7.1.1c-.4.1-1.2.1-1.9.9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.7.8 1.6.7 2 .8C6.4 18.9 12 19 12 19s4.8 0 7.1-.2c.4 0 1.2-.1 1.9-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM10 15V9l6 3-6 3z"/></svg>
+        <div className="w-8 h-8 rounded-lg bg-red-500 flex items-center justify-center shrink-0">
+          <svg viewBox="0 0 24 24" className="w-4 h-4 fill-white"><path d="M21.8 8s-.2-1.4-.8-2c-.7-.8-1.5-.8-1.9-.9C16.8 5 12 5 12 5s-4.8 0-7.1.1c-.4.1-1.2.1-1.9.9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.7.8 1.6.7 2 .8C6.4 18.9 12 19 12 19s4.8 0 7.1-.2c.4 0 1.2-.1 1.9-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM10 15V9l6 3-6 3z"/></svg>
         </div>
         <div className="flex-1">
-          <p className="font-semibold text-sm text-on-surface">{t("body.watchOnYoutube")}</p>
-          <p className="text-xs text-on-surface-variant">{t("body.videoNote")}</p>
+          <p className="font-semibold text-xs text-on-surface">{t("body.watchOnYoutube")}</p>
         </div>
-        <span className="material-symbols-outlined text-on-surface-variant">open_in_new</span>
+        <span className="material-symbols-outlined text-on-surface-variant text-sm">open_in_new</span>
       </a>
 
       {/* Steps */}

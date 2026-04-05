@@ -1,14 +1,57 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import { useLanguage } from "@/lib/i18n";
 import { useChat } from "@ai-sdk/react";
 import { isTextUIPart, DefaultChatTransport, type UIMessage } from "ai";
+
+function useVoiceInput(onResult: (text: string) => void) {
+  const [isListening, setIsListening] = useState(false);
+  const recognitionRef = useRef<SpeechRecognition | null>(null);
+
+  const startListening = useCallback(() => {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) return;
+
+    const recognition = new SpeechRecognition();
+    recognition.continuous = false;
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    recognition.onresult = (event: SpeechRecognitionEvent) => {
+      const transcript = event.results[0]?.[0]?.transcript;
+      if (transcript) onResult(transcript);
+      setIsListening(false);
+    };
+
+    recognition.onerror = () => setIsListening(false);
+    recognition.onend = () => setIsListening(false);
+
+    recognitionRef.current = recognition;
+    recognition.start();
+    setIsListening(true);
+  }, [onResult]);
+
+  const stopListening = useCallback(() => {
+    recognitionRef.current?.stop();
+    setIsListening(false);
+  }, []);
+
+  const supported = typeof window !== "undefined" && !!(window.SpeechRecognition || window.webkitSpeechRecognition);
+
+  return { isListening, startListening, stopListening, supported };
+}
 
 export default function ChatPage() {
   const { t, bloomId } = useLanguage();
   const bottomRef = useRef<HTMLDivElement>(null);
   const [inputValue, setInputValue] = useState("");
+
+  const handleVoiceResult = useCallback((text: string) => {
+    setInputValue((prev) => (prev ? prev + " " + text : text));
+  }, []);
+
+  const { isListening, startListening, stopListening, supported: voiceSupported } = useVoiceInput(handleVoiceResult);
 
   const greeting = t("chat.greeting");
   const initialMessages: UIMessage[] = [
@@ -112,10 +155,27 @@ export default function ChatPage() {
         onSubmit={handleSend}
         className="px-4 py-3 border-t border-outline-variant/20 flex gap-2 bg-background shrink-0"
       >
+        {voiceSupported && (
+          <button
+            type="button"
+            onClick={isListening ? stopListening : startListening}
+            disabled={isLoading}
+            className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 transition-all duration-200 ${
+              isListening
+                ? "bg-error text-white animate-pulse"
+                : "bg-surface-container text-on-surface-variant hover:bg-surface-container-high"
+            } disabled:opacity-40`}
+            title={isListening ? t("chat.stopRecording") : t("chat.voice")}
+          >
+            <span className="material-symbols-outlined text-base" style={{ fontVariationSettings: "'FILL' 1" }}>
+              {isListening ? "stop" : "mic"}
+            </span>
+          </button>
+        )}
         <input
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
-          placeholder={t("chat.placeholder")}
+          placeholder={isListening ? t("chat.recording") : t("chat.placeholder")}
           className="flex-1 px-4 py-3 rounded-xl border border-outline-variant/30 bg-surface-container-low text-sm focus:ring-2 focus:ring-primary/20 outline-none"
           disabled={isLoading}
         />

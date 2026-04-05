@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react";
 
-export type Lang = "en" | "fr" | "es" | "ar" | "pa" | "zh" | "tl" | "fa" | "hi" | "vi" | "ko";
+export type Lang = "en" | "fr" | "es" | "ar" | "pa" | "zh" | "tl" | "fa" | "hi" | "vi" | "ko" | "ja" | "yue";
 
 export const LANGUAGES: { code: Lang; label: string; nativeLabel: string; rtl?: boolean }[] = [
   { code: "en", label: "English",   nativeLabel: "English" },
@@ -16,6 +16,8 @@ export const LANGUAGES: { code: Lang; label: string; nativeLabel: string; rtl?: 
   { code: "hi", label: "Hindi",     nativeLabel: "हिन्दी" },
   { code: "vi", label: "Vietnamese",nativeLabel: "Tiếng Việt" },
   { code: "ko", label: "Korean",    nativeLabel: "한국어" },
+  { code: "ja", label: "Japanese",  nativeLabel: "日本語" },
+  { code: "yue", label: "Cantonese", nativeLabel: "粵語" },
 ];
 
 export type TKey =
@@ -61,7 +63,13 @@ export type TKey =
   | "common.guestMode" | "common.loggingFor" | "common.changeId"
   | "common.send" | "common.tryAgain" | "common.close" | "common.skip"
   | "common.or" | "common.gentle" | "common.moderate" | "common.active"
-  | "common.seated" | "common.min";
+  | "common.seated" | "common.min"
+  | "chat.voice" | "chat.recording" | "chat.stopRecording"
+  | "resources.catMental" | "resources.catFood" | "resources.catHousing"
+  | "resources.catSafety" | "resources.catCounselling" | "resources.catEmployment"
+  | "resources.allCategories" | "resources.openInMaps" | "resources.callNow"
+  | "resources.directions" | "resources.address" | "resources.phone"
+  | "resources.hours" | "resources.languages";
 
 type TranslationMap = Record<TKey, string>;
 
@@ -147,6 +155,14 @@ const en: TranslationMap = {
   "common.or": "or", "common.gentle": "Gentle",
   "common.moderate": "Moderate", "common.active": "Active",
   "common.seated": "Seated", "common.min": "min",
+  "chat.voice": "Voice input", "chat.recording": "Listening…", "chat.stopRecording": "Stop recording",
+  "resources.catMental": "Mental Wellness", "resources.catFood": "Food Security",
+  "resources.catHousing": "Housing & Legal", "resources.catSafety": "Safety",
+  "resources.catCounselling": "Counselling", "resources.catEmployment": "Employment",
+  "resources.allCategories": "All", "resources.openInMaps": "Open in Google Maps",
+  "resources.callNow": "Call Now", "resources.directions": "Get Directions",
+  "resources.address": "Address", "resources.phone": "Phone",
+  "resources.hours": "Hours", "resources.languages": "Languages",
 };
 
 const fr: Partial<TranslationMap> = {
@@ -222,6 +238,14 @@ const fr: Partial<TranslationMap> = {
   "connect.resonances": "Résonances", "connect.hearts": "Cœurs", "connect.joys": "Joies",
   "resources.housingTag": "8 Sites Actifs", "resources.foodTag": "Marché Aujourd'hui",
   "resources.mentalTag": "Soutien par pairs", "resources.safetyTag": "Réponse 24h",
+  "chat.voice": "Saisie vocale", "chat.recording": "Écoute en cours…", "chat.stopRecording": "Arrêter",
+  "resources.catMental": "Bien-être Mental", "resources.catFood": "Sécurité Alimentaire",
+  "resources.catHousing": "Logement et Juridique", "resources.catSafety": "Sécurité",
+  "resources.catCounselling": "Conseil", "resources.catEmployment": "Emploi",
+  "resources.allCategories": "Tout", "resources.openInMaps": "Ouvrir dans Google Maps",
+  "resources.callNow": "Appeler", "resources.directions": "Itinéraire",
+  "resources.address": "Adresse", "resources.phone": "Téléphone",
+  "resources.hours": "Horaires", "resources.languages": "Langues",
 };
 
 const es: Partial<TranslationMap> = {
@@ -299,6 +323,14 @@ const es: Partial<TranslationMap> = {
   "common.close": "Cerrar", "common.skip": "Omitir",
   "common.or": "o", "common.gentle": "Suave", "common.moderate": "Moderado",
   "common.active": "Activo", "common.seated": "Sentada", "common.min": "min",
+  "chat.voice": "Entrada de voz", "chat.recording": "Escuchando…", "chat.stopRecording": "Detener",
+  "resources.catMental": "Bienestar Mental", "resources.catFood": "Seguridad Alimentaria",
+  "resources.catHousing": "Vivienda y Legal", "resources.catSafety": "Seguridad",
+  "resources.catCounselling": "Consejería", "resources.catEmployment": "Empleo",
+  "resources.allCategories": "Todos", "resources.openInMaps": "Abrir en Google Maps",
+  "resources.callNow": "Llamar", "resources.directions": "Cómo llegar",
+  "resources.address": "Dirección", "resources.phone": "Teléfono",
+  "resources.hours": "Horario", "resources.languages": "Idiomas",
 };
 
 const ar: Partial<TranslationMap> = {
@@ -376,6 +408,14 @@ const ar: Partial<TranslationMap> = {
   "common.close": "إغلاق", "common.skip": "تخطي",
   "common.or": "أو", "common.gentle": "لطيف", "common.moderate": "متوسط",
   "common.active": "نشيط", "common.seated": "جلوس", "common.min": "د",
+  "chat.voice": "إدخال صوتي", "chat.recording": "جارٍ الاستماع…", "chat.stopRecording": "توقفي",
+  "resources.catMental": "العافية النفسية", "resources.catFood": "الأمن الغذائي",
+  "resources.catHousing": "السكن والقانوني", "resources.catSafety": "السلامة",
+  "resources.catCounselling": "الإرشاد", "resources.catEmployment": "التوظيف",
+  "resources.allCategories": "الكل", "resources.openInMaps": "افتح في خرائط جوجل",
+  "resources.callNow": "اتصلي الآن", "resources.directions": "الاتجاهات",
+  "resources.address": "العنوان", "resources.phone": "الهاتف",
+  "resources.hours": "الساعات", "resources.languages": "اللغات",
 };
 
 const pa: Partial<TranslationMap> = {
@@ -453,6 +493,231 @@ const pa: Partial<TranslationMap> = {
   "common.close": "ਬੰਦ ਕਰੋ", "common.skip": "ਛੱਡੋ",
   "common.or": "ਜਾਂ", "common.gentle": "ਕੋਮਲ", "common.moderate": "ਮੱਧਮ",
   "common.active": "ਸਰਗਰਮ", "common.seated": "ਬੈਠ ਕੇ", "common.min": "ਮਿੰਟ",
+  "chat.voice": "ਆਵਾਜ਼ ਇਨਪੁੱਟ", "chat.recording": "ਸੁਣ ਰਿਹਾ ਹੈ…", "chat.stopRecording": "ਬੰਦ ਕਰੋ",
+  "resources.catMental": "ਮਾਨਸਿਕ ਤੰਦਰੁਸਤੀ", "resources.catFood": "ਭੋਜਨ ਸੁਰੱਖਿਆ",
+  "resources.catHousing": "ਰਿਹਾਇਸ਼ ਅਤੇ ਕਾਨੂੰਨੀ", "resources.catSafety": "ਸੁਰੱਖਿਆ",
+  "resources.catCounselling": "ਕਾਉਂਸਲਿੰਗ", "resources.catEmployment": "ਰੁਜ਼ਗਾਰ",
+  "resources.allCategories": "ਸਾਰੇ", "resources.openInMaps": "Google Maps ਵਿੱਚ ਖੋਲ੍ਹੋ",
+  "resources.callNow": "ਹੁਣੇ ਕਾਲ ਕਰੋ", "resources.directions": "ਦਿਸ਼ਾ-ਨਿਰਦੇਸ਼",
+  "resources.address": "ਪਤਾ", "resources.phone": "ਫ਼ੋਨ",
+  "resources.hours": "ਸਮਾਂ", "resources.languages": "ਭਾਸ਼ਾਵਾਂ",
+};
+
+const zh: Partial<TranslationMap> = {
+  "nav.garden": "花园", "nav.sanctuary": "庇护所", "nav.connect": "连接",
+  "nav.resources": "资源", "nav.chat": "聊天",
+  "welcome.title": "欢迎来到 Bloom", "welcome.subtitle": "一个温柔的健康之旅空间",
+  "welcome.chooseLanguage": "选择您的语言",
+  "welcome.enterBloomId": "输入您的 Bloom ID",
+  "welcome.continueWithId": "使用我的ID继续", "welcome.continueWithout": "以访客身份继续",
+  "home.title": "庇护所", "home.subtitle": "培养内在的风景",
+  "home.mind": "心灵", "home.body": "身体", "home.soul": "灵魂",
+  "home.mindCta": "探索", "home.bodyCta": "运动", "home.soulCta": "表达",
+  "body.title": "身体运动", "body.filterAll": "全部",
+  "chat.title": "Bloom 聊天", "chat.subtitle": "您的健康伙伴",
+  "chat.placeholder": "今天你感觉怎样？",
+  "chat.greeting": "你好 🌿 我在这里陪伴你。今天你感觉怎样？",
+  "chat.thinking": "Bloom 在这里陪伴你…", "chat.voice": "语音输入", "chat.recording": "正在聆听…", "chat.stopRecording": "停止",
+  "grounding.title": "安静的扎根", "grounding.final": "你在这里。你是安全的。你是存在的。",
+  "soul.title": "灵魂表达", "connect.title": "连接空间",
+  "resources.title": "基本服务", "resources.callBC211": "拨打 BC211 · 24/7 支持",
+  "resources.catMental": "心理健康", "resources.catFood": "食品安全",
+  "resources.catHousing": "住房与法律", "resources.catSafety": "安全",
+  "resources.catCounselling": "咨询", "resources.catEmployment": "就业",
+  "resources.allCategories": "全部", "resources.openInMaps": "在谷歌地图中打开",
+  "resources.callNow": "立即拨打", "resources.directions": "获取路线",
+  "garden.title": "生命花园", "garden.subtitle": "每朵花都是健康的瞬间",
+  "common.back": "返回", "common.done": "完成", "common.next": "下一步",
+  "common.loading": "加载中…", "common.send": "发送", "common.gentle": "温和", "common.moderate": "中等",
+};
+
+const ja: Partial<TranslationMap> = {
+  "nav.garden": "庭園", "nav.sanctuary": "サンクチュアリ", "nav.connect": "つながり",
+  "nav.resources": "リソース", "nav.chat": "チャット",
+  "welcome.title": "Bloomへようこそ", "welcome.subtitle": "あなたの健康の旅のための優しい空間",
+  "welcome.chooseLanguage": "言語を選択",
+  "welcome.continueWithId": "IDで続ける", "welcome.continueWithout": "ゲストとして続ける",
+  "home.title": "サンクチュアリ", "home.subtitle": "内なる風景を育む",
+  "home.mind": "心", "home.body": "体", "home.soul": "魂",
+  "home.mindCta": "探索", "home.bodyCta": "動く", "home.soulCta": "表現",
+  "body.title": "ボディムーブメント", "body.filterAll": "すべて",
+  "chat.title": "Bloom チャット", "chat.subtitle": "あなたの健康の仲間",
+  "chat.placeholder": "今日の調子はいかがですか？",
+  "chat.greeting": "こんにちは 🌿 あなたのそばにいます。今日はいかがですか？",
+  "chat.thinking": "Bloomはあなたのそばに…", "chat.voice": "音声入力", "chat.recording": "聞いています…", "chat.stopRecording": "停止",
+  "grounding.title": "静かなグラウンディング", "grounding.final": "あなたはここにいます。安全です。今ここにいます。",
+  "soul.title": "魂の表現", "connect.title": "つながりの空間",
+  "resources.title": "基本サービス", "resources.callBC211": "BC211に電話 · 24時間対応",
+  "resources.catMental": "メンタルヘルス", "resources.catFood": "食料支援",
+  "resources.catHousing": "住居・法律", "resources.catSafety": "安全",
+  "resources.catCounselling": "カウンセリング", "resources.catEmployment": "就労支援",
+  "resources.allCategories": "すべて", "resources.openInMaps": "Googleマップで開く",
+  "resources.callNow": "電話する", "resources.directions": "道順",
+  "garden.title": "生命の庭", "garden.subtitle": "すべての花は健康の瞬間です",
+  "common.back": "戻る", "common.done": "完了", "common.next": "次へ",
+  "common.loading": "読み込み中…", "common.send": "送信", "common.gentle": "やさしい", "common.moderate": "中程度",
+};
+
+const ko: Partial<TranslationMap> = {
+  "nav.garden": "정원", "nav.sanctuary": "안식처", "nav.connect": "연결",
+  "nav.resources": "자원", "nav.chat": "채팅",
+  "welcome.title": "Bloom에 오신 것을 환영합니다", "welcome.subtitle": "당신의 건강 여정을 위한 부드러운 공간",
+  "welcome.chooseLanguage": "언어를 선택하세요",
+  "welcome.continueWithId": "내 ID로 계속", "welcome.continueWithout": "게스트로 계속",
+  "home.title": "안식처", "home.subtitle": "내면의 풍경을 가꾸세요",
+  "home.mind": "마음", "home.body": "몸", "home.soul": "영혼",
+  "home.mindCta": "탐색", "home.bodyCta": "움직임", "home.soulCta": "표현",
+  "body.title": "신체 움직임", "body.filterAll": "전체",
+  "chat.title": "Bloom 채팅", "chat.subtitle": "당신의 건강 동반자",
+  "chat.placeholder": "오늘 기분이 어떠세요?",
+  "chat.greeting": "안녕하세요 🌿 함께 있어요. 오늘 기분이 어떠세요?",
+  "chat.thinking": "Bloom이 함께합니다…", "chat.voice": "음성 입력", "chat.recording": "듣고 있어요…", "chat.stopRecording": "중지",
+  "grounding.title": "고요한 그라운딩", "grounding.final": "당신은 여기 있습니다. 안전합니다. 현재에 있습니다.",
+  "soul.title": "영혼의 표현", "connect.title": "연결 공간",
+  "resources.title": "필수 서비스", "resources.callBC211": "BC211 전화 · 24시간",
+  "resources.catMental": "정신 건강", "resources.catFood": "식량 지원",
+  "resources.catHousing": "주거 및 법률", "resources.catSafety": "안전",
+  "resources.catCounselling": "상담", "resources.catEmployment": "고용",
+  "resources.allCategories": "전체", "resources.openInMaps": "Google 지도에서 열기",
+  "resources.callNow": "전화하기", "resources.directions": "길찾기",
+  "garden.title": "생명의 정원", "garden.subtitle": "모든 꽃은 건강의 순간입니다",
+  "common.back": "뒤로", "common.done": "완료", "common.next": "다음",
+  "common.loading": "로딩 중…", "common.send": "보내기", "common.gentle": "부드러운", "common.moderate": "보통",
+};
+
+const hi: Partial<TranslationMap> = {
+  "nav.garden": "बगीचा", "nav.sanctuary": "अभयारण्य", "nav.connect": "जुड़ें",
+  "nav.resources": "संसाधन", "nav.chat": "चैट",
+  "welcome.title": "Bloom में आपका स्वागत है", "welcome.subtitle": "आपकी स्वास्थ्य यात्रा के लिए एक कोमल स्थान",
+  "welcome.chooseLanguage": "अपनी भाषा चुनें",
+  "welcome.continueWithId": "मेरी ID के साथ जारी रखें", "welcome.continueWithout": "अतिथि के रूप में जारी रखें",
+  "home.title": "अभयारण्य", "home.subtitle": "अपने आंतरिक परिदृश्य को विकसित करें",
+  "home.mind": "मन", "home.body": "शरीर", "home.soul": "आत्मा",
+  "home.mindCta": "खोजें", "home.bodyCta": "चलें", "home.soulCta": "अभिव्यक्त करें",
+  "body.title": "शारीरिक गति", "body.filterAll": "सभी",
+  "chat.title": "Bloom चैट", "chat.subtitle": "आपकी स्वास्थ्य साथी",
+  "chat.placeholder": "आज आप कैसा महसूस कर रही हैं?",
+  "chat.greeting": "नमस्ते 🌿 मैं आपके साथ हूँ। आज आप कैसा महसूस कर रही हैं?",
+  "chat.thinking": "Bloom आपके साथ है…", "chat.voice": "आवाज़ इनपुट", "chat.recording": "सुन रहा है…", "chat.stopRecording": "रोकें",
+  "grounding.title": "शांत ग्राउंडिंग", "grounding.final": "आप यहाँ हैं। आप सुरक्षित हैं। आप वर्तमान में हैं।",
+  "soul.title": "आत्मा अभिव्यक्ति", "connect.title": "जुड़ाव स्थान",
+  "resources.title": "आवश्यक सेवाएं", "resources.callBC211": "BC211 कॉल करें · 24/7",
+  "resources.catMental": "मानसिक स्वास्थ्य", "resources.catFood": "खाद्य सुरक्षा",
+  "resources.catHousing": "आवास और कानूनी", "resources.catSafety": "सुरक्षा",
+  "resources.catCounselling": "परामर्श", "resources.catEmployment": "रोज़गार",
+  "resources.allCategories": "सभी", "resources.openInMaps": "Google Maps में खोलें",
+  "resources.callNow": "अभी कॉल करें", "resources.directions": "रास्ता",
+  "garden.title": "जीवित बगीचा", "garden.subtitle": "हर फूल स्वास्थ्य का एक पल है",
+  "common.back": "वापस", "common.done": "हो गया", "common.next": "अगला",
+  "common.loading": "लोड हो रहा है…", "common.send": "भेजें", "common.gentle": "कोमल", "common.moderate": "मध्यम",
+};
+
+const vi: Partial<TranslationMap> = {
+  "nav.garden": "Vườn", "nav.sanctuary": "Nơi Trú Ẩn", "nav.connect": "Kết Nối",
+  "nav.resources": "Tài Nguyên", "nav.chat": "Trò Chuyện",
+  "welcome.title": "Chào mừng đến Bloom", "welcome.subtitle": "Không gian nhẹ nhàng cho hành trình sức khỏe của bạn",
+  "welcome.chooseLanguage": "Chọn ngôn ngữ",
+  "welcome.continueWithId": "Tiếp tục với ID", "welcome.continueWithout": "Tiếp tục với tư cách khách",
+  "home.title": "Nơi Trú Ẩn", "home.subtitle": "Chăm sóc cảnh quan bên trong",
+  "home.mind": "Tâm Trí", "home.body": "Cơ Thể", "home.soul": "Tâm Hồn",
+  "home.mindCta": "Khám Phá", "home.bodyCta": "Vận Động", "home.soulCta": "Biểu Đạt",
+  "body.title": "Vận Động Cơ Thể", "body.filterAll": "Tất cả",
+  "chat.title": "Bloom Chat", "chat.subtitle": "Bạn đồng hành sức khỏe",
+  "chat.placeholder": "Hôm nay bạn cảm thấy thế nào?",
+  "chat.greeting": "Xin chào 🌿 Tôi ở đây cùng bạn. Hôm nay bạn cảm thấy thế nào?",
+  "chat.thinking": "Bloom ở đây cùng bạn…", "chat.voice": "Nhập giọng nói", "chat.recording": "Đang nghe…", "chat.stopRecording": "Dừng",
+  "grounding.title": "Nối Đất Tĩnh Lặng", "grounding.final": "Bạn ở đây. Bạn an toàn. Bạn đang hiện diện.",
+  "soul.title": "Biểu Đạt Tâm Hồn", "connect.title": "Không Gian Kết Nối",
+  "resources.title": "Dịch Vụ Thiết Yếu", "resources.callBC211": "Gọi BC211 · Hỗ trợ 24/7",
+  "resources.catMental": "Sức Khỏe Tâm Thần", "resources.catFood": "An Ninh Lương Thực",
+  "resources.catHousing": "Nhà Ở & Pháp Lý", "resources.catSafety": "An Toàn",
+  "resources.catCounselling": "Tư Vấn", "resources.catEmployment": "Việc Làm",
+  "resources.allCategories": "Tất cả", "resources.openInMaps": "Mở trong Google Maps",
+  "resources.callNow": "Gọi ngay", "resources.directions": "Chỉ đường",
+  "garden.title": "Vườn Sống", "garden.subtitle": "Mỗi bông hoa là một khoảnh khắc sức khỏe",
+  "common.back": "Quay lại", "common.done": "Xong", "common.next": "Tiếp",
+  "common.loading": "Đang tải…", "common.send": "Gửi", "common.gentle": "Nhẹ nhàng", "common.moderate": "Vừa phải",
+};
+
+const fa: Partial<TranslationMap> = {
+  "nav.garden": "باغ", "nav.sanctuary": "پناهگاه", "nav.connect": "ارتباط",
+  "nav.resources": "منابع", "nav.chat": "گفتگو",
+  "welcome.title": "به Bloom خوش آمدید", "welcome.subtitle": "فضایی آرام برای سفر سلامتی شما",
+  "welcome.chooseLanguage": "زبان خود را انتخاب کنید",
+  "welcome.continueWithId": "ادامه با شناسه من", "welcome.continueWithout": "ادامه به عنوان مهمان",
+  "home.title": "پناهگاه", "home.subtitle": "منظره درونی خود را پرورش دهید",
+  "home.mind": "ذهن", "home.body": "بدن", "home.soul": "روح",
+  "home.mindCta": "کاوش", "home.bodyCta": "حرکت", "home.soulCta": "بیان",
+  "body.title": "حرکت بدن", "body.filterAll": "همه",
+  "chat.title": "گفتگو با Bloom", "chat.subtitle": "همراه سلامتی شما",
+  "chat.placeholder": "امروز حالتان چطور است؟",
+  "chat.greeting": "سلام 🌿 من اینجا با شما هستم. امروز حالتان چطور است؟",
+  "chat.thinking": "Bloom با شماست…", "chat.voice": "ورودی صوتی", "chat.recording": "در حال گوش دادن…", "chat.stopRecording": "توقف",
+  "grounding.title": "زمین‌گیری آرام", "grounding.final": "شما اینجایید. در امنیتید. در حال حاضرید.",
+  "soul.title": "بیان روح", "connect.title": "فضای ارتباط",
+  "resources.title": "خدمات ضروری", "resources.callBC211": "تماس با BC211 · پشتیبانی ۲۴/۷",
+  "resources.catMental": "سلامت روان", "resources.catFood": "امنیت غذایی",
+  "resources.catHousing": "مسکن و حقوقی", "resources.catSafety": "ایمنی",
+  "resources.catCounselling": "مشاوره", "resources.catEmployment": "اشتغال",
+  "resources.allCategories": "همه", "resources.openInMaps": "باز کردن در نقشه گوگل",
+  "resources.callNow": "تماس بگیرید", "resources.directions": "مسیریابی",
+  "garden.title": "باغ زنده", "garden.subtitle": "هر شکوفه لحظه‌ای از سلامتی است",
+  "common.back": "بازگشت", "common.done": "انجام شد", "common.next": "بعدی",
+  "common.loading": "در حال بارگذاری…", "common.send": "ارسال", "common.gentle": "ملایم", "common.moderate": "متوسط",
+};
+
+const tl: Partial<TranslationMap> = {
+  "nav.garden": "Hardin", "nav.sanctuary": "Santuwaryo", "nav.connect": "Koneksyon",
+  "nav.resources": "Mga Mapagkukunan", "nav.chat": "Chat",
+  "welcome.title": "Maligayang pagdating sa Bloom", "welcome.subtitle": "Isang malambot na lugar para sa iyong paglalakbay sa kalusugan",
+  "welcome.chooseLanguage": "Pumili ng wika",
+  "welcome.continueWithId": "Magpatuloy gamit ang ID", "welcome.continueWithout": "Magpatuloy bilang bisita",
+  "home.title": "Santuwaryo", "home.subtitle": "Alagaan ang iyong loob na tanawin",
+  "home.mind": "Isip", "home.body": "Katawan", "home.soul": "Kaluluwa",
+  "home.mindCta": "Galugarin", "home.bodyCta": "Gumalaw", "home.soulCta": "Ipahayag",
+  "body.title": "Galaw ng Katawan", "body.filterAll": "Lahat",
+  "chat.title": "Bloom Chat", "chat.subtitle": "Ang iyong kasama sa kalusugan",
+  "chat.placeholder": "Kamusta ang pakiramdam mo ngayon?",
+  "chat.greeting": "Kumusta 🌿 Nandito ako para sa iyo. Kamusta ang pakiramdam mo ngayon?",
+  "chat.thinking": "Nandito ang Bloom…", "chat.voice": "Boses input", "chat.recording": "Nakikinig…", "chat.stopRecording": "Itigil",
+  "grounding.title": "Tahimik na Pag-ugat", "grounding.final": "Nandito ka. Ligtas ka. Narito ka ngayon.",
+  "soul.title": "Pagpapahayag ng Kaluluwa", "connect.title": "Espasyo ng Koneksyon",
+  "resources.title": "Mahahalagang Serbisyo", "resources.callBC211": "Tumawag sa BC211 · 24/7",
+  "resources.catMental": "Kalusugan ng Isip", "resources.catFood": "Seguridad sa Pagkain",
+  "resources.catHousing": "Pabahay at Legal", "resources.catSafety": "Kaligtasan",
+  "resources.catCounselling": "Pagpapayo", "resources.catEmployment": "Trabaho",
+  "resources.allCategories": "Lahat", "resources.openInMaps": "Buksan sa Google Maps",
+  "resources.callNow": "Tumawag", "resources.directions": "Direksyon",
+  "garden.title": "Buhay na Hardin", "garden.subtitle": "Bawat bulaklak ay isang sandali ng kalusugan",
+  "common.back": "Bumalik", "common.done": "Tapos", "common.next": "Susunod",
+  "common.loading": "Naglo-load…", "common.send": "Ipadala", "common.gentle": "Banayad", "common.moderate": "Katamtaman",
+};
+
+const yue: Partial<TranslationMap> = {
+  "nav.garden": "花園", "nav.sanctuary": "庇護所", "nav.connect": "聯繫",
+  "nav.resources": "資源", "nav.chat": "傾計",
+  "welcome.title": "歡迎嚟到 Bloom", "welcome.subtitle": "一個溫柔嘅健康之旅空間",
+  "welcome.chooseLanguage": "揀你嘅語言",
+  "welcome.continueWithId": "用我嘅ID繼續", "welcome.continueWithout": "以訪客身份繼續",
+  "home.title": "庇護所", "home.subtitle": "培養你內在嘅風景",
+  "home.mind": "心靈", "home.body": "身體", "home.soul": "靈魂",
+  "home.mindCta": "探索", "home.bodyCta": "運動", "home.soulCta": "表達",
+  "body.title": "身體運動", "body.filterAll": "全部",
+  "chat.title": "Bloom 傾計", "chat.subtitle": "你嘅健康夥伴",
+  "chat.placeholder": "今日你感覺點呀？",
+  "chat.greeting": "你好 🌿 我喺度陪住你。今日你感覺點呀？",
+  "chat.thinking": "Bloom 喺度陪你…", "chat.voice": "語音輸入", "chat.recording": "聽緊…", "chat.stopRecording": "停止",
+  "grounding.title": "安靜嘅扎根", "grounding.final": "你喺度。你係安全嘅。你係存在嘅。",
+  "soul.title": "靈魂表達", "connect.title": "聯繫空間",
+  "resources.title": "基本服務", "resources.callBC211": "打 BC211 · 24/7 支援",
+  "resources.catMental": "心理健康", "resources.catFood": "食物安全",
+  "resources.catHousing": "住屋同法律", "resources.catSafety": "安全",
+  "resources.catCounselling": "輔導", "resources.catEmployment": "就業",
+  "resources.allCategories": "全部", "resources.openInMaps": "喺Google地圖打開",
+  "resources.callNow": "即刻打", "resources.directions": "搵路",
+  "garden.title": "生命花園", "garden.subtitle": "每朵花都係健康嘅瞬間",
+  "common.back": "返回", "common.done": "完成", "common.next": "下一步",
+  "common.loading": "載入中…", "common.send": "發送", "common.gentle": "溫和", "common.moderate": "中等",
 };
 
 const TRANSLATIONS: Record<Lang, TranslationMap> = {
@@ -461,7 +726,14 @@ const TRANSLATIONS: Record<Lang, TranslationMap> = {
   es: { ...en, ...es } as TranslationMap,
   ar: { ...en, ...ar } as TranslationMap,
   pa: { ...en, ...pa } as TranslationMap,
-  zh: en, tl: en, fa: en, hi: en, vi: en, ko: en,
+  zh: { ...en, ...zh } as TranslationMap,
+  tl: { ...en, ...tl } as TranslationMap,
+  fa: { ...en, ...fa } as TranslationMap,
+  hi: { ...en, ...hi } as TranslationMap,
+  vi: { ...en, ...vi } as TranslationMap,
+  ko: { ...en, ...ko } as TranslationMap,
+  ja: { ...en, ...ja } as TranslationMap,
+  yue: { ...en, ...yue } as TranslationMap,
 };
 
 // ─── Context ───────────────────────────────────────────────────────────────

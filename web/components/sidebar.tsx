@@ -9,6 +9,7 @@ const NAV_ITEMS = [
   { href: "/dashboard/activity-logs", label: "Activity Logs", icon: "timeline" },
   { href: "/dashboard/residents", label: "Residents", icon: "group" },
   { href: "/dashboard/resources", label: "Resource Hub", icon: "library_books" },
+  { href: "/dashboard/shelter-map", label: "Shelter Map", icon: "map" },
   { href: "/tablet", label: "Shelter tablet", icon: "tablet_mac", external: true },
 ];
 
@@ -31,7 +32,9 @@ export default function Sidebar() {
 
       <nav className="flex-1 px-4 space-y-1">
         {NAV_ITEMS.map((item) => {
-          const active = pathname === item.href;
+          const active = item.href === "/dashboard"
+            ? pathname === "/dashboard"
+            : pathname.startsWith(item.href);
           const cls = `flex items-center gap-3 px-4 py-3 rounded-lg transition-colors duration-200
                 ${active
                   ? "text-primary font-bold bg-surface-variant/50 border-r-4 border-primary"

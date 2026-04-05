@@ -37,7 +37,7 @@ export default function WelcomePage() {
   };
 
   const T = (en: string, fr: string, es: string, ar: string, pa: string) => {
-    const map: Record<Lang, string> = { en, fr, es, ar, pa, zh: en, tl: en, fa: en, hi: en, vi: en, ko: en };
+    const map: Record<Lang, string> = { en, fr, es, ar, pa, zh: en, tl: en, fa: en, hi: en, vi: en, ko: en, ja: en, yue: en };
     return map[lang] ?? en;
   };
 

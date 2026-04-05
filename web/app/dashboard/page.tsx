@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { createClient, Flower, ActivityLog } from "@/lib/supabase";
 import GardenView from "@/components/garden-view";
-import { StatCard, StatCardRow } from "@/components/stats-cards";
 
 export default function DashboardHome() {
   const [flowers, setFlowers] = useState<Flower[]>([]);
@@ -11,6 +10,8 @@ export default function DashboardHome() {
   const [todayActivities, setTodayActivities] = useState(0);
   const [uniqueUsers, setUniqueUsers] = useState(0);
   const [recentLogs, setRecentLogs] = useState<ActivityLog[]>([]);
+  const [allLogs, setAllLogs] = useState<ActivityLog[]>([]);
+  const [langDist, setLangDist] = useState<Record<string, number>>({});
 
   useEffect(() => {
     const supabase = createClient();
@@ -18,11 +19,13 @@ export default function DashboardHome() {
     todayStart.setHours(0, 0, 0, 0);
 
     async function load() {
-      const [flowerRes, sessionRes, activityRes, recentRes] = await Promise.all([
+      const [flowerRes, sessionRes, activityRes, recentRes, weekRes, langRes] = await Promise.all([
         supabase.from("flowers").select("*").order("created_at", { ascending: false }).limit(200),
         supabase.from("sessions").select("id").gte("started_at", todayStart.toISOString()),
         supabase.from("activity_logs").select("user_id").eq("completed", true).gte("created_at", todayStart.toISOString()),
         supabase.from("activity_logs").select("*, profiles(display_name, unique_code)").eq("completed", true).order("created_at", { ascending: false }).limit(10),
+        supabase.from("activity_logs").select("quadrant, activity_type, created_at").eq("completed", true).order("created_at", { ascending: false }).limit(500),
+        supabase.from("sessions").select("language").limit(200),
       ]);
 
       setFlowers(flowerRes.data ?? []);
@@ -31,6 +34,14 @@ export default function DashboardHome() {
       setTodayActivities(activities.length);
       setUniqueUsers(new Set(activities.map((a: any) => a.user_id)).size);
       setRecentLogs((recentRes.data as ActivityLog[]) ?? []);
+      setAllLogs((weekRes.data as any[]) ?? []);
+
+      const ld: Record<string, number> = {};
+      (langRes.data ?? []).forEach((s: any) => {
+        const l = s.language || "en";
+        ld[l] = (ld[l] || 0) + 1;
+      });
+      setLangDist(ld);
     }
 
     load();
@@ -52,24 +63,233 @@ export default function DashboardHome() {
     return () => { supabase.removeChannel(channel); };
   }, []);
 
+  const todayBlooms = flowers.filter((f) => isToday(f.created_at)).length;
+  const totalBlooms = flowers.length;
+
+  // Quadrant distribution
+  const quadrantCounts = { mind: 0, body: 0, soul: 0, connect: 0 };
+  allLogs.forEach((l: any) => {
+    if (l.quadrant in quadrantCounts) quadrantCounts[l.quadrant as keyof typeof quadrantCounts]++;
+  });
+  const totalQActivities = Object.values(quadrantCounts).reduce((a, b) => a + b, 0);
+  const topPillar = Object.entries(quadrantCounts).sort((a, b) => b[1] - a[1])[0];
+
+  // Peak usage hours
+  const hourCounts: Record<number, number> = {};
+  allLogs.forEach((l: any) => {
+    const h = new Date(l.created_at).getHours();
+    hourCounts[h] = (hourCounts[h] || 0) + 1;
+  });
+  const peakHours = Object.entries(hourCounts)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 3)
+    .map(([h, c]) => ({ hour: parseInt(h), count: c }));
+  const maxHourCount = peakHours[0]?.count || 1;
+
+  // Language distribution
+  const totalLang = Object.values(langDist).reduce((a, b) => a + b, 0) || 1;
+  const langEntries = Object.entries(langDist).sort((a, b) => b[1] - a[1]).slice(0, 5);
+  const LANG_NAMES: Record<string, string> = {
+    en: "English", fr: "Français", es: "Español", ar: "العربية", pa: "ਪੰਜਾਬੀ",
+    zh: "中文", tl: "Tagalog", fa: "فارسی", hi: "हिन्दी", vi: "Tiếng Việt",
+    ko: "한국어", ja: "日本語", yue: "粵語",
+  };
+
+  // Top activities
+  const actCounts: Record<string, number> = {};
+  allLogs.forEach((l: any) => { actCounts[l.activity_type] = (actCounts[l.activity_type] || 0) + 1; });
+  const topActivities = Object.entries(actCounts).sort((a, b) => b[1] - a[1]).slice(0, 5);
+
   return (
-    <div className="p-12 max-w-6xl mx-auto space-y-12">
-      <header className="text-center">
-        <h2 className="font-headline text-5xl text-primary-on-container mb-4">Living Garden</h2>
-        <p className="text-lg text-on-surface-variant max-w-xl mx-auto leading-relaxed">
-          A real-time view of collective wellness. Each bloom represents a completed activity by a resident.
-        </p>
+    <div className="p-8 lg:p-12 max-w-7xl mx-auto space-y-8">
+      {/* Header */}
+      <header className="flex items-center justify-between">
+        <div>
+          <h2 className="font-headline text-4xl text-on-surface font-bold">Living Garden</h2>
+          <p className="text-on-surface-variant mt-1">Real-time view of collective wellness</p>
+        </div>
+        <div className="text-right text-sm text-on-surface-variant">
+          <p>{new Date().toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" })}</p>
+        </div>
       </header>
 
+      {/* Garden View */}
       <GardenView flowers={flowers} />
 
-      <StatCardRow>
-        <StatCard label="Blooms today" value={flowers.filter(f => isToday(f.created_at)).length} icon="local_florist" tint="primary" />
-        <StatCard label="Sessions today" value={todaySessions} icon="calendar_today" tint="secondary" />
-        <StatCard label="Activities completed" value={todayActivities} icon="check_circle" tint="tertiary" />
-        <StatCard label="Active residents" value={uniqueUsers} icon="group" tint="primary" />
-      </StatCardRow>
+      {/* Bento Analytics Grid */}
+      <div className="grid grid-cols-12 gap-6">
 
+        {/* Total Blooms - Hero stat */}
+        <div className="col-span-12 md:col-span-4 bg-primary-container/30 rounded-2xl p-6 border border-primary-fixed-dim/30">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="material-symbols-outlined text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>local_florist</span>
+            <span className="text-xs font-bold text-primary uppercase tracking-widest">Total Blooms Grown</span>
+          </div>
+          <p className="text-5xl font-bold text-on-surface">{totalBlooms.toLocaleString()}</p>
+          <div className="flex items-center gap-2 mt-3">
+            <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full font-medium">+{todayBlooms} today</span>
+          </div>
+          {/* Mini bar chart */}
+          <div className="flex items-end gap-1 mt-4 h-10">
+            {[0.3, 0.5, 0.4, 0.7, 0.6, 0.9, 1.0].map((v, i) => (
+              <div
+                key={i}
+                className="flex-1 bg-primary/30 rounded-sm transition-all"
+                style={{ height: `${v * 100}%` }}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Most Used Pillar */}
+        <div className="col-span-12 md:col-span-4 bg-surface-container-low rounded-2xl p-6 border border-outline-variant/20">
+          <p className="text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-4">Most Used Pillar</p>
+          <div className="flex items-center gap-4">
+            <div className={`p-4 rounded-2xl ${pillarStyle(topPillar?.[0]).bg}`}>
+              <span className="material-symbols-outlined text-3xl" style={{ color: pillarStyle(topPillar?.[0]).color, fontVariationSettings: "'FILL' 1" }}>
+                {pillarStyle(topPillar?.[0]).icon}
+              </span>
+            </div>
+            <div>
+              <p className="font-headline text-2xl font-bold text-on-surface capitalize">{topPillar?.[0] ?? "—"}</p>
+              <p className="text-sm text-on-surface-variant">
+                {totalQActivities > 0 ? `${Math.round((topPillar?.[1] ?? 0) / totalQActivities * 100)}% of interactions` : "No data yet"}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Quick Stats */}
+        <div className="col-span-12 md:col-span-4 grid grid-cols-2 gap-4">
+          <div className="bg-secondary-container/30 rounded-2xl p-5 border border-secondary-fixed-dim/30">
+            <span className="material-symbols-outlined text-secondary mb-2 block">calendar_today</span>
+            <p className="text-2xl font-bold text-on-surface">{todaySessions}</p>
+            <p className="text-[10px] text-on-surface-variant uppercase tracking-widest font-medium mt-1">Sessions Today</p>
+          </div>
+          <div className="bg-tertiary-container/30 rounded-2xl p-5 border border-tertiary-fixed-dim/30">
+            <span className="material-symbols-outlined text-tertiary mb-2 block">check_circle</span>
+            <p className="text-2xl font-bold text-on-surface">{todayActivities}</p>
+            <p className="text-[10px] text-on-surface-variant uppercase tracking-widest font-medium mt-1">Activities</p>
+          </div>
+          <div className="bg-primary-container/20 rounded-2xl p-5 border border-primary-fixed-dim/30">
+            <span className="material-symbols-outlined text-primary mb-2 block">group</span>
+            <p className="text-2xl font-bold text-on-surface">{uniqueUsers}</p>
+            <p className="text-[10px] text-on-surface-variant uppercase tracking-widest font-medium mt-1">Active Users</p>
+          </div>
+          <div className="bg-surface-container-low rounded-2xl p-5 border border-outline-variant/20">
+            <span className="material-symbols-outlined text-on-surface-variant mb-2 block">translate</span>
+            <p className="text-2xl font-bold text-on-surface">{Object.keys(langDist).length || 1}</p>
+            <p className="text-[10px] text-on-surface-variant uppercase tracking-widest font-medium mt-1">Languages</p>
+          </div>
+        </div>
+
+        {/* Peak Usage Times */}
+        <div className="col-span-12 md:col-span-4 bg-surface-container-low rounded-2xl p-6 border border-outline-variant/20">
+          <p className="text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-4">Peak Usage Times</p>
+          <div className="space-y-3">
+            {peakHours.length === 0 && <p className="text-sm text-on-surface-variant">No data yet</p>}
+            {peakHours.map(({ hour, count }) => (
+              <div key={hour} className="flex items-center gap-3">
+                <span className="text-sm font-medium text-on-surface w-12">{formatHour(hour)}</span>
+                <div className="flex-1 h-6 bg-surface-container rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-primary/40 rounded-full transition-all"
+                    style={{ width: `${(count / maxHourCount) * 100}%` }}
+                  />
+                </div>
+                <span className="text-xs text-on-surface-variant w-8 text-right">{count}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Language Distribution */}
+        <div className="col-span-12 md:col-span-4 bg-surface-container-low rounded-2xl p-6 border border-outline-variant/20">
+          <p className="text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-4">Language Distribution</p>
+          <div className="space-y-3">
+            {langEntries.length === 0 && <p className="text-sm text-on-surface-variant">No data yet</p>}
+            {langEntries.map(([code, count]) => {
+              const pct = Math.round((count / totalLang) * 100);
+              return (
+                <div key={code} className="flex items-center gap-3">
+                  <span className="text-sm font-medium text-on-surface w-16 truncate">{LANG_NAMES[code] ?? code}</span>
+                  <div className="flex-1 h-4 bg-surface-container rounded-full overflow-hidden">
+                    <div className="h-full bg-tertiary/40 rounded-full" style={{ width: `${pct}%` }} />
+                  </div>
+                  <span className="text-xs text-on-surface-variant w-10 text-right">{pct}%</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Top Activities */}
+        <div className="col-span-12 md:col-span-4 bg-surface-container-low rounded-2xl p-6 border border-outline-variant/20">
+          <p className="text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-4">Resource Hub Interests</p>
+          <div className="space-y-3">
+            {topActivities.length === 0 && <p className="text-sm text-on-surface-variant">No data yet</p>}
+            {topActivities.map(([name, count], i) => (
+              <div key={name} className="flex items-center gap-3">
+                <span className="text-xs font-bold text-on-surface-variant w-5">{i + 1}.</span>
+                <span className="text-sm text-on-surface flex-1 truncate capitalize">{name.replace(/-/g, " ")}</span>
+                <span className="text-xs text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">{count}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Wellness Focus Breakdown */}
+        <div className="col-span-12 md:col-span-6 bg-surface-container-low rounded-2xl p-6 border border-outline-variant/20">
+          <p className="text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-4">Wellness Focus</p>
+          <div className="grid grid-cols-2 gap-4">
+            {(["mind", "body", "soul", "connect"] as const).map((q) => {
+              const ps = pillarStyle(q);
+              const count = quadrantCounts[q];
+              const pct = totalQActivities > 0 ? Math.round((count / totalQActivities) * 100) : 0;
+              return (
+                <div key={q} className={`${ps.bg} rounded-xl p-4 flex items-center gap-3`}>
+                  <span className="material-symbols-outlined text-2xl" style={{ color: ps.color, fontVariationSettings: "'FILL' 1" }}>{ps.icon}</span>
+                  <div>
+                    <p className="font-bold text-lg text-on-surface capitalize">{q}</p>
+                    <p className="text-xs text-on-surface-variant">{pct}% · {count} activities</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Insights & Suggestions */}
+        <div className="col-span-12 md:col-span-6 bg-surface-container-low rounded-2xl p-6 border border-outline-variant/20">
+          <p className="text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-4">Insights & Suggestions</p>
+          <div className="space-y-4">
+            <div className="bg-primary-container/20 rounded-xl p-4 flex gap-3">
+              <span className="material-symbols-outlined text-primary shrink-0 mt-0.5">lightbulb</span>
+              <div>
+                <p className="text-sm font-semibold text-on-surface">Body Pillar Activity</p>
+                <p className="text-xs text-on-surface-variant mt-1">
+                  {quadrantCounts.body < quadrantCounts.mind
+                    ? "Body activities are underutilized compared to Mind. Consider promoting gentle movement exercises."
+                    : "Body activities are popular. Keep the exercise catalog fresh with new additions."}
+                </p>
+              </div>
+            </div>
+            <div className="bg-tertiary-container/20 rounded-xl p-4 flex gap-3">
+              <span className="material-symbols-outlined text-tertiary shrink-0 mt-0.5">schedule</span>
+              <div>
+                <p className="text-sm font-semibold text-on-surface">Engagement Timing</p>
+                <p className="text-xs text-on-surface-variant mt-1">
+                  {peakHours.length > 0
+                    ? `Peak usage is at ${formatHour(peakHours[0].hour)}. Consider scheduling group activities around this time.`
+                    : "Not enough data yet to identify peak usage patterns."}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Recent Activity Table */}
       <section>
         <h3 className="font-headline text-2xl text-on-surface mb-6">Recent Activity</h3>
         <div className="bg-white rounded-xl border border-outline-variant/10 overflow-hidden">
@@ -91,11 +311,11 @@ export default function DashboardHome() {
                 <tr key={log.id} className="hover:bg-surface-variant/20 transition-colors">
                   <td className="px-6 py-4 font-medium">{(log.profiles as any)?.unique_code ?? "—"}</td>
                   <td className="px-6 py-4">
-                    <span className={`inline-block px-2 py-1 rounded text-xs font-bold uppercase tracking-wider ${quadrantStyle(log.quadrant)}`}>
+                    <span className={`inline-block px-2 py-1 rounded text-xs font-bold uppercase tracking-wider ${quadrantBadge(log.quadrant)}`}>
                       {log.quadrant}
                     </span>
                   </td>
-                  <td className="px-6 py-4">{log.activity_type}</td>
+                  <td className="px-6 py-4 capitalize">{log.activity_type.replace(/-/g, " ")}</td>
                   <td className="px-6 py-4">{log.duration_seconds ? `${Math.round(log.duration_seconds / 60)}m` : "—"}</td>
                   <td className="px-6 py-4 text-on-surface-variant">{timeAgo(log.created_at)}</td>
                 </tr>
@@ -108,13 +328,29 @@ export default function DashboardHome() {
   );
 }
 
-function quadrantStyle(q: string) {
+function pillarStyle(q?: string) {
+  switch (q) {
+    case "mind": return { bg: "bg-primary-container/30", color: "#52695e", icon: "psychology" };
+    case "body": return { bg: "bg-secondary-container/30", color: "#6d6258", icon: "fitness_center" };
+    case "soul": return { bg: "bg-tertiary-container/30", color: "#6b6077", icon: "auto_awesome" };
+    case "connect": return { bg: "bg-surface-variant/40", color: "#6d6258", icon: "diversity_3" };
+    default: return { bg: "bg-surface-variant/30", color: "#6d6258", icon: "spa" };
+  }
+}
+
+function quadrantBadge(q: string) {
   switch (q) {
     case "mind": return "bg-primary-container/40 text-primary";
     case "body": return "bg-secondary-container/50 text-secondary";
     case "soul": return "bg-tertiary-container/40 text-tertiary";
     default: return "bg-surface-variant text-on-surface-variant";
   }
+}
+
+function formatHour(h: number) {
+  if (h === 0) return "12AM";
+  if (h === 12) return "12PM";
+  return h > 12 ? `${h - 12}PM` : `${h}AM`;
 }
 
 function isToday(dateStr: string) {
