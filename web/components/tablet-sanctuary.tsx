@@ -24,6 +24,9 @@ import {
   setStoredKioskIdentifier,
 } from "@/lib/kioskActivity";
 import { useLanguage, LANGUAGES } from "@/lib/i18n";
+import PantryToPlate from "@/components/features/PantryToPlate";
+import ThreadsOfHome from "@/components/features/ThreadsOfHome";
+import KidsCorner from "@/components/features/KidsCorner";
 
 type Step =
   | "welcome"
@@ -35,6 +38,9 @@ type Step =
   | "exercise"
   | "soul"
   | "chat"
+  | "pantry"
+  | "threads"
+  | "kids"
   | "message";
 
 type CompletionNotice = {
@@ -330,6 +336,9 @@ export default function TabletSanctuary() {
     exercise: selectedExercise?.name ?? "Body practice",
     soul: "Soul expression",
     chat: "Chat with Bloom",
+    pantry: "Pantry to Plate",
+    threads: "Threads of Home",
+    kids: "Kids Corner",
     message: "Saved moment",
   }[step];
 
@@ -427,6 +436,9 @@ export default function TabletSanctuary() {
             onOpenBody={() => setStep("body")}
             onOpenSoul={() => setStep("soul")}
             onOpenChat={() => setStep("chat")}
+            onOpenPantry={() => setStep("pantry")}
+            onOpenThreads={() => setStep("threads")}
+            onOpenKids={() => setStep("kids")}
           />
         )}
 
@@ -486,6 +498,24 @@ export default function TabletSanctuary() {
         )}
 
         {step === "chat" && <ChatCompanion identifier={identifier} />}
+
+        {step === "pantry" && (
+          <div className="rounded-[2rem] border border-outline-variant/20 bg-white/80 p-4 shadow-[0_20px_70px_rgba(82,105,94,0.08)] md:p-8">
+            <PantryToPlate />
+          </div>
+        )}
+
+        {step === "threads" && (
+          <div className="rounded-[2rem] border border-outline-variant/20 bg-white/80 p-4 shadow-[0_20px_70px_rgba(82,105,94,0.08)] md:p-8">
+            <ThreadsOfHome />
+          </div>
+        )}
+
+        {step === "kids" && (
+          <div className="rounded-[2rem] border border-outline-variant/20 bg-white/80 p-4 shadow-[0_20px_70px_rgba(82,105,94,0.08)] md:p-8">
+            <KidsCorner />
+          </div>
+        )}
 
         {step === "message" && notice && (
           <MessageStep notice={notice} onBackHome={() => setStep("home")} />
@@ -623,12 +653,18 @@ function HomeStep({
   onOpenBody,
   onOpenSoul,
   onOpenChat,
+  onOpenPantry,
+  onOpenThreads,
+  onOpenKids,
 }: {
   identifier: string;
   onOpenMind: () => void;
   onOpenBody: () => void;
   onOpenSoul: () => void;
   onOpenChat: () => void;
+  onOpenPantry: () => void;
+  onOpenThreads: () => void;
+  onOpenKids: () => void;
 }) {
   return (
     <div className="space-y-8">
@@ -705,6 +741,48 @@ function HomeStep({
           cta="Open chat"
           onClick={onOpenChat}
         />
+      </section>
+
+      <section className="space-y-4">
+        <div className="flex items-end justify-between">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-on-surface-variant">
+              More from Bloom
+            </p>
+            <h2 className="mt-1 font-headline text-3xl text-on-surface">
+              Nourishment, home, and little ones
+            </h2>
+          </div>
+        </div>
+        <div className="grid gap-5 md:grid-cols-3">
+          <SanctuaryCard
+            icon="restaurant_menu"
+            eyebrow="Pantry"
+            title="Pantry to Plate"
+            description="Tell Bloom what is in the pantry tonight and get 2 or 3 recipes tuned to time, tools, and dietary needs."
+            accent="secondary"
+            cta="Start cooking"
+            onClick={onOpenPantry}
+          />
+          <SanctuaryCard
+            icon="public"
+            eyebrow="Heritage"
+            title="Threads of Home"
+            description="Revisit proverbs, songs, and sacred texts from a country or faith that feels like yours."
+            accent="primary"
+            cta="Open threads"
+            onClick={onOpenThreads}
+          />
+          <SanctuaryCard
+            icon="child_care"
+            eyebrow="Kids"
+            title="Kids Corner"
+            description="Stories, lullabies, a feelings helper, and a drawing canvas to share with a child beside you."
+            accent="tertiary"
+            cta="Open kids"
+            onClick={onOpenKids}
+          />
+        </div>
       </section>
     </div>
   );

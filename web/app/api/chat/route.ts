@@ -1,15 +1,16 @@
 import { streamText, convertToModelMessages } from "ai";
-import { createGroq } from "@ai-sdk/groq";
 import { createClient } from "@supabase/supabase-js";
-
-const groq = createGroq({ apiKey: process.env.GROQ_API_KEY });
+import { getBloomModel, hasBloomModel } from "@/lib/ai";
 
 export async function POST(req: Request) {
-  if (!process.env.GROQ_API_KEY) {
-    return new Response(JSON.stringify({ error: "GROQ_API_KEY is not configured" }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" },
-    });
+  if (!hasBloomModel()) {
+    return new Response(
+      JSON.stringify({
+        error:
+          "No AI provider configured. Set GROQ_API_KEY locally, or deploy to Vercel (AI Gateway is auto-configured via OIDC).",
+      }),
+      { status: 500, headers: { "Content-Type": "application/json" } },
+    );
   }
 
   const { messages, bloomId } = await req.json();
@@ -72,7 +73,7 @@ ${residentContext || "The resident is using guest mode — no history available.
   const coreMessages = await convertToModelMessages(messages);
 
   const result = streamText({
-    model: groq("llama-3.3-70b-versatile"),
+    model: getBloomModel(),
     system: systemPrompt,
     messages: coreMessages,
     maxOutputTokens: 512,

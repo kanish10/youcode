@@ -72,6 +72,60 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* New feature pillars */}
+      <div className="grid grid-cols-1 gap-4">
+        {/* Pantry to Plate */}
+        <div className="bg-secondary-container/20 rounded-2xl p-6 flex gap-5 items-center border border-secondary/10 active:scale-[0.98] transition-transform cursor-pointer"
+          onClick={() => router.push("/resident/pantry")}>
+          <div className="w-14 h-14 bg-secondary-container rounded-full flex items-center justify-center shrink-0">
+            <span className="material-symbols-outlined text-secondary text-2xl">restaurant_menu</span>
+          </div>
+          <div className="flex-1">
+            <h2 className="font-headline text-xl font-bold text-secondary mb-1">Pantry to Plate</h2>
+            <p className="text-sm text-on-secondary-container leading-relaxed">
+              Tell us what you have, we&rsquo;ll find 2 or 3 recipes you can make tonight.
+            </p>
+          </div>
+          <button className="px-4 py-2 bg-secondary text-on-secondary rounded-full font-label text-xs font-semibold shrink-0">
+            Cook
+          </button>
+        </div>
+
+        {/* Threads of Home */}
+        <div className="bg-primary-container/20 rounded-2xl p-6 flex gap-5 items-center border border-primary/10 active:scale-[0.98] transition-transform cursor-pointer"
+          onClick={() => router.push("/resident/threads")}>
+          <div className="w-14 h-14 bg-primary-container rounded-full flex items-center justify-center shrink-0">
+            <span className="material-symbols-outlined text-primary text-2xl">public</span>
+          </div>
+          <div className="flex-1">
+            <h2 className="font-headline text-xl font-bold text-primary mb-1">Threads of Home</h2>
+            <p className="text-sm text-on-primary-container leading-relaxed">
+              Songs, scriptures, and sayings from your country or faith.
+            </p>
+          </div>
+          <button className="px-4 py-2 bg-primary text-on-primary rounded-full font-label text-xs font-semibold shrink-0">
+            Open
+          </button>
+        </div>
+
+        {/* Kids Corner */}
+        <div className="bg-tertiary-container/20 rounded-2xl p-6 flex gap-5 items-center border border-tertiary/10 active:scale-[0.98] transition-transform cursor-pointer"
+          onClick={() => router.push("/resident/kids")}>
+          <div className="w-14 h-14 bg-tertiary-container rounded-full flex items-center justify-center shrink-0">
+            <span className="material-symbols-outlined text-tertiary text-2xl">child_care</span>
+          </div>
+          <div className="flex-1">
+            <h2 className="font-headline text-xl font-bold text-tertiary mb-1">Kids Corner</h2>
+            <p className="text-sm text-on-tertiary-container leading-relaxed">
+              Stories, lullabies, and drawing for the little ones.
+            </p>
+          </div>
+          <button className="px-4 py-2 bg-tertiary text-on-tertiary rounded-full font-label text-xs font-semibold shrink-0">
+            Play
+          </button>
+        </div>
+      </div>
+
       {/* Bento bottom row */}
       <div className="grid grid-cols-2 gap-4">
         {/* Daily Intention */}
