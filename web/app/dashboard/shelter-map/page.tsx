@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { createClient } from "@/lib/supabase";
+import { SHELTER_FALLBACKS } from "@/lib/shelter-fallbacks";
 
 type Shelter = {
   id: string;
@@ -15,8 +16,7 @@ type Shelter = {
   longitude?: number;
 };
 
-// Fallback shelter data for when Supabase doesn't have coordinates
-const SHELTER_DEFAULTS: Omit<Shelter, "id">[] = [
+const CURATED_SHELTERS: Omit<Shelter, "id">[] = [
   { name: "Atira Women's Resource Society", city: "Vancouver", organization: "Atira", phone: "604-331-1407", type: "transition_house", address: "101 E Cordova St, Vancouver", latitude: 49.2824, longitude: -123.0991 },
   { name: "Battered Women's Support Services", city: "Vancouver", organization: "BWSS", phone: "604-687-1867", type: "safe_home", address: "Vancouver, BC", latitude: 49.2607, longitude: -123.1135 },
   { name: "YWCA Crabtree Corner", city: "Vancouver", organization: "YWCA", phone: "604-216-1699", type: "transition_house", address: "101 E Cordova St, Vancouver", latitude: 49.2823, longitude: -123.0990 },
@@ -27,6 +27,17 @@ const SHELTER_DEFAULTS: Omit<Shelter, "id">[] = [
   { name: "Haven Transition House", city: "Chilliwack", organization: "Ann Davis Society", phone: "604-792-2760", type: "transition_house", address: "Chilliwack, BC", latitude: 49.1579, longitude: -121.9514 },
   { name: "Powell Place Transition House", city: "New Westminster", organization: "YWCA", phone: "604-525-1377", type: "transition_house", address: "New Westminster, BC", latitude: 49.2057, longitude: -122.9110 },
   { name: "Marguerite Dixon House", city: "Burnaby", organization: "Dixon Society", phone: "604-298-3454", type: "safe_home", address: "Burnaby, BC", latitude: 49.2488, longitude: -122.9805 },
+];
+
+const SHELTER_DEFAULTS: Omit<Shelter, "id">[] = [
+  ...CURATED_SHELTERS,
+  ...SHELTER_FALLBACKS.filter(
+    (fallback) =>
+      !CURATED_SHELTERS.some(
+        (curated) =>
+          curated.name === fallback.name && curated.city === fallback.city
+      )
+  ),
 ];
 
 export default function ShelterMapPage() {
@@ -225,6 +236,9 @@ function typeLabel(type: string) {
     case "transition_house": return "Transition House";
     case "safe_home": return "Safe Home";
     case "emergency_shelter": return "Emergency Shelter";
+    case "second_stage": return "Second Stage Housing";
+    case "crisis": return "Crisis Support";
+    case "mixed": return "Mixed Shelter Services";
     default: return type.replace(/_/g, " ");
   }
 }
