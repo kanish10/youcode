@@ -75,14 +75,10 @@ export default function DashboardHome() {
     return () => { supabase.removeChannel(channel); };
   }, []);
 
-  // Combine flowers + anonymous events for total bloom count
-  const totalBlooms = flowers.length + anonEvents.length;
-  const todayBlooms = flowers.filter((f) => isToday(f.created_at)).length +
-    anonEvents.filter((e) => isToday(e.created_at)).length;
-
-  // Also count today's anon activities for the Activities stat
-  const todayAnonActivities = anonEvents.filter((e) => isToday(e.created_at)).length;
-  const combinedTodayActivities = todayActivities + todayAnonActivities;
+  // Use kiosk_anonymous_events as the single source of truth for bloom counts.
+  // The flowers table is supplementary for linked-user personalization only.
+  const totalBlooms = anonEvents.length;
+  const todayBlooms = anonEvents.filter((e) => isToday(e.created_at)).length;
 
   // Quadrant distribution — from anonymous events (primary universal log)
   const quadrantCounts = { mind: 0, body: 0, soul: 0, connect: 0 };
@@ -183,7 +179,7 @@ export default function DashboardHome() {
           </div>
           <div className="bg-tertiary-container/30 rounded-2xl p-5 border border-tertiary-fixed-dim/30">
             <span className="material-symbols-outlined text-tertiary mb-2 block">check_circle</span>
-            <p className="text-2xl font-bold text-on-surface">{combinedTodayActivities}</p>
+            <p className="text-2xl font-bold text-on-surface">{todayBlooms}</p>
             <p className="text-[10px] text-on-surface-variant uppercase tracking-widest font-medium mt-1">Activities</p>
           </div>
           <div className="bg-primary-container/20 rounded-2xl p-5 border border-primary-fixed-dim/30">

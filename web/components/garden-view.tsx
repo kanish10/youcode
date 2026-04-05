@@ -117,8 +117,8 @@ export default function GardenView({
           )}
         </div>
 
-        {/* Legend */}
-        <div className="absolute bottom-6 left-6">
+        {/* Legend — top-left to avoid overlapping flowers */}
+        <div className="absolute top-6 left-6 z-20">
           <div className="flex gap-6 bg-surface/80 backdrop-blur-md px-6 py-2 rounded-full border border-outline-variant/20 text-xs font-bold uppercase tracking-widest text-on-surface-variant/80">
             <span className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-primary inline-block" /> Mind

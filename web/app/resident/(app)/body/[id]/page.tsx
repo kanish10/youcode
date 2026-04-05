@@ -4,7 +4,6 @@ import { use, useState } from "react";
 import { useLanguage } from "@/lib/i18n";
 import { EXERCISES, TINT_CLASSES } from "@/lib/exercises";
 import { useRouter } from "next/navigation";
-import { createClient } from "@/lib/supabase";
 
 export default function ExerciseDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
@@ -40,41 +39,18 @@ export default function ExerciseDetailPage({ params }: { params: Promise<{ id: s
   async function handleLog() {
     setLogging(true);
     try {
-      const supabase = createClient();
-      const durationSec = (ex!.durationMin ?? 5) * 60;
-
-      // Always log to kiosk_anonymous_events (universal activity log)
-      await supabase.from("kiosk_anonymous_events").insert({
-        quadrant: "body",
-        activity_type: ex!.id,
-        duration_seconds: durationSec,
+      await fetch("/api/log-activity", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          quadrant: "body",
+          activityType: ex!.id,
+          durationSeconds: (ex!.durationMin ?? 5) * 60,
+          identifier: bloomId || "",
+          addFlower: true,
+          colorHex: "#A89B8F",
+        }),
       });
-
-      // If bloom ID exists, also log to activity_logs + flowers
-      if (bloomId) {
-        const { data: profile } = await supabase
-          .from("profiles")
-          .select("id")
-          .or(`unique_code.eq.${bloomId},display_name.eq.${bloomId}`)
-          .limit(1)
-          .maybeSingle();
-
-        if (profile) {
-          await supabase.from("activity_logs").insert({
-            user_id: profile.id,
-            quadrant: "body",
-            activity_type: ex!.id,
-            duration_seconds: durationSec,
-            completed: true,
-          });
-          await supabase.from("flowers").insert({
-            user_id: profile.id,
-            quadrant: "body",
-            color_hex: "#A89B8F",
-          });
-        }
-      }
-
       setLogged(true);
     } catch {
       setLogged(true);
