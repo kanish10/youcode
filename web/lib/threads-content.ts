@@ -51,6 +51,36 @@ export type Religion = {
 
 export const COUNTRIES: Country[] = [
   {
+    id: "canada",
+    name: "Canada",
+    nativeName: "Canada · ᑲᓇᑕ",
+    flag: "🇨🇦",
+    intro:
+      "The second-largest country on earth, with more coastline than any other. Home to First Nations, Inuit, and Métis peoples whose stories stretch back millennia, and to new arrivals from every corner of the world who now call it home.",
+    proverb: "Ajuinnata.",
+    proverbSource: "Inuktitut — \"Never give up. Commit to what matters, no matter how hard.\" Adopted as a guiding word by Governor General Mary Simon.",
+    historyNote:
+      "Long before the name \"Canada,\" Indigenous nations cared for this land through sophisticated governance, trade, and knowledge systems. The country was confederated in 1867 and has grown through waves of migration. Today's ongoing work of Truth and Reconciliation shapes how Canada understands its past and its future.",
+    newsQuery: "Canada",
+    songs: [
+      {
+        title: "O Canada",
+        description: "The national anthem — sung in English, French, and many Indigenous languages.",
+        youtubeQuery: "O Canada anthem bilingual",
+      },
+      {
+        title: "Hallelujah — Leonard Cohen",
+        description: "The most-covered Canadian song in the world. Quiet, aching, honest.",
+        youtubeQuery: "Hallelujah Leonard Cohen original",
+      },
+      {
+        title: "Strong Woman Song",
+        description: "Composed by Indigenous women at Kingston Prison in the 1970s — sung at gatherings as a song of resilience.",
+        youtubeQuery: "Strong Woman Song Indigenous drumming",
+      },
+    ],
+  },
+  {
     id: "philippines",
     name: "Philippines",
     nativeName: "Pilipinas",
