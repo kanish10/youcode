@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { createClient } from "@/lib/supabase";
-import { LANGUAGES, type Lang } from "@/lib/i18n";
+import { useLanguage, LANGUAGES } from "@/lib/i18n";
 
 const NAV_ITEMS = [
   { href: "/dashboard", label: "Living Garden", icon: "local_florist" },
@@ -18,7 +18,7 @@ const NAV_ITEMS = [
 export default function Sidebar() {
   const pathname = usePathname();
   const router = useRouter();
-  const [lang, setLang] = useState<Lang>("en");
+  const { lang, setLang } = useLanguage();
   const [showLangPanel, setShowLangPanel] = useState(false);
 
   async function handleLogout() {

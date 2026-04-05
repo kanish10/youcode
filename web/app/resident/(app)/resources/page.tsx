@@ -10,6 +10,91 @@ import {
   type Resource,
 } from "@/lib/resources";
 
+/* ── Category overview cards (matching Android app layout) ── */
+const CATEGORY_INFO: {
+  id: ResourceCategory;
+  icon: string;
+  descKey: string;
+  tagKey: string;
+  labelKey: string;
+  bgClass: string;
+  iconBgClass: string;
+  tagClass: string;
+}[] = [
+  {
+    id: "mental", icon: "psychology",
+    descKey: "resources.mentalDesc", tagKey: "resources.mentalTag", labelKey: "resources.catMental",
+    bgClass: "bg-tertiary-container/20 border-tertiary/15",
+    iconBgClass: "bg-tertiary-container/50 text-tertiary",
+    tagClass: "bg-tertiary-container/40 text-tertiary",
+  },
+  {
+    id: "food", icon: "restaurant",
+    descKey: "resources.foodDesc", tagKey: "resources.foodTag", labelKey: "resources.catFood",
+    bgClass: "bg-secondary-container/20 border-secondary/15",
+    iconBgClass: "bg-secondary-container/50 text-secondary",
+    tagClass: "bg-secondary-container/40 text-secondary",
+  },
+  {
+    id: "housing", icon: "home_work",
+    descKey: "resources.housingDesc", tagKey: "resources.housingTag", labelKey: "resources.catHousing",
+    bgClass: "bg-primary-container/20 border-primary/15",
+    iconBgClass: "bg-primary-container/50 text-primary",
+    tagClass: "bg-primary-container/40 text-primary",
+  },
+  {
+    id: "safety", icon: "security",
+    descKey: "resources.safetyDesc", tagKey: "resources.safetyTag", labelKey: "resources.catSafety",
+    bgClass: "bg-error-container/15 border-error/10",
+    iconBgClass: "bg-error-container/40 text-error",
+    tagClass: "bg-error-container/30 text-error",
+  },
+  {
+    id: "counselling", icon: "support_agent",
+    descKey: "resources.mentalDesc", tagKey: "resources.mentalTag", labelKey: "resources.catCounselling",
+    bgClass: "bg-tertiary-container/15 border-tertiary/10",
+    iconBgClass: "bg-tertiary-container/50 text-tertiary",
+    tagClass: "bg-tertiary-container/40 text-tertiary",
+  },
+  {
+    id: "employment", icon: "work",
+    descKey: "resources.foodDesc", tagKey: "resources.housingTag", labelKey: "resources.catEmployment",
+    bgClass: "bg-secondary-container/15 border-secondary/10",
+    iconBgClass: "bg-secondary-container/50 text-secondary",
+    tagClass: "bg-secondary-container/40 text-secondary",
+  },
+];
+
+function CategoryCard({
+  cat,
+  t,
+  onClick,
+}: {
+  cat: (typeof CATEGORY_INFO)[0];
+  t: (k: any) => string;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className={`w-full rounded-2xl border p-4 flex items-center gap-4 text-left transition-all active:scale-[0.98] hover:shadow-sm ${cat.bgClass}`}
+    >
+      <div className={`w-11 h-11 rounded-xl flex items-center justify-center shrink-0 ${cat.iconBgClass}`}>
+        <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>
+          {cat.icon}
+        </span>
+      </div>
+      <div className="flex-1 min-w-0">
+        <h3 className="font-headline font-semibold text-sm text-on-surface">{t(cat.labelKey as any)}</h3>
+        <p className="text-xs text-on-surface-variant leading-relaxed mt-0.5 line-clamp-2">{t(cat.descKey as any)}</p>
+      </div>
+      <div className={`px-2 py-1 rounded-lg text-[10px] font-bold shrink-0 ${cat.tagClass}`}>
+        {t(cat.tagKey as any)}
+      </div>
+    </button>
+  );
+}
+
 function ResourceCard({ r, t, onSelect }: { r: Resource; t: (k: any) => string; onSelect: (r: Resource) => void }) {
   const style = CATEGORY_STYLES[r.category];
   const cat = RESOURCE_CATEGORIES.find((c) => c.id === r.category);
@@ -101,7 +186,6 @@ function MapModal({ resource, onClose, t }: { resource: Resource; onClose: () =>
         className="bg-background rounded-t-2xl sm:rounded-2xl w-full max-w-lg max-h-[85vh] overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-outline-variant/20">
           <div className="flex-1 min-w-0">
             <h3 className="font-headline font-semibold text-on-surface truncate">{resource.name}</h3>
@@ -112,7 +196,6 @@ function MapModal({ resource, onClose, t }: { resource: Resource; onClose: () =>
           </button>
         </div>
 
-        {/* Map Embed */}
         <div className="relative w-full" style={{ paddingBottom: "60%" }}>
           <iframe
             className="absolute inset-0 w-full h-full"
@@ -124,7 +207,6 @@ function MapModal({ resource, onClose, t }: { resource: Resource; onClose: () =>
           />
         </div>
 
-        {/* Details */}
         <div className="p-4 space-y-3">
           {resource.phone && (
             <div className="flex items-center gap-3 text-sm">
@@ -165,6 +247,8 @@ export default function ResourcesPage() {
   const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState<ResourceCategory | "all">("all");
   const [selectedResource, setSelectedResource] = useState<Resource | null>(null);
+
+  const showCategoryCards = activeCategory === "all" && !search.trim();
 
   const filtered = RESOURCES.filter((r) => {
     const matchesCategory = activeCategory === "all" || r.category === activeCategory;
@@ -207,7 +291,21 @@ export default function ResourcesPage() {
         />
       </div>
 
-      {/* Category Filters */}
+      {/* Category Overview Cards (like Android app) */}
+      {showCategoryCards && (
+        <section className="space-y-3">
+          {CATEGORY_INFO.map((cat) => (
+            <CategoryCard
+              key={cat.id}
+              cat={cat}
+              t={t}
+              onClick={() => setActiveCategory(cat.id)}
+            />
+          ))}
+        </section>
+      )}
+
+      {/* Category Filter Tabs */}
       <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none">
         {RESOURCE_CATEGORIES.map((cat) => (
           <button
@@ -224,6 +322,21 @@ export default function ResourcesPage() {
           </button>
         ))}
       </div>
+
+      {/* Section title */}
+      {!showCategoryCards && activeCategory !== "all" && (
+        <div className="flex items-center justify-between">
+          <h2 className="font-headline text-lg font-semibold text-on-surface">
+            {t(RESOURCE_CATEGORIES.find((c) => c.id === activeCategory)?.labelKey as any)}
+          </h2>
+          <button
+            onClick={() => setActiveCategory("all")}
+            className="text-xs text-primary font-medium"
+          >
+            {t("resources.allCategories")}
+          </button>
+        </div>
+      )}
 
       {/* Resource Cards */}
       <div className="space-y-4">

@@ -23,7 +23,7 @@ import {
   logKioskActivity,
   setStoredKioskIdentifier,
 } from "@/lib/kioskActivity";
-import { LANGUAGES, type Lang } from "@/lib/i18n";
+import { useLanguage, LANGUAGES } from "@/lib/i18n";
 
 type Step =
   | "welcome"
@@ -247,7 +247,7 @@ export default function TabletSanctuary() {
   const [identifier, setIdentifier] = useState("");
   const [selectedExerciseId, setSelectedExerciseId] = useState(EXERCISES[0]?.id ?? "");
   const [notice, setNotice] = useState<CompletionNotice | null>(null);
-  const [lang, setLang] = useState<Lang>("en");
+  const { lang, setLang, t } = useLanguage();
   const [showLangPanel, setShowLangPanel] = useState(false);
 
   useEffect(() => {

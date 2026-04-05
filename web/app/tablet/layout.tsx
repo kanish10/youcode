@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Bloom — Shelter tablet",
-  description: "Optional ID wellness kiosk for shelter common areas",
-};
+import { LanguageProvider } from "@/lib/i18n";
 
 export default function TabletLayout({ children }: { children: React.ReactNode }) {
-  return <div className="min-h-screen bg-surface text-on-surface">{children}</div>;
+  return (
+    <LanguageProvider>
+      <div className="min-h-screen bg-surface text-on-surface">{children}</div>
+    </LanguageProvider>
+  );
 }
