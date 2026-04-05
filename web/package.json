@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^3.0.66",
+    "@ai-sdk/groq": "^3.0.33",
     "@ai-sdk/react": "^3.0.148",
     "@supabase/ssr": "^0.5.2",
     "@supabase/supabase-js": "^2.49.1",

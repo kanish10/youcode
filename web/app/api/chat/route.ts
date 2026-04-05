@@ -1,5 +1,8 @@
 import { streamText, convertToModelMessages } from "ai";
+import { createGroq } from "@ai-sdk/groq";
 import { createClient } from "@/lib/supabase";
+
+const groq = createGroq({ apiKey: process.env.GROQ_API_KEY });
 
 export async function POST(req: Request) {
   const { messages, bloomId } = await req.json();
@@ -59,7 +62,7 @@ ${residentContext || "The resident is using guest mode — no history available.
   const coreMessages = await convertToModelMessages(messages);
 
   const result = streamText({
-    model: "anthropic/claude-haiku-4.5",
+    model: groq("llama-3.3-70b-versatile"),
     system: systemPrompt,
     messages: coreMessages,
     maxOutputTokens: 512,
