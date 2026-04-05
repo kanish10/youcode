@@ -17,16 +17,55 @@ type Shelter = {
 };
 
 const CURATED_SHELTERS: Omit<Shelter, "id">[] = [
+  // ── Greater Vancouver ──
   { name: "Atira Women's Resource Society", city: "Vancouver", organization: "Atira", phone: "604-331-1407", type: "transition_house", address: "101 E Cordova St, Vancouver", latitude: 49.2824, longitude: -123.0991 },
   { name: "Battered Women's Support Services", city: "Vancouver", organization: "BWSS", phone: "604-687-1867", type: "safe_home", address: "Vancouver, BC", latitude: 49.2607, longitude: -123.1135 },
   { name: "YWCA Crabtree Corner", city: "Vancouver", organization: "YWCA", phone: "604-216-1699", type: "transition_house", address: "101 E Cordova St, Vancouver", latitude: 49.2823, longitude: -123.0990 },
   { name: "Salvation Army Belkin House", city: "Vancouver", organization: "Salvation Army", phone: "604-681-3405", type: "emergency_shelter", address: "555 Homer St, Vancouver", latitude: 49.2833, longitude: -123.1122 },
   { name: "Bloom Shelter – Main", city: "Vancouver", organization: "Bloom", phone: "604-555-0100", type: "transition_house", address: "609 Helmcken St, Vancouver", latitude: 49.2769, longitude: -123.1222 },
-  { name: "Ishtar Transition Housing", city: "Langley", organization: "Ishtar", phone: "604-530-9442", type: "transition_house", address: "Langley, BC", latitude: 49.1044, longitude: -122.6606 },
+  { name: "Kate Booth House", city: "Vancouver", organization: "Salvation Army", phone: "604-253-8771", type: "emergency_shelter", address: "3189 E Hastings St, Vancouver", latitude: 49.2812, longitude: -123.0375 },
+  { name: "Munroe House", city: "Vancouver", organization: "Atira", phone: "604-331-1407", type: "transition_house", address: "Chinatown, Vancouver", latitude: 49.2791, longitude: -123.1000 },
+  { name: "Downtown Eastside Women's Centre", city: "Vancouver", organization: "DEWC", phone: "604-681-8480", type: "emergency_shelter", address: "302 Columbia St, Vancouver", latitude: 49.2818, longitude: -123.1003 },
+  { name: "SOS Children's Village", city: "Surrey", organization: "SOS Canada", phone: "604-574-2964", type: "transition_house", address: "Surrey, BC", latitude: 49.1850, longitude: -122.8010 },
   { name: "Cythera Transition House", city: "Surrey", organization: "OPTIONS", phone: "604-572-7366", type: "transition_house", address: "Surrey, BC", latitude: 49.1913, longitude: -122.8490 },
-  { name: "Haven Transition House", city: "Chilliwack", organization: "Ann Davis Society", phone: "604-792-2760", type: "transition_house", address: "Chilliwack, BC", latitude: 49.1579, longitude: -121.9514 },
-  { name: "Powell Place Transition House", city: "New Westminster", organization: "YWCA", phone: "604-525-1377", type: "transition_house", address: "New Westminster, BC", latitude: 49.2057, longitude: -122.9110 },
+  { name: "Virginia Sam Transition House", city: "Surrey", organization: "OPTIONS", phone: "604-584-3301", type: "transition_house", address: "Surrey, BC", latitude: 49.1720, longitude: -122.7912 },
   { name: "Marguerite Dixon House", city: "Burnaby", organization: "Dixon Society", phone: "604-298-3454", type: "safe_home", address: "Burnaby, BC", latitude: 49.2488, longitude: -122.9805 },
+  { name: "Dixon Transition House", city: "Burnaby", organization: "Dixon Transition Society", phone: "604-298-3454", type: "transition_house", address: "Burnaby, BC", latitude: 49.2753, longitude: -122.9913 },
+  { name: "Powell Place Transition House", city: "New Westminster", organization: "YWCA", phone: "604-525-1377", type: "transition_house", address: "New Westminster, BC", latitude: 49.2057, longitude: -122.9110 },
+  { name: "Monarch Place", city: "New Westminster", organization: "W.I.N.G.S.", phone: "604-521-1888", type: "transition_house", address: "New Westminster, BC", latitude: 49.2007, longitude: -122.9163 },
+  { name: "Sage Transition House", city: "North Vancouver", organization: "North Shore Crisis Services", phone: "604-987-3374", type: "transition_house", address: "North Vancouver, BC", latitude: 49.3229, longitude: -123.0740 },
+  { name: "Ishtar Transition Housing", city: "Langley", organization: "Ishtar", phone: "604-530-9442", type: "transition_house", address: "Langley, BC", latitude: 49.1044, longitude: -122.6606 },
+  { name: "Joy's Place", city: "Coquitlam", organization: "Tri-City Transitions Society", phone: "604-492-1700", type: "transition_house", address: "Coquitlam, BC", latitude: 49.2615, longitude: -122.7819 },
+  { name: "Cythera Transition House – Maple Ridge", city: "Maple Ridge", organization: "Cythera Transition House Society", phone: "604-467-9966", type: "transition_house", address: "Maple Ridge, BC", latitude: 49.2193, longitude: -122.6026 },
+  { name: "Ama House", city: "Richmond", organization: "Chimo Community Services", phone: "604-279-7077", type: "transition_house", address: "Richmond, BC", latitude: 49.1666, longitude: -123.1336 },
+  // ── Fraser Valley ──
+  { name: "Haven Transition House", city: "Chilliwack", organization: "Ann Davis Society", phone: "604-792-2760", type: "transition_house", address: "Chilliwack, BC", latitude: 49.1579, longitude: -121.9514 },
+  { name: "Mission Transition House", city: "Mission", organization: "SARA for Women", phone: "604-826-7800", type: "transition_house", address: "Mission, BC", latitude: 49.1791, longitude: -122.2373 },
+  { name: "Abbotsford Transition House", city: "Abbotsford", organization: "SARA for Women", phone: "604-852-6008", type: "transition_house", address: "Abbotsford, BC", latitude: 49.0495, longitude: -122.3349 },
+  { name: "Jean Scott Transition House", city: "Hope", organization: "Cedar Strong", phone: "604-869-5191", type: "transition_house", address: "Hope, BC", latitude: 49.3331, longitude: -121.2157 },
+  // ── Vancouver Island ──
+  { name: "Victoria Women's Transition House", city: "Victoria", organization: "Victoria Women's Transition House Society", phone: "250-385-6611", type: "transition_house", address: "Victoria, BC", latitude: 48.4284, longitude: -123.3656 },
+  { name: "Sandy Merriman House", city: "Victoria", organization: "Cool Aid Society", phone: "250-383-1951", type: "emergency_shelter", address: "Victoria, BC", latitude: 48.4250, longitude: -123.3700 },
+  { name: "Nanaimo Haven Society", city: "Nanaimo", organization: "Haven Society", phone: "250-756-2452", type: "transition_house", address: "Nanaimo, BC", latitude: 49.1659, longitude: -123.9401 },
+  { name: "Lilli House", city: "Courtenay", organization: "Comox Valley Transition Society", phone: "250-338-1227", type: "transition_house", address: "Courtenay, BC", latitude: 49.6900, longitude: -124.9994 },
+  { name: "Ann Elmore Transition House", city: "Campbell River", organization: "Campbell River Transition Society", phone: "250-286-3666", type: "transition_house", address: "Campbell River, BC", latitude: 50.0198, longitude: -125.2413 },
+  { name: "Port Alberni Transition House", city: "Port Alberni", organization: "Sage Haven Society", phone: "250-724-2223", type: "transition_house", address: "Port Alberni, BC", latitude: 49.2679, longitude: -124.7859 },
+  // ── Interior / Okanagan ──
+  { name: "Kelowna Women's Shelter", city: "Kelowna", organization: "Central Okanagan Emergency Shelter Society", phone: "250-763-1040", type: "transition_house", address: "Kelowna, BC", latitude: 49.8905, longitude: -119.4692 },
+  { name: "Hughes House", city: "Penticton", organization: "South Okanagan Women in Need", phone: "250-493-7233", type: "transition_house", address: "Penticton, BC", latitude: 49.4964, longitude: -119.6128 },
+  { name: "Y Women's Emergency Shelter", city: "Kamloops", organization: "YWCA BC", phone: "250-374-6162", type: "transition_house", address: "Kamloops, BC", latitude: 50.6181, longitude: -120.1505 },
+  { name: "Vernon Transition House", city: "Vernon", organization: "Vernon Women's Transition House Society", phone: "250-542-1122", type: "transition_house", address: "Vernon, BC", latitude: 50.2671, longitude: -119.2720 },
+  // ── Northern BC ──
+  { name: "Phoenix Transition House", city: "Prince George", organization: "Phoenix Transition Society", phone: "250-563-7305", type: "transition_house", address: "Prince George, BC", latitude: 53.9129, longitude: -122.7573 },
+  { name: "Amber House", city: "Prince George", organization: "Elizabeth Fry Society", phone: "250-562-5868", type: "transition_house", address: "Prince George, BC", latitude: 53.9165, longitude: -122.7515 },
+  { name: "Dunmore Place", city: "Kitimat", organization: "Tamitik Status of Women", phone: "250-632-6070", type: "transition_house", address: "Kitimat, BC", latitude: 54.0536, longitude: -128.6534 },
+  { name: "Ksan House", city: "Terrace", organization: "Ksan House Society", phone: "250-635-6447", type: "transition_house", address: "Terrace, BC", latitude: 54.5164, longitude: -128.5997 },
+  // ── Kootenays ──
+  { name: "Aimee Beaulieu Transition House", city: "Nelson", organization: "Nelson Community Services", phone: "250-354-4357", type: "transition_house", address: "Nelson, BC", latitude: 49.4937, longitude: -117.2951 },
+  { name: "Kootenay Haven Transition House", city: "Cranbrook", organization: "CMHA Kootenays", phone: "250-426-4887", type: "transition_house", address: "Cranbrook, BC", latitude: 49.5218, longitude: -115.7515 },
+  // ── Sea-to-Sky ──
+  { name: "Pearl's Safe Home", city: "Pemberton", organization: "PearlSpace Support Services", phone: "604-892-5711", type: "safe_home", address: "Pemberton, BC", latitude: 50.5109, longitude: -123.0112 },
+  { name: "Howe Sound Women's Centre", city: "Squamish", organization: "Howe Sound Women's Centre Society", phone: "604-892-5748", type: "safe_home", address: "Squamish, BC", latitude: 49.7016, longitude: -123.1558 },
 ];
 
 const SHELTER_DEFAULTS: Omit<Shelter, "id">[] = [
@@ -50,22 +89,28 @@ export default function ShelterMapPage() {
     (async () => {
       const supabase = createClient();
       const { data } = await supabase.from("shelters").select("*").order("name");
-      let shelterData = (data as Shelter[]) ?? [];
+      const dbShelters = (data as Shelter[]) ?? [];
 
-      // If no shelters from DB or they lack coordinates, use defaults
-      if (shelterData.length === 0) {
-        shelterData = SHELTER_DEFAULTS.map((s, i) => ({ ...s, id: `default-${i}` }));
-      } else {
-        // Merge coordinates from defaults for shelters that lack them
-        shelterData = shelterData.map((s) => {
-          if (!s.latitude || !s.longitude) {
-            const match = SHELTER_DEFAULTS.find((d) => d.name === s.name || d.city === s.city);
-            if (match) return { ...s, latitude: match.latitude, longitude: match.longitude, address: s.address || match.address };
-          }
-          return s;
-        });
-      }
-      setShelters(shelterData);
+      // Enrich DB shelters with coordinates from defaults if missing
+      const enrichedDb = dbShelters.map((s) => {
+        if (!s.latitude || !s.longitude) {
+          const match = SHELTER_DEFAULTS.find((d) => d.name === s.name || d.city === s.city);
+          if (match) return { ...s, latitude: match.latitude, longitude: match.longitude, address: s.address || match.address };
+        }
+        return s;
+      });
+
+      // Always merge: DB shelters + all defaults not already in DB (by name)
+      const dbNames = new Set(enrichedDb.map((s) => s.name.toLowerCase()));
+      const extraDefaults = SHELTER_DEFAULTS
+        .filter((d) => !dbNames.has(d.name.toLowerCase()))
+        .map((s, i) => ({ ...s, id: `default-${i}` }));
+
+      const allShelters = [...enrichedDb, ...extraDefaults].sort((a, b) =>
+        a.name.localeCompare(b.name)
+      );
+
+      setShelters(allShelters);
       setLoading(false);
     })();
   }, []);

@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { useState } from "react";
 import { createClient } from "@/lib/supabase";
+import { LANGUAGES, type Lang } from "@/lib/i18n";
 
 const NAV_ITEMS = [
   { href: "/dashboard", label: "Living Garden", icon: "local_florist" },
@@ -16,6 +18,8 @@ const NAV_ITEMS = [
 export default function Sidebar() {
   const pathname = usePathname();
   const router = useRouter();
+  const [lang, setLang] = useState<Lang>("en");
+  const [showLangPanel, setShowLangPanel] = useState(false);
 
   async function handleLogout() {
     const supabase = createClient();
@@ -57,7 +61,15 @@ export default function Sidebar() {
         })}
       </nav>
 
-      <div className="p-6 mt-auto border-t border-outline-variant/10">
+      <div className="p-6 mt-auto border-t border-outline-variant/10 space-y-2">
+        <button
+          onClick={() => setShowLangPanel(true)}
+          className="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-colors w-full px-4 py-2 rounded-lg hover:bg-surface-variant/30"
+        >
+          <span className="material-symbols-outlined text-xl">translate</span>
+          <span className="text-sm font-medium">Language</span>
+          <span className="ml-auto text-xs font-bold uppercase text-primary">{lang}</span>
+        </button>
         <button
           onClick={handleLogout}
           className="flex items-center gap-3 text-on-surface-variant hover:text-error transition-colors w-full px-4 py-2 rounded-lg hover:bg-surface-variant/30"
@@ -66,6 +78,49 @@ export default function Sidebar() {
           <span className="text-sm font-medium">Sign out</span>
         </button>
       </div>
+
+      {/* Language picker panel */}
+      {showLangPanel && (
+        <div className="fixed inset-0 bg-black/40 z-[70] flex items-center justify-center" onClick={() => setShowLangPanel(false)}>
+          <div
+            className="bg-background rounded-2xl w-full max-w-md max-h-[80vh] overflow-hidden shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between p-5 border-b border-outline-variant/20">
+              <div className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-primary">translate</span>
+                <h3 className="font-headline text-lg font-semibold text-on-surface">Choose language</h3>
+              </div>
+              <button onClick={() => setShowLangPanel(false)} className="p-2 rounded-full hover:bg-surface-container">
+                <span className="material-symbols-outlined text-on-surface-variant">close</span>
+              </button>
+            </div>
+            <div className="p-4 grid grid-cols-2 gap-2 overflow-y-auto max-h-[60vh]">
+              {LANGUAGES.map((l) => (
+                <button
+                  key={l.code}
+                  onClick={() => { setLang(l.code); setShowLangPanel(false); }}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-xl text-left transition-all ${
+                    lang === l.code
+                      ? "bg-primary-container border-2 border-primary"
+                      : "bg-surface-container-low border-2 border-transparent hover:bg-surface-container"
+                  }`}
+                >
+                  <div className="flex-1 min-w-0">
+                    <p className={`font-medium text-sm ${lang === l.code ? "text-primary" : "text-on-surface"}`}>
+                      {l.nativeLabel}
+                    </p>
+                    <p className="text-[10px] text-on-surface-variant">{l.label}</p>
+                  </div>
+                  {lang === l.code && (
+                    <span className="material-symbols-outlined text-primary text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+                  )}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </aside>
   );
 }

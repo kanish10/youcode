@@ -23,6 +23,7 @@ import {
   logKioskActivity,
   setStoredKioskIdentifier,
 } from "@/lib/kioskActivity";
+import { LANGUAGES, type Lang } from "@/lib/i18n";
 
 type Step =
   | "welcome"
@@ -246,6 +247,8 @@ export default function TabletSanctuary() {
   const [identifier, setIdentifier] = useState("");
   const [selectedExerciseId, setSelectedExerciseId] = useState(EXERCISES[0]?.id ?? "");
   const [notice, setNotice] = useState<CompletionNotice | null>(null);
+  const [lang, setLang] = useState<Lang>("en");
+  const [showLangPanel, setShowLangPanel] = useState(false);
 
   useEffect(() => {
     const savedIdentifier = getStoredKioskIdentifier();
@@ -365,30 +368,40 @@ export default function TabletSanctuary() {
             </div>
           </div>
 
-          {step !== "welcome" && (
-            <div className="flex items-center gap-3">
-              <div className="hidden rounded-full border border-outline-variant/20 bg-white px-4 py-2 text-sm text-on-surface-variant sm:block">
-                {identifier.trim() ? (
-                  <>
-                    Logging for <span className="font-semibold text-primary">{identifier}</span>
-                  </>
-                ) : (
-                  "Guest mode"
-                )}
-              </div>
-              <button
-                type="button"
-                onClick={() => {
-                  setIdInput(identifier);
-                  setNotice(null);
-                  setStep("welcome");
-                }}
-                className="rounded-full bg-surface-container px-4 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary-container/60"
-              >
-                Change ID
-              </button>
-            </div>
-          )}
+          <div className="flex items-center gap-3">
+            {step !== "welcome" && (
+              <>
+                <div className="hidden rounded-full border border-outline-variant/20 bg-white px-4 py-2 text-sm text-on-surface-variant sm:block">
+                  {identifier.trim() ? (
+                    <>
+                      Logging for <span className="font-semibold text-primary">{identifier}</span>
+                    </>
+                  ) : (
+                    "Guest mode"
+                  )}
+                </div>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIdInput(identifier);
+                    setNotice(null);
+                    setStep("welcome");
+                  }}
+                  className="rounded-full bg-surface-container px-4 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary-container/60"
+                >
+                  Change ID
+                </button>
+              </>
+            )}
+            <button
+              type="button"
+              onClick={() => setShowLangPanel(true)}
+              className="flex items-center gap-1.5 rounded-full border border-outline-variant/20 bg-white px-4 py-2 text-sm text-on-surface-variant transition-colors hover:bg-surface-container"
+            >
+              <span className="material-symbols-outlined text-lg">translate</span>
+              <span className="font-medium uppercase">{lang}</span>
+            </button>
+          </div>
         </div>
       </header>
 
@@ -478,6 +491,49 @@ export default function TabletSanctuary() {
           <MessageStep notice={notice} onBackHome={() => setStep("home")} />
         )}
       </main>
+
+      {/* Language picker panel */}
+      {showLangPanel && (
+        <div className="fixed inset-0 bg-black/40 z-[70] flex items-center justify-center" onClick={() => setShowLangPanel(false)}>
+          <div
+            className="bg-background rounded-2xl w-full max-w-md max-h-[80vh] overflow-hidden shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between p-5 border-b border-outline-variant/20">
+              <div className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-primary">translate</span>
+                <h3 className="font-headline text-lg font-semibold text-on-surface">Choose your language</h3>
+              </div>
+              <button onClick={() => setShowLangPanel(false)} className="p-2 rounded-full hover:bg-surface-container">
+                <span className="material-symbols-outlined text-on-surface-variant">close</span>
+              </button>
+            </div>
+            <div className="p-4 grid grid-cols-2 gap-2 overflow-y-auto max-h-[60vh]">
+              {LANGUAGES.map((l) => (
+                <button
+                  key={l.code}
+                  onClick={() => { setLang(l.code); setShowLangPanel(false); }}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-xl text-left transition-all ${
+                    lang === l.code
+                      ? "bg-primary-container border-2 border-primary"
+                      : "bg-surface-container-low border-2 border-transparent hover:bg-surface-container"
+                  }`}
+                >
+                  <div className="flex-1 min-w-0">
+                    <p className={`font-medium text-sm ${lang === l.code ? "text-primary" : "text-on-surface"}`}>
+                      {l.nativeLabel}
+                    </p>
+                    <p className="text-[10px] text-on-surface-variant">{l.label}</p>
+                  </div>
+                  {lang === l.code && (
+                    <span className="material-symbols-outlined text-primary text-lg" style={{ fontVariationSettings: "'FILL' 1" }}>check_circle</span>
+                  )}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
