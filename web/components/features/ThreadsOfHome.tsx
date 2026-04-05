@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   COUNTRIES,
   RELIGIONS,
@@ -8,6 +8,13 @@ import {
   type Religion,
   type Song,
 } from "@/lib/threads-content";
+
+type Headline = {
+  title: string;
+  link: string;
+  source: string;
+  publishedAt: string;
+};
 
 type View =
   | { kind: "entry" }
@@ -213,6 +220,9 @@ export default function ThreadsOfHome() {
           </p>
         </div>
 
+        {/* Current news */}
+        <NewsSection query={c.newsQuery} country={c.name} />
+
         {/* Songs */}
         <div className="space-y-4">
           <div className="flex items-center gap-3">
@@ -350,6 +360,35 @@ export default function ThreadsOfHome() {
         </p>
       </div>
 
+      {/* Full text link-out */}
+      <a
+        href={r.fullText.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group flex items-start gap-4 rounded-[1.75rem] border border-outline-variant/20 bg-white/80 p-6 transition-all hover:-translate-y-0.5 hover:border-primary/30 hover:bg-surface-container"
+      >
+        <div
+          className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl ${tone.icon}`}
+        >
+          <span className="material-symbols-outlined">menu_book</span>
+        </div>
+        <div className="flex-1 min-w-0">
+          <p className="text-xs font-bold uppercase tracking-[0.22em] text-on-surface-variant">
+            Read the full text
+          </p>
+          <h3 className="mt-1 font-headline text-xl leading-snug text-on-surface">
+            {r.fullText.title}
+          </h3>
+          <p className="mt-2 text-sm leading-relaxed text-on-surface-variant">
+            {r.fullText.note}
+          </p>
+          <div className={`mt-3 inline-flex items-center gap-1.5 text-xs font-semibold ${tone.label}`}>
+            {r.fullText.host}
+            <span className="material-symbols-outlined text-sm">open_in_new</span>
+          </div>
+        </div>
+      </a>
+
       {/* Prayer / meditation */}
       <div className="rounded-[1.75rem] border border-outline-variant/20 bg-surface-container p-6">
         <div className="flex items-center gap-3">
@@ -405,6 +444,85 @@ function toneClasses(tone: "primary" | "secondary" | "tertiary") {
     icon: "bg-tertiary text-white",
     label: "text-tertiary",
   };
+}
+
+function NewsSection({ query, country }: { query: string; country: string }) {
+  const [state, setState] = useState<
+    | { status: "loading" }
+    | { status: "ready"; headlines: Headline[] }
+    | { status: "error" }
+  >({ status: "loading" });
+
+  useEffect(() => {
+    let cancelled = false;
+    setState({ status: "loading" });
+    fetch(`/api/news?q=${encodeURIComponent(query)}`)
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((data: { headlines?: Headline[] }) => {
+        if (cancelled) return;
+        setState({ status: "ready", headlines: data.headlines ?? [] });
+      })
+      .catch(() => {
+        if (!cancelled) setState({ status: "error" });
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [query]);
+
+  return (
+    <div className="rounded-[1.75rem] border border-secondary/15 bg-secondary-container/20 p-6">
+      <div className="flex items-center gap-3">
+        <span className="material-symbols-outlined text-secondary">newspaper</span>
+        <p className="text-xs font-bold uppercase tracking-[0.22em] text-secondary">
+          Today&rsquo;s headlines from {country}
+        </p>
+      </div>
+
+      {state.status === "loading" && (
+        <p className="mt-4 text-sm text-on-surface-variant">Gathering the news…</p>
+      )}
+
+      {state.status === "error" && (
+        <p className="mt-4 text-sm text-on-surface-variant">
+          Headlines aren&rsquo;t reachable right now. Please try again later.
+        </p>
+      )}
+
+      {state.status === "ready" && state.headlines.length === 0 && (
+        <p className="mt-4 text-sm text-on-surface-variant">
+          No recent headlines found.
+        </p>
+      )}
+
+      {state.status === "ready" && state.headlines.length > 0 && (
+        <div className="mt-4 space-y-3">
+          {state.headlines.map((h) => (
+            <a
+              key={h.link}
+              href={h.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block rounded-2xl border border-outline-variant/20 bg-white/75 p-4 transition-all hover:-translate-y-0.5 hover:border-secondary/40 hover:bg-white"
+            >
+              <h3 className="font-headline text-base leading-snug text-on-surface group-hover:text-secondary">
+                {h.title}
+              </h3>
+              <div className="mt-2 flex items-center gap-2 text-xs text-on-surface-variant">
+                {h.source && <span className="font-semibold">{h.source}</span>}
+                <span className="inline-flex items-center gap-1 ml-auto text-secondary font-semibold">
+                  Read <span className="material-symbols-outlined text-sm">open_in_new</span>
+                </span>
+              </div>
+            </a>
+          ))}
+          <p className="pt-1 text-[11px] text-on-surface-variant">
+            Headlines via Google News · updated every 30 minutes
+          </p>
+        </div>
+      )}
+    </div>
+  );
 }
 
 function SongCard({

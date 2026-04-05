@@ -112,8 +112,15 @@ Return only the JSON object.`;
     });
   } catch (err) {
     const message = err instanceof Error ? err.message : "Unknown error";
+    // Log the real error server-side so staff/devs can diagnose.
+    console.error("[pantry] recipe generation failed:", message);
+    const isAuthError =
+      /invalid api key|unauthori[sz]ed|401|authentication/i.test(message);
+    const friendly = isAuthError
+      ? "The recipe helper isn't available right now. Please let staff know so they can set up the AI connection."
+      : "The recipe helper couldn't answer right now. Please try again in a moment.";
     return new Response(
-      JSON.stringify({ error: `Recipe generation failed: ${message}` }),
+      JSON.stringify({ error: friendly }),
       { status: 500, headers: { "Content-Type": "application/json" } },
     );
   }

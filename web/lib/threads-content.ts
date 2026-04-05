@@ -17,7 +17,16 @@ export type Country = {
   proverb: string;
   proverbSource: string;
   historyNote: string;
+  /** Google News search query — used by /api/news to fetch headlines. */
+  newsQuery: string;
   songs: Song[];
+};
+
+export type FullText = {
+  title: string;
+  url: string;
+  host: string;
+  note: string;
 };
 
 export type Religion = {
@@ -35,6 +44,8 @@ export type Religion = {
     title: string;
     text: string;
   };
+  /** Link out to a trusted online edition of the full text. */
+  fullText: FullText;
   songs: Song[];
 };
 
@@ -50,6 +61,7 @@ export const COUNTRIES: Country[] = [
     proverbSource: "Tagalog saying — \"One who does not look back to where they came from cannot reach where they are going.\"",
     historyNote:
       "The Philippines was home to seafaring civilisations long before the 1565 Spanish arrival. Independence came in 1946. The country has weathered typhoons, revolutions, and diaspora — and keeps singing through all of it.",
+    newsQuery: "Philippines",
     songs: [
       {
         title: "Anak",
@@ -79,6 +91,7 @@ export const COUNTRIES: Country[] = [
     proverbSource: "Sanskrit — \"The guest is God.\"",
     historyNote:
       "India gave the world zero, yoga, chess, and ahimsa (non-violence). Independence came in 1947 after a long non-violent resistance movement. Today it is the world's most populous nation.",
+    newsQuery: "India",
     songs: [
       {
         title: "Vande Mataram",
@@ -108,6 +121,7 @@ export const COUNTRIES: Country[] = [
     proverbSource: "Lao Tzu — \"A journey of a thousand miles begins with a single step.\"",
     historyNote:
       "From the Shang dynasty to today, China's story is told through calligraphy, poetry, and philosophy. Confucian, Taoist, and Buddhist threads run through daily life.",
+    newsQuery: "China",
     songs: [
       {
         title: "茉莉花 (Jasmine Flower)",
@@ -137,6 +151,7 @@ export const COUNTRIES: Country[] = [
     proverbSource: "Mexican saying — \"The one who searches, finds.\"",
     historyNote:
       "Mexico's Indigenous civilisations built cities of astonishing mathematical precision. After independence in 1821 and revolution in 1910, the country keeps reinventing itself.",
+    newsQuery: "Mexico",
     songs: [
       {
         title: "Cielito Lindo",
@@ -166,6 +181,7 @@ export const COUNTRIES: Country[] = [
     proverbSource: "Vietnamese saying — \"When eating fruit, remember the one who planted the tree.\"",
     historyNote:
       "Vietnam has survived a thousand years of Chinese rule, French colonisation, and war — and remains deeply family-centred, with ancestors honoured at home altars.",
+    newsQuery: "Vietnam",
     songs: [
       {
         title: "Lòng Mẹ (Mother's Heart)",
@@ -195,6 +211,7 @@ export const COUNTRIES: Country[] = [
     proverbSource: "Persian saying — \"May this good wind continue to blow.\"",
     historyNote:
       "Persian civilisation stretches back 2,500 years. Poetry is not a hobby here — it is part of ordinary life. Hafez's tomb in Shiraz is visited daily by people reading his verses for guidance.",
+    newsQuery: "Iran",
     songs: [
       {
         title: "Gole Sangam",
@@ -224,6 +241,7 @@ export const COUNTRIES: Country[] = [
     proverbSource: "Korean saying — \"Starting is half.\"",
     historyNote:
       "Korea has existed as a distinct culture for over 2,000 years. King Sejong created hangul in 1443 so that common people could read. Today, Korean storytelling reaches the whole world.",
+    newsQuery: "South Korea",
     songs: [
       {
         title: "아리랑 (Arirang)",
@@ -253,6 +271,7 @@ export const COUNTRIES: Country[] = [
     proverbSource: "Japanese saying — \"Fall down seven times, get up eight.\"",
     historyNote:
       "Japan's culture fuses Shinto, Buddhism, and a deep attention to craft. From the Heian court poets to today, small moments of beauty are taken seriously.",
+    newsQuery: "Japan",
     songs: [
       {
         title: "上を向いて歩こう (Ue wo Muite Arukō)",
@@ -282,6 +301,7 @@ export const COUNTRIES: Country[] = [
     proverbSource: "Urdu saying — \"A person creates their own worth.\"",
     historyNote:
       "Pakistan was formed in 1947. Its poetic tradition — from Allama Iqbal to Faiz Ahmed Faiz — is carried through everyday speech.",
+    newsQuery: "Pakistan",
     songs: [
       {
         title: "Tajdar-e-Haram",
@@ -311,6 +331,7 @@ export const COUNTRIES: Country[] = [
     proverbSource: "Dari saying — \"Drop by drop, a river is made.\"",
     historyNote:
       "Afghanistan's culture is older than any of its borders. Through decades of upheaval, music, poetry, and family bonds remain.",
+    newsQuery: "Afghanistan",
     songs: [
       {
         title: "Ahmad Zahir Classics",
@@ -340,6 +361,7 @@ export const COUNTRIES: Country[] = [
     proverbSource: "Arabic saying — \"The neighbour comes before the house.\"",
     historyNote:
       "Syria has been a meeting place of civilisations for 10,000 years. Aramaic, the language Jesus spoke, is still alive in villages like Ma'loula.",
+    newsQuery: "Syria",
     songs: [
       {
         title: "Ya Mal El Sham",
@@ -369,6 +391,7 @@ export const COUNTRIES: Country[] = [
     proverbSource: "Somali saying — \"Every person is a story.\"",
     historyNote:
       "Somali culture prized poetry above almost everything else for centuries. A good poem could end a war, start a marriage, or preserve a family's history.",
+    newsQuery: "Somalia",
     songs: [
       {
         title: "Classical Somali Songs",
@@ -398,6 +421,7 @@ export const COUNTRIES: Country[] = [
     proverbSource: "Ukrainian saying — \"Chase two hares, catch none.\"",
     historyNote:
       "Ukraine's culture is ancient — Kyivan Rus' predates most modern nations. Through every trial, songs and embroidered shirts keep families together.",
+    newsQuery: "Ukraine",
     songs: [
       {
         title: "Chervona Kalyna (Red Viburnum)",
@@ -427,6 +451,7 @@ export const COUNTRIES: Country[] = [
     proverbSource: "Ethiopian saying — \"A fly has one person she loves — her child.\"",
     historyNote:
       "Ethiopia's alphabet is 2,000 years old. Its rock-hewn churches at Lalibela were carved in the 12th century from single stones.",
+    newsQuery: "Ethiopia",
     songs: [
       {
         title: "Tizita",
@@ -456,6 +481,7 @@ export const COUNTRIES: Country[] = [
     proverbSource: "Colombian saying — \"Little by little, you go far.\"",
     historyNote:
       "Colombia's Indigenous, African, and Spanish heritage created its vibrant music. García Márquez turned everyday Colombian life into magical realism.",
+    newsQuery: "Colombia",
     songs: [
       {
         title: "La Pollera Colorá",
@@ -485,6 +511,7 @@ export const COUNTRIES: Country[] = [
     proverbSource: "Yoruba saying — \"One who stays in one place sees nothing.\"",
     historyNote:
       "Nigeria's Yoruba, Igbo, and Hausa civilisations built kingdoms that traded across the Sahara. Today Nigerian music shapes global pop.",
+    newsQuery: "Nigeria",
     songs: [
       {
         title: "Water No Get Enemy — Fela Kuti",
@@ -524,6 +551,12 @@ export const RELIGIONS: Religion[] = [
       text:
         "Sit quietly. Breathe slowly. Let one word hold you — peace, home, held, loved. When your mind wanders, simply return to the word.",
     },
+    fullText: {
+      title: "The Bible — read full chapters",
+      url: "https://www.biblegateway.com/passage/?search=Psalm+46&version=NIV",
+      host: "biblegateway.com",
+      note: "Opens Psalm 46 in the NIV translation. From here you can switch translations or browse any book of the Bible.",
+    },
     songs: [
       {
         title: "Amazing Grace",
@@ -559,6 +592,12 @@ export const RELIGIONS: Religion[] = [
       title: "A simple dua for difficult moments",
       text:
         "Hasbunallahu wa ni'mal wakeel — Allah is sufficient for us, and He is the best disposer of affairs. Repeat this slowly, as many times as you need.",
+    },
+    fullText: {
+      title: "The Qur'an — read any surah",
+      url: "https://quran.com/94",
+      host: "quran.com",
+      note: "Opens Surah Ash-Sharh with Arabic, translation, and recitation. You can browse all 114 surahs from here.",
     },
     songs: [
       {
@@ -596,6 +635,12 @@ export const RELIGIONS: Religion[] = [
       text:
         "Sit with your spine easy. Say softly: Om Shanti, Shanti, Shanti — peace in mind, peace in body, peace in the world. Let the third Shanti dissolve into silence.",
     },
+    fullText: {
+      title: "Bhagavad Gita — read verse by verse",
+      url: "https://www.holy-bhagavad-gita.org/chapter/2/verse/47",
+      host: "holy-bhagavad-gita.org",
+      note: "Opens Chapter 2, Verse 47 with Sanskrit, transliteration, translation, and commentary. All 18 chapters are here.",
+    },
     songs: [
       {
         title: "Raghupati Raghava Raja Ram",
@@ -631,6 +676,12 @@ export const RELIGIONS: Religion[] = [
       title: "Breath-in-breath-out meditation",
       text:
         "Breathe in and silently say: calm. Breathe out and say: ease. Continue for as long as feels right. There is no goal — just the breath.",
+    },
+    fullText: {
+      title: "Buddhist suttas — in plain English",
+      url: "https://suttacentral.net/snp1.8/en/sujato",
+      host: "suttacentral.net",
+      note: "Opens the Metta Sutta (loving-kindness discourse) in modern translation. From here you can browse the full Pali canon.",
     },
     songs: [
       {
@@ -668,6 +719,12 @@ export const RELIGIONS: Religion[] = [
       text:
         "Breathe in: Wahe. Breathe out: Guru. Repeat slowly. \"Waheguru\" means \"Wonderful Teacher\" — an expression of awe at the divine.",
     },
+    fullText: {
+      title: "Guru Granth Sahib — search by shabad",
+      url: "https://www.sikhitothemax.org/",
+      host: "sikhitothemax.org",
+      note: "Browse and search the Guru Granth Sahib in Gurmukhi with English translations and transliterations.",
+    },
     songs: [
       {
         title: "Gurbani Shabad",
@@ -704,6 +761,12 @@ export const RELIGIONS: Religion[] = [
       text:
         "Modeh ani lefanecha — I give thanks to You, for You have returned my soul to me. Say this upon waking, as a simple acknowledgment that today is a gift.",
     },
+    fullText: {
+      title: "Tanakh & Talmud — open library",
+      url: "https://www.sefaria.org/Psalms.23?lang=bi",
+      host: "sefaria.org",
+      note: "Opens Psalm 23 in Hebrew and English side by side. Sefaria holds the full Tanakh, Talmud, Midrash, and more.",
+    },
     songs: [
       {
         title: "Oseh Shalom",
@@ -739,6 +802,12 @@ export const RELIGIONS: Religion[] = [
       title: "A simple grounding practice",
       text:
         "Sit quietly. Notice your feet on the ground. Notice three things you can see. Notice your breath moving in and out. You are here. That is enough for now.",
+    },
+    fullText: {
+      title: "Mary Oliver — read her poems",
+      url: "https://www.poetryfoundation.org/poets/mary-oliver",
+      host: "poetryfoundation.org",
+      note: "Browse Mary Oliver's poems — and thousands of others — from the Poetry Foundation's free archive.",
     },
     songs: [
       {
